@@ -1,0 +1,35 @@
+{
+  "name": "hl7.fhir.us.subscriptions-backport",
+  "version": "0.1.0",
+  "canonical": "http://hl7.org/fhir/us/subscriptions-backport",
+  "url": "http://hl7.org/fhir/us/subscriptions-backport",
+  "title": "Subscriptions R5 Backport",
+  "description": "The Subscription R5 Backport Implementation Guide enables servers running verions of FHIR earlier than R5 to implement a subset of R5 Subscriptions in a standardized way.",
+  "dependencies": {
+  },
+  "keywords": [
+    "Subscriptions",
+    "Notifications"
+  ],
+  "language": "en",
+  "author": "?",
+  "maintainers": [
+    {
+      "name": "HL7 FHIR Infrastructure WG",
+      "url": "http://hl7.org/Special/committees/fiwg/index.cfm"
+    },
+    {
+      "name": "The Argonaut Project",
+      "url": "https://argonautwiki.hl7.org"
+    },
+    {
+      "name": "Microsoft",
+      "url": "https://microsoft.com"
+    },
+    {
+      "name": "Gino Canessa",
+      "email": "mailto:gino.canessa@microsoft.com"
+    }
+  ],
+  "license": "CC0-1.0"
+}
