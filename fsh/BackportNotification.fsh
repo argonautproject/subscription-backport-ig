@@ -16,31 +16,31 @@ Title:    "Backported R5 Subscription Notification Bundle"
 
 Extension:   BackportSubscriptionEventCount
 Id:          backport-subscription-event-count
-Title:       "Backported R5 Subscription Event Count"
+Title:       "R5 Subscription Event Count"
 Description: "Indicates the number of unique events that have triggered notification attempts on this Subscription inclusive of the current notification being sent."
 * value[x] only unsignedInt
 
 Extension:   BackportBundleEventCount
 Id:          backport-bundle-event-count
-Title:       "Backported R5 Subscription Bundle Event Count"
+Title:       "R5 Subscription Bundle Event Count"
 Description: "Represents the number of event notifications conveyed by this Bundle."
 * value[x] only unsignedInt
 
 Extension:   BackportSubscriptionTopicUrl
 Id:          backport-subscription-topic-url
-Title:       "Backported R5 Canonical SubscriptionTopic"
+Title:       "R5 Canonical SubscriptionTopic"
 Description: "The Canonical SubscriptionTopic resource relevant to this notification (e.g., the topic the triggering subscription relates to)."
 * value[x] only uri
 
 Extension:   BackportSubscriptionUrl
 Id:          backport-subscription-url
-Title:       "Backported R5 Subscription Absolute URL"
+Title:       "R5 Subscription Absolute URL"
 Description: "The Subscription resource that triggered this notification, as an absolute URL for the Subscription resource on the server that generated the notification."
 * value[x] only uri
 
 CodeSystem:  BackportNotificationTypeCodeSystem
 Id:          backport-notification-type-code-system
-Title:       "Backported R5 Subscription Notification Type Code System"
+Title:       "R5 Subscription Notification Type Code System"
 Description: "Codes to represent types of notification bundles."
 * #handshake          "Handshake"           "The notification is being sent as part of the setup or verification of a communications channel."
 * #heartbeat          "Heartbeat"           "The notification is being sent because there has not been a notification generated over an extended period of time."
@@ -49,13 +49,13 @@ Description: "Codes to represent types of notification bundles."
 
 ValueSet:    BackportNotificationTypeValueSet
 Id:          backport-notification-type-value-set
-Title:       "Backported R5 Subscription Notification Type Value Set"
+Title:       "R5 Subscription Notification Type Value Set"
 Description: "Codes to represent types of notification bundles."
 * codes from system BackportNotificationTypeCodeSystem
 
 Extension:   BackportNotificationType
 Id:          backport-notification-type
-Title:       "Backported R5 Subscription Notification Type"
+Title:       "R5 Subscription Notification Type"
 Description: "The type of event being conveyed with this notificaiton."
 * value[x] only code
 * valueCode from BackportNotificationTypeValueSet
