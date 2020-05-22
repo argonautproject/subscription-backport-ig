@@ -21,6 +21,18 @@
 				"kind": "build",
 				"isDefault": true
 			}
+		},
+		{
+			"label": "Start http-server",
+			"type": "shell",
+			"command": "http-server",
+			"args": ["./output", "-d", "--cors", "-p 8181"],
+			"windows": {
+				"command": "http-server",
+				"args": [".\\output", "-d", "--cors", "-p 8181"],
+			},
+			"problemMatcher": [],
+			"isBackground": true
 		}
 	]
 }
