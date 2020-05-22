@@ -1,0 +1,60 @@
+﻿SubscriptionsR5Backport : Validation Results
+=========================================
+
+err = 0, warn = 16, info = 0
+IG Publisher Version: v1.0.94-SNAPSHOT Out of date - current version is v1.0.95-SNAPSHOT
+Generated Fri May 22 16:08:01 CDT 2020. FHIR version 4.0.1 for hl7.fhir.us.subscriptions-backport#0.1.0 (canonical = http://hl7.org/fhir/us/subscriptions-backport)
+
+ Build Errors : 0 / 2
+ C:\git\subscription-backport-ig\input\ImplementationGuide-hl7.fhir.us.subscriptions-backport : 0 / 1
+ C:\git\subscription-backport-ig\input\extensions\structuredefinition-backport-bundle-event-count : 1 / 1
+ C:\git\subscription-backport-ig\input\extensions\structuredefinition-backport-heartbeat-period : 1 / 1
+ C:\git\subscription-backport-ig\input\extensions\structuredefinition-backport-notification-type : 1 / 1
+ C:\git\subscription-backport-ig\input\extensions\structuredefinition-backport-payload-content : 1 / 1
+ C:\git\subscription-backport-ig\input\extensions\structuredefinition-backport-subscription-event-count : 1 / 1
+ C:\git\subscription-backport-ig\input\extensions\structuredefinition-backport-subscription-topic-url : 1 / 1
+ C:\git\subscription-backport-ig\input\extensions\structuredefinition-backport-subscription-url : 1 / 1
+ C:\git\subscription-backport-ig\input\extensions\structuredefinition-backport-timeout : 1 / 1
+ C:\git\subscription-backport-ig\input\extensions\structuredefinition-backport-topic-canonical : 1 / 1
+ C:\git\subscription-backport-ig\input\profiles\structuredefinition-backport-subscription : 1 / 1
+ C:\git\subscription-backport-ig\input\profiles\structuredefinition-backport-subscription-notification : 1 / 1
+ C:\git\subscription-backport-ig\input\vocabulary\codesystem-backport-content-code-system : 0 / 1
+ C:\git\subscription-backport-ig\input\vocabulary\codesystem-backport-notification-type-code-system : 0 / 1
+ C:\git\subscription-backport-ig\input\vocabulary\valueset-backport-content-value-set : 0 / 1
+ C:\git\subscription-backport-ig\input\vocabulary\valueset-backport-notification-type-value-set : 0 / 1
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/backport-subscription.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/backport-subscription-notification.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+== C:\git\subscription-backport-ig\input\ImplementationGuide-hl7.fhir.us.subscriptions-backport.json ==
+WARNING: ImplementationGuide.jurisdiction: The resource should declare it's jurisdiction to match the package id (hl7.fhir.us.subscriptions-backport, jurisdiction = urn:iso:std:iso:3166:-2#US)
+== C:\git\subscription-backport-ig\input\extensions\StructureDefinition-backport-bundle-event-count.json ==
+WARNING: http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-bundle-event-count: The Implementation Guide contains no examples for this extension
+== C:\git\subscription-backport-ig\input\extensions\StructureDefinition-backport-heartbeat-period.json ==
+WARNING: http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-heartbeat-period: The Implementation Guide contains no examples for this extension
+== C:\git\subscription-backport-ig\input\extensions\StructureDefinition-backport-notification-type.json ==
+WARNING: http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-notification-type: The Implementation Guide contains no examples for this extension
+== C:\git\subscription-backport-ig\input\extensions\StructureDefinition-backport-payload-content.json ==
+WARNING: http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-payload-content: The Implementation Guide contains no examples for this extension
+== C:\git\subscription-backport-ig\input\extensions\StructureDefinition-backport-subscription-event-count.json ==
+WARNING: http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-event-count: The Implementation Guide contains no examples for this extension
+== C:\git\subscription-backport-ig\input\extensions\StructureDefinition-backport-subscription-topic-url.json ==
+WARNING: http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-topic-url: The Implementation Guide contains no examples for this extension
+== C:\git\subscription-backport-ig\input\extensions\StructureDefinition-backport-subscription-url.json ==
+WARNING: http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-url: The Implementation Guide contains no examples for this extension
+== C:\git\subscription-backport-ig\input\extensions\StructureDefinition-backport-timeout.json ==
+WARNING: http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-timeout: The Implementation Guide contains no examples for this extension
+== C:\git\subscription-backport-ig\input\extensions\StructureDefinition-backport-topic-canonical.json ==
+WARNING: http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-topic-canonical: The Implementation Guide contains no examples for this extension
+== C:\git\subscription-backport-ig\input\profiles\StructureDefinition-backport-subscription.json ==
+WARNING: http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription: The Implementation Guide contains no examples for this profile
+== C:\git\subscription-backport-ig\input\profiles\StructureDefinition-backport-subscription-notification.json ==
+WARNING: http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-notification: The Implementation Guide contains no examples for this profile
+== C:\git\subscription-backport-ig\input\vocabulary\CodeSystem-backport-content-code-system.json ==
+WARNING: CodeSystem.jurisdiction: The resource should declare it's jurisdiction to match the package id (hl7.fhir.us.subscriptions-backport, jurisdiction = urn:iso:std:iso:3166:-2#US)
+== C:\git\subscription-backport-ig\input\vocabulary\CodeSystem-backport-notification-type-code-system.json ==
+WARNING: CodeSystem.jurisdiction: The resource should declare it's jurisdiction to match the package id (hl7.fhir.us.subscriptions-backport, jurisdiction = urn:iso:std:iso:3166:-2#US)
+== C:\git\subscription-backport-ig\input\vocabulary\ValueSet-backport-content-value-set.json ==
+WARNING: ValueSet.jurisdiction: The resource should declare it's jurisdiction to match the package id (hl7.fhir.us.subscriptions-backport, jurisdiction = urn:iso:std:iso:3166:-2#US)
+== C:\git\subscription-backport-ig\input\vocabulary\ValueSet-backport-notification-type-value-set.json ==
+WARNING: ValueSet.jurisdiction: The resource should declare it's jurisdiction to match the package id (hl7.fhir.us.subscriptions-backport, jurisdiction = urn:iso:std:iso:3166:-2#US)

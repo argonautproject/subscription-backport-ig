@@ -1,0 +1,42 @@
+name: Build FSH -> IG -> GH Pages
+
+env:
+  IG_URL: https://storage.googleapis.com/ig-build/org.hl7.fhir.publisher.jar
+  IG_JAR: org.hl7.fhir.publisher.jar
+
+on:
+  push:
+    branches:
+      - disabled-for-testing
+    paths:
+      - 'fsh'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Java v14
+      uses: actions/setup-java@1
+      with:
+        java-version: 14
+
+    - name: Set up Jekyll
+      uses: helaili/jekyll-action@2.0.1
+
+    - name: Set up Node v12
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12'
+
+    - name: Install requirements.txt
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r python/requirements.txt
+
+    - name: Delete all
+      run: python ./python/server-loader.py -D -s $AZURE
+
+    - name: Load Azure
+      run: python3 ./python/server-loader.py -s $AZURE -f generated

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="backport-notification-type-value-set"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>R5 Subscription Notification Type Value Set</h2><div><p>Codes to represent types of notification bundles.</p>
+</div><ul><li>Include all codes defined in <a href="CodeSystem-backport-notification-type-code-system.html"><code>http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-notification-type-code-system</code></a></li></ul></div>
+  </text>
+  <url value="http://hl7.org/fhir/us/subscriptions-backport/ValueSet/backport-notification-type-value-set"/>
+  <version value="0.1.0"/>
+  <name value="BackportNotificationTypeValueSet"/>
+  <title value="R5 Subscription Notification Type Value Set"/>
+  <status value="active"/>
+  <date value="2020-05-22T16:07:42-05:00"/>
+  <publisher value="The Argonaut Project"/>
+  <contact>
+    <name value="HL7 FHIR Infrastructure WG"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.org/Special/committees/fiwg/index.cfm"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="The Argonaut Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://argonautwiki.hl7.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Microsoft"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://microsoft.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Gino Canessa"/>
+    <telecom>
+      <system value="email"/>
+      <value value="mailto:gino.canessa@microsoft.com"/>
+    </telecom>
+  </contact>
+  <description value="Codes to represent types of notification bundles."/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-notification-type-code-system"/>
+    </include>
+  </compose>
+</ValueSet>
