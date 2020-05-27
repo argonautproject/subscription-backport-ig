@@ -17,6 +17,7 @@ lists those files generated from project configs or the contents in the ig-data 
 | input\includes\menu.xml                                           | generated |                                                                       |
 | package-list.json                                                 | generated | fsh\package.json                                                      |
 | input\pagecontent\actors_and_transactions.md                      | copied    | fsh\ig-data\input\pagecontent\actors_and_transactions.md              |
+| input\pagecontent\errors.md                                       | copied    | fsh\ig-data\input\pagecontent\errors.md                               |
 | input\pagecontent\index.md                                        | copied    | fsh\ig-data\input\pagecontent\index.md                                |
 | input\pagecontent\overview.md                                     | copied    | fsh\ig-data\input\pagecontent\overview.md                             |
 | package.json                                                      | copied    | fsh\package.json                                                      |

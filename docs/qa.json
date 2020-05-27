@@ -3,7 +3,7 @@
   "name": "SubscriptionsR5Backport",
   "package-id": "hl7.fhir.us.subscriptions-backport",
   "ig-ver": "0.1.0",
-  "date": "Wed, 27 May, 2020 10:52:30 -0500",
+  "date": "Wed, 27 May, 2020 17:20:07 -0500",
   "errs": 0,
   "warnings": 16,
   "hints": 0,

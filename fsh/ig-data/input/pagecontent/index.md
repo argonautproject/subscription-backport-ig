@@ -6,13 +6,40 @@ This is a draft implementation guide to enable the implementation of R5-style su
 
 The goal of publishing this guide is to define a standard method of back-porting newer subscriptions for greater compatibility and adoption.
 
-## Organization of This Guide
+## Contents of This Guide
 
 * [Overview](overview.html)
   * R5 Subscription Redesign
   * Subscriptions Overview
   * Useful Links
 
+* [Actors and Operations](actors_and_transactions.html)
+  * Server
+  * Client
+  * Endpoint (REST Hook)
+  * Endpoint (Email)
+
+* Handling Errors
+  * Server
+  * Client
+
 * Profiles and Extensions
   * Profile: [Subscription](StructureDefinition-backport-subscription.html)
+    * Modifier Extension: [Backport Topic Canonical]StructureDefinition-backport-topic-canonical.html)
+    * Extension: [Backport Heartbeat Period](StructureDefinition-backport-heartbeat-period.html)
+    * Extension: [Backport Timeout](StructureDefinition-backport-timeout.html)
+    * Extension: [Backport Payload Content](StructureDefinition-backport-payload-content.html)
   * Profile: Notification [Bundle](StructureDefinition-backport-subscription-notification.html)
+    * Extension: [Backport Subscription Event Count](StructureDefinition-backport-subscription-event-count.html)
+    * Extension: [Backport Bundle Event Count](StructureDefinition-backport-bundle-event-count.html)
+    * Extension: [Backport Subscription Topic URL](StructureDefinition-backport-subscription-topic-url.html)
+    * Extension: [Backport Subscription URL](StructureDefinition-backport-subscription-url.html)
+    * Extension: [Backport Notification Type](StructureDefinition-backport-notification-type.html)
+
+* Value Sets and Code Systems
+  * Subscription Contents
+    * [Code System](CodeSystem-backport-content-code-system.html)
+    * [Value Set](ValueSet-backport-content-value-set.html)
+  * Subscription Notification Types
+    * [Code System](CodeSystem-backport-notification-type-code-system.html)
+    * [Value Set](ValueSet-backport-notification-type-value-set.html)

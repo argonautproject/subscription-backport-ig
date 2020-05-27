@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "SubscriptionsR5Backport"];
   fhir:ImplementationGuide.title [ fhir:value "Subscriptions R5 Backport"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2020-05-27T10:52:30-05:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-05-27T17:20:07-05:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "The Argonaut Project"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -586,6 +586,11 @@
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
          fhir:index 2;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "errors.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Errors" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 3;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "overview.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Overview" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]

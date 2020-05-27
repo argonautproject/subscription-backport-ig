@@ -115,7 +115,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div class="markdown-toc">
 <ul id="markdown-toc">
   <li><a href="#about-this-guide" id="markdown-toc-about-this-guide">About This Guide</a></li>
-  <li><a href="#organization-of-this-guide" id="markdown-toc-organization-of-this-guide">Organization of This Guide</a></li>
+  <li><a href="#contents-of-this-guide" id="markdown-toc-contents-of-this-guide">Contents of This Guide</a></li>
 </ul>
 
 </div>
@@ -128,7 +128,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>The goal of publishing this guide is to define a standard method of back-porting newer subscriptions for greater compatibility and adoption.</p>
 
-<h2 id="organization-of-this-guide">Organization of This Guide</h2>
+<h2 id="contents-of-this-guide">Contents of This Guide</h2>
 
 <ul>
   <li><a href="overview.html">Overview</a>
@@ -138,10 +138,55 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <li>Useful Links</li>
     </ul>
   </li>
+  <li><a href="actors_and_transactions.html">Actors and Operations</a>
+    <ul>
+      <li>Server</li>
+      <li>Client</li>
+      <li>Endpoint (REST Hook)</li>
+      <li>Endpoint (Email)</li>
+    </ul>
+  </li>
+  <li>Handling Errors
+    <ul>
+      <li>Server</li>
+      <li>Client</li>
+    </ul>
+  </li>
   <li>Profiles and Extensions
     <ul>
-      <li>Profile: <a href="StructureDefinition-backport-subscription.html">Subscription</a></li>
-      <li>Profile: Notification <a href="StructureDefinition-backport-subscription-notification.html">Bundle</a></li>
+      <li>Profile: <a href="StructureDefinition-backport-subscription.html">Subscription</a>
+        <ul>
+          <li>Modifier Extension: [Backport Topic Canonical]StructureDefinition-backport-topic-canonical.html)</li>
+          <li>Extension: <a href="StructureDefinition-backport-heartbeat-period.html">Backport Heartbeat Period</a></li>
+          <li>Extension: <a href="StructureDefinition-backport-timeout.html">Backport Timeout</a></li>
+          <li>Extension: <a href="StructureDefinition-backport-payload-content.html">Backport Payload Content</a></li>
+        </ul>
+      </li>
+      <li>Profile: Notification <a href="StructureDefinition-backport-subscription-notification.html">Bundle</a>
+        <ul>
+          <li>Extension: <a href="StructureDefinition-backport-subscription-event-count.html">Backport Subscription Event Count</a></li>
+          <li>Extension: <a href="StructureDefinition-backport-bundle-event-count.html">Backport Bundle Event Count</a></li>
+          <li>Extension: <a href="StructureDefinition-backport-subscription-topic-url.html">Backport Subscription Topic URL</a></li>
+          <li>Extension: <a href="StructureDefinition-backport-subscription-url.html">Backport Subscription URL</a></li>
+          <li>Extension: <a href="StructureDefinition-backport-notification-type.html">Backport Notification Type</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Value Sets and Code Systems
+    <ul>
+      <li>Subscription Contents
+        <ul>
+          <li><a href="CodeSystem-backport-content-code-system.html">Code System</a></li>
+          <li><a href="ValueSet-backport-content-value-set.html">Value Set</a></li>
+        </ul>
+      </li>
+      <li>Subscription Notification Types
+        <ul>
+          <li><a href="CodeSystem-backport-notification-type-code-system.html">Code System</a></li>
+          <li><a href="ValueSet-backport-notification-type-value-set.html">Value Set</a></li>
+        </ul>
+      </li>
     </ul>
   </li>
 </ul>
@@ -153,12 +198,21 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </div>  <!-- /container -->
   </div>  <!-- /segment-content -->
 
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="http://hl7.org/Special/committees/fiwg/index.cfm">The Argonaut Project</a>.  Package hl7.fhir.us.subscriptions-backport#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 27, 2020 10:52-0500">2020-05-27</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="http://hl7.org/Special/committees/fiwg/index.cfm">The Argonaut Project</a>.  Package hl7.fhir.us.subscriptions-backport#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 27, 2020 17:20-0500">2020-05-27</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
@@ -178,7 +232,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>

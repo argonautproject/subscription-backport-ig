@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>HL7.FHIR.US.SUBSCRIPTIONS-BACKPORT\Backported R5 Subscription Content Value Set - JSON Representation - FHIR v4.0.1</title>
+    <title>HL7.FHIR.US.SUBSCRIPTIONS-BACKPORT\Errors - FHIR v4.0.1</title>
   
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -37,8 +37,8 @@
   </head>
   <body>
 
-    <style type="text/css">h2{--heading-prefix:"5.12"}
-    h3,h4,h5,h6{--heading-prefix:"5.12"}</style>
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         
@@ -90,7 +90,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->  
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Backported R5 Subscription Content Value Set</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Errors</b></li>
         </ul>  
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
@@ -99,91 +99,33 @@
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Subscriptions R5 Backport - Local Development build (v0.1.0). See the <a href="http://hl7.org/fhir/us/subscriptions-backport/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-  <a name="root"> </a>
+  <h2>Errors</h2>
+  
+  
+  
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#handling-errors-on-a-server" id="markdown-toc-handling-errors-on-a-server">Handling Errors on a Server</a></li>
+  <li><a href="#handling-errors-on-a-client" id="markdown-toc-handling-errors-on-a-client">Handling Errors on a Client</a></li>
+</ul>
+
+</div>
+<!-- errors.md  -->
+
+<h2 id="handling-errors-on-a-server">Handling Errors on a Server</h2>
+
+<h2 id="handling-errors-on-a-client">Handling Errors on a Client</h2>
 
 
-  <h2 id="root">: Backported R5 Subscription Content Value Set - JSON Representation</h2>
-  <p>
-    <a href="ValueSet-backport-content-value-set.html">(back to description)</a>
-  </p>
-  <p>
-    <a href="ValueSet-backport-content-value-set.json">Raw json</a>
-  </p>
-  
-  
-  
-  <p>
-    <b>Source view</b>
-  </p>
-  
-  <pre class="json">
-{
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet">resourceType</a>" : "ValueSet",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">id</a>" : "backport-content-value-set",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">text</a>" : {
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2&gt;Backported R5 Subscription Content Value Set&lt;/h2&gt;&lt;div&gt;&lt;p&gt;Codes to represent how much resource content to send in the notification payload.&lt;/p&gt;\n&lt;/div&gt;&lt;ul&gt;&lt;li&gt;Include all codes defined in &lt;a href=\&quot;CodeSystem-backport-content-code-system.html\&quot;&gt;&lt;code&gt;http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-content-code-system&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
-  },
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>" : "http://hl7.org/fhir/us/subscriptions-backport/ValueSet/backport-content-value-set",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "0.1.0",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a>" : "BackportContentValueSet",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a>" : "Backported R5 Subscription Content Value Set",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "active",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2020-05-27T17:20:07-05:00",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a>" : "The Argonaut Project",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>" : [
-    {
-      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "HL7 FHIR Infrastructure WG",
-      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "http://hl7.org/Special/committees/fiwg/index.cfm"
-        }
-      ]
-    },
-    {
-      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "The Argonaut Project",
-      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "https://argonautwiki.hl7.org"
-        }
-      ]
-    },
-    {
-      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "Microsoft",
-      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "https://microsoft.com"
-        }
-      ]
-    },
-    {
-      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "Gino Canessa",
-      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "mailto:gino.canessa@microsoft.com"
-        }
-      ]
-    }
-  ],
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">description</a>" : "Codes to represent how much resource content to send in the notification payload.",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>" : {
-    "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>" : [
-      {
-        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-content-code-system"
-      }
-    ]
-  }
-}</pre>
-
-
-  
-  
 </div>
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->

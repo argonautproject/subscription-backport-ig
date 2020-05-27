@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "BackportNotificationType"];
   fhir:StructureDefinition.title [ fhir:value "R5 Subscription Notification Type"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2020-05-27T10:52:30-05:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2020-05-27T17:20:07-05:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "The Argonaut Project"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
