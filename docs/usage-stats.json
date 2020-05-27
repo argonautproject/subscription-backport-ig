@@ -139,7 +139,7 @@
       "Subscription.channel"
     ],
     "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-topic-canonical": [
-      "Subscription.criteria"
+      "Subscription"
     ]
   }
 }

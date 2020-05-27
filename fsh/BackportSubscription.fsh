@@ -2,11 +2,11 @@ Profile:     BackportSubscription
 Parent:      Subscription
 Id:          backport-subscription
 Title:       "Backported R5 Subscription"
-* criteria.extension contains BackportTopicCanonical named subscriptionTopic 1..1
-* criteria.extension[BackportTopicCanonical] MS
+* modifierExtension contains BackportTopicCanonical named subscriptionTopic 1..1
+* modifierExtension[BackportTopicCanonical] SU MS ?!
 * channel.payload 1..1
 * channel.payload.extension contains BackportPayloadContent named content 1..1
-* channel.payload.extension[BackportPayloadContent] MS
+* channel.payload.extension[BackportPayloadContent] MS SU
 * channel.extension contains BackportHeartbeatPeriod named heartbeatPeriod 0..1
 * channel.extension contains BackportTimeout named timeout 0..1
 

@@ -10,7 +10,7 @@
   "name": "SubscriptionsR5Backport",
   "title": "Subscriptions R5 Backport",
   "status": "active",
-  "date": "2020-05-22T16:07:42-05:00",
+  "date": "2020-05-27T10:52:30-05:00",
   "publisher": "The Argonaut Project",
   "contact": [
     {
@@ -597,6 +597,16 @@
         {
           "nameUrl": "index.html",
           "title": "Home",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "actors_and_transactions.html",
+          "title": "Actors and Transactions",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "overview.html",
+          "title": "Overview",
           "generation": "markdown"
         }
       ]

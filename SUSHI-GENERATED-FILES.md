@@ -15,6 +15,8 @@ lists those files generated from project configs or the contents in the ig-data 
 | input\ImplementationGuide-hl7.fhir.us.subscriptions-backport.json | generated | fsh\ig-data\ig.ini, fsh\package.json, {all input resources and pages} |
 | input\ignoreWarnings.txt                                          | generated |                                                                       |
 | input\includes\menu.xml                                           | generated |                                                                       |
-| input\pagecontent\index.md                                        | generated | fsh\package.json                                                      |
 | package-list.json                                                 | generated | fsh\package.json                                                      |
+| input\pagecontent\actors_and_transactions.md                      | copied    | fsh\ig-data\input\pagecontent\actors_and_transactions.md              |
+| input\pagecontent\index.md                                        | copied    | fsh\ig-data\input\pagecontent\index.md                                |
+| input\pagecontent\overview.md                                     | copied    | fsh\ig-data\input\pagecontent\overview.md                             |
 | package.json                                                      | copied    | fsh\package.json                                                      |
