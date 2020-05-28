@@ -4,25 +4,10 @@
   "fhirVersion": "4.0.1",
   "extensions": [
     {
-      "url": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-bundle-event-count",
-      "title": "R5 Subscription Bundle Event Count",
-      "types": [
-        "unsignedInt"
-      ]
-    },
-    {
       "url": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-heartbeat-period",
       "title": "Backport R5 Subscription Heartbeat Period",
       "types": [
         "unsignedInt"
-      ]
-    },
-    {
-      "url": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-notification-type",
-      "title": "R5 Subscription Notification Type",
-      "types": [
-        "code",
-        "code"
       ]
     },
     {
@@ -31,27 +16,6 @@
       "types": [
         "code",
         "code"
-      ]
-    },
-    {
-      "url": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-event-count",
-      "title": "R5 Subscription Event Count",
-      "types": [
-        "unsignedInt"
-      ]
-    },
-    {
-      "url": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-topic-url",
-      "title": "R5 Canonical SubscriptionTopic",
-      "types": [
-        "uri"
-      ]
-    },
-    {
-      "url": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-url",
-      "title": "R5 Subscription Absolute URL",
-      "types": [
-        "uri"
       ]
     },
     {
@@ -80,6 +44,12 @@
       {
         "url": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-notification",
         "title": "Backported R5 Subscription Notification Bundle"
+      }
+    ],
+    "Parameters": [
+      {
+        "url": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-status",
+        "title": "Backported R5 Subscription Notification Status"
       }
     ]
   },
@@ -114,26 +84,11 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
-    "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-bundle-event-count": [
-      "Bundle.meta"
-    ],
     "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-heartbeat-period": [
       "Subscription.channel"
     ],
-    "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-notification-type": [
-      "Bundle.meta"
-    ],
     "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-payload-content": [
       "Subscription.channel.payload"
-    ],
-    "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-event-count": [
-      "Bundle.meta"
-    ],
-    "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-topic-url": [
-      "Bundle.meta"
-    ],
-    "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-url": [
-      "Bundle.meta"
     ],
     "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-timeout": [
       "Subscription.channel"

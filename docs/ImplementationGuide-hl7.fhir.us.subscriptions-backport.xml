@@ -11,7 +11,7 @@
   <name value="SubscriptionsR5Backport"/>
   <title value="Subscriptions R5 Backport"/>
   <status value="active"/>
-  <date value="2020-05-27T17:20:07-05:00"/>
+  <date value="2020-05-28T15:29:42-05:00"/>
   <publisher value="The Argonaut Project"/>
   <contact>
     <name value="HL7 FHIR Infrastructure WG"/>
@@ -234,16 +234,15 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
+        <valueString value="StructureDefinition:resource"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-backport-bundle-event-count.html"/>
+        <valueUri value="StructureDefinition-backport-subscription-status.html"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/backport-bundle-event-count"/>
+        <reference value="StructureDefinition/backport-subscription-status"/>
       </reference>
-      <name value="R5 Subscription Bundle Event Count"/>
-      <description value="Represents the number of event notifications conveyed by this Bundle."/>
+      <name value="Backported R5 Subscription Notification Status"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -265,20 +264,6 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-backport-notification-type.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/backport-notification-type"/>
-      </reference>
-      <name value="R5 Subscription Notification Type"/>
-      <description value="The type of event being conveyed with this notificaiton."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-backport-payload-content.html"/>
       </extension>
       <reference>
@@ -286,48 +271,6 @@
       </reference>
       <name value="Backport R5 Subscription Payload Content Information"/>
       <description value="How much of the resource content to deliver in the notification payload. The choices are an empty payload, only the resource id, or the full resource content."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-backport-subscription-event-count.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/backport-subscription-event-count"/>
-      </reference>
-      <name value="R5 Subscription Event Count"/>
-      <description value="Indicates the number of unique events that have triggered notification attempts on this Subscription inclusive of the current notification being sent."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-backport-subscription-topic-url.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/backport-subscription-topic-url"/>
-      </reference>
-      <name value="R5 Canonical SubscriptionTopic"/>
-      <description value="The Canonical SubscriptionTopic resource relevant to this notification (e.g., the topic the triggering subscription relates to)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-backport-subscription-url.html"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/backport-subscription-url"/>
-      </reference>
-      <name value="R5 Subscription Absolute URL"/>
-      <description value="The Subscription resource that triggered this notification, as an absolute URL for the Subscription resource on the server that generated the notification."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

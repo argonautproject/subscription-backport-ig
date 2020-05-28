@@ -3,40 +3,63 @@ Parent:   Bundle
 Id:       backport-subscription-notification
 Title:    "Backported R5 Subscription Notification Bundle"
 * type = #history
-* meta.extension contains BackportSubscriptionEventCount named subscriptionEventCount 1..1
-* meta.extension[BackportSubscriptionEventCount] MS
-* meta.extension contains BackportBundleEventCount named bundleEventCount 1..1
-* meta.extension[BackportBundleEventCount] MS
-* meta.extension contains BackportSubscriptionTopicUrl named subscriptionTopicUrl 1..1
-* meta.extension[subscriptionTopicUrl] MS
-* meta.extension contains BackportSubscriptionUrl named subscriptionUrl 1..1
-* meta.extension[BackportSubscriptionUrl] MS
-* meta.extension contains BackportNotificationType named notificationType 1..1
-* meta.extension[BackportNotificationType] MS
+* entry ^slicing.discriminator.type = #type
+* entry ^slicing.discriminator.path = "resource"
+* entry ^slicing.rules = #open
+* entry ^slicing.ordered = false 
+* entry ^slicing.description = "Slice based on resource"
+* entry contains subscriptionStatus 1..* MS
+* entry[subscriptionStatus].resource 1..1 MS
+* entry[subscriptionStatus].resource only BackportSubscriptionStatus
+* obeys backport-notification-bundle-1
+// * meta.extension contains BackportSubscriptionEventCount named subscriptionEventCount 1..1
+// * meta.extension[BackportSubscriptionEventCount] MS
+// * meta.extension contains BackportBundleEventCount named bundleEventCount 1..1
+// * meta.extension[BackportBundleEventCount] MS
+// * meta.extension contains BackportSubscriptionTopicUrl named subscriptionTopicUrl 1..1
+// * meta.extension[subscriptionTopicUrl] MS
+// * meta.extension contains BackportSubscriptionUrl named subscriptionUrl 1..1
+// * meta.extension[BackportSubscriptionUrl] MS
+// * meta.extension contains BackportNotificationType named notificationType 1..1
+// * meta.extension[BackportNotificationType] MS
 
-Extension:   BackportSubscriptionEventCount
-Id:          backport-subscription-event-count
-Title:       "R5 Subscription Event Count"
-Description: "Indicates the number of unique events that have triggered notification attempts on this Subscription inclusive of the current notification being sent."
-* value[x] only unsignedInt
+Invariant:   backport-notification-bundle-1
+Description: "A notification bundle MUST have the BackportSubscriptionStatus as the first entry"
+Expression:  "entry.first().resource.is(SubscriptionStatus)"
+Severity:    #error
+XPath:       "f:entry[1]/f:resource/f:SubscriptionStatus"
 
-Extension:   BackportBundleEventCount
-Id:          backport-bundle-event-count
-Title:       "R5 Subscription Bundle Event Count"
-Description: "Represents the number of event notifications conveyed by this Bundle."
-* value[x] only unsignedInt
+Profile:  BackportSubscriptionStatus
+Parent:   Parameters
+Id:       backport-subscription-status
+Title:    "Backported R5 Subscription Notification Status"
+* parameter  ^slicing.discriminator.type = #value
+* parameter  ^slicing.discriminator.path = "name"
+* parameter  ^slicing.rules = #open
+* parameter  ^slicing.ordered = false
+* parameter  ^slicing.description = "Slice on name"
 
-Extension:   BackportSubscriptionTopicUrl
-Id:          backport-subscription-topic-url
-Title:       "R5 Canonical SubscriptionTopic"
-Description: "The Canonical SubscriptionTopic resource relevant to this notification (e.g., the topic the triggering subscription relates to)."
-* value[x] only uri
-
-Extension:   BackportSubscriptionUrl
-Id:          backport-subscription-url
-Title:       "R5 Subscription Absolute URL"
-Description: "The Subscription resource that triggered this notification, as an absolute URL for the Subscription resource on the server that generated the notification."
-* value[x] only uri
+* parameter contains subscriptionEventCount 1..1 MS
+    and bundleEventCount 1..1 MS
+    and subscriptionTopicUrl 0..1 MS
+    and subscriptionUrl 1..1 MS
+    and type 1..1 MS
+* parameter[subscriptionEventCount].name = "subscription-event-count"
+* parameter[subscriptionEventCount].value[x] 1..1 MS
+* parameter[subscriptionEventCount].value[x] only unsignedInt
+* parameter[bundleEventCount].name = "bundle-event-count"
+* parameter[bundleEventCount].value[x] 0..1 MS
+* parameter[bundleEventCount].value[x] only unsignedInt
+* parameter[subscriptionTopicUrl].name = "subscription-topic-url"
+* parameter[subscriptionTopicUrl].value[x] 0..1 MS
+* parameter[subscriptionTopicUrl].value[x] only uri
+* parameter[subscriptionUrl].name = "subscription-url"
+* parameter[subscriptionUrl].value[x] 1..1 MS
+* parameter[subscriptionUrl].value[x] only uri
+* parameter[type].name = "type"
+* parameter[type].value[x] 1..1 MS
+* parameter[type].value[x] only code
+* parameter[type].value[x] from BackportNotificationTypeValueSet
 
 CodeSystem:  BackportNotificationTypeCodeSystem
 Id:          backport-notification-type-code-system
@@ -53,10 +76,34 @@ Title:       "R5 Subscription Notification Type Value Set"
 Description: "Codes to represent types of notification bundles."
 * codes from system BackportNotificationTypeCodeSystem
 
-Extension:   BackportNotificationType
-Id:          backport-notification-type
-Title:       "R5 Subscription Notification Type"
-Description: "The type of event being conveyed with this notificaiton."
-* value[x] only code
-* valueCode from BackportNotificationTypeValueSet
 
+// Extension:   BackportNotificationType
+// Id:          backport-notification-type
+// Title:       "R5 Subscription Notification Type"
+// Description: "The type of event being conveyed with this notificaiton."
+// * value[x] only code
+// * valueCode from BackportNotificationTypeValueSet
+
+// Extension:   BackportSubscriptionEventCount
+// Id:          backport-subscription-event-count
+// Title:       "R5 Subscription Event Count"
+// Description: "Indicates the number of unique events that have triggered notification attempts on this Subscription inclusive of the current notification being sent."
+// * value[x] only unsignedInt
+
+// Extension:   BackportBundleEventCount
+// Id:          backport-bundle-event-count
+// Title:       "R5 Subscription Bundle Event Count"
+// Description: "Represents the number of event notifications conveyed by this Bundle."
+// * value[x] only unsignedInt
+
+// Extension:   BackportSubscriptionTopicUrl
+// Id:          backport-subscription-topic-url
+// Title:       "R5 Canonical SubscriptionTopic"
+// Description: "The Canonical SubscriptionTopic resource relevant to this notification (e.g., the topic the triggering subscription relates to)."
+// * value[x] only uri
+
+// Extension:   BackportSubscriptionUrl
+// Id:          backport-subscription-url
+// Title:       "R5 Subscription Absolute URL"
+// Description: "The Subscription resource that triggered this notification, as an absolute URL for the Subscription resource on the server that generated the notification."
+// * value[x] only uri

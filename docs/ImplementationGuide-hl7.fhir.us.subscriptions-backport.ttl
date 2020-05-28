@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "SubscriptionsR5Backport"];
   fhir:ImplementationGuide.title [ fhir:value "Subscriptions R5 Backport"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2020-05-27T17:20:07-05:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-05-28T15:29:42-05:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "The Argonaut Project"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -340,18 +340,17 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-backport-bundle-event-count.html" ]
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-backport-subscription-status.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-bundle-event-count>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/backport-bundle-event-count" ]
+         fhir:link <http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-status>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/backport-subscription-status" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "R5 Subscription Bundle Event Count" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Represents the number of event notifications conveyed by this Bundle." ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Backported R5 Subscription Notification Status" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 3;
@@ -380,24 +379,6 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-backport-notification-type.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-notification-type>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/backport-notification-type" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "R5 Subscription Notification Type" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The type of event being conveyed with this notificaiton." ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 5;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
          fhir:Extension.valueUri [ fhir:value "StructureDefinition-backport-payload-content.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -408,61 +389,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "How much of the resource content to deliver in the notification payload. The choices are an empty payload, only the resource id, or the full resource content." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 6;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-backport-subscription-event-count.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-event-count>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/backport-subscription-event-count" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "R5 Subscription Event Count" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicates the number of unique events that have triggered notification attempts on this Subscription inclusive of the current notification being sent." ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 7;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-backport-subscription-topic-url.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-topic-url>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/backport-subscription-topic-url" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "R5 Canonical SubscriptionTopic" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The Canonical SubscriptionTopic resource relevant to this notification (e.g., the topic the triggering subscription relates to)." ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 8;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-backport-subscription-url.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-url>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/backport-subscription-url" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "R5 Subscription Absolute URL" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The Subscription resource that triggered this notification, as an absolute URL for the Subscription resource on the server that generated the notification." ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 9;
+       fhir:index 5;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -480,7 +407,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Timeout in seconds to attempt notification delivery." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 10;
+       fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -498,7 +425,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Canonical reference to the subscription topic being subscribed to." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 11;
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -516,7 +443,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes to represent how much resource content to send in the notification payload." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 12;
+       fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -534,7 +461,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes to represent types of notification bundles." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 13;
+       fhir:index 9;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -552,7 +479,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes to represent how much resource content to send in the notification payload." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 14;
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -655,19 +582,11 @@
 
 <http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-notification> a fhir:us .
 
-<http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-bundle-event-count> a fhir:us .
+<http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-status> a fhir:us .
 
 <http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-heartbeat-period> a fhir:us .
 
-<http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-notification-type> a fhir:us .
-
 <http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-payload-content> a fhir:us .
-
-<http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-event-count> a fhir:us .
-
-<http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-topic-url> a fhir:us .
-
-<http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-url> a fhir:us .
 
 <http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-timeout> a fhir:us .
 
