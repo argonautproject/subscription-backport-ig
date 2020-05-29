@@ -1,7 +1,8 @@
-Profile:  BackportSubscriptionNotification
-Parent:   Bundle
-Id:       backport-subscription-notification
-Title:    "Backported R5 Subscription Notification Bundle"
+Profile:     BackportSubscriptionNotification
+Parent:      Bundle
+Id:          backport-subscription-notification
+Title:       "Backported R5 Subscription Notification Bundle"
+Description: "Profile on the R4 Bundle resource to enable R5-style topic-based subscription notifications in FHIR R4."
 * type = #history
 * entry ^slicing.discriminator.type = #type
 * entry ^slicing.discriminator.path = "resource"
@@ -29,10 +30,11 @@ Expression:  "entry.first().resource.is(SubscriptionStatus)"
 Severity:    #error
 XPath:       "f:entry[1]/f:resource/f:SubscriptionStatus"
 
-Profile:  BackportSubscriptionStatus
-Parent:   Parameters
-Id:       backport-subscription-status
-Title:    "Backported R5 Subscription Notification Status"
+Profile:     BackportSubscriptionStatus
+Parent:      Parameters
+Id:          backport-subscription-status
+Title:       "Backported R5 Subscription Notification Status"
+Description: "Profile on the Parameters resource to enable R5-style topic-based subscription notifications in FHIR R4."
 * parameter  ^slicing.discriminator.type = #value
 * parameter  ^slicing.discriminator.path = "name"
 * parameter  ^slicing.rules = #open
@@ -75,6 +77,52 @@ Id:          backport-notification-type-value-set
 Title:       "R5 Subscription Notification Type Value Set"
 Description: "Codes to represent types of notification bundles."
 * codes from system BackportNotificationTypeCodeSystem
+
+
+Instance:    BackportStatusEventNotification
+InstanceOf:  BackportSubscriptionStatus
+Usage:       #inline
+* id = "b21e4fae-ce73-45cb-8e37-1e203362b2ae"
+* parameter[subscriptionEventCount].name             = "subscription-event-count"
+* parameter[subscriptionEventCount].valueUnsignedInt = 310
+* parameter[bundleEventCount].name                   = "bundle-event-count"
+* parameter[bundleEventCount].valueUnsignedInt       = 1
+* parameter[subscriptionTopicUrl].name               = "subscription-topic-url"
+* parameter[subscriptionTopicUrl].valueUri           = "http://hl7.org/SubscriptionTopic/admission"
+* parameter[subscriptionUrl].name                    = "subscription-url"
+* parameter[subscriptionUrl].valueUri                = "https://example.org/fhir/r4/Subscription/admission"
+* parameter[type].name                               = "type"
+* parameter[type].valueCode                          = #event-notification
+
+
+Instance:    BackportNotificationExampleEmpty
+InstanceOf:  BackportSubscriptionNotification
+Usage:       #example
+Title:       "Backported Notification: Empty"
+Description: "Example of a backported notification with 'empty' content."
+* id        = "9601c07a-e34f-4945-93ca-6efb5394c995"
+* type      = #history
+* timestamp = "2020-05-29T11:44:13.1882432-05:00"
+* entry[subscriptionStatus].fullUrl  = "urn:uuid:b21e4fae-ce73-45cb-8e37-1e203362b2ae"
+* entry[subscriptionStatus].resource = BackportStatusEventNotification
+
+
+
+
+Instance:    BackportNotificationExampleIdOnly
+InstanceOf:  BackportSubscriptionNotification
+Usage:       #example
+Title:       "Backported Notification: Id Only"
+Description: "Example of a backported notification with 'id-only' content."
+* id        = "3945182f-d315-4dbf-9259-09d863c7e7da"
+* type      = #history
+* timestamp = "2020-05-29T11:44:13.1882432-05:00"
+* entry[subscriptionStatus].fullUrl  = "urn:uuid:b21e4fae-ce73-45cb-8e37-1e203362b2ae"
+* entry[subscriptionStatus].resource = BackportStatusEventNotification
+* entry[1].fullUrl = "https://example.org/fhir/r4/Encounter/551683b3-1477-41d1-b58e-32fe8b0047b0"
+* entry[1].request.method = #POST
+* entry[1].request.url    = "Encounter"
+* entry[1].response.status = "201"
 
 
 // Extension:   BackportNotificationType

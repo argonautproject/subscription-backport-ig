@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "BackportPayloadContent"];
   fhir:StructureDefinition.title [ fhir:value "Backport R5 Subscription Payload Content Information"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2020-05-28T15:29:42-05:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2020-05-29T12:04:30-05:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "The Argonaut Project"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

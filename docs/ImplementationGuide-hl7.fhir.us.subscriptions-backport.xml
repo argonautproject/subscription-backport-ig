@@ -11,7 +11,7 @@
   <name value="SubscriptionsR5Backport"/>
   <title value="Subscriptions R5 Backport"/>
   <status value="active"/>
-  <date value="2020-05-28T15:29:42-05:00"/>
+  <date value="2020-05-29T12:04:30-05:00"/>
   <publisher value="The Argonaut Project"/>
   <contact>
     <name value="HL7 FHIR Infrastructure WG"/>
@@ -217,6 +217,7 @@
         <reference value="StructureDefinition/backport-subscription"/>
       </reference>
       <name value="Backported R5 Subscription"/>
+      <description value="Profile on the R4 Subscription resource to enable R5-style topic-based subscriptions in FHIR R4."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -230,6 +231,7 @@
         <reference value="StructureDefinition/backport-subscription-notification"/>
       </reference>
       <name value="Backported R5 Subscription Notification Bundle"/>
+      <description value="Profile on the R4 Bundle resource to enable R5-style topic-based subscription notifications in FHIR R4."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -243,6 +245,7 @@
         <reference value="StructureDefinition/backport-subscription-status"/>
       </reference>
       <name value="Backported R5 Subscription Notification Status"/>
+      <description value="Profile on the Parameters resource to enable R5-style topic-based subscription notifications in FHIR R4."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -356,6 +359,48 @@
       <name value="R5 Subscription Notification Type Code System"/>
       <description value="Codes to represent types of notification bundles."/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-3945182f-d315-4dbf-9259-09d863c7e7da.html"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/3945182f-d315-4dbf-9259-09d863c7e7da"/>
+      </reference>
+      <name value="Backported Notification: Id Only"/>
+      <description value="Example of a backported notification with &#39;id-only&#39; content."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-notification"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-9601c07a-e34f-4945-93ca-6efb5394c995.html"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/9601c07a-e34f-4945-93ca-6efb5394c995"/>
+      </reference>
+      <name value="Backported Notification: Empty"/>
+      <description value="Example of a backported notification with &#39;empty&#39; content."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-notification"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Subscription"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Subscription-admission.html"/>
+      </extension>
+      <reference>
+        <reference value="Subscription/admission"/>
+      </reference>
+      <name value="Backported Subscription: Admission"/>
+      <description value="Example of a backported R5 admissions subscription in R4."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

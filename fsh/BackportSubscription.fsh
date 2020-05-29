@@ -2,6 +2,7 @@ Profile:     BackportSubscription
 Parent:      Subscription
 Id:          backport-subscription
 Title:       "Backported R5 Subscription"
+Description: "Profile on the R4 Subscription resource to enable R5-style topic-based subscriptions in FHIR R4."
 * modifierExtension contains BackportTopicCanonical named subscriptionTopic 1..1
 * modifierExtension[BackportTopicCanonical] SU MS ?!
 * channel.payload 1..1
@@ -15,6 +16,7 @@ Id:          backport-topic-canonical
 Title:       "Backport R5 Subscription Topic Canonical"
 Description: "Canonical reference to the subscription topic being subscribed to."
 * value[x] only uri
+* valueUri 1..1 MS
 
 CodeSystem:  BackportContentCodeSystem
 Id:          backport-content-code-system
@@ -48,3 +50,23 @@ Id:          backport-timeout
 Title:       "Backport R5 Subscription Timeout"
 Description: "Timeout in seconds to attempt notification delivery."
 * value[x] only unsignedInt
+
+
+Instance:    BackportSubscriptionExampleAdmission
+InstanceOf:  BackportSubscription
+Usage:       #example
+Title:       "Backported Subscription: Admission"
+Description: "Example of a backported R5 admissions subscription in R4."
+* id       = "admission"
+* modifierExtension[subscriptionTopic].valueUri = "http://hl7.org/SubscriptionTopic/admission"
+* status   = #active
+* end      = "2020-12-31T12:00:00Z"
+* reason   = "Example Backported Subscription for Patient Admission"
+* criteria = "Encounter?patient=Patient/123"
+* channel.type                                  = #rest-hook
+* channel.endpoint                              = "https://example.org/Endpoints/eae3806a-f7fb-4e3f-a14d-c4c58ca9c038"
+* channel.extension[heartbeatPeriod].valueUnsignedInt = 86400
+* channel.extension[timeout].valueUnsignedInt   = 60
+* channel.payload                               = #application/fhir+json
+* channel.payload.extension[content].valueCode  = #id-only
+* channel.header[0]                             = "Authorization: Bearer secret-token-abc-123"

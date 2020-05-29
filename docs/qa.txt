@@ -1,18 +1,21 @@
 ﻿SubscriptionsR5Backport : Validation Results
 =========================================
 
-err = 0, warn = 12, info = 0
+err = 0, warn = 5, info = 10
 IG Publisher Version: v1.0.94-SNAPSHOT Out of date - current version is v1.0.97-SNAPSHOT
-Generated Thu May 28 15:30:01 CDT 2020. FHIR version 4.0.1 for hl7.fhir.us.subscriptions-backport#0.1.0 (canonical = http://hl7.org/fhir/us/subscriptions-backport)
+Generated Fri May 29 12:04:49 CDT 2020. FHIR version 4.0.1 for hl7.fhir.us.subscriptions-backport#0.1.0 (canonical = http://hl7.org/fhir/us/subscriptions-backport)
 
- Build Errors : 0 / 3
+ Build Errors : 0 / 0
  C:\git\subscription-backport-ig\input\ImplementationGuide-hl7.fhir.us.subscriptions-backport : 0 / 1
- C:\git\subscription-backport-ig\input\extensions\structuredefinition-backport-heartbeat-period : 1 / 1
- C:\git\subscription-backport-ig\input\extensions\structuredefinition-backport-payload-content : 1 / 1
- C:\git\subscription-backport-ig\input\extensions\structuredefinition-backport-timeout : 1 / 1
- C:\git\subscription-backport-ig\input\extensions\structuredefinition-backport-topic-canonical : 1 / 1
- C:\git\subscription-backport-ig\input\profiles\structuredefinition-backport-subscription : 1 / 1
- C:\git\subscription-backport-ig\input\profiles\structuredefinition-backport-subscription-notification : 1 / 1
+ C:\git\subscription-backport-ig\input\examples\bundle-3945182f-d315-4dbf-9259-09d863c7e7da : 28 / 5
+ C:\git\subscription-backport-ig\input\examples\bundle-9601c07a-e34f-4945-93ca-6efb5394c995 : 28 / 4
+ C:\git\subscription-backport-ig\input\examples\subscription-admission : 1 / 0
+ C:\git\subscription-backport-ig\input\extensions\structuredefinition-backport-heartbeat-period : 1 / 0
+ C:\git\subscription-backport-ig\input\extensions\structuredefinition-backport-payload-content : 1 / 0
+ C:\git\subscription-backport-ig\input\extensions\structuredefinition-backport-timeout : 1 / 0
+ C:\git\subscription-backport-ig\input\extensions\structuredefinition-backport-topic-canonical : 1 / 0
+ C:\git\subscription-backport-ig\input\profiles\structuredefinition-backport-subscription : 1 / 0
+ C:\git\subscription-backport-ig\input\profiles\structuredefinition-backport-subscription-notification : 1 / 0
  C:\git\subscription-backport-ig\input\profiles\structuredefinition-backport-subscription-status : 1 / 1
  C:\git\subscription-backport-ig\input\vocabulary\codesystem-backport-content-code-system : 0 / 1
  C:\git\subscription-backport-ig\input\vocabulary\codesystem-backport-notification-type-code-system : 0 / 1
@@ -20,25 +23,28 @@ Generated Thu May 28 15:30:01 CDT 2020. FHIR version 4.0.1 for hl7.fhir.us.subsc
  C:\git\subscription-backport-ig\input\vocabulary\valueset-backport-notification-type-value-set : 0 / 1
 </table>
 == n/a ==
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/backport-subscription.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/backport-subscription-notification.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/backport-subscription-status.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 == C:\git\subscription-backport-ig\input\ImplementationGuide-hl7.fhir.us.subscriptions-backport.json ==
 WARNING: ImplementationGuide.jurisdiction: The resource should declare it's jurisdiction to match the package id (hl7.fhir.us.subscriptions-backport, jurisdiction = urn:iso:std:iso:3166:-2#US)
+== C:\git\subscription-backport-ig\input\examples\Bundle-3945182f-d315-4dbf-9259-09d863c7e7da.json ==
+INFORMATION: Bundle/3945182f-d315-4dbf-9259-09d863c7e7da: Bundle.entry[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-notification
+INFORMATION: Bundle/3945182f-d315-4dbf-9259-09d863c7e7da: Bundle.entry[0].resource: Profile http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-status, Element 'Bundle.entry[0].resource.parameter[subscriptionEventCount]'": Unable to check minimum required (1) due to lack of slicing validation
+INFORMATION: Bundle/3945182f-d315-4dbf-9259-09d863c7e7da: Bundle.entry[0].resource: Profile http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-status, Element 'Bundle.entry[0].resource.parameter[bundleEventCount]'": Unable to check minimum required (1) due to lack of slicing validation
+INFORMATION: Bundle/3945182f-d315-4dbf-9259-09d863c7e7da: Bundle.entry[0].resource: Profile http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-status, Element 'Bundle.entry[0].resource.parameter[subscriptionUrl]'": Unable to check minimum required (1) due to lack of slicing validation
+INFORMATION: Bundle/3945182f-d315-4dbf-9259-09d863c7e7da: Bundle.entry[0].resource: Profile http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-status, Element 'Bundle.entry[0].resource.parameter[type]'": Unable to check minimum required (1) due to lack of slicing validation
+== C:\git\subscription-backport-ig\input\examples\Bundle-9601c07a-e34f-4945-93ca-6efb5394c995.json ==
+INFORMATION: Bundle/9601c07a-e34f-4945-93ca-6efb5394c995: Bundle.entry[0].resource: Profile http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-status, Element 'Bundle.entry[0].resource.parameter[subscriptionEventCount]'": Unable to check minimum required (1) due to lack of slicing validation
+INFORMATION: Bundle/9601c07a-e34f-4945-93ca-6efb5394c995: Bundle.entry[0].resource: Profile http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-status, Element 'Bundle.entry[0].resource.parameter[bundleEventCount]'": Unable to check minimum required (1) due to lack of slicing validation
+INFORMATION: Bundle/9601c07a-e34f-4945-93ca-6efb5394c995: Bundle.entry[0].resource: Profile http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-status, Element 'Bundle.entry[0].resource.parameter[subscriptionUrl]'": Unable to check minimum required (1) due to lack of slicing validation
+INFORMATION: Bundle/9601c07a-e34f-4945-93ca-6efb5394c995: Bundle.entry[0].resource: Profile http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-status, Element 'Bundle.entry[0].resource.parameter[type]'": Unable to check minimum required (1) due to lack of slicing validation
+== C:\git\subscription-backport-ig\input\examples\Subscription-admission.json ==
 == C:\git\subscription-backport-ig\input\extensions\StructureDefinition-backport-heartbeat-period.json ==
-WARNING: http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-heartbeat-period: The Implementation Guide contains no examples for this extension
 == C:\git\subscription-backport-ig\input\extensions\StructureDefinition-backport-payload-content.json ==
-WARNING: http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-payload-content: The Implementation Guide contains no examples for this extension
 == C:\git\subscription-backport-ig\input\extensions\StructureDefinition-backport-timeout.json ==
-WARNING: http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-timeout: The Implementation Guide contains no examples for this extension
 == C:\git\subscription-backport-ig\input\extensions\StructureDefinition-backport-topic-canonical.json ==
-WARNING: http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-topic-canonical: The Implementation Guide contains no examples for this extension
 == C:\git\subscription-backport-ig\input\profiles\StructureDefinition-backport-subscription.json ==
-WARNING: http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription: The Implementation Guide contains no examples for this profile
 == C:\git\subscription-backport-ig\input\profiles\StructureDefinition-backport-subscription-notification.json ==
-WARNING: http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-notification: The Implementation Guide contains no examples for this profile
 == C:\git\subscription-backport-ig\input\profiles\StructureDefinition-backport-subscription-status.json ==
-WARNING: http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-status: The Implementation Guide contains no examples for this profile
+INFORMATION: http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-status: The Implementation Guide contains no explicitly linked examples for this profile
 == C:\git\subscription-backport-ig\input\vocabulary\CodeSystem-backport-content-code-system.json ==
 WARNING: CodeSystem.jurisdiction: The resource should declare it's jurisdiction to match the package id (hl7.fhir.us.subscriptions-backport, jurisdiction = urn:iso:std:iso:3166:-2#US)
 == C:\git\subscription-backport-ig\input\vocabulary\CodeSystem-backport-notification-type-code-system.json ==

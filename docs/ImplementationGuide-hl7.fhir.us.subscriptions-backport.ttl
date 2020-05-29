@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "SubscriptionsR5Backport"];
   fhir:ImplementationGuide.title [ fhir:value "Subscriptions R5 Backport"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2020-05-28T15:29:42-05:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-05-29T12:04:30-05:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "The Argonaut Project"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -317,6 +317,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/backport-subscription" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Backported R5 Subscription" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile on the R4 Subscription resource to enable R5-style topic-based subscriptions in FHIR R4." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 1;
@@ -334,6 +335,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/backport-subscription-notification" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Backported R5 Subscription Notification Bundle" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile on the R4 Bundle resource to enable R5-style topic-based subscription notifications in FHIR R4." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 2;
@@ -351,6 +353,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/backport-subscription-status" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Backported R5 Subscription Notification Status" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile on the Parameters resource to enable R5-style topic-based subscription notifications in FHIR R4." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 3;
@@ -496,6 +499,69 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "R5 Subscription Notification Type Code System" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes to represent types of notification bundles." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Bundle-3945182f-d315-4dbf-9259-09d863c7e7da.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/subscriptions-backport/Bundle/3945182f-d315-4dbf-9259-09d863c7e7da>;
+         fhir:Reference.reference [ fhir:value "Bundle/3945182f-d315-4dbf-9259-09d863c7e7da" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Backported Notification: Id Only" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a backported notification with 'id-only' content." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-notification";
+         fhir:link <http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-notification>
+       ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Bundle-9601c07a-e34f-4945-93ca-6efb5394c995.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/subscriptions-backport/Bundle/9601c07a-e34f-4945-93ca-6efb5394c995>;
+         fhir:Reference.reference [ fhir:value "Bundle/9601c07a-e34f-4945-93ca-6efb5394c995" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Backported Notification: Empty" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a backported notification with 'empty' content." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-notification";
+         fhir:link <http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-notification>
+       ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Subscription" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Subscription-admission.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/subscriptions-backport/Subscription/admission>;
+         fhir:Reference.reference [ fhir:value "Subscription/admission" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Backported Subscription: Admission" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a backported R5 admissions subscription in R4." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription";
+         fhir:link <http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription>
+       ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];
@@ -599,6 +665,12 @@
 <http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-content-code-system> a fhir:us .
 
 <http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-notification-type-code-system> a fhir:us .
+
+<http://hl7.org/fhir/us/subscriptions-backport/Bundle/3945182f-d315-4dbf-9259-09d863c7e7da> a fhir:us .
+
+<http://hl7.org/fhir/us/subscriptions-backport/Bundle/9601c07a-e34f-4945-93ca-6efb5394c995> a fhir:us .
+
+<http://hl7.org/fhir/us/subscriptions-backport/Subscription/admission> a fhir:us .
 
 # - ontology header ------------------------------------------------------------
 

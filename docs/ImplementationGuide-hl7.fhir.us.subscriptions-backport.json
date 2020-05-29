@@ -10,7 +10,7 @@
   "name": "SubscriptionsR5Backport",
   "title": "Subscriptions R5 Backport",
   "status": "active",
-  "date": "2020-05-28T15:29:42-05:00",
+  "date": "2020-05-29T12:04:30-05:00",
   "publisher": "The Argonaut Project",
   "contact": [
     {
@@ -335,6 +335,7 @@
           "reference": "StructureDefinition/backport-subscription"
         },
         "name": "Backported R5 Subscription",
+        "description": "Profile on the R4 Subscription resource to enable R5-style topic-based subscriptions in FHIR R4.",
         "exampleBoolean": false
       },
       {
@@ -352,6 +353,7 @@
           "reference": "StructureDefinition/backport-subscription-notification"
         },
         "name": "Backported R5 Subscription Notification Bundle",
+        "description": "Profile on the R4 Bundle resource to enable R5-style topic-based subscription notifications in FHIR R4.",
         "exampleBoolean": false
       },
       {
@@ -369,6 +371,7 @@
           "reference": "StructureDefinition/backport-subscription-status"
         },
         "name": "Backported R5 Subscription Notification Status",
+        "description": "Profile on the Parameters resource to enable R5-style topic-based subscription notifications in FHIR R4.",
         "exampleBoolean": false
       },
       {
@@ -514,6 +517,60 @@
         "name": "R5 Subscription Notification Type Code System",
         "description": "Codes to represent types of notification bundles.",
         "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Bundle-3945182f-d315-4dbf-9259-09d863c7e7da.html"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/3945182f-d315-4dbf-9259-09d863c7e7da"
+        },
+        "name": "Backported Notification: Id Only",
+        "description": "Example of a backported notification with 'id-only' content.",
+        "exampleCanonical": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-notification"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Bundle-9601c07a-e34f-4945-93ca-6efb5394c995.html"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/9601c07a-e34f-4945-93ca-6efb5394c995"
+        },
+        "name": "Backported Notification: Empty",
+        "description": "Example of a backported notification with 'empty' content.",
+        "exampleCanonical": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-notification"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Subscription"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Subscription-admission.html"
+          }
+        ],
+        "reference": {
+          "reference": "Subscription/admission"
+        },
+        "name": "Backported Subscription: Admission",
+        "description": "Example of a backported R5 admissions subscription in R4.",
+        "exampleCanonical": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription"
       }
     ],
     "page": {

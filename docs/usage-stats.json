@@ -29,6 +29,7 @@
       "url": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-topic-canonical",
       "title": "Backport R5 Subscription Topic Canonical",
       "types": [
+        "uri",
         "uri"
       ]
     }

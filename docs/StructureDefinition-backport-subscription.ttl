@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "BackportSubscription"];
   fhir:StructureDefinition.title [ fhir:value "Backported R5 Subscription"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2020-05-28T15:29:42-05:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2020-05-29T12:04:30-05:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "The Argonaut Project"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -52,6 +52,7 @@
        fhir:ContactPoint.value [ fhir:value "mailto:gino.canessa@microsoft.com" ]
      ]
   ];
+  fhir:StructureDefinition.description [ fhir:value "Profile on the R4 Subscription resource to enable R5-style topic-based subscriptions in FHIR R4."];
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"];
   fhir:StructureDefinition.mapping [
      fhir:index 0;
