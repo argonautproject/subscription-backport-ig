@@ -1,4 +1,4 @@
-name: Build FSH -> IG -> GH Pages
+name: "build"
 on:
   push:
     branches:
