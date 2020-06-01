@@ -7,7 +7,7 @@ env:
 on:
   push:
     branches:
-      - disabled-for-testing
+      - master
     paths:
       - 'fsh'
 
@@ -17,6 +17,17 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    - name: Set up Node v12
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12'
+
+    - name: Install SUSHI
+      run: npm install fsh-sushi
+
+    - name: Run SUSHI on the 'fsh' directory, default output
+      run: sushi fsh -o .
+
     - name: Set up Java v15
       uses: actions/setup-java@1
       with:
@@ -25,18 +36,5 @@ jobs:
     - name: Set up Jekyll
       uses: helaili/jekyll-action@2.0.1
 
-    - name: Set up Node v12
-      uses: actions/setup-node@v1
-      with:
-        node-version: '12'
-
-    - name: Install requirements.txt
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r python/requirements.txt
-
-    - name: Delete all
-      run: python ./python/server-loader.py -D -s $AZURE
-
-    - name: Load Azure
-      run: python3 ./python/server-loader.py -s $AZURE -f generated
+    - name: Run IG publisher
+      uses: microsoft-healthcare-madison/fhir-ig-publish-action@v1
