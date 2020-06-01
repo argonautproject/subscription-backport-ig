@@ -30,4 +30,4 @@ jobs:
       uses: helaili/jekyll-action@2.0.1
 
     - name: Run IG publisher
-      uses: microsoft-healthcare-madison/fhir-ig-publish-action@v1
+      uses: microsoft-healthcare-madison/fhir-ig-publish-action@v1.0.0-beta
