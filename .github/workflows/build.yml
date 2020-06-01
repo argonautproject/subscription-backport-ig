@@ -1,9 +1,4 @@
 name: Build FSH -> IG -> GH Pages
-
-env:
-  IG_URL: https://storage.googleapis.com/ig-build/org.hl7.fhir.publisher.jar
-  IG_JAR: org.hl7.fhir.publisher.jar
-
 on:
   push:
     branches:
