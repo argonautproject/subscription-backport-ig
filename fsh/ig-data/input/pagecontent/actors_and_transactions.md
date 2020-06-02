@@ -1,7 +1,6 @@
 ## Server
 
-
-### Searching for Subscriptions
+### Searching for a Subscription
 
 
 ### Creating a Subscription
@@ -11,12 +10,18 @@
 
 
 ### Deleting a Subscription
+
+
+### Getting Subscription Status
+
+
+### Sending Notifications
 
 
 ## Client
 
 
-### Searching for Subscriptions
+### Searching for a Subscription
 
 
 ### Creating a Subscription
@@ -28,8 +33,14 @@
 ### Deleting a Subscription
 
 
-## Endpoint (REST Hook)
+### Getting Subscription Status
 
 
-## Endpoint (Email)
+### Receving Notifications
 
+
+#### REST-Hook Endpoint
+
+#### Email Endpoint
+
+#### Messaging Endpoint

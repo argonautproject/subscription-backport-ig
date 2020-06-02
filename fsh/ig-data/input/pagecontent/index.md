@@ -19,6 +19,8 @@ The goal of publishing this guide is to define a standard method of back-porting
   * Endpoint (REST Hook)
   * Endpoint (Email)
 
+* [Implementation Conformance](conformance.html)
+
 * Handling Errors
   * Server
   * Client
