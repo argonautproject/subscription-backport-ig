@@ -115,28 +115,30 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div class="markdown-toc">
 <ul id="markdown-toc">
   <li><a href="#server" id="markdown-toc-server">Server</a>    <ul>
-      <li><a href="#searching-for-subscriptions" id="markdown-toc-searching-for-subscriptions">Searching for Subscriptions</a></li>
+      <li><a href="#searching-for-a-subscription" id="markdown-toc-searching-for-a-subscription">Searching for a Subscription</a></li>
       <li><a href="#creating-a-subscription" id="markdown-toc-creating-a-subscription">Creating a Subscription</a></li>
       <li><a href="#updating-a-subscription" id="markdown-toc-updating-a-subscription">Updating a Subscription</a></li>
       <li><a href="#deleting-a-subscription" id="markdown-toc-deleting-a-subscription">Deleting a Subscription</a></li>
+      <li><a href="#getting-subscription-status" id="markdown-toc-getting-subscription-status">Getting Subscription Status</a></li>
+      <li><a href="#sending-notifications" id="markdown-toc-sending-notifications">Sending Notifications</a></li>
     </ul>
   </li>
   <li><a href="#client" id="markdown-toc-client">Client</a>    <ul>
-      <li><a href="#searching-for-subscriptions-1" id="markdown-toc-searching-for-subscriptions-1">Searching for Subscriptions</a></li>
+      <li><a href="#searching-for-a-subscription-1" id="markdown-toc-searching-for-a-subscription-1">Searching for a Subscription</a></li>
       <li><a href="#creating-a-subscription-1" id="markdown-toc-creating-a-subscription-1">Creating a Subscription</a></li>
       <li><a href="#updating-a-subscription-1" id="markdown-toc-updating-a-subscription-1">Updating a Subscription</a></li>
       <li><a href="#deleting-a-subscription-1" id="markdown-toc-deleting-a-subscription-1">Deleting a Subscription</a></li>
+      <li><a href="#getting-subscription-status-1" id="markdown-toc-getting-subscription-status-1">Getting Subscription Status</a></li>
+      <li><a href="#receving-notifications" id="markdown-toc-receving-notifications">Receving Notifications</a></li>
     </ul>
   </li>
-  <li><a href="#endpoint-rest-hook" id="markdown-toc-endpoint-rest-hook">Endpoint (REST Hook)</a></li>
-  <li><a href="#endpoint-email" id="markdown-toc-endpoint-email">Endpoint (Email)</a></li>
 </ul>
 
 </div>
 <!-- actors_and_transactions.md  -->
 <h2 id="server">Server</h2>
 
-<h3 id="searching-for-subscriptions">Searching for Subscriptions</h3>
+<h3 id="searching-for-a-subscription">Searching for a Subscription</h3>
 
 <h3 id="creating-a-subscription">Creating a Subscription</h3>
 
@@ -144,9 +146,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="deleting-a-subscription">Deleting a Subscription</h3>
 
+<h3 id="getting-subscription-status">Getting Subscription Status</h3>
+
+<h3 id="sending-notifications">Sending Notifications</h3>
+
 <h2 id="client">Client</h2>
 
-<h3 id="searching-for-subscriptions-1">Searching for Subscriptions</h3>
+<h3 id="searching-for-a-subscription-1">Searching for a Subscription</h3>
 
 <h3 id="creating-a-subscription-1">Creating a Subscription</h3>
 
@@ -154,9 +160,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="deleting-a-subscription-1">Deleting a Subscription</h3>
 
-<h2 id="endpoint-rest-hook">Endpoint (REST Hook)</h2>
+<h3 id="getting-subscription-status-1">Getting Subscription Status</h3>
 
-<h2 id="endpoint-email">Endpoint (Email)</h2>
+<h3 id="receving-notifications">Receving Notifications</h3>
+
+<h4 id="rest-hook-endpoint">REST-Hook Endpoint</h4>
+
+<h4 id="email-endpoint">Email Endpoint</h4>
+
+<h4 id="messaging-endpoint">Messaging Endpoint</h4>
 
 
 </div>
@@ -179,7 +191,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="http://hl7.org/Special/committees/fiwg/index.cfm">The Argonaut Project</a>.  Package hl7.fhir.us.subscriptions-backport#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, May 29, 2020 12:04-0500">2020-05-29</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="https://argonautwiki.hl7.org">The Argonaut Project</a>.  Package hl7.fhir.us.subscriptions-backport#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 3, 2020 14:34-0500">2020-06-03</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

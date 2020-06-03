@@ -17,18 +17,10 @@
   fhir:StructureDefinition.name [ fhir:value "BackportHeartbeatPeriod"];
   fhir:StructureDefinition.title [ fhir:value "Backport R5 Subscription Heartbeat Period"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2020-05-29T12:04:30-05:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2020-06-03T14:34:46-05:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "The Argonaut Project"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "HL7 FHIR Infrastructure WG" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "http://hl7.org/Special/committees/fiwg/index.cfm" ]
-     ]
-  ], [
-     fhir:index 1;
      fhir:ContactDetail.name [ fhir:value "The Argonaut Project" ];
      fhir:ContactDetail.telecom [
        fhir:index 0;
@@ -36,15 +28,7 @@
        fhir:ContactPoint.value [ fhir:value "https://argonautwiki.hl7.org" ]
      ]
   ], [
-     fhir:index 2;
-     fhir:ContactDetail.name [ fhir:value "Microsoft" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://microsoft.com" ]
-     ]
-  ], [
-     fhir:index 3;
+     fhir:index 1;
      fhir:ContactDetail.name [ fhir:value "Gino Canessa" ];
      fhir:ContactDetail.telecom [
        fhir:index 0;

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="726e4dbf-761a-4f55-998f-7c52c4e14968"/>
+  <id value="27eaa191-22fe-4450-8293-589d4cea6c65"/>
   <meta>
-    <lastUpdated value="2020-05-29T12:04:30.040-05:00"/>
+    <lastUpdated value="2020-06-03T14:34:46.870-05:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -67,27 +67,13 @@
         <name value="BackportContentValueSet"/>
         <title value="Backported R5 Subscription Content Value Set"/>
         <status value="active"/>
-        <date value="2020-05-29T12:04:30-05:00"/>
+        <date value="2020-06-03T14:34:46-05:00"/>
         <publisher value="The Argonaut Project"/>
-        <contact>
-          <name value="HL7 FHIR Infrastructure WG"/>
-          <telecom>
-            <system value="url"/>
-            <value value="http://hl7.org/Special/committees/fiwg/index.cfm"/>
-          </telecom>
-        </contact>
         <contact>
           <name value="The Argonaut Project"/>
           <telecom>
             <system value="url"/>
             <value value="https://argonautwiki.hl7.org"/>
-          </telecom>
-        </contact>
-        <contact>
-          <name value="Microsoft"/>
-          <telecom>
-            <system value="url"/>
-            <value value="https://microsoft.com"/>
           </telecom>
         </contact>
         <contact>
@@ -99,8 +85,8 @@
         </contact>
         <description value="Codes to represent how much resource content to send in the notification payload."/>
         <expansion>
-          <identifier value="urn:uuid:39b4727b-e69e-47a2-82cd-b81561e5b321"/>
-          <timestamp value="2020-05-29T12:04:34-05:00"/>
+          <identifier value="urn:uuid:b17be809-3f1d-4a06-ac0d-1ab34de7480d"/>
+          <timestamp value="2020-06-03T14:34:54-05:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -198,27 +184,13 @@
         <name value="BackportNotificationTypeValueSet"/>
         <title value="R5 Subscription Notification Type Value Set"/>
         <status value="active"/>
-        <date value="2020-05-29T12:04:30-05:00"/>
+        <date value="2020-06-03T14:34:46-05:00"/>
         <publisher value="The Argonaut Project"/>
-        <contact>
-          <name value="HL7 FHIR Infrastructure WG"/>
-          <telecom>
-            <system value="url"/>
-            <value value="http://hl7.org/Special/committees/fiwg/index.cfm"/>
-          </telecom>
-        </contact>
         <contact>
           <name value="The Argonaut Project"/>
           <telecom>
             <system value="url"/>
             <value value="https://argonautwiki.hl7.org"/>
-          </telecom>
-        </contact>
-        <contact>
-          <name value="Microsoft"/>
-          <telecom>
-            <system value="url"/>
-            <value value="https://microsoft.com"/>
           </telecom>
         </contact>
         <contact>
@@ -230,8 +202,8 @@
         </contact>
         <description value="Codes to represent types of notification bundles."/>
         <expansion>
-          <identifier value="urn:uuid:00388f12-47a3-4f7a-9a2f-55efafa6184a"/>
-          <timestamp value="2020-05-29T12:04:34-05:00"/>
+          <identifier value="urn:uuid:9f86b651-2263-43b9-9bd2-24dbeb8bf89b"/>
+          <timestamp value="2020-06-03T14:34:54-05:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>

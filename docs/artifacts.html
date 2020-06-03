@@ -37,8 +37,8 @@
   </head>
   <body>
 
-    <style type="text/css">h2{--heading-prefix:"5"}
-    h3,h4,h5,h6{--heading-prefix:"5.0"}</style>
+    <style type="text/css">h2{--heading-prefix:"6"}
+    h3,h4,h5,h6{--heading-prefix:"6.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         
@@ -117,19 +117,22 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
    <p>Contents:</p>
    <ul>
       <li>
-         <a href="#1">Structures: Resource Profiles</a>
+         <a href="#1">Behavior: Operation Definitions</a>
       </li>
       <li>
-         <a href="#2">Structures: Extension Definitions</a>
+         <a href="#2">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#3">Terminology: Value Sets</a>
+         <a href="#3">Structures: Extension Definitions</a>
       </li>
       <li>
-         <a href="#4">Terminology: Code Systems</a>
+         <a href="#4">Terminology: Value Sets</a>
       </li>
       <li>
-         <a href="#5">Example: Example Instances</a>
+         <a href="#5">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#6">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -138,6 +141,30 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
      xmlns:f="http://hl7.org/fhir">
    <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
    <a name="1"> </a>
+   <h3>Behavior: Operation Definitions </h3>
+   <p>These are custom operations that can be supported by and/or invoked by systems complying with this implementation guide</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="OperationDefinition-Backport-subscription-status.html"
+                     title="OperationDefinition/Backport-subscription-status">Backported R5 Subscription Status</a>
+               </td>
+               <td>This operation is used to return the current status information about one or more backported R5-Style Subscriptions in R4.</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="OperationDefinition-Backport-subscriptiontopic-list.html"
+                     title="OperationDefinition/Backport-subscriptiontopic-list">Backported R5 SubscriptionTopic List</a>
+               </td>
+               <td>This operation is used to return the current list of R5 SubscriptionTopics in a Backported-R4 environment.</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="2"> </a>
    <h3>Structures: Resource Profiles </h3>
    <p>These define constraints on FHIR resources that need to be complied with by conformant implementations</p>
    <p>
@@ -168,7 +195,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tbody>
       </table>
    </p>
-   <a name="2"> </a>
+   <a name="3"> </a>
    <h3>Structures: Extension Definitions </h3>
    <p>These define constraints on FHIR data types that need to be complied with by conformant implementations</p>
    <p>
@@ -206,7 +233,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tbody>
       </table>
    </p>
-   <a name="3"> </a>
+   <a name="4"> </a>
    <h3>Terminology: Value Sets </h3>
    <p>These define sets of codes used by systems conforming with this implementation guide</p>
    <p>
@@ -230,7 +257,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tbody>
       </table>
    </p>
-   <a name="4"> </a>
+   <a name="5"> </a>
    <h3>Terminology: Code Systems </h3>
    <p>These define new code systems used by systems conforming with this implementation guide</p>
    <p>
@@ -254,7 +281,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tbody>
       </table>
    </p>
-   <a name="5"> </a>
+   <a name="6"> </a>
    <h3>Example: Example Instances </h3>
    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like</p>
    <p>
@@ -306,7 +333,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="http://hl7.org/Special/committees/fiwg/index.cfm">The Argonaut Project</a>.  Package hl7.fhir.us.subscriptions-backport#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, May 29, 2020 12:04-0500">2020-05-29</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="https://argonautwiki.hl7.org">The Argonaut Project</a>.  Package hl7.fhir.us.subscriptions-backport#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 3, 2020 14:34-0500">2020-06-03</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

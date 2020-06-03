@@ -11,27 +11,13 @@
   <name value="SubscriptionsR5Backport"/>
   <title value="Subscriptions R5 Backport"/>
   <status value="active"/>
-  <date value="2020-05-29T12:04:30-05:00"/>
+  <date value="2020-06-03T14:34:46-05:00"/>
   <publisher value="The Argonaut Project"/>
-  <contact>
-    <name value="HL7 FHIR Infrastructure WG"/>
-    <telecom>
-      <system value="url"/>
-      <value value="http://hl7.org/Special/committees/fiwg/index.cfm"/>
-    </telecom>
-  </contact>
   <contact>
     <name value="The Argonaut Project"/>
     <telecom>
       <system value="url"/>
       <value value="https://argonautwiki.hl7.org"/>
-    </telecom>
-  </contact>
-  <contact>
-    <name value="Microsoft"/>
-    <telecom>
-      <system value="url"/>
-      <value value="https://microsoft.com"/>
     </telecom>
   </contact>
   <contact>
@@ -402,6 +388,34 @@
       <description value="Example of a backported R5 admissions subscription in R4."/>
       <exampleCanonical value="http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription"/>
     </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OperationDefinition"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="OperationDefinition-Backport-subscription-status.html"/>
+      </extension>
+      <reference>
+        <reference value="OperationDefinition/Backport-subscription-status"/>
+      </reference>
+      <name value="Backported R5 Subscription Status"/>
+      <description value="This operation is used to return the current status information about one or more backported R5-Style Subscriptions in R4."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OperationDefinition"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="OperationDefinition-Backport-subscriptiontopic-list.html"/>
+      </extension>
+      <reference>
+        <reference value="OperationDefinition/Backport-subscriptiontopic-list"/>
+      </reference>
+      <name value="Backported R5 SubscriptionTopic List"/>
+      <description value="This operation is used to return the current list of R5 SubscriptionTopics in a Backported-R4 environment."/>
+      <exampleBoolean value="false"/>
+    </resource>
     <page>
       <nameUrl value="toc.html"/>
       <title value="Table of Contents"/>
@@ -414,6 +428,11 @@
       <page>
         <nameUrl value="actors_and_transactions.html"/>
         <title value="Actors and Transactions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="conformance.html"/>
+        <title value="Conformance"/>
         <generation value="markdown"/>
       </page>
       <page>

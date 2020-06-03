@@ -18,16 +18,8 @@
   "author": "The Argonaut Project",
   "maintainers": [
     {
-      "name": "HL7 FHIR Infrastructure WG",
-      "url": "http://hl7.org/Special/committees/fiwg/index.cfm"
-    },
-    {
       "name": "The Argonaut Project",
       "url": "https://argonautwiki.hl7.org"
-    },
-    {
-      "name": "Microsoft",
-      "url": "https://microsoft.com"
     },
     {
       "name": "Gino Canessa",

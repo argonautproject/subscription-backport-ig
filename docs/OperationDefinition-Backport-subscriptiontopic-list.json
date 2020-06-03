@@ -1,0 +1,71 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "Backport-subscriptiontopic-list",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Backported R5 SubscriptionTopic List</h2><p>OPERATION: Backported R5 SubscriptionTopic List</p><p>The official URL for this operation definition is: </p><pre>http://hl7.org/fhir/OperationDefinition/Backport-subscriptiontopic-list</pre><div><p>This operation is used to return the current list of R5 SubscriptionTopics in a Backported-R4 environment.</p>\n</div><p>URL: [base]/Subscription/$topic-list</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>urls</td><td>0..*</td><td><a href=\"datatypes.html#uri\">Uri</a></td><td/><td><div><p>If present, one or more parameters each containing exactly one Canonical SubscriptionTopic URL to search for.</p>\n</div></td></tr><tr><td>OUT</td><td>return</td><td>1..1</td><td><a href=\"bundle.html\">Bundle</a></td><td/><td><div><p>The bundle type is &quot;searchset&quot;. The operation returns a bundle containing entries with only &quot;fullUrl&quot; present, representing supported SubscriptionTopics for the server.</p>\n</div></td></tr></table><div/></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 0
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    }
+  ],
+  "url": "http://hl7.org/fhir/OperationDefinition/Backport-subscriptiontopic-list",
+  "version": "0.1.0",
+  "name": "Backported R5 SubscriptionTopic List",
+  "status": "draft",
+  "kind": "operation",
+  "date": "2020-06-01T12:23:37-05:00",
+  "publisher": "The Argonaut Project",
+  "contact": [
+    {
+      "name": "The Argonaut Project",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://argonautwiki.hl7.org"
+        }
+      ]
+    },
+    {
+      "name": "Gino Canessa",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "mailto:gino.canessa@microsoft.com"
+        }
+      ]
+    }
+  ],
+  "description": "This operation is used to return the current list of R5 SubscriptionTopics in a Backported-R4 environment.",
+  "code": "topic-list",
+  "resource": [
+    "Subscription"
+  ],
+  "system": false,
+  "type": true,
+  "instance": false,
+  "parameter": [
+    {
+      "name": "urls",
+      "use": "in",
+      "min": 0,
+      "max": "*",
+      "documentation": "If present, one or more parameters each containing exactly one Canonical SubscriptionTopic URL to search for.",
+      "type": "uri"
+    },
+    {
+      "name": "return",
+      "use": "out",
+      "min": 1,
+      "max": "1",
+      "documentation": "The bundle type is \"searchset\". The operation returns a bundle containing entries with only \"fullUrl\" present, representing supported SubscriptionTopics for the server.",
+      "type": "Bundle"
+    }
+  ]
+}

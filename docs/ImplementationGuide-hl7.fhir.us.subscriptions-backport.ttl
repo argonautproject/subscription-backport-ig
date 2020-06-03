@@ -17,18 +17,10 @@
   fhir:ImplementationGuide.name [ fhir:value "SubscriptionsR5Backport"];
   fhir:ImplementationGuide.title [ fhir:value "Subscriptions R5 Backport"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2020-05-29T12:04:30-05:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-06-03T14:34:46-05:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "The Argonaut Project"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "HL7 FHIR Infrastructure WG" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "http://hl7.org/Special/committees/fiwg/index.cfm" ]
-     ]
-  ], [
-     fhir:index 1;
      fhir:ContactDetail.name [ fhir:value "The Argonaut Project" ];
      fhir:ContactDetail.telecom [
        fhir:index 0;
@@ -36,15 +28,7 @@
        fhir:ContactPoint.value [ fhir:value "https://argonautwiki.hl7.org" ]
      ]
   ], [
-     fhir:index 2;
-     fhir:ContactDetail.name [ fhir:value "Microsoft" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://microsoft.com" ]
-     ]
-  ], [
-     fhir:index 3;
+     fhir:index 1;
      fhir:ContactDetail.name [ fhir:value "Gino Canessa" ];
      fhir:ContactDetail.telecom [
        fhir:index 0;
@@ -562,6 +546,42 @@
          fhir:value "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription";
          fhir:link <http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription>
        ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "OperationDefinition" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "OperationDefinition-Backport-subscription-status.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/subscriptions-backport/OperationDefinition/Backport-subscription-status>;
+         fhir:Reference.reference [ fhir:value "OperationDefinition/Backport-subscription-status" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Backported R5 Subscription Status" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This operation is used to return the current status information about one or more backported R5-Style Subscriptions in R4." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "OperationDefinition" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "OperationDefinition-Backport-subscriptiontopic-list.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/subscriptions-backport/OperationDefinition/Backport-subscriptiontopic-list>;
+         fhir:Reference.reference [ fhir:value "OperationDefinition/Backport-subscriptiontopic-list" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Backported R5 SubscriptionTopic List" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This operation is used to return the current list of R5 SubscriptionTopics in a Backported-R4 environment." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];
@@ -579,11 +599,16 @@
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
          fhir:index 2;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "conformance.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Conformance" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 3;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "errors.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Errors" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 3;
+         fhir:index 4;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "overview.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Overview" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
@@ -671,6 +696,10 @@
 <http://hl7.org/fhir/us/subscriptions-backport/Bundle/9601c07a-e34f-4945-93ca-6efb5394c995> a fhir:us .
 
 <http://hl7.org/fhir/us/subscriptions-backport/Subscription/admission> a fhir:us .
+
+<http://hl7.org/fhir/us/subscriptions-backport/OperationDefinition/Backport-subscription-status> a fhir:us .
+
+<http://hl7.org/fhir/us/subscriptions-backport/OperationDefinition/Backport-subscriptiontopic-list> a fhir:us .
 
 # - ontology header ------------------------------------------------------------
 

@@ -27,27 +27,13 @@
   <name value="BackportSubscriptionStatus"/>
   <title value="Backported R5 Subscription Notification Status"/>
   <status value="active"/>
-  <date value="2020-05-29T12:04:30-05:00"/>
+  <date value="2020-06-03T14:34:46-05:00"/>
   <publisher value="The Argonaut Project"/>
-  <contact>
-    <name value="HL7 FHIR Infrastructure WG"/>
-    <telecom>
-      <system value="url"/>
-      <value value="http://hl7.org/Special/committees/fiwg/index.cfm"/>
-    </telecom>
-  </contact>
   <contact>
     <name value="The Argonaut Project"/>
     <telecom>
       <system value="url"/>
       <value value="https://argonautwiki.hl7.org"/>
-    </telecom>
-  </contact>
-  <contact>
-    <name value="Microsoft"/>
-    <telecom>
-      <system value="url"/>
-      <value value="https://microsoft.com"/>
     </telecom>
   </contact>
   <contact>
