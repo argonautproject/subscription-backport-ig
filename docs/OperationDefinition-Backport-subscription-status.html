@@ -136,8 +136,8 @@
     <b>Narrative view</b>
   </p>
   <div><h2>Backported R5 Subscription Status</h2><p>OPERATION: Backported R5 Subscription Status</p><p>The official URL for this operation definition is: </p><pre>http://hl7.org/fhir/OperationDefinition/Backport-subscription-status</pre><div><p>This operation is used to return the current status information about one or more R5-Style Subscriptions in R4.</p>
-</div><p>URL: [base]/Subscription/$status</p><p>URL: [base]/Subscription/[id]/$status</p><p>Parameters</p><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>ids</td><td>0..*</td><td><a name="31c434cd-02cd-4db7-bc4a-4da062805944">​</a><a href="datatypes.html#id">id</a></td><td></td><td><div><p>At the Resource level, one or more parameters containing one or more comma-delimited FHIR ids of Subscriptions to get status information for.  In the absense of any specified ids, the server returns the status for all Subscriptions available to the caller.  At the Instance level, this parameter is ignored.</p>
-</div></td></tr><tr><td>OUT</td><td>return</td><td>1..1</td><td><a name="3483b078-8a3a-4097-8839-c13989994de9">​</a><a href="bundle.html">Bundle</a></td><td></td><td><div><p>The bundle type is "searchset". The operation returns a bundle containing one or more Parameters resources, compliant with "backport-subscription-status", one per Subscription being queried.</p>
+</div><p>URL: [base]/Subscription/$status</p><p>URL: [base]/Subscription/[id]/$status</p><p>Parameters</p><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>ids</td><td>0..*</td><td><a name="0943d275-3289-4612-8892-9cc1690c1d4c">​</a><a href="datatypes.html#id">id</a></td><td></td><td><div><p>At the Resource level, one or more parameters containing one or more comma-delimited FHIR ids of Subscriptions to get status information for.  In the absense of any specified ids, the server returns the status for all Subscriptions available to the caller.  At the Instance level, this parameter is ignored.</p>
+</div></td></tr><tr><td>OUT</td><td>return</td><td>1..1</td><td><a name="e36ea78e-9bc3-4ae3-b771-9c90582d3d78">​</a><a href="bundle.html">Bundle</a></td><td></td><td><div><p>The bundle type is "searchset". The operation returns a bundle containing one or more Parameters resources, compliant with "backport-subscription-status", one per Subscription being queried.</p>
 </div></td></tr></table><div></div></div>
 
   
@@ -163,7 +163,7 @@
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="https://argonautwiki.hl7.org">The Argonaut Project</a>.  Package hl7.fhir.us.subscriptions-backport#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 3, 2020 14:34-0500">2020-06-03</span>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="https://argonautwiki.hl7.org">The Argonaut Project</a>.  Package hl7.fhir.us.subscriptions-backport#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jun 5, 2020 17:32-0500">2020-06-05</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

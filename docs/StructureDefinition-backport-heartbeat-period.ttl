@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "BackportHeartbeatPeriod"];
   fhir:StructureDefinition.title [ fhir:value "Backport R5 Subscription Heartbeat Period"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2020-06-03T14:34:46-05:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2020-06-05T17:32:36-05:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "The Argonaut Project"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

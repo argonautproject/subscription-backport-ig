@@ -1,9 +1,9 @@
 ﻿SubscriptionsR5Backport : Validation Results
 =========================================
 
-err = 0, warn = 9, info = 10
+err = 0, warn = 10, info = 10
 IG Publisher Version: v1.0.94-SNAPSHOT Out of date - current version is v1.0.99-SNAPSHOT
-Generated Wed Jun 03 14:35:14 CDT 2020. FHIR version 4.0.1 for hl7.fhir.us.subscriptions-backport#0.1.0 (canonical = http://hl7.org/fhir/us/subscriptions-backport)
+Generated Fri Jun 05 17:33:02 CDT 2020. FHIR version 4.0.1 for hl7.fhir.us.subscriptions-backport#0.1.0 (canonical = http://hl7.org/fhir/us/subscriptions-backport)
 
  Build Errors : 4 / 0
  C:\git\subscription-backport-ig\input\ImplementationGuide-hl7.fhir.us.subscriptions-backport : 0 / 1
@@ -19,6 +19,7 @@ Generated Wed Jun 03 14:35:14 CDT 2020. FHIR version 4.0.1 for hl7.fhir.us.subsc
  C:\git\subscription-backport-ig\input\profiles\structuredefinition-backport-subscription : 1 / 0
  C:\git\subscription-backport-ig\input\profiles\structuredefinition-backport-subscription-notification : 1 / 0
  C:\git\subscription-backport-ig\input\profiles\structuredefinition-backport-subscription-status : 1 / 1
+ C:\git\subscription-backport-ig\input\profiles\structuredefinition-backport-subscription-topic-list : 1 / 1
  C:\git\subscription-backport-ig\input\vocabulary\codesystem-backport-content-code-system : 0 / 1
  C:\git\subscription-backport-ig\input\vocabulary\codesystem-backport-notification-type-code-system : 0 / 1
  C:\git\subscription-backport-ig\input\vocabulary\valueset-backport-content-value-set : 0 / 1
@@ -57,6 +58,8 @@ WARNING: OperationDefinition.jurisdiction: The resource should declare it's juri
 == C:\git\subscription-backport-ig\input\profiles\StructureDefinition-backport-subscription-notification.json ==
 == C:\git\subscription-backport-ig\input\profiles\StructureDefinition-backport-subscription-status.json ==
 INFORMATION: http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-status: The Implementation Guide contains no explicitly linked examples for this profile
+== C:\git\subscription-backport-ig\input\profiles\StructureDefinition-backport-subscription-topic-list.json ==
+WARNING: http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-topic-list: The Implementation Guide contains no examples for this profile
 == C:\git\subscription-backport-ig\input\vocabulary\CodeSystem-backport-content-code-system.json ==
 WARNING: CodeSystem.jurisdiction: The resource should declare it's jurisdiction to match the package id (hl7.fhir.us.subscriptions-backport, jurisdiction = urn:iso:std:iso:3166:-2#US)
 == C:\git\subscription-backport-ig\input\vocabulary\CodeSystem-backport-notification-type-code-system.json ==

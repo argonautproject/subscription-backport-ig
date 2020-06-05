@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "SubscriptionsR5Backport"];
   fhir:ImplementationGuide.title [ fhir:value "Subscriptions R5 Backport"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2020-06-03T14:34:46-05:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-06-05T17:32:36-05:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "The Argonaut Project"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -344,6 +344,24 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-backport-subscription-topic-list.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-topic-list>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/backport-subscription-topic-list" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Backported R5 SubscriptionTopic List Bundle" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile on the R4 Bundle resource to enable R5-style topic-based subscriptions in FHIR R4." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ], [
          fhir:index 1;
@@ -358,7 +376,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Interval in seconds to send 'heartbeat' notifications." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 4;
+       fhir:index 5;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -376,7 +394,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "How much of the resource content to deliver in the notification payload. The choices are an empty payload, only the resource id, or the full resource content." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 5;
+       fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -394,7 +412,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Timeout in seconds to attempt notification delivery." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 6;
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -412,7 +430,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Canonical reference to the subscription topic being subscribed to." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 7;
+       fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -430,7 +448,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes to represent how much resource content to send in the notification payload." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 8;
+       fhir:index 9;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -448,7 +466,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes to represent types of notification bundles." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 9;
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -466,7 +484,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes to represent how much resource content to send in the notification payload." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 10;
+       fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -484,7 +502,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes to represent types of notification bundles." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 11;
+       fhir:index 12;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -505,7 +523,7 @@
          fhir:link <http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-notification>
        ]
      ], [
-       fhir:index 12;
+       fhir:index 13;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -526,7 +544,7 @@
          fhir:link <http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-notification>
        ]
      ], [
-       fhir:index 13;
+       fhir:index 14;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -547,7 +565,7 @@
          fhir:link <http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription>
        ]
      ], [
-       fhir:index 14;
+       fhir:index 15;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -565,7 +583,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This operation is used to return the current status information about one or more backported R5-Style Subscriptions in R4." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 15;
+       fhir:index 16;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -674,6 +692,8 @@
 <http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-notification> a fhir:us .
 
 <http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-status> a fhir:us .
+
+<http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-topic-list> a fhir:us .
 
 <http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-heartbeat-period> a fhir:us .
 

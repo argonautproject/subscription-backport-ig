@@ -43,8 +43,8 @@
     ],
     "Bundle": [
       {
-        "url": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-notification",
-        "title": "Backported R5 Subscription Notification Bundle"
+        "url": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-topic-list",
+        "title": "Backported R5 SubscriptionTopic List Bundle"
       }
     ],
     "Parameters": [

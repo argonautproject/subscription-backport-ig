@@ -10,7 +10,7 @@
   "name": "SubscriptionsR5Backport",
   "title": "Subscriptions R5 Backport",
   "status": "active",
-  "date": "2020-06-03T14:34:46-05:00",
+  "date": "2020-06-05T17:32:36-05:00",
   "publisher": "The Argonaut Project",
   "contact": [
     {
@@ -354,6 +354,24 @@
         },
         "name": "Backported R5 Subscription Notification Status",
         "description": "Profile on the Parameters resource to enable R5-style topic-based subscription notifications in FHIR R4.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-backport-subscription-topic-list.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/backport-subscription-topic-list"
+        },
+        "name": "Backported R5 SubscriptionTopic List Bundle",
+        "description": "Profile on the R4 Bundle resource to enable R5-style topic-based subscriptions in FHIR R4.",
         "exampleBoolean": false
       },
       {
