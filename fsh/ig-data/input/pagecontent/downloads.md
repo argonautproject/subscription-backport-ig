@@ -5,40 +5,29 @@
 
 ![Meow](custom_org_logo.jpg)  
 
+here is the master file tree
+
 ~~~
-File1.fsh
-File2.fsh
-File3.fsh
-...
-package.json
-/ig-data
-├── package-list.json (optional)
-├── ig.ini (optional)
-└── /input
-    ├── ignoreWarnings.txt (optional)
-    ├── /images
-    │   ├── myGraphic.jpg
-    │   ├── myDocument.docx
-    │   └── mySpreadsheet.xlsx
-    ├── /includes
-    │   └── menu.xml (optional)
-    └── /pagecontent
-        ├── index.md
-        ├── 1_mySecondPage.md
-        ├── 2_myThirdPage.md
-        └── 3_myFourthPage.md
-~~
-
-based on this I put all my pages etc in input folder but that is not the right place it should go in the optional ig-data/input. This is confusing...  
-
-I think the folders should be renamed e.g. ito make it obvious to those of us who assume input is user input.
-
-~~├── BackportSubscription.fsh
+.
+├── BackportNotification.fsh
+├── BackportSubscription.fsh
 ├── SUSHI-GENERATED-FILES.md
-├── config.yaml
-├── draft
-│   └── ig.ini
+├── ig-data
+│   ├── ig.ini
+│   └── input
+│       ├── examples
+│       ├── operations
+│       │   ├── OperationDefinition-subscription-status.json
+│       │   └── OperationDefinition-subscriptiontopic-list.json
+│       └── pagecontent
+│           ├── actors_and_transactions.md
+│           ├── conformance.md
+│           ├── errors.md
+│           ├── index.md
+│           └── overview.md
+├── ig.ini
 ├── input
+│   ├── ImplementationGuide-hl7.fhir.us.subscriptions-backport.json
 │   ├── extensions
 │   │   ├── StructureDefinition-backport-bundle-event-count.json
 │   │   ├── StructureDefinition-backport-heartbeat-period.json
@@ -51,8 +40,6 @@ I think the folders should be renamed e.g. ito make it obvious to those of us wh
 │   │   └── StructureDefinition-backport-topic-canonical.json
 │   ├── pagecontent
 │   │   ├── actors_and_transactions.md
-│   │   ├── downloads.md
-│   │   ├── errors.md
 │   │   ├── index.md
 │   │   └── overview.md
 │   ├── profiles
@@ -67,4 +54,28 @@ I think the folders should be renamed e.g. ito make it obvious to those of us wh
 └── package.json
 ~~~
 
-pagecontent is left behind when generating the output..
+I put all my pages etc in input folder but that is not the right place it should go in the optional ig-data/input.  The input folder is generated output and belongs it root. This is confusing to simplify FSH is now:
+
+~~~
+.
+├── BackportNotification.fsh
+├── BackportSubscription.fsh
+├── SUSHI-GENERATED-FILES.md
+├── config.yaml  <- NEW in Beta Sushi- see http://build.fhir.org/ig/HL7/fhir-shorthand/branches/beta/sushi.html#configuration-file  obviates the need for a separate ig.ini ( which I removed ), menu.xml (which I edited) and package-list.json (which I did not remove)
+├── ig-data
+│   └── input
+│       ├── examples
+│       ├── images
+│       │   ├── cat.jpg
+│       │   ├── custom_org_logo.jpg
+│       │   └── liquid
+│       │       └── Subscription.liquid
+│       └── pagecontent
+│           ├── actors_and_transactions.md
+│           ├── downloads.md
+│           ├── errors.md
+│           ├── index.md
+│           └── overview.md
+├── package-list.json
+└── package.json
+~~~
