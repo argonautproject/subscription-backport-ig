@@ -2,10 +2,10 @@
 =========================================
 
 err = 0, warn = 10, info = 10
-IG Publisher Version: v1.0.94-SNAPSHOT Out of date - current version is v1.0.99-SNAPSHOT
-Generated Fri Jun 05 17:33:02 CDT 2020. FHIR version 4.0.1 for hl7.fhir.us.subscriptions-backport#0.1.0 (canonical = http://hl7.org/fhir/us/subscriptions-backport)
+IG Publisher Version: v1.0.94-SNAPSHOT Out of date - current version is v1.0.100-SNAPSHOT
+Generated Mon Jun 08 14:08:33 CDT 2020. FHIR version 4.0.1 for hl7.fhir.us.subscriptions-backport#0.1.0 (canonical = http://hl7.org/fhir/us/subscriptions-backport)
 
- Build Errors : 4 / 0
+ Build Errors : 0 / 0
  C:\git\subscription-backport-ig\input\ImplementationGuide-hl7.fhir.us.subscriptions-backport : 0 / 1
  C:\git\subscription-backport-ig\input\examples\bundle-3945182f-d315-4dbf-9259-09d863c7e7da : 28 / 5
  C:\git\subscription-backport-ig\input\examples\bundle-9601c07a-e34f-4945-93ca-6efb5394c995 : 28 / 4
@@ -15,21 +15,17 @@ Generated Fri Jun 05 17:33:02 CDT 2020. FHIR version 4.0.1 for hl7.fhir.us.subsc
  C:\git\subscription-backport-ig\input\extensions\structuredefinition-backport-timeout : 1 / 0
  C:\git\subscription-backport-ig\input\extensions\structuredefinition-backport-topic-canonical : 1 / 0
  C:\git\subscription-backport-ig\input\operations\operationdefinition-Backport-subscription-status : 0 / 2
- C:\git\subscription-backport-ig\input\operations\operationdefinition-Backport-subscriptiontopic-list : 0 / 2
- C:\git\subscription-backport-ig\input\profiles\structuredefinition-backport-subscription : 1 / 0
+ C:\git\subscription-backport-ig\input\operations\operationdefinition-Backport-subscriptiontopic-list : 1 / 2
+ C:\git\subscription-backport-ig\input\profiles\structuredefinition-backport-subscription : 3 / 0
  C:\git\subscription-backport-ig\input\profiles\structuredefinition-backport-subscription-notification : 1 / 0
  C:\git\subscription-backport-ig\input\profiles\structuredefinition-backport-subscription-status : 1 / 1
- C:\git\subscription-backport-ig\input\profiles\structuredefinition-backport-subscription-topic-list : 1 / 1
+ C:\git\subscription-backport-ig\input\profiles\structuredefinition-backport-subscription-topic-canonical-urls : 1 / 1
  C:\git\subscription-backport-ig\input\vocabulary\codesystem-backport-content-code-system : 0 / 1
  C:\git\subscription-backport-ig\input\vocabulary\codesystem-backport-notification-type-code-system : 0 / 1
  C:\git\subscription-backport-ig\input\vocabulary\valueset-backport-content-value-set : 0 / 1
  C:\git\subscription-backport-ig\input\vocabulary\valueset-backport-notification-type-value-set : 0 / 1
 </table>
 == n/a ==
-ERROR: C:\git\subscription-backport-ig\output\OperationDefinition-Backport-subscription-status.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 139, column 319: The link 'datatypes.html#id' for "id" cannot be resolved
-ERROR: C:\git\subscription-backport-ig\output\OperationDefinition-Backport-subscription-status.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 140, column 66: The link 'bundle.html' for "Bundle" cannot be resolved
-ERROR: C:\git\subscription-backport-ig\output\OperationDefinition-Backport-subscriptiontopic-list.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 139, column 280: The link 'datatypes.html#uri' for "Uri" cannot be resolved
-ERROR: C:\git\subscription-backport-ig\output\OperationDefinition-Backport-subscriptiontopic-list.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 140, column 66: The link 'bundle.html' for "Bundle" cannot be resolved
 == C:\git\subscription-backport-ig\input\ImplementationGuide-hl7.fhir.us.subscriptions-backport.json ==
 WARNING: ImplementationGuide.jurisdiction: The resource should declare it's jurisdiction to match the package id (hl7.fhir.us.subscriptions-backport, jurisdiction = urn:iso:std:iso:3166:-2#US)
 == C:\git\subscription-backport-ig\input\examples\Bundle-3945182f-d315-4dbf-9259-09d863c7e7da.json ==
@@ -58,8 +54,8 @@ WARNING: OperationDefinition.jurisdiction: The resource should declare it's juri
 == C:\git\subscription-backport-ig\input\profiles\StructureDefinition-backport-subscription-notification.json ==
 == C:\git\subscription-backport-ig\input\profiles\StructureDefinition-backport-subscription-status.json ==
 INFORMATION: http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-status: The Implementation Guide contains no explicitly linked examples for this profile
-== C:\git\subscription-backport-ig\input\profiles\StructureDefinition-backport-subscription-topic-list.json ==
-WARNING: http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-topic-list: The Implementation Guide contains no examples for this profile
+== C:\git\subscription-backport-ig\input\profiles\StructureDefinition-backport-subscription-topic-canonical-urls.json ==
+WARNING: http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-topic-canonical-urls: The Implementation Guide contains no examples for this profile
 == C:\git\subscription-backport-ig\input\vocabulary\CodeSystem-backport-content-code-system.json ==
 WARNING: CodeSystem.jurisdiction: The resource should declare it's jurisdiction to match the package id (hl7.fhir.us.subscriptions-backport, jurisdiction = urn:iso:std:iso:3166:-2#US)
 == C:\git\subscription-backport-ig\input\vocabulary\CodeSystem-backport-notification-type-code-system.json ==

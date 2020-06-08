@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "SubscriptionsR5Backport"];
   fhir:ImplementationGuide.title [ fhir:value "Subscriptions R5 Backport"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2020-06-05T17:32:36-05:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-06-08T14:08:06-05:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "The Argonaut Project"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -348,14 +348,14 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-backport-subscription-topic-list.html" ]
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-backport-subscription-topic-canonical-urls.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-topic-list>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/backport-subscription-topic-list" ]
+         fhir:link <http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-topic-canonical-urls>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/backport-subscription-topic-canonical-urls" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Backported R5 SubscriptionTopic List Bundle" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile on the R4 Bundle resource to enable R5-style topic-based subscriptions in FHIR R4." ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Backported R5 SubscriptionTopic Canonical URL Parameters" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile on the R4 Parameters resource to enable R5-style topic-based subscriptions in FHIR R4." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 4;
@@ -693,7 +693,7 @@
 
 <http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-status> a fhir:us .
 
-<http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-topic-list> a fhir:us .
+<http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-topic-canonical-urls> a fhir:us .
 
 <http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-heartbeat-period> a fhir:us .
 

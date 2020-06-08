@@ -10,7 +10,7 @@
   "name": "SubscriptionsR5Backport",
   "title": "Subscriptions R5 Backport",
   "status": "active",
-  "date": "2020-06-05T17:32:36-05:00",
+  "date": "2020-06-08T14:08:06-05:00",
   "publisher": "The Argonaut Project",
   "contact": [
     {
@@ -364,14 +364,14 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-backport-subscription-topic-list.html"
+            "valueUri": "StructureDefinition-backport-subscription-topic-canonical-urls.html"
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/backport-subscription-topic-list"
+          "reference": "StructureDefinition/backport-subscription-topic-canonical-urls"
         },
-        "name": "Backported R5 SubscriptionTopic List Bundle",
-        "description": "Profile on the R4 Bundle resource to enable R5-style topic-based subscriptions in FHIR R4.",
+        "name": "Backported R5 SubscriptionTopic Canonical URL Parameters",
+        "description": "Profile on the R4 Parameters resource to enable R5-style topic-based subscriptions in FHIR R4.",
         "exampleBoolean": false
       },
       {

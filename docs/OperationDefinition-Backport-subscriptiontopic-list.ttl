@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "Backport-subscriptiontopic-list"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Backported R5 SubscriptionTopic List</h2><p>OPERATION: Backported R5 SubscriptionTopic List</p><p>The official URL for this operation definition is: </p><pre>http://hl7.org/fhir/OperationDefinition/Backport-subscriptiontopic-list</pre><div><p>This operation is used to return the current list of R5 SubscriptionTopics in a Backported-R4 environment.</p>\n</div><p>URL: [base]/Subscription/$topic-list</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>urls</td><td>0..*</td><td><a href=\"datatypes.html#uri\">Uri</a></td><td/><td><div><p>If present, one or more parameters each containing exactly one Canonical SubscriptionTopic URL to search for.</p>\n</div></td></tr><tr><td>OUT</td><td>return</td><td>1..1</td><td><a href=\"bundle.html\">Bundle</a></td><td/><td><div><p>The bundle type is &quot;searchset&quot;. The operation returns a bundle containing entries with only &quot;link&quot; present, representing supported SubscriptionTopics for the server and their canonical URLs.</p>\n</div></td></tr></table><div/></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Backported R5 SubscriptionTopic List</h2><p>OPERATION: Backported R5 SubscriptionTopic List</p><p>The official URL for this operation definition is: </p><pre>http://hl7.org/fhir/OperationDefinition/Backport-subscriptiontopic-list</pre><div><p>This operation is used to return the current list of R5 SubscriptionTopics in a Backported-R4 environment.</p>\n</div><p>URL: [base]/Subscription/$topic-list</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>urls</td><td>0..*</td><td><a href=\"http://hl7.org/fhir/datatypes.html#uri\">Uri</a></td><td/><td><div><p>If present, one or more parameters each containing exactly one Canonical SubscriptionTopic URL to search for.</p>\n</div></td></tr><tr><td>OUT</td><td>return</td><td>1..1</td><td><a href=\"http://hl7.org/fhir/parameters.html\">Parameters</a></td><td/><td><div><p>The operation returns a Parameters resource compliant with the &quot;backport-subscription-topic-list&quot; profile, representing supported SubscriptionTopics for the server by their canonical URLs.</p>\n</div></td></tr></table><div/></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -68,8 +68,13 @@
      fhir:OperationDefinition.parameter.use [ fhir:value "out" ];
      fhir:OperationDefinition.parameter.min [ fhir:value "1"^^xsd:integer ];
      fhir:OperationDefinition.parameter.max [ fhir:value "1" ];
-     fhir:OperationDefinition.parameter.documentation [ fhir:value "The bundle type is \"searchset\". The operation returns a bundle containing entries with only \"link\" present, representing supported SubscriptionTopics for the server and their canonical URLs." ];
-     fhir:OperationDefinition.parameter.type [ fhir:value "Bundle" ]
+     fhir:OperationDefinition.parameter.documentation [ fhir:value "The operation returns a Parameters resource compliant with the \"backport-subscription-topic-list\" profile, representing supported SubscriptionTopics for the server by their canonical URLs." ];
+     fhir:OperationDefinition.parameter.type [ fhir:value "Parameters" ];
+     fhir:OperationDefinition.parameter.targetProfile [
+       fhir:value "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-topic-canonical-urls";
+       fhir:index 0;
+       fhir:link <http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-topic-canonical-urls>
+     ]
   ] .
 
 # - ontology header ------------------------------------------------------------

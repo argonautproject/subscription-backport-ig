@@ -3,8 +3,8 @@ Parent:      Subscription
 Id:          backport-subscription
 Title:       "Backported R5 Subscription"
 Description: "Profile on the R4 Subscription resource to enable R5-style topic-based subscriptions in FHIR R4."
-* modifierExtension contains BackportTopicCanonical named subscriptionTopic 1..1
-* modifierExtension[BackportTopicCanonical] SU MS ?!
+* extension contains BackportTopicCanonical named subscriptionTopic 1..1
+* extension[BackportTopicCanonical] SU MS ?!
 * channel.payload 1..1
 * channel.payload.extension contains BackportPayloadContent named content 1..1
 * channel.payload.extension[BackportPayloadContent] MS SU
@@ -58,7 +58,7 @@ Usage:       #example
 Title:       "Backported Subscription: Admission"
 Description: "Example of a backported R5 admissions subscription in R4."
 * id       = "admission"
-* modifierExtension[subscriptionTopic].valueUri = "http://hl7.org/SubscriptionTopic/admission"
+* extension[subscriptionTopic].valueUri         = "http://hl7.org/SubscriptionTopic/admission"
 * status   = #active
 * end      = "2020-12-31T12:00:00Z"
 * reason   = "Example Backported Subscription for Patient Admission"
