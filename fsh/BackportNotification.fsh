@@ -41,27 +41,33 @@ Description: "Profile on the Parameters resource to enable R5-style topic-based 
 * parameter  ^slicing.ordered = false
 * parameter  ^slicing.description = "Slice on name"
 
-* parameter contains subscriptionEventCount 1..1 MS
-    and bundleEventCount 1..1 MS
+* parameter 
+    contains subscriptionUrl 1..1 MS
     and subscriptionTopicUrl 0..1 MS
-    and subscriptionUrl 1..1 MS
+    and status 1..1 MS
     and type 1..1 MS
+    and subscriptionEventCount 1..1 MS
+    and bundleEventCount 1..1 MS
+* parameter[subscriptionUrl].name = "subscription-url"
+* parameter[subscriptionUrl].value[x] 1..1 MS
+* parameter[subscriptionUrl].value[x] only uri
+* parameter[subscriptionTopicUrl].name = "subscription-topic-url"
+* parameter[subscriptionTopicUrl].value[x] 0..1 MS
+* parameter[subscriptionTopicUrl].value[x] only uri
+* parameter[status].name = "status"
+* parameter[status].value[x] 1..1 MS
+* parameter[status].value[x] only code
+* parameter[status].value[x] from http://hl7.org/fhir/ValueSet/subscription-status
+* parameter[type].name = "type"
+* parameter[type].value[x] 1..1 MS
+* parameter[type].value[x] only code
+* parameter[type].value[x] from BackportNotificationTypeValueSet
 * parameter[subscriptionEventCount].name = "subscription-event-count"
 * parameter[subscriptionEventCount].value[x] 1..1 MS
 * parameter[subscriptionEventCount].value[x] only unsignedInt
 * parameter[bundleEventCount].name = "bundle-event-count"
 * parameter[bundleEventCount].value[x] 0..1 MS
 * parameter[bundleEventCount].value[x] only unsignedInt
-* parameter[subscriptionTopicUrl].name = "subscription-topic-url"
-* parameter[subscriptionTopicUrl].value[x] 0..1 MS
-* parameter[subscriptionTopicUrl].value[x] only uri
-* parameter[subscriptionUrl].name = "subscription-url"
-* parameter[subscriptionUrl].value[x] 1..1 MS
-* parameter[subscriptionUrl].value[x] only uri
-* parameter[type].name = "type"
-* parameter[type].value[x] 1..1 MS
-* parameter[type].value[x] only code
-* parameter[type].value[x] from BackportNotificationTypeValueSet
 
 CodeSystem:  BackportNotificationTypeCodeSystem
 Id:          backport-notification-type-code-system
@@ -83,16 +89,18 @@ Instance:    BackportStatusEventNotification
 InstanceOf:  BackportSubscriptionStatus
 Usage:       #inline
 * id = "b21e4fae-ce73-45cb-8e37-1e203362b2ae"
+* parameter[subscriptionUrl].name                    = "subscription-url"
+* parameter[subscriptionUrl].valueUri                = "https://example.org/fhir/r4/Subscription/admission"
+* parameter[subscriptionTopicUrl].name               = "subscription-topic-url"
+* parameter[subscriptionTopicUrl].valueUri           = "http://hl7.org/SubscriptionTopic/admission"
+* parameter[status].name                             = "status"
+* parameter[status].valueCode                        = #active
+* parameter[type].name                               = "type"
+* parameter[type].valueCode                          = #event-notification
 * parameter[subscriptionEventCount].name             = "subscription-event-count"
 * parameter[subscriptionEventCount].valueUnsignedInt = 310
 * parameter[bundleEventCount].name                   = "bundle-event-count"
 * parameter[bundleEventCount].valueUnsignedInt       = 1
-* parameter[subscriptionTopicUrl].name               = "subscription-topic-url"
-* parameter[subscriptionTopicUrl].valueUri           = "http://hl7.org/SubscriptionTopic/admission"
-* parameter[subscriptionUrl].name                    = "subscription-url"
-* parameter[subscriptionUrl].valueUri                = "https://example.org/fhir/r4/Subscription/admission"
-* parameter[type].name                               = "type"
-* parameter[type].valueCode                          = #event-notification
 
 
 Instance:    BackportNotificationExampleEmpty
@@ -105,7 +113,6 @@ Description: "Example of a backported notification with 'empty' content."
 * timestamp = "2020-05-29T11:44:13.1882432-05:00"
 * entry[subscriptionStatus].fullUrl  = "urn:uuid:b21e4fae-ce73-45cb-8e37-1e203362b2ae"
 * entry[subscriptionStatus].resource = BackportStatusEventNotification
-
 
 
 

@@ -21,20 +21,24 @@
         },
         "parameter": [
           {
+            "name": "subscription-url",
+            "valueUri": "https://example.org/fhir/r4/Subscription/admission"
+          },
+          {
+            "name": "status",
+            "valueCode": "active"
+          },
+          {
+            "name": "type",
+            "valueCode": "event-notification"
+          },
+          {
             "name": "subscription-event-count",
             "valueUnsignedInt": 310
           },
           {
             "name": "bundle-event-count",
             "valueUnsignedInt": 1
-          },
-          {
-            "name": "subscription-url",
-            "valueUri": "https://example.org/fhir/r4/Subscription/admission"
-          },
-          {
-            "name": "type",
-            "valueCode": "event-notification"
           },
           {
             "name": "subscription-topic-url",

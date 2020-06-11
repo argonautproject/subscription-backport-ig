@@ -17,7 +17,7 @@
   fhir:CodeSystem.name [ fhir:value "BackportNotificationTypeCodeSystem"];
   fhir:CodeSystem.title [ fhir:value "R5 Subscription Notification Type Code System"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2020-06-08T14:08:06-05:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2020-06-11T15:46:13-05:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "The Argonaut Project"];
   fhir:CodeSystem.contact [
      fhir:index 0;
