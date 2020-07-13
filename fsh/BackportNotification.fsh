@@ -3,6 +3,7 @@ Parent:      Bundle
 Id:          backport-subscription-notification
 Title:       "Backported R5 Subscription Notification Bundle"
 Description: "Profile on the R4 Bundle resource to enable R5-style topic-based subscription notifications in FHIR R4."
+* ^jurisdiction = urn:iso:std:iso:3166#US
 * type = #history
 * entry ^slicing.discriminator.type = #type
 * entry ^slicing.discriminator.path = "resource"
@@ -26,15 +27,17 @@ Description: "Profile on the R4 Bundle resource to enable R5-style topic-based s
 
 Invariant:   backport-notification-bundle-1
 Description: "A notification bundle MUST have the BackportSubscriptionStatus as the first entry"
-Expression:  "entry.first().resource.is(SubscriptionStatus)"
+Expression:  "entry.first().resource.is(Parameters)"
+//Expression:  "(entry.first().resource.is(Parameters)) and (entry.first().resource.conformsTo(BackportSubscriptionStatus))"
 Severity:    #error
-XPath:       "f:entry[1]/f:resource/f:SubscriptionStatus"
+XPath:       "f:entry[1]/f:resource/f:Parameters"
 
 Profile:     BackportSubscriptionStatus
 Parent:      Parameters
 Id:          backport-subscription-status
 Title:       "Backported R5 Subscription Notification Status"
 Description: "Profile on the Parameters resource to enable R5-style topic-based subscription notifications in FHIR R4."
+* ^jurisdiction = urn:iso:std:iso:3166#US
 * parameter  ^slicing.discriminator.type = #value
 * parameter  ^slicing.discriminator.path = "name"
 * parameter  ^slicing.rules = #open
@@ -73,6 +76,7 @@ CodeSystem:  BackportNotificationTypeCodeSystem
 Id:          backport-notification-type-code-system
 Title:       "R5 Subscription Notification Type Code System"
 Description: "Codes to represent types of notification bundles."
+* ^jurisdiction = urn:iso:std:iso:3166#US
 * #handshake          "Handshake"           "The notification is being sent as part of the setup or verification of a communications channel."
 * #heartbeat          "Heartbeat"           "The notification is being sent because there has not been a notification generated over an extended period of time."
 * #event-notification "Event Notification"  "The notification is being sent due to an event for the subscriber."
@@ -82,6 +86,7 @@ ValueSet:    BackportNotificationTypeValueSet
 Id:          backport-notification-type-value-set
 Title:       "R5 Subscription Notification Type Value Set"
 Description: "Codes to represent types of notification bundles."
+* ^jurisdiction = urn:iso:std:iso:3166#US
 * codes from system BackportNotificationTypeCodeSystem
 
 
@@ -113,7 +118,9 @@ Description: "Example of a backported notification with 'empty' content."
 * timestamp = "2020-05-29T11:44:13.1882432-05:00"
 * entry[subscriptionStatus].fullUrl  = "urn:uuid:b21e4fae-ce73-45cb-8e37-1e203362b2ae"
 * entry[subscriptionStatus].resource = BackportStatusEventNotification
-
+* entry[subscriptionStatus].request.method = #GET
+* entry[subscriptionStatus].request.url = "https://example.org/fhir/r4/Subscription/admission/$status"
+* entry[subscriptionStatus].response.status = "200"
 
 
 Instance:    BackportNotificationExampleIdOnly
@@ -126,6 +133,9 @@ Description: "Example of a backported notification with 'id-only' content."
 * timestamp = "2020-05-29T11:44:13.1882432-05:00"
 * entry[subscriptionStatus].fullUrl  = "urn:uuid:b21e4fae-ce73-45cb-8e37-1e203362b2ae"
 * entry[subscriptionStatus].resource = BackportStatusEventNotification
+* entry[subscriptionStatus].request.method = #GET
+* entry[subscriptionStatus].request.url = "https://example.org/fhir/r4/Subscription/admission/$status"
+* entry[subscriptionStatus].response.status = "200"
 * entry[1].fullUrl = "https://example.org/fhir/r4/Encounter/551683b3-1477-41d1-b58e-32fe8b0047b0"
 * entry[1].request.method = #POST
 * entry[1].request.url    = "Encounter"

@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "hl7.fhir.us.subscriptions-backport",
   "text": {
-    "status": "generated",
+    "status": "extensions",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SubscriptionsR5Backport</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/subscriptions-backport/ImplementationGuide/hl7.fhir.us.subscriptions-backport</pre><div><p>The Subscription R5 Backport Implementation Guide enables servers running verions of FHIR earlier than R5 to implement a subset of R5 Subscriptions in a standardized way.</p>\n</div></div>"
   },
   "url": "http://hl7.org/fhir/us/subscriptions-backport/ImplementationGuide/hl7.fhir.us.subscriptions-backport",
@@ -10,7 +10,7 @@
   "name": "SubscriptionsR5Backport",
   "title": "Subscriptions R5 Backport",
   "status": "active",
-  "date": "2020-06-11T15:46:13-05:00",
+  "date": "2020-07-13T15:21:28-05:00",
   "publisher": "The Argonaut Project",
   "contact": [
     {
@@ -83,11 +83,37 @@
         "extension": [
           {
             "url": "code",
+            "valueString": "usage-stats-opt-out"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
             "valueString": "path-history"
           },
           {
             "url": "value",
             "valueString": "http://hl7.org/fhir/us/subscriptions-backport/history.html"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "autoload-resources"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -586,7 +612,7 @@
         "reference": {
           "reference": "OperationDefinition/Backport-subscription-status"
         },
-        "name": "Backported R5 Subscription Status",
+        "name": "R5SubscriptionStatus",
         "description": "This operation is used to return the current status information about one or more backported R5-Style Subscriptions in R4.",
         "exampleBoolean": false
       },
@@ -604,7 +630,7 @@
         "reference": {
           "reference": "OperationDefinition/Backport-subscriptiontopic-list"
         },
-        "name": "Backported R5 SubscriptionTopic List",
+        "name": "R5SubscriptionTopicList",
         "description": "This operation is used to return the current list of R5 SubscriptionTopics in a Backported-R4 environment.",
         "exampleBoolean": false
       }
@@ -681,6 +707,10 @@
       {
         "code": "path-resource",
         "value": "input/testing"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/history"
       },
       {
         "code": "path-pages",

@@ -11,11 +11,11 @@ lists those files generated from project configs or the contents in the ig-data 
 
 | SUSHI-GENERATED FILE                                                      | ACTION    | INPUT FILE(S)                                                                |
 | ------------------------------------------------------------------------- | --------- | ---------------------------------------------------------------------------- |
-| ig.ini                                                                    | generated | fsh\ig-data\ig.ini, fsh\package.json                                         |
-| input\ImplementationGuide-hl7.fhir.us.subscriptions-backport.json         | generated | fsh\ig-data\ig.ini, fsh\package.json, {all input resources and pages}        |
+| input\ImplementationGuide-hl7.fhir.us.subscriptions-backport.json         | generated | fsh\config.yaml, {all input resources and pages}                             |
 | input\ignoreWarnings.txt                                                  | generated |                                                                              |
-| input\includes\menu.xml                                                   | generated |                                                                              |
-| package-list.json                                                         | generated | fsh\package.json                                                             |
+| input\includes\menu.xml                                                   | generated | fsh\config.yaml                                                              |
+| package-list.json                                                         | generated | fsh\config.yaml                                                              |
+| ig.ini                                                                    | copied    | fsh\ig-data\ig.ini                                                           |
 | input\operations\OperationDefinition-Backport-subscription-status.json    | copied    | fsh\ig-data\input\operations\OperationDefinition-subscription-status.json    |
 | input\operations\OperationDefinition-Backport-subscriptiontopic-list.json | copied    | fsh\ig-data\input\operations\OperationDefinition-subscriptiontopic-list.json |
 | input\pagecontent\actors_and_transactions.md                              | copied    | fsh\ig-data\input\pagecontent\actors_and_transactions.md                     |
@@ -23,4 +23,3 @@ lists those files generated from project configs or the contents in the ig-data 
 | input\pagecontent\errors.md                                               | copied    | fsh\ig-data\input\pagecontent\errors.md                                      |
 | input\pagecontent\index.md                                                | copied    | fsh\ig-data\input\pagecontent\index.md                                       |
 | input\pagecontent\overview.md                                             | copied    | fsh\ig-data\input\pagecontent\overview.md                                    |
-| package.json                                                              | copied    | fsh\package.json                                                             |

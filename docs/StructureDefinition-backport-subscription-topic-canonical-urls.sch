@@ -69,6 +69,12 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
+    <sch:title>f:Parameters/f:parameter/f:part</sch:title>
+    <sch:rule context="f:Parameters/f:parameter/f:part">
+      <sch:assert test="count(f:value[x]) &gt;= 1">value[x]: minimum cardinality of 'value[x]' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>Parameters.parameter.part</sch:title>
     <sch:rule context="f:Parameters/f:parameter/f:part">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>

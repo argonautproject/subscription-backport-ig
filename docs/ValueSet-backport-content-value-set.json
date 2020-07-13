@@ -3,14 +3,14 @@
   "id": "backport-content-value-set",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Backported R5 Subscription Content Value Set</h2><div><p>Codes to represent how much resource content to send in the notification payload.</p>\n</div><ul><li>Include all codes defined in <a href=\"CodeSystem-backport-content-code-system.html\"><code>http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-content-code-system</code></a></li></ul></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-backport-content-code-system.html\"><code>http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-content-code-system</code></a></li></ul></div>"
   },
   "url": "http://hl7.org/fhir/us/subscriptions-backport/ValueSet/backport-content-value-set",
   "version": "0.1.0",
   "name": "BackportContentValueSet",
   "title": "Backported R5 Subscription Content Value Set",
   "status": "active",
-  "date": "2020-06-11T15:46:13-05:00",
+  "date": "2020-07-13T15:21:28-05:00",
   "publisher": "The Argonaut Project",
   "contact": [
     {

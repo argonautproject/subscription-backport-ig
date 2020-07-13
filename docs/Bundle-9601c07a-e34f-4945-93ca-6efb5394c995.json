@@ -45,6 +45,13 @@
             "valueUri": "http://hl7.org/SubscriptionTopic/admission"
           }
         ]
+      },
+      "request": {
+        "method": "GET",
+        "url": "https://example.org/fhir/r4/Subscription/admission/$status"
+      },
+      "response": {
+        "status": "200"
       }
     }
   ]

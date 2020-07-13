@@ -41,5 +41,12 @@
         </parameter>
       </Parameters>
     </resource>
+    <request>
+      <method value="GET"/>
+      <url value="https://example.org/fhir/r4/Subscription/admission/$status"/>
+    </request>
+    <response>
+      <status value="200"/>
+    </response>
   </entry>
 </Bundle>

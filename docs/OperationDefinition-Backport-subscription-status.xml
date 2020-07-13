@@ -16,10 +16,10 @@
   </extension>
   <url value="http://hl7.org/fhir/OperationDefinition/Backport-subscription-status"/>
   <version value="0.1.0"/>
-  <name value="Backported R5 Subscription Status"/>
+  <name value="R5SubscriptionStatus"/>
   <status value="draft"/>
   <kind value="operation"/>
-  <date value="2020-06-01T12:23:37-05:00"/>
+  <date value="2020-06-01T17:23:37+00:00"/>
   <publisher value="The Argonaut Project"/>
   <contact>
     <name value="The Argonaut Project"/>
@@ -36,6 +36,12 @@
     </telecom>
   </contact>
   <description value="This operation is used to return the current status information about one or more backported R5-Style Subscriptions in R4."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
   <code value="status"/>
   <resource value="Subscription"/>
   <system value="false"/>

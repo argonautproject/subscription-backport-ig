@@ -3,15 +3,14 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="backport-notification-type-value-set"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>R5 Subscription Notification Type Value Set</h2><div><p>Codes to represent types of notification bundles.</p>
-</div><ul><li>Include all codes defined in <a href="CodeSystem-backport-notification-type-code-system.html"><code>http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-notification-type-code-system</code></a></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-backport-notification-type-code-system.html"><code>http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-notification-type-code-system</code></a></li></ul></div>
   </text>
   <url value="http://hl7.org/fhir/us/subscriptions-backport/ValueSet/backport-notification-type-value-set"/>
   <version value="0.1.0"/>
   <name value="BackportNotificationTypeValueSet"/>
   <title value="R5 Subscription Notification Type Value Set"/>
   <status value="active"/>
-  <date value="2020-06-11T15:46:13-05:00"/>
+  <date value="2020-07-13T15:21:28-05:00"/>
   <publisher value="The Argonaut Project"/>
   <contact>
     <name value="The Argonaut Project"/>
@@ -28,6 +27,12 @@
     </telecom>
   </contact>
   <description value="Codes to represent types of notification bundles."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
   <compose>
     <include>
       <system value="http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-notification-type-code-system"/>

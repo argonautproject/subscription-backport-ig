@@ -41,6 +41,13 @@
         </parameter>
       </Parameters>
     </resource>
+    <request>
+      <method value="GET"/>
+      <url value="https://example.org/fhir/r4/Subscription/admission/$status"/>
+    </request>
+    <response>
+      <status value="200"/>
+    </response>
   </entry>
   <entry>
     <fullUrl value="https://example.org/fhir/r4/Encounter/551683b3-1477-41d1-b58e-32fe8b0047b0"/>

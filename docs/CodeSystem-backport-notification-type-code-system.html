@@ -41,7 +41,8 @@
     h3,h4,h5,h6{--heading-prefix:"6.14"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
-        
+        <!-- Placeholder for child template header declarations -->
+
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Subscriptions R5 Backport</span><br/>0.1.0 - CI Build</p>
@@ -65,13 +66,20 @@
             <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
               <!-- menu.xml  -->
+
 <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
-  <li><a href="index.html">IG Home</a></li>
-  <li><a href="toc.html">Table of Contents</a></li>
-  <li><a href="artifacts.html">Artifact Index</a></li>
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support<b class="caret">
-      </b>
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
       <li>
@@ -101,10 +109,51 @@
           <div class="inner-wrapper">
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Subscriptions R5 Backport - Local Development build (v0.1.0). See the <a href="http://hl7.org/fhir/us/subscriptions-backport/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+  
+    <li>
+      <a href="CodeSystem-backport-notification-type-code-system.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-backport-notification-type-code-system.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-backport-notification-type-code-system.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
   <a name="root"> </a>
   <h2 id="root">CodeSystem: R5 Subscription Notification Type Code System</h2>
+
+  <!-- insert intro if present -->
   
-  
+
+
+
   <p>
     <b>Summary</b>
   </p>
@@ -127,19 +176,22 @@
   <p>
   This Code system is referenced in the content logical definition of the following value sets:
   </p>
-  
+
   
 <ul>
  <li><a href="ValueSet-backport-notification-type-value-set.html">BackportNotificationTypeValueSet</a></li>
 </ul>
 
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><h2>R5 Subscription Notification Type Code System</h2><div><p>Codes to represent types of notification bundles.</p>
-</div><p>This code system http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-notification-type-code-system defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">handshake<a name="backport-notification-type-code-system-handshake"> </a></td><td>Handshake</td><td>The notification is being sent as part of the setup or verification of a communications channel.</td></tr><tr><td style="white-space:nowrap">heartbeat<a name="backport-notification-type-code-system-heartbeat"> </a></td><td>Heartbeat</td><td>The notification is being sent because there has not been a notification generated over an extended period of time.</td></tr><tr><td style="white-space:nowrap">event-notification<a name="backport-notification-type-code-system-event-notification"> </a></td><td>Event Notification</td><td>The notification is being sent due to an event for the subscriber.</td></tr><tr><td style="white-space:nowrap">query-status<a name="backport-notification-type-code-system-query-status"> </a></td><td>Query Status</td><td>The notification is being sent due to a client request or query for Subscription status.</td></tr></table></div>
+  <div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-notification-type-code-system defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">handshake<a name="backport-notification-type-code-system-handshake"> </a></td><td>Handshake</td><td>The notification is being sent as part of the setup or verification of a communications channel.</td></tr><tr><td style="white-space:nowrap">heartbeat<a name="backport-notification-type-code-system-heartbeat"> </a></td><td>Heartbeat</td><td>The notification is being sent because there has not been a notification generated over an extended period of time.</td></tr><tr><td style="white-space:nowrap">event-notification<a name="backport-notification-type-code-system-event-notification"> </a></td><td>Event Notification</td><td>The notification is being sent due to an event for the subscriber.</td></tr><tr><td style="white-space:nowrap">query-status<a name="backport-notification-type-code-system-query-status"> </a></td><td>Query Status</td><td>The notification is being sent due to a client request or query for Subscription status.</td></tr></table></div>
+
+  <!-- insert notes if present -->
+  
+
+
 
   
-  
-  
+
 </div>
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
@@ -160,7 +212,7 @@
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="https://argonautwiki.hl7.org">The Argonaut Project</a>.  Package hl7.fhir.us.subscriptions-backport#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 11, 2020 15:46-0500">2020-06-11</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="https://argonautwiki.hl7.org">The Argonaut Project</a>.  Package hl7.fhir.us.subscriptions-backport#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 13, 2020 15:21-0500">2020-07-13</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

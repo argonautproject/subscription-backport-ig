@@ -27,7 +27,7 @@ The goal of publishing this guide is to define a standard method of back-porting
 
 * Profiles and Extensions
   * Profile: [Subscription](StructureDefinition-backport-subscription.html)
-    * Modifier Extension: [Backport Topic Canonical]StructureDefinition-backport-topic-canonical.html)
+    * Extension: [Backport Topic Canonical](StructureDefinition-backport-topic-canonical.html)
     * Extension: [Backport Heartbeat Period](StructureDefinition-backport-heartbeat-period.html)
     * Extension: [Backport Timeout](StructureDefinition-backport-timeout.html)
     * Extension: [Backport Payload Content](StructureDefinition-backport-payload-content.html)

@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "backport-content-value-set"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Backported R5 Subscription Content Value Set</h2><div><p>Codes to represent how much resource content to send in the notification payload.</p>\n</div><ul><li>Include all codes defined in <a href=\"CodeSystem-backport-content-code-system.html\"><code>http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-content-code-system</code></a></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-backport-content-code-system.html\"><code>http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-content-code-system</code></a></li></ul></div>"
   ];
   fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/us/subscriptions-backport/ValueSet/backport-content-value-set"];
   fhir:ValueSet.version [ fhir:value "0.1.0"];
   fhir:ValueSet.name [ fhir:value "BackportContentValueSet"];
   fhir:ValueSet.title [ fhir:value "Backported R5 Subscription Content Value Set"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2020-06-11T15:46:13-05:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2020-07-13T15:21:28-05:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "The Argonaut Project"];
   fhir:ValueSet.contact [
      fhir:index 0;

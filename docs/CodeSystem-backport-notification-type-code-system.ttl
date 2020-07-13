@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "backport-notification-type-code-system"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>R5 Subscription Notification Type Code System</h2><div><p>Codes to represent types of notification bundles.</p>\n</div><p>This code system http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-notification-type-code-system defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">handshake<a name=\"backport-notification-type-code-system-handshake\"> </a></td><td>Handshake</td><td>The notification is being sent as part of the setup or verification of a communications channel.</td></tr><tr><td style=\"white-space:nowrap\">heartbeat<a name=\"backport-notification-type-code-system-heartbeat\"> </a></td><td>Heartbeat</td><td>The notification is being sent because there has not been a notification generated over an extended period of time.</td></tr><tr><td style=\"white-space:nowrap\">event-notification<a name=\"backport-notification-type-code-system-event-notification\"> </a></td><td>Event Notification</td><td>The notification is being sent due to an event for the subscriber.</td></tr><tr><td style=\"white-space:nowrap\">query-status<a name=\"backport-notification-type-code-system-query-status\"> </a></td><td>Query Status</td><td>The notification is being sent due to a client request or query for Subscription status.</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-notification-type-code-system defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">handshake<a name=\"backport-notification-type-code-system-handshake\"> </a></td><td>Handshake</td><td>The notification is being sent as part of the setup or verification of a communications channel.</td></tr><tr><td style=\"white-space:nowrap\">heartbeat<a name=\"backport-notification-type-code-system-heartbeat\"> </a></td><td>Heartbeat</td><td>The notification is being sent because there has not been a notification generated over an extended period of time.</td></tr><tr><td style=\"white-space:nowrap\">event-notification<a name=\"backport-notification-type-code-system-event-notification\"> </a></td><td>Event Notification</td><td>The notification is being sent due to an event for the subscriber.</td></tr><tr><td style=\"white-space:nowrap\">query-status<a name=\"backport-notification-type-code-system-query-status\"> </a></td><td>Query Status</td><td>The notification is being sent due to a client request or query for Subscription status.</td></tr></table></div>"
   ];
   fhir:CodeSystem.url [ fhir:value "http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-notification-type-code-system"];
   fhir:CodeSystem.version [ fhir:value "0.1.0"];
   fhir:CodeSystem.name [ fhir:value "BackportNotificationTypeCodeSystem"];
   fhir:CodeSystem.title [ fhir:value "R5 Subscription Notification Type Code System"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2020-06-11T15:46:13-05:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2020-07-13T15:21:28-05:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "The Argonaut Project"];
   fhir:CodeSystem.contact [
      fhir:index 0;
@@ -37,7 +37,16 @@
      ]
   ];
   fhir:CodeSystem.description [ fhir:value "Codes to represent types of notification bundles."];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "US" ]
+     ]
+  ];
   fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "4"^^xsd:nonNegativeInteger];
   fhir:CodeSystem.concept [
      fhir:index 0;
      fhir:CodeSystem.concept.code [ fhir:value "handshake" ];

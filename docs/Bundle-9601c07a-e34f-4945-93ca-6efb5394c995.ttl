@@ -20,7 +20,14 @@
   fhir:Bundle.entry [
      fhir:index 0;
      fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:b21e4fae-ce73-45cb-8e37-1e203362b2ae" ];
-     fhir:Bundle.entry.resource <urn:uuid:b21e4fae-ce73-45cb-8e37-1e203362b2ae>
+     fhir:Bundle.entry.resource <urn:uuid:b21e4fae-ce73-45cb-8e37-1e203362b2ae>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "GET" ];
+       fhir:Bundle.entry.request.url [ fhir:value "https://example.org/fhir/r4/Subscription/admission/$status" ]
+     ];
+     fhir:Bundle.entry.response [
+       fhir:Bundle.entry.response.status [ fhir:value "200" ]
+     ]
   ] .
 
 <urn:uuid:b21e4fae-ce73-45cb-8e37-1e203362b2ae> a fhir:Parameters;

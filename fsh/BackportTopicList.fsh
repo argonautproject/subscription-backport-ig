@@ -3,6 +3,7 @@ Parent:      Parameters
 Id:          backport-subscription-topic-canonical-urls
 Title:       "Backported R5 SubscriptionTopic Canonical URL Parameters"
 Description: "Profile on the R4 Parameters resource to enable R5-style topic-based subscriptions in FHIR R4."
+* ^jurisdiction = urn:iso:std:iso:3166#US
 * parameter  ^slicing.discriminator.type = #value
 * parameter  ^slicing.discriminator.path = "name"
 * parameter  ^slicing.rules = #open

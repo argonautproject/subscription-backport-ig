@@ -1,3 +1,5 @@
+
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
@@ -41,7 +43,8 @@
     h3,h4,h5,h6{--heading-prefix:"6.17"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
-        
+        <!-- Placeholder for child template header declarations -->
+
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Subscriptions R5 Backport</span><br/>0.1.0 - CI Build</p>
@@ -65,13 +68,20 @@
             <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
               <!-- menu.xml  -->
+
 <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
-  <li><a href="index.html">IG Home</a></li>
-  <li><a href="toc.html">Table of Contents</a></li>
-  <li><a href="artifacts.html">Artifact Index</a></li>
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support<b class="caret">
-      </b>
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
       <li>
@@ -99,25 +109,58 @@
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
-<div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Subscriptions R5 Backport - Local Development build (v0.1.0). See the <a href="http://hl7.org/fhir/us/subscriptions-backport/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-  <a name="root"> </a>
+<div style="counter-reset: section 7" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">Subscriptions R5 Backport - Local Development build (v0.1.0). See the <a href="http://hl7.org/fhir/us/subscriptions-backport/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
-  <h2 id="root">: Backported Subscription: Admission - XML Representation</h2>
-  <p>
-    <a href="Subscription-admission.html">(back to description)</a>
-  </p>
-  <p>
-    <a href="Subscription-admission.xml">Raw xml</a>
-  </p>
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="Subscription-admission.html">Narrative Content</a>
+  </li>
+
+
   
+    <li class="active">
+      <a href="#">XML</a>
+    </li>
   
+
+
   
-  <p>
-    <b>Source view</b>
-  </p>
+    <li>
+      <a href="Subscription-admission.json.html">JSON</a>
+    </li>
   
+
+
+  
+    <li>
+      <a href="Subscription-admission.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Backported Subscription: Admission - XML Representation</h2>
+
+<p><a href="Subscription-admission.xml" no-download="true">Raw xml</a> | <a href="Subscription-admission.xml" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
   <pre class="xml">
 
 &lt;<a href="http://hl7.org/fhir/R4/subscription.html#Subscription">Subscription</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
@@ -128,7 +171,7 @@
   &lt;/meta&gt;
   &lt;<a href="http://hl7.org/fhir/R4/subscription.html#Subscription.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: admission&lt;/p&gt;&lt;p&gt;&lt;b&gt;meta&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;end&lt;/b&gt;: Dec 31, 2020, 6:00:00 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;reason&lt;/b&gt;: Example Backported Subscription for Patient Admission&lt;/p&gt;&lt;p&gt;&lt;b&gt;criteria&lt;/b&gt;: Encounter?patient=Patient/123&lt;/p&gt;&lt;h3&gt;Channels&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Extension&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Endpoint&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Payload&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Header&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;rest-hook&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;https://example.org/Endpoints/eae3806a-f7fb-4e3f-a14d-c4c58ca9c038&quot;&gt;https://example.org/Endpoints/eae3806a-f7fb-4e3f-a14d-c4c58ca9c038&lt;/a&gt;&lt;/td&gt;&lt;td&gt;application/fhir+json&lt;/td&gt;&lt;td&gt;Authorization: Bearer secret-token-abc-123&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: admission&lt;/p&gt;&lt;p&gt;&lt;b&gt;meta&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;end&lt;/b&gt;: Dec 31, 2020, 6:00:00 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;reason&lt;/b&gt;: Example Backported Subscription for Patient Admission&lt;/p&gt;&lt;p&gt;&lt;b&gt;criteria&lt;/b&gt;: Encounter?patient=Patient/123&lt;/p&gt;&lt;h3&gt;Channels&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Extension&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Endpoint&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Payload&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Header&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;rest-hook&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;https://example.org/Endpoints/eae3806a-f7fb-4e3f-a14d-c4c58ca9c038&quot;&gt;https://example.org/Endpoints/eae3806a-f7fb-4e3f-a14d-c4c58ca9c038&lt;/a&gt;&lt;/td&gt;&lt;td&gt;application/fhir+json&lt;/td&gt;&lt;td&gt;Authorization: Bearer secret-token-abc-123&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/text&gt;
   &lt;<a href="http://hl7.org/fhir/R4/subscription.html#Subscription.extension">extension</a>
              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-topic-canonical&quot;&gt;
@@ -161,8 +204,11 @@
 &lt;/Subscription&gt;</pre>
 
 
+  <!-- insert notes if present -->
   
-  
+
+
+
 </div>
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
@@ -183,7 +229,7 @@
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="https://argonautwiki.hl7.org">The Argonaut Project</a>.  Package hl7.fhir.us.subscriptions-backport#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 11, 2020 15:46-0500">2020-06-11</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="https://argonautwiki.hl7.org">The Argonaut Project</a>.  Package hl7.fhir.us.subscriptions-backport#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 13, 2020 15:21-0500">2020-07-13</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

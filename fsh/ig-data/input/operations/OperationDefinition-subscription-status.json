@@ -15,7 +15,7 @@
   }],
   "url" : "http://hl7.org/fhir/OperationDefinition/Backport-subscription-status",
   "version" : "4.4.0",
-  "name" : "Backported R5 Subscription Status",
+  "name" : "R5SubscriptionStatus",
   "status" : "draft",
   "kind" : "operation",
   "date" : "2020-06-01T17:23:37+00:00",
@@ -27,6 +27,16 @@
     }]
   }],
   "description" : "This operation is used to return the current status information about one or more backported R5-Style Subscriptions in R4.",
+  "jurisdiction" : [
+    {
+      "coding" : [
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "US"
+        }
+      ]
+    }
+  ],
   "code" : "status",
   "resource" : ["Subscription"],
   "system" : false,

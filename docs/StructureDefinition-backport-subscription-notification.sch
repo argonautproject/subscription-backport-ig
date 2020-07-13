@@ -21,7 +21,7 @@
       <sch:assert test="not(f:type/@value = 'document') or exists(f:timestamp/@value)">A document must have a date (inherited)</sch:assert>
       <sch:assert test="not(f:type/@value='document') or f:entry[1]/f:resource/f:Composition">A document must have a Composition as the first resource (inherited)</sch:assert>
       <sch:assert test="not(f:type/@value='message') or f:entry[1]/f:resource/f:MessageHeader">A message must have a MessageHeader as the first resource (inherited)</sch:assert>
-      <sch:assert test="f:entry[1]/f:resource/f:SubscriptionStatus">A notification bundle MUST have the BackportSubscriptionStatus as the first entry</sch:assert>
+      <sch:assert test="f:entry[1]/f:resource/f:Parameters">A notification bundle MUST have the BackportSubscriptionStatus as the first entry</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
