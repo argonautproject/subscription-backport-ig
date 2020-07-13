@@ -10,7 +10,7 @@
   "name": "SubscriptionsR5Backport",
   "title": "Subscriptions R5 Backport",
   "status": "active",
-  "date": "2020-07-13T15:21:28-05:00",
+  "date": "2020-07-13T16:47:44-05:00",
   "publisher": "The Argonaut Project",
   "contact": [
     {
@@ -33,6 +33,16 @@
     }
   ],
   "description": "The Subscription R5 Backport Implementation Guide enables servers running verions of FHIR earlier than R5 to implement a subset of R5 Subscriptions in a standardized way.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
   "packageId": "hl7.fhir.us.subscriptions-backport",
   "license": "CC0-1.0",
   "fhirVersion": [

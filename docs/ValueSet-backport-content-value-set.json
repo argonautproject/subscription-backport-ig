@@ -10,7 +10,7 @@
   "name": "BackportContentValueSet",
   "title": "Backported R5 Subscription Content Value Set",
   "status": "active",
-  "date": "2020-07-13T15:21:28-05:00",
+  "date": "2020-07-13T16:47:44-05:00",
   "publisher": "The Argonaut Project",
   "contact": [
     {
@@ -33,6 +33,16 @@
     }
   ],
   "description": "Codes to represent how much resource content to send in the notification payload.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
   "compose": {
     "include": [
       {

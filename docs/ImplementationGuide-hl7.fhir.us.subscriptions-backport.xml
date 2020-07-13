@@ -11,7 +11,7 @@
   <name value="SubscriptionsR5Backport"/>
   <title value="Subscriptions R5 Backport"/>
   <status value="active"/>
-  <date value="2020-07-13T15:21:28-05:00"/>
+  <date value="2020-07-13T16:47:44-05:00"/>
   <publisher value="The Argonaut Project"/>
   <contact>
     <name value="The Argonaut Project"/>
@@ -28,6 +28,12 @@
     </telecom>
   </contact>
   <description value="The Subscription R5 Backport Implementation Guide enables servers running verions of FHIR earlier than R5 to implement a subset of R5 Subscriptions in a standardized way."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
   <packageId value="hl7.fhir.us.subscriptions-backport"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>

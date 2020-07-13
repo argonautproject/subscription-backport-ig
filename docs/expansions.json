@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "6d8dfa3d-8b3b-4824-993b-1c3b2578973d",
+  "id" : "6078d074-9541-4eb9-bd5f-436755cbe784",
   "meta" : {
-    "lastUpdated" : "2020-07-13T15:21:28.382-05:00"
+    "lastUpdated" : "2020-07-13T16:47:44.202-05:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "BackportContentValueSet",
       "title" : "Backported R5 Subscription Content Value Set",
       "status" : "active",
-      "date" : "2020-07-13T15:21:28-05:00",
+      "date" : "2020-07-13T16:47:44-05:00",
       "publisher" : "The Argonaut Project",
       "contact" : [{
         "name" : "The Argonaut Project",
@@ -36,9 +36,15 @@
         }]
       }],
       "description" : "Codes to represent how much resource content to send in the notification payload.",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "US"
+        }]
+      }],
       "expansion" : {
-        "identifier" : "urn:uuid:20c3f2c7-93f8-481a-9a57-d964135e9d3f",
-        "timestamp" : "2020-07-13T15:21:34-05:00",
+        "identifier" : "urn:uuid:4168a6ef-f975-49b7-87c4-743a52bf18b3",
+        "timestamp" : "2020-07-13T16:47:49-05:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -80,7 +86,7 @@
       "name" : "BackportNotificationTypeValueSet",
       "title" : "R5 Subscription Notification Type Value Set",
       "status" : "active",
-      "date" : "2020-07-13T15:21:28-05:00",
+      "date" : "2020-07-13T16:47:44-05:00",
       "publisher" : "The Argonaut Project",
       "contact" : [{
         "name" : "The Argonaut Project",
@@ -104,8 +110,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:8f3296b9-178c-49fa-83fd-54386132b92c",
-        "timestamp" : "2020-07-13T15:21:34-05:00",
+        "identifier" : "urn:uuid:51cae43e-5de8-4421-ba93-fff6458971c4",
+        "timestamp" : "2020-07-13T16:47:49-05:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",

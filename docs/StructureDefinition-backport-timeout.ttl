@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "BackportTimeout"];
   fhir:StructureDefinition.title [ fhir:value "Backport R5 Subscription Timeout"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2020-07-13T15:21:28-05:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2020-07-13T16:47:44-05:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "The Argonaut Project"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "SubscriptionsR5Backport"];
   fhir:ImplementationGuide.title [ fhir:value "Subscriptions R5 Backport"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2020-07-13T15:21:28-05:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-07-13T16:47:44-05:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "The Argonaut Project"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -37,6 +37,14 @@
      ]
   ];
   fhir:ImplementationGuide.description [ fhir:value "The Subscription R5 Backport Implementation Guide enables servers running verions of FHIR earlier than R5 to implement a subset of R5 Subscriptions in a standardized way."];
+  fhir:ImplementationGuide.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "US" ]
+     ]
+  ];
   fhir:ImplementationGuide.packageId [ fhir:value "hl7.fhir.us.subscriptions-backport"];
   fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
   fhir:ImplementationGuide.fhirVersion [

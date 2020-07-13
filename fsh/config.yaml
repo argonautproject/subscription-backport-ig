@@ -34,6 +34,8 @@ parameters:
   usage-stats-opt-out: true
 copyrightYear: 2020+
 releaseLabel: CI Build
+jurisdiction: urn:iso:std:iso:3166#US
+
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided ig-data/input/includes/menu.xml file, delete the "menu" property below.     │

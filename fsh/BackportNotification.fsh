@@ -43,7 +43,6 @@ Description: "Profile on the Parameters resource to enable R5-style topic-based 
 * parameter  ^slicing.rules = #open
 * parameter  ^slicing.ordered = false
 * parameter  ^slicing.description = "Slice on name"
-
 * parameter 
     contains subscriptionUrl 1..1 MS
     and subscriptionTopicUrl 0..1 MS

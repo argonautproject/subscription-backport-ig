@@ -1,12 +1,12 @@
 ﻿SubscriptionsR5Backport : Validation Results
 =========================================
 
-err = 72, warn = 4, info = 12
+err = 72, warn = 1, info = 12
 IG Publisher Version: v1.1.2 Out of date - current version is ?pub-ver-1?
-Generated Mon Jul 13 15:21:51 CDT 2020. FHIR version 4.0.1 for hl7.fhir.us.subscriptions-backport#0.1.0 (canonical = http://hl7.org/fhir/us/subscriptions-backport)
+Generated Mon Jul 13 16:48:06 CDT 2020. FHIR version 4.0.1 for hl7.fhir.us.subscriptions-backport#0.1.0 (canonical = http://hl7.org/fhir/us/subscriptions-backport)
 
  Build Errors : 0 / 0
- C:\git\subscription-backport-ig\input\ImplementationGuide-hl7.fhir.us.subscriptions-backport : 0 / 1
+ C:\git\subscription-backport-ig\input\ImplementationGuide-hl7.fhir.us.subscriptions-backport : 0 / 0
  C:\git\subscription-backport-ig\input\examples\Bundle-3945182f-d315-4dbf-9259-09d863c7e7da : 36 / 6
  C:\git\subscription-backport-ig\input\examples\Bundle-9601c07a-e34f-4945-93ca-6efb5394c995 : 36 / 5
  C:\git\subscription-backport-ig\input\examples\Subscription-admission : 0 / 0
@@ -20,15 +20,14 @@ Generated Mon Jul 13 15:21:51 CDT 2020. FHIR version 4.0.1 for hl7.fhir.us.subsc
  C:\git\subscription-backport-ig\input\profiles\StructureDefinition-backport-subscription-notification : 0 / 0
  C:\git\subscription-backport-ig\input\profiles\StructureDefinition-backport-subscription-status : 0 / 1
  C:\git\subscription-backport-ig\input\profiles\StructureDefinition-backport-subscription-topic-canonical-urls : 0 / 1
- C:\git\subscription-backport-ig\input\vocabulary\CodeSystem-backport-content-code-system : 0 / 1
+ C:\git\subscription-backport-ig\input\vocabulary\CodeSystem-backport-content-code-system : 0 / 0
  C:\git\subscription-backport-ig\input\vocabulary\CodeSystem-backport-notification-type-code-system : 0 / 0
- C:\git\subscription-backport-ig\input\vocabulary\ValueSet-backport-content-value-set : 0 / 1
+ C:\git\subscription-backport-ig\input\vocabulary\ValueSet-backport-content-value-set : 0 / 0
  C:\git\subscription-backport-ig\input\vocabulary\ValueSet-backport-notification-type-value-set : 0 / 0
 </table>
 == n/a ==
 == C:\git\subscription-backport-ig\input\ImplementationGuide-hl7.fhir.us.subscriptions-backport.json ==
 INFORMATION: ImplementationGuide/hl7.fhir.us.subscriptions-backport: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
-WARNING: ImplementationGuide.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.us.subscriptions-backport, jurisdiction = urn:iso:std:iso:3166#US)
 == C:\git\subscription-backport-ig\input\examples\Bundle-3945182f-d315-4dbf-9259-09d863c7e7da.json ==
 INFORMATION: Bundle/3945182f-d315-4dbf-9259-09d863c7e7da: Bundle: Validate resource against profile http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-notification
 INFORMATION: Bundle/3945182f-d315-4dbf-9259-09d863c7e7da: Bundle.entry[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-notification
@@ -142,11 +141,9 @@ INFORMATION: StructureDefinition/backport-subscription-topic-canonical-urls: Str
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-topic-canonical-urls'): The Implementation Guide contains no examples for this profile
 == C:\git\subscription-backport-ig\input\vocabulary\CodeSystem-backport-content-code-system.json ==
 INFORMATION: CodeSystem/backport-content-code-system: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
-WARNING: CodeSystem.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.us.subscriptions-backport, jurisdiction = urn:iso:std:iso:3166#US)
 == C:\git\subscription-backport-ig\input\vocabulary\CodeSystem-backport-notification-type-code-system.json ==
 INFORMATION: CodeSystem/backport-notification-type-code-system: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
 == C:\git\subscription-backport-ig\input\vocabulary\ValueSet-backport-content-value-set.json ==
 INFORMATION: ValueSet/backport-content-value-set: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
-WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.us.subscriptions-backport, jurisdiction = urn:iso:std:iso:3166#US)
 == C:\git\subscription-backport-ig\input\vocabulary\ValueSet-backport-notification-type-value-set.json ==
 INFORMATION: ValueSet/backport-notification-type-value-set: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
