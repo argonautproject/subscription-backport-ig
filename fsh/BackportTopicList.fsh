@@ -8,8 +8,8 @@ Description: "Profile on the R4 Parameters resource to enable R5-style topic-bas
 * parameter  ^slicing.discriminator.path = "name"
 * parameter  ^slicing.rules = #open
 * parameter  ^slicing.ordered = false
-* parameter  ^slicing.description = "Slice on name"
+* parameter  ^slicing.description = "Slice on parameter name"
 * parameter contains subscriptionTopicCanonical 0..* MS
-* parameter[subscriptionTopicCanonical].name = "subscription-topic-canonical"
+* parameter[subscriptionTopicCanonical].name = "subscription-topic-canonical" (exactly)
 * parameter[subscriptionTopicCanonical].value[x] 1..1 MS
 * parameter[subscriptionTopicCanonical].value[x] only canonical

@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "SubscriptionsR5Backport"];
   fhir:ImplementationGuide.title [ fhir:value "Subscriptions R5 Backport"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2020-07-13T16:47:44-05:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-07-14T10:49:14-05:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "The Argonaut Project"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -580,6 +580,27 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Parameters" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Parameters-BackportNotificationStatusExample.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/subscriptions-backport/Parameters/BackportNotificationStatusExample>;
+         fhir:Reference.reference [ fhir:value "Parameters/BackportNotificationStatusExample" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BackportNotificationStatusExample" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example Backported R5 Notification Status." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-status";
+         fhir:link <http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-status>
+       ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "Subscription" ]
        ], [
          fhir:index 1;
@@ -597,7 +618,7 @@
          fhir:link <http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription>
        ]
      ], [
-       fhir:index 15;
+       fhir:index 16;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -615,7 +636,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This operation is used to return the current status information about one or more backported R5-Style Subscriptions in R4." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 16;
+       fhir:index 17;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -750,6 +771,8 @@
 <http://hl7.org/fhir/us/subscriptions-backport/Bundle/3945182f-d315-4dbf-9259-09d863c7e7da> a fhir:us .
 
 <http://hl7.org/fhir/us/subscriptions-backport/Bundle/9601c07a-e34f-4945-93ca-6efb5394c995> a fhir:us .
+
+<http://hl7.org/fhir/us/subscriptions-backport/Parameters/BackportNotificationStatusExample> a fhir:us .
 
 <http://hl7.org/fhir/us/subscriptions-backport/Subscription/admission> a fhir:us .
 

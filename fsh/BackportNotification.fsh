@@ -10,25 +10,15 @@ Description: "Profile on the R4 Bundle resource to enable R5-style topic-based s
 * entry ^slicing.rules = #open
 * entry ^slicing.ordered = false 
 * entry ^slicing.description = "Slice based on resource"
-* entry contains subscriptionStatus 1..* MS
+* entry contains subscriptionStatus 1..1 MS
 * entry[subscriptionStatus].resource 1..1 MS
 * entry[subscriptionStatus].resource only BackportSubscriptionStatus
 * obeys backport-notification-bundle-1
-// * meta.extension contains BackportSubscriptionEventCount named subscriptionEventCount 1..1
-// * meta.extension[BackportSubscriptionEventCount] MS
-// * meta.extension contains BackportBundleEventCount named bundleEventCount 1..1
-// * meta.extension[BackportBundleEventCount] MS
-// * meta.extension contains BackportSubscriptionTopicUrl named subscriptionTopicUrl 1..1
-// * meta.extension[subscriptionTopicUrl] MS
-// * meta.extension contains BackportSubscriptionUrl named subscriptionUrl 1..1
-// * meta.extension[BackportSubscriptionUrl] MS
-// * meta.extension contains BackportNotificationType named notificationType 1..1
-// * meta.extension[BackportNotificationType] MS
 
 Invariant:   backport-notification-bundle-1
 Description: "A notification bundle MUST have the BackportSubscriptionStatus as the first entry"
 Expression:  "entry.first().resource.is(Parameters)"
-//Expression:  "(entry.first().resource.is(Parameters)) and (entry.first().resource.conformsTo(BackportSubscriptionStatus))"
+// Expression:  "(entry.first().resource.is(Parameters)) and (entry.first().resource.conformsTo(backport-subscription-status))"
 Severity:    #error
 XPath:       "f:entry[1]/f:resource/f:Parameters"
 
@@ -42,7 +32,7 @@ Description: "Profile on the Parameters resource to enable R5-style topic-based 
 * parameter  ^slicing.discriminator.path = "name"
 * parameter  ^slicing.rules = #open
 * parameter  ^slicing.ordered = false
-* parameter  ^slicing.description = "Slice on name"
+* parameter  ^slicing.description = "Slice on parameter name"
 * parameter 
     contains subscriptionUrl 1..1 MS
     and subscriptionTopicUrl 0..1 MS
@@ -50,24 +40,24 @@ Description: "Profile on the Parameters resource to enable R5-style topic-based 
     and type 1..1 MS
     and subscriptionEventCount 1..1 MS
     and bundleEventCount 1..1 MS
-* parameter[subscriptionUrl].name = "subscription-url"
+* parameter[subscriptionUrl].name = "subscription-url" (exactly)
 * parameter[subscriptionUrl].value[x] 1..1 MS
 * parameter[subscriptionUrl].value[x] only uri
-* parameter[subscriptionTopicUrl].name = "subscription-topic-url"
+* parameter[subscriptionTopicUrl].name = "subscription-topic-url" (exactly)
 * parameter[subscriptionTopicUrl].value[x] 0..1 MS
 * parameter[subscriptionTopicUrl].value[x] only uri
-* parameter[status].name = "status"
+* parameter[status].name = "status" (exactly)
 * parameter[status].value[x] 1..1 MS
 * parameter[status].value[x] only code
 * parameter[status].value[x] from http://hl7.org/fhir/ValueSet/subscription-status
-* parameter[type].name = "type"
+* parameter[type].name = "type" (exactly)
 * parameter[type].value[x] 1..1 MS
 * parameter[type].value[x] only code
 * parameter[type].value[x] from BackportNotificationTypeValueSet
-* parameter[subscriptionEventCount].name = "subscription-event-count"
+* parameter[subscriptionEventCount].name = "subscription-event-count" (exactly)
 * parameter[subscriptionEventCount].value[x] 1..1 MS
 * parameter[subscriptionEventCount].value[x] only unsignedInt
-* parameter[bundleEventCount].name = "bundle-event-count"
+* parameter[bundleEventCount].name = "bundle-event-count" (exactly)
 * parameter[bundleEventCount].value[x] 0..1 MS
 * parameter[bundleEventCount].value[x] only unsignedInt
 
@@ -93,17 +83,22 @@ Instance:    BackportStatusEventNotification
 InstanceOf:  BackportSubscriptionStatus
 Usage:       #inline
 * id = "b21e4fae-ce73-45cb-8e37-1e203362b2ae"
-* parameter[subscriptionUrl].name                    = "subscription-url"
 * parameter[subscriptionUrl].valueUri                = "https://example.org/fhir/r4/Subscription/admission"
-* parameter[subscriptionTopicUrl].name               = "subscription-topic-url"
 * parameter[subscriptionTopicUrl].valueUri           = "http://hl7.org/SubscriptionTopic/admission"
-* parameter[status].name                             = "status"
 * parameter[status].valueCode                        = #active
-* parameter[type].name                               = "type"
 * parameter[type].valueCode                          = #event-notification
-* parameter[subscriptionEventCount].name             = "subscription-event-count"
 * parameter[subscriptionEventCount].valueUnsignedInt = 310
-* parameter[bundleEventCount].name                   = "bundle-event-count"
+* parameter[bundleEventCount].valueUnsignedInt       = 1
+
+
+Instance:    BackportNotificationStatusExample
+InstanceOf:  BackportSubscriptionStatus
+Description: "Example Backported R5 Notification Status."
+* parameter[subscriptionUrl].valueUri                = "https://example.org/fhir/r4/Subscription/admission"
+* parameter[subscriptionTopicUrl].valueUri           = "http://hl7.org/SubscriptionTopic/admission"
+* parameter[status].valueCode                        = #active
+* parameter[type].valueCode                          = #event-notification
+* parameter[subscriptionEventCount].valueUnsignedInt = 310
 * parameter[bundleEventCount].valueUnsignedInt       = 1
 
 

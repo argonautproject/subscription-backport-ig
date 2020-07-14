@@ -10,7 +10,7 @@
   "name": "SubscriptionsR5Backport",
   "title": "Subscriptions R5 Backport",
   "status": "active",
-  "date": "2020-07-13T16:47:44-05:00",
+  "date": "2020-07-14T10:49:14-05:00",
   "publisher": "The Argonaut Project",
   "contact": [
     {
@@ -589,6 +589,24 @@
         "name": "Backported Notification: Empty",
         "description": "Example of a backported notification with 'empty' content.",
         "exampleCanonical": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-notification"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Parameters"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Parameters-BackportNotificationStatusExample.html"
+          }
+        ],
+        "reference": {
+          "reference": "Parameters/BackportNotificationStatusExample"
+        },
+        "name": "BackportNotificationStatusExample",
+        "description": "Example Backported R5 Notification Status.",
+        "exampleCanonical": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-status"
       },
       {
         "extension": [
