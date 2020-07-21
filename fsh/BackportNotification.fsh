@@ -3,7 +3,7 @@ Parent:      Bundle
 Id:          backport-subscription-notification
 Title:       "Backported R5 Subscription Notification Bundle"
 Description: "Profile on the R4 Bundle resource to enable R5-style topic-based subscription notifications in FHIR R4."
-* ^jurisdiction = urn:iso:std:iso:3166#US
+* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001
 * type = #history
 * entry ^slicing.discriminator.type = #type
 * entry ^slicing.discriminator.path = "resource"
@@ -27,7 +27,7 @@ Parent:      Parameters
 Id:          backport-subscription-status
 Title:       "Backported R5 Subscription Notification Status"
 Description: "Profile on the Parameters resource to enable R5-style topic-based subscription notifications in FHIR R4."
-* ^jurisdiction = urn:iso:std:iso:3166#US
+* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001
 * parameter  ^slicing.discriminator.type = #value
 * parameter  ^slicing.discriminator.path = "name"
 * parameter  ^slicing.rules = #open
@@ -65,7 +65,7 @@ CodeSystem:  BackportNotificationTypeCodeSystem
 Id:          backport-notification-type-code-system
 Title:       "R5 Subscription Notification Type Code System"
 Description: "Codes to represent types of notification bundles."
-* ^jurisdiction = urn:iso:std:iso:3166#US
+* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001
 * #handshake          "Handshake"           "The notification is being sent as part of the setup or verification of a communications channel."
 * #heartbeat          "Heartbeat"           "The notification is being sent because there has not been a notification generated over an extended period of time."
 * #event-notification "Event Notification"  "The notification is being sent due to an event for the subscriber."
@@ -75,7 +75,7 @@ ValueSet:    BackportNotificationTypeValueSet
 Id:          backport-notification-type-value-set
 Title:       "R5 Subscription Notification Type Value Set"
 Description: "Codes to represent types of notification bundles."
-* ^jurisdiction = urn:iso:std:iso:3166#US
+* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001
 * codes from system BackportNotificationTypeCodeSystem
 
 

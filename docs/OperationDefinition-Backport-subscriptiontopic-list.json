@@ -21,14 +21,14 @@
   "status": "draft",
   "kind": "operation",
   "date": "2020-06-01T17:23:37+00:00",
-  "publisher": "The Argonaut Project",
+  "publisher": "HL7 FHIR Infrastructure WG",
   "contact": [
     {
-      "name": "The Argonaut Project",
+      "name": "HL7 FHIR Infrastructure WG",
       "telecom": [
         {
           "system": "url",
-          "value": "https://argonautwiki.hl7.org"
+          "value": "https://hl7.org/Special/committees/fiwg/index.cfm"
         }
       ]
     },
@@ -47,8 +47,9 @@
     {
       "coding": [
         {
-          "system": "urn:iso:std:iso:3166",
-          "code": "US"
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001",
+          "display": "World"
         }
       ]
     }
@@ -60,7 +61,7 @@
   "system": false,
   "type": true,
   "instance": false,
-  "outputProfile": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-topic-canonical-urls",
+  "outputProfile": "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription-topic-canonical-urls",
   "parameter": [
     {
       "name": "urls",

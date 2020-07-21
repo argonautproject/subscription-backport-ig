@@ -1,18 +1,18 @@
 {
-  "package": "hl7.fhir.us.subscriptions-backport",
+  "package": "hl7.fhir.uv.subscriptions-backport",
   "version": "0.1.0",
   "fhirVersion": "4.0.1",
-  "jurisdiction": "US",
+  "jurisdiction": "001",
   "extensions": [
     {
-      "url": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-heartbeat-period",
+      "url": "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-heartbeat-period",
       "title": "Backport R5 Subscription Heartbeat Period",
       "types": [
         "unsignedInt"
       ]
     },
     {
-      "url": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-payload-content",
+      "url": "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-payload-content",
       "title": "Backport R5 Subscription Payload Content Information",
       "types": [
         "code",
@@ -20,14 +20,14 @@
       ]
     },
     {
-      "url": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-timeout",
+      "url": "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-timeout",
       "title": "Backport R5 Subscription Timeout",
       "types": [
         "unsignedInt"
       ]
     },
     {
-      "url": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-topic-canonical",
+      "url": "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-topic-canonical",
       "title": "Backport R5 Subscription Topic Canonical",
       "types": [
         "uri",
@@ -38,23 +38,23 @@
   "profiles": {
     "Subscription": [
       {
-        "url": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription",
+        "url": "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription",
         "title": "Backported R5 Subscription"
       }
     ],
     "Bundle": [
       {
-        "url": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-notification",
+        "url": "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription-notification",
         "title": "Backported R5 Subscription Notification Bundle"
       }
     ],
     "Parameters": [
       {
-        "url": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-status",
+        "url": "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription-status",
         "title": "Backported R5 Subscription Notification Status"
       },
       {
-        "url": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-topic-canonical-urls",
+        "url": "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription-topic-canonical-urls",
         "title": "Backported R5 SubscriptionTopic Canonical URL Parameters"
       }
     ]
@@ -94,16 +94,16 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
-    "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-heartbeat-period": [
+    "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-heartbeat-period": [
       "Subscription.channel"
     ],
-    "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-payload-content": [
+    "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-payload-content": [
       "Subscription.channel.payload"
     ],
-    "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-timeout": [
+    "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-timeout": [
       "Subscription.channel"
     ],
-    "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-topic-canonical": [
+    "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-topic-canonical": [
       "Subscription"
     ]
   }

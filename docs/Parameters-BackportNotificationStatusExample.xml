@@ -3,7 +3,7 @@
 <Parameters xmlns="http://hl7.org/fhir">
   <id value="BackportNotificationStatusExample"/>
   <meta>
-    <profile value="http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-status"/>
+    <profile value="http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription-status"/>
   </meta>
   <parameter>
     <name value="subscription-url"/>

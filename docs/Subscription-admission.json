@@ -3,7 +3,7 @@
   "id": "admission",
   "meta": {
     "profile": [
-      "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription"
+      "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription"
     ]
   },
   "text": {
@@ -12,7 +12,7 @@
   },
   "extension": [
     {
-      "url": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-topic-canonical",
+      "url": "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-topic-canonical",
       "valueUri": "http://hl7.org/SubscriptionTopic/admission"
     }
   ],
@@ -23,11 +23,11 @@
   "channel": {
     "extension": [
       {
-        "url": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-heartbeat-period",
+        "url": "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-heartbeat-period",
         "valueUnsignedInt": 86400
       },
       {
-        "url": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-timeout",
+        "url": "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-timeout",
         "valueUnsignedInt": 60
       }
     ],
@@ -37,7 +37,7 @@
     "_payload": {
       "extension": [
         {
-          "url": "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-payload-content",
+          "url": "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-payload-content",
           "valueCode": "id-only"
         }
       ]

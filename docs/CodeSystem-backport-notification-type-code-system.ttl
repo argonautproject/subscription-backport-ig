@@ -5,27 +5,27 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-notification-type-code-system> a fhir:CodeSystem;
+<http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-notification-type-code-system> a fhir:CodeSystem;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "backport-notification-type-code-system"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-notification-type-code-system defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">handshake<a name=\"backport-notification-type-code-system-handshake\"> </a></td><td>Handshake</td><td>The notification is being sent as part of the setup or verification of a communications channel.</td></tr><tr><td style=\"white-space:nowrap\">heartbeat<a name=\"backport-notification-type-code-system-heartbeat\"> </a></td><td>Heartbeat</td><td>The notification is being sent because there has not been a notification generated over an extended period of time.</td></tr><tr><td style=\"white-space:nowrap\">event-notification<a name=\"backport-notification-type-code-system-event-notification\"> </a></td><td>Event Notification</td><td>The notification is being sent due to an event for the subscriber.</td></tr><tr><td style=\"white-space:nowrap\">query-status<a name=\"backport-notification-type-code-system-query-status\"> </a></td><td>Query Status</td><td>The notification is being sent due to a client request or query for Subscription status.</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-notification-type-code-system defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">handshake<a name=\"backport-notification-type-code-system-handshake\"> </a></td><td>Handshake</td><td>The notification is being sent as part of the setup or verification of a communications channel.</td></tr><tr><td style=\"white-space:nowrap\">heartbeat<a name=\"backport-notification-type-code-system-heartbeat\"> </a></td><td>Heartbeat</td><td>The notification is being sent because there has not been a notification generated over an extended period of time.</td></tr><tr><td style=\"white-space:nowrap\">event-notification<a name=\"backport-notification-type-code-system-event-notification\"> </a></td><td>Event Notification</td><td>The notification is being sent due to an event for the subscriber.</td></tr><tr><td style=\"white-space:nowrap\">query-status<a name=\"backport-notification-type-code-system-query-status\"> </a></td><td>Query Status</td><td>The notification is being sent due to a client request or query for Subscription status.</td></tr></table></div>"
   ];
-  fhir:CodeSystem.url [ fhir:value "http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-notification-type-code-system"];
+  fhir:CodeSystem.url [ fhir:value "http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-notification-type-code-system"];
   fhir:CodeSystem.version [ fhir:value "0.1.0"];
   fhir:CodeSystem.name [ fhir:value "BackportNotificationTypeCodeSystem"];
   fhir:CodeSystem.title [ fhir:value "R5 Subscription Notification Type Code System"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2020-07-14T10:49:14-05:00"^^xsd:dateTime];
-  fhir:CodeSystem.publisher [ fhir:value "The Argonaut Project"];
+  fhir:CodeSystem.date [ fhir:value "2020-07-21T16:50:41-05:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "HL7 FHIR Infrastructure WG"];
   fhir:CodeSystem.contact [
      fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "The Argonaut Project" ];
+     fhir:ContactDetail.name [ fhir:value "HL7 FHIR Infrastructure WG" ];
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://argonautwiki.hl7.org" ]
+       fhir:ContactPoint.value [ fhir:value "https://hl7.org/Special/committees/fiwg/index.cfm" ]
      ]
   ], [
      fhir:index 1;
@@ -41,8 +41,9 @@
      fhir:index 0;
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
-       fhir:Coding.code [ fhir:value "US" ]
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "001" ];
+       fhir:Coding.display [ fhir:value "World" ]
      ]
   ];
   fhir:CodeSystem.content [ fhir:value "complete"];
@@ -71,9 +72,9 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-notification-type-code-system.ttl> a owl:Ontology;
+<http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-notification-type-code-system.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/subscriptions-backport/CodeSystem/backport-notification-type-code-system.ttl> .
+  owl:versionIRI <http://build.fhir.org/uv/subscriptions-backport/CodeSystem/backport-notification-type-code-system.ttl> .
 
 # -------------------------------------------------------------------------------------
 

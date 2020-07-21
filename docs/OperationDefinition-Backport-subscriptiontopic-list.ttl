@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/subscriptions-backport/OperationDefinition/Backport-subscriptiontopic-list> a fhir:OperationDefinition;
+<http://hl7.org/fhir/uv/subscriptions-backport/OperationDefinition/Backport-subscriptiontopic-list> a fhir:OperationDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "Backport-subscriptiontopic-list"];
   fhir:DomainResource.text [
@@ -27,14 +27,14 @@
   fhir:OperationDefinition.status [ fhir:value "draft"];
   fhir:OperationDefinition.kind [ fhir:value "operation"];
   fhir:OperationDefinition.date [ fhir:value "2020-06-01T17:23:37+00:00"^^xsd:dateTime];
-  fhir:OperationDefinition.publisher [ fhir:value "The Argonaut Project"];
+  fhir:OperationDefinition.publisher [ fhir:value "HL7 FHIR Infrastructure WG"];
   fhir:OperationDefinition.contact [
      fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "The Argonaut Project" ];
+     fhir:ContactDetail.name [ fhir:value "HL7 FHIR Infrastructure WG" ];
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://argonautwiki.hl7.org" ]
+       fhir:ContactPoint.value [ fhir:value "https://hl7.org/Special/committees/fiwg/index.cfm" ]
      ]
   ], [
      fhir:index 1;
@@ -50,8 +50,9 @@
      fhir:index 0;
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
-       fhir:Coding.code [ fhir:value "US" ]
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "001" ];
+       fhir:Coding.display [ fhir:value "World" ]
      ]
   ];
   fhir:OperationDefinition.code [ fhir:value "topic-list"];
@@ -63,8 +64,8 @@
   fhir:OperationDefinition.type [ fhir:value "true"^^xsd:boolean];
   fhir:OperationDefinition.instance [ fhir:value "false"^^xsd:boolean];
   fhir:OperationDefinition.outputProfile [
-     fhir:value "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-topic-canonical-urls";
-     fhir:link <http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-topic-canonical-urls>
+     fhir:value "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription-topic-canonical-urls";
+     fhir:link <http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription-topic-canonical-urls>
   ];
   fhir:OperationDefinition.parameter [
      fhir:index 0;
@@ -86,9 +87,9 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/subscriptions-backport/OperationDefinition/Backport-subscriptiontopic-list.ttl> a owl:Ontology;
+<http://hl7.org/fhir/uv/subscriptions-backport/OperationDefinition/Backport-subscriptiontopic-list.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/subscriptions-backport/OperationDefinition/Backport-subscriptiontopic-list.ttl> .
+  owl:versionIRI <http://build.fhir.org/uv/subscriptions-backport/OperationDefinition/Backport-subscriptiontopic-list.ttl> .
 
 # -------------------------------------------------------------------------------------
 

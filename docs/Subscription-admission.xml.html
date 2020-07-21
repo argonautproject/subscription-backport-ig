@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>HL7.FHIR.US.SUBSCRIPTIONS-BACKPORT\Backported Subscription: Admission - XML Representation - FHIR v4.0.1</title>
+    <title>HL7.FHIR.UV.SUBSCRIPTIONS-BACKPORT\Backported Subscription: Admission - XML Representation - FHIR v4.0.1</title>
   
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -21,6 +21,8 @@
     <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
     <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -44,6 +46,18 @@
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="http://hl7.org">
+            <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
 
 
         <div id="ig-status">
@@ -110,7 +124,8 @@
         <div class="row">
           <div class="inner-wrapper">
 <div style="counter-reset: section 7" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Subscriptions R5 Backport - Local Development build (v0.1.0). See the <a href="http://hl7.org/fhir/us/subscriptions-backport/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Subscriptions R5 Backport - Local Development build (v0.1.0). See the <a href="http://hl7.org/fhir/uv/subscriptions-backport/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
 
 
 
@@ -167,14 +182,14 @@
   &lt;<a href="http://hl7.org/fhir/R4/subscription.html#Subscription.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;admission&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/subscription.html#Subscription.meta">meta</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription&quot;/&gt;
+             <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription&quot;/&gt;
   &lt;/meta&gt;
   &lt;<a href="http://hl7.org/fhir/R4/subscription.html#Subscription.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
     &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: admission&lt;/p&gt;&lt;p&gt;&lt;b&gt;meta&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;end&lt;/b&gt;: Dec 31, 2020, 6:00:00 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;reason&lt;/b&gt;: Example Backported Subscription for Patient Admission&lt;/p&gt;&lt;p&gt;&lt;b&gt;criteria&lt;/b&gt;: Encounter?patient=Patient/123&lt;/p&gt;&lt;h3&gt;Channels&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Extension&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Endpoint&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Payload&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Header&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;rest-hook&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;https://example.org/Endpoints/eae3806a-f7fb-4e3f-a14d-c4c58ca9c038&quot;&gt;https://example.org/Endpoints/eae3806a-f7fb-4e3f-a14d-c4c58ca9c038&lt;/a&gt;&lt;/td&gt;&lt;td&gt;application/fhir+json&lt;/td&gt;&lt;td&gt;Authorization: Bearer secret-token-abc-123&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/text&gt;
   &lt;<a href="http://hl7.org/fhir/R4/subscription.html#Subscription.extension">extension</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-topic-canonical&quot;&gt;
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-topic-canonical&quot;&gt;
     &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueUri</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://hl7.org/SubscriptionTopic/admission&quot;/&gt;
   &lt;/extension&gt;
   &lt;<a href="http://hl7.org/fhir/R4/subscription.html#Subscription.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
@@ -183,11 +198,11 @@
   &lt;<a href="http://hl7.org/fhir/R4/subscription.html#Subscription.criteria">criteria</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Encounter?patient=Patient/123&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/subscription.html#Subscription.channel">channel</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/subscription.html#Subscription.channel.extension">extension</a>
-               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-heartbeat-period&quot;&gt;
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-heartbeat-period&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueUnsignedInt</a> <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">value</a>=&quot;86400&quot;/&gt;
     &lt;/extension&gt;
     &lt;<a href="http://hl7.org/fhir/R4/subscription.html#Subscription.channel.extension">extension</a>
-               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-timeout&quot;&gt;
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-timeout&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueUnsignedInt</a> <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">value</a>=&quot;60&quot;/&gt;
     &lt;/extension&gt;
     &lt;<a href="http://hl7.org/fhir/R4/subscription.html#Subscription.channel.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;rest-hook&quot;/&gt;
@@ -195,7 +210,7 @@
               <a href="http://hl7.org/fhir/R4/datatypes.html#url">value</a>=&quot;https://example.org/Endpoints/eae3806a-f7fb-4e3f-a14d-c4c58ca9c038&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/subscription.html#Subscription.channel.payload">payload</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;application/fhir+json&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#code#code.extension">extension</a>
-                 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-payload-content&quot;&gt;
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-payload-content&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;id-only&quot;/&gt;
       &lt;/extension&gt;
     &lt;/payload&gt;
@@ -229,11 +244,16 @@
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="https://argonautwiki.hl7.org">The Argonaut Project</a>.  Package hl7.fhir.us.subscriptions-backport#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 14, 2020 10:49-0500">2020-07-14</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="https://hl7.org/Special/committees/fiwg/index.cfm">HL7 FHIR Infrastructure WG</a>.  Package hl7.fhir.uv.subscriptions-backport#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 21, 2020 16:50-0500">2020-07-21</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
                  <a style="color: #81BEF7" href="qa.html">QA Report</a>
+                 | <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir/uv/subscriptions-backport/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change <img alt="external" style="vertical-align: baseline" src="external.png"/></a>
+
           </span>
         </p>
       </div>  <!-- /inner-wrapper -->

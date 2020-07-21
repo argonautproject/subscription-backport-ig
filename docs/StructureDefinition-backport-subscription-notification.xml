@@ -10,18 +10,18 @@
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0240.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-backport-subscription-notification-definitions.html#Bundle.entry:subscriptionStatus.resource">resource</a><a name="Bundle.entry.resource"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-backport-subscription-status.html" title="Parameters">BackportSubscriptionStatus</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Operation Request or Response</span></td></tr>
 <tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
-  <url value="http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-notification"/>
+  <url value="http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription-notification"/>
   <version value="0.1.0"/>
   <name value="BackportSubscriptionNotification"/>
   <title value="Backported R5 Subscription Notification Bundle"/>
   <status value="active"/>
-  <date value="2020-07-14T10:49:14-05:00"/>
-  <publisher value="The Argonaut Project"/>
+  <date value="2020-07-21T16:50:41-05:00"/>
+  <publisher value="HL7 FHIR Infrastructure WG"/>
   <contact>
-    <name value="The Argonaut Project"/>
+    <name value="HL7 FHIR Infrastructure WG"/>
     <telecom>
       <system value="url"/>
-      <value value="https://argonautwiki.hl7.org"/>
+      <value value="https://hl7.org/Special/committees/fiwg/index.cfm"/>
     </telecom>
   </contact>
   <contact>
@@ -34,8 +34,9 @@
   <description value="Profile on the R4 Bundle resource to enable R5-style topic-based subscription notifications in FHIR R4."/>
   <jurisdiction>
     <coding>
-      <system value="urn:iso:std:iso:3166"/>
-      <code value="US"/>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
     </coding>
   </jurisdiction>
   <fhirVersion value="4.0.1"/>
@@ -154,7 +155,7 @@
         <human value="A notification bundle MUST have the BackportSubscriptionStatus as the first entry"/>
         <expression value="entry.first().resource.is(Parameters)"/>
         <xpath value="f:entry[1]/f:resource/f:Parameters"/>
-        <source value="http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-notification"/>
+        <source value="http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription-notification"/>
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
@@ -1787,7 +1788,7 @@
       </base>
       <type>
         <code value="Parameters"/>
-        <profile value="http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-status"/>
+        <profile value="http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription-status"/>
       </type>
       <mustSupport value="true"/>
       <isModifier value="false"/>
@@ -2649,7 +2650,7 @@
         <human value="A notification bundle MUST have the BackportSubscriptionStatus as the first entry"/>
         <expression value="entry.first().resource.is(Parameters)"/>
         <xpath value="f:entry[1]/f:resource/f:Parameters"/>
-        <source value="http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-notification"/>
+        <source value="http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription-notification"/>
       </constraint>
     </element>
     <element id="Bundle.type">
@@ -2681,7 +2682,7 @@
       <min value="1"/>
       <type>
         <code value="Parameters"/>
-        <profile value="http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-status"/>
+        <profile value="http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription-status"/>
       </type>
       <mustSupport value="true"/>
     </element>

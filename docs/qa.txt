@@ -1,12 +1,12 @@
 ﻿SubscriptionsR5Backport : Validation Results
 =========================================
 
-err = 0, warn = 1, info = 1
+err = 0, warn = 2, info = 1
 IG Publisher Version: v1.1.2 Out of date - current version is ?pub-ver-1?
-Generated Tue Jul 14 10:49:36 CDT 2020. FHIR version 4.0.1 for hl7.fhir.us.subscriptions-backport#0.1.0 (canonical = http://hl7.org/fhir/us/subscriptions-backport)
+Generated Tue Jul 21 16:51:01 CDT 2020. FHIR version 4.0.1 for hl7.fhir.uv.subscriptions-backport#0.1.0 (canonical = http://hl7.org/fhir/uv/subscriptions-backport)
 
- Build Errors : 0 / 0
- C:\git\subscription-backport-ig\input\ImplementationGuide-hl7.fhir.us.subscriptions-backport : 0 / 0
+ Build Errors : 0 / 1
+ C:\git\subscription-backport-ig\input\ImplementationGuide-hl7.fhir.uv.subscriptions-backport : 0 / 0
  C:\git\subscription-backport-ig\input\examples\Bundle-3945182f-d315-4dbf-9259-09d863c7e7da : 0 / 1
  C:\git\subscription-backport-ig\input\examples\Bundle-9601c07a-e34f-4945-93ca-6efb5394c995 : 0 / 0
  C:\git\subscription-backport-ig\input\examples\Parameters-BackportNotificationStatusExample : 0 / 0
@@ -27,17 +27,18 @@ Generated Tue Jul 14 10:49:36 CDT 2020. FHIR version 4.0.1 for hl7.fhir.us.subsc
  C:\git\subscription-backport-ig\input\vocabulary\ValueSet-backport-notification-type-value-set : 0 / 0
 </table>
 == n/a ==
-== C:\git\subscription-backport-ig\input\ImplementationGuide-hl7.fhir.us.subscriptions-backport.json ==
-INFORMATION: ImplementationGuide/hl7.fhir.us.subscriptions-backport: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
+WARNING: The jira specification file appears to be out of date with the versions, artifacts and pages currently defined in the IG.  A proposed revised file to be reviewed and, if appropriate, submitted as a pull request against the XML folder in https://github.com/HL7/JIRA-Spec-Artifacts.
+== C:\git\subscription-backport-ig\input\ImplementationGuide-hl7.fhir.uv.subscriptions-backport.json ==
+INFORMATION: ImplementationGuide/hl7.fhir.uv.subscriptions-backport: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
 == C:\git\subscription-backport-ig\input\examples\Bundle-3945182f-d315-4dbf-9259-09d863c7e7da.json ==
-INFORMATION: Bundle/3945182f-d315-4dbf-9259-09d863c7e7da: Bundle: Validate resource against profile http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-notification
-INFORMATION: Bundle/3945182f-d315-4dbf-9259-09d863c7e7da: Bundle.entry[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-notification
+INFORMATION: Bundle/3945182f-d315-4dbf-9259-09d863c7e7da: Bundle: Validate resource against profile http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription-notification
+INFORMATION: Bundle/3945182f-d315-4dbf-9259-09d863c7e7da: Bundle.entry[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription-notification
 == C:\git\subscription-backport-ig\input\examples\Bundle-9601c07a-e34f-4945-93ca-6efb5394c995.json ==
-INFORMATION: Bundle/9601c07a-e34f-4945-93ca-6efb5394c995: Bundle: Validate resource against profile http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-notification
+INFORMATION: Bundle/9601c07a-e34f-4945-93ca-6efb5394c995: Bundle: Validate resource against profile http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription-notification
 == C:\git\subscription-backport-ig\input\examples\Parameters-BackportNotificationStatusExample.json ==
-INFORMATION: Parameters/BackportNotificationStatusExample: Parameters: Validate resource against profile http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-status
+INFORMATION: Parameters/BackportNotificationStatusExample: Parameters: Validate resource against profile http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription-status
 == C:\git\subscription-backport-ig\input\examples\Subscription-admission.json ==
-INFORMATION: Subscription/admission: Subscription: Validate resource against profile http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription
+INFORMATION: Subscription/admission: Subscription: Validate resource against profile http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription
 == C:\git\subscription-backport-ig\input\extensions\StructureDefinition-backport-heartbeat-period.json ==
 INFORMATION: StructureDefinition/backport-heartbeat-period: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 == C:\git\subscription-backport-ig\input\extensions\StructureDefinition-backport-payload-content.json ==
@@ -58,7 +59,7 @@ INFORMATION: StructureDefinition/backport-subscription-notification: StructureDe
 INFORMATION: StructureDefinition/backport-subscription-status: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 == C:\git\subscription-backport-ig\input\profiles\StructureDefinition-backport-subscription-topic-canonical-urls.json ==
 INFORMATION: StructureDefinition/backport-subscription-topic-canonical-urls: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-topic-canonical-urls'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription-topic-canonical-urls'): The Implementation Guide contains no examples for this profile
 == C:\git\subscription-backport-ig\input\vocabulary\CodeSystem-backport-content-code-system.json ==
 INFORMATION: CodeSystem/backport-content-code-system: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
 == C:\git\subscription-backport-ig\input\vocabulary\CodeSystem-backport-notification-type-code-system.json ==

@@ -1,31 +1,31 @@
 {
   "resourceType" : "Bundle",
-  "id" : "63d6e9c3-feba-4a71-bc75-6c8440e74b81",
+  "id" : "ee4f0a2b-075c-4d7d-a7e6-7dc779786950",
   "meta" : {
-    "lastUpdated" : "2020-07-14T10:49:14.211-05:00"
+    "lastUpdated" : "2020-07-21T16:50:41.135-05:00"
   },
   "type" : "collection",
   "entry" : [{
-    "fullUrl" : "http://hl7.org/fhir/us/subscriptions-backport/ValueSet/backport-content-value-set",
+    "fullUrl" : "http://hl7.org/fhir/uv/subscriptions-backport/ValueSet/backport-content-value-set",
     "resource" : {
       "resourceType" : "ValueSet",
       "id" : "backport-content-value-set",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-backport-content-code-system.html\">Backported R5 Subscription Content Code System v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-backport-content-code-system.html\"><code>http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-content-code-system</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-subscriptions-backport-CodeSystem-backport-content-code-system-empty\"> </a><a href=\"CodeSystem-backport-content-code-system.html#backport-content-code-system-empty\">empty</a></td><td>Empty</td><td>No resource content is transacted in the notification payload.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-subscriptions-backport-CodeSystem-backport-content-code-system-id-only\"> </a><a href=\"CodeSystem-backport-content-code-system.html#backport-content-code-system-id-only\">id-only</a></td><td>Id Only</td><td>Only the resource id is transacted in the notification payload.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-subscriptions-backport-CodeSystem-backport-content-code-system-full-resource\"> </a><a href=\"CodeSystem-backport-content-code-system.html#backport-content-code-system-full-resource\">full-resource</a></td><td>Full Resource</td><td>The entire resource is transacted in the notification payload.</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-backport-content-code-system.html\">Backported R5 Subscription Content Code System v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-backport-content-code-system.html\"><code>http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-content-code-system</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-uv-subscriptions-backport-CodeSystem-backport-content-code-system-empty\"> </a><a href=\"CodeSystem-backport-content-code-system.html#backport-content-code-system-empty\">empty</a></td><td>Empty</td><td>No resource content is transacted in the notification payload.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-uv-subscriptions-backport-CodeSystem-backport-content-code-system-id-only\"> </a><a href=\"CodeSystem-backport-content-code-system.html#backport-content-code-system-id-only\">id-only</a></td><td>Id Only</td><td>Only the resource id is transacted in the notification payload.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-uv-subscriptions-backport-CodeSystem-backport-content-code-system-full-resource\"> </a><a href=\"CodeSystem-backport-content-code-system.html#backport-content-code-system-full-resource\">full-resource</a></td><td>Full Resource</td><td>The entire resource is transacted in the notification payload.</td></tr></table></div>"
       },
-      "url" : "http://hl7.org/fhir/us/subscriptions-backport/ValueSet/backport-content-value-set",
+      "url" : "http://hl7.org/fhir/uv/subscriptions-backport/ValueSet/backport-content-value-set",
       "version" : "0.1.0",
       "name" : "BackportContentValueSet",
       "title" : "Backported R5 Subscription Content Value Set",
       "status" : "active",
-      "date" : "2020-07-14T10:49:14-05:00",
-      "publisher" : "The Argonaut Project",
+      "date" : "2020-07-21T16:50:41-05:00",
+      "publisher" : "HL7 FHIR Infrastructure WG",
       "contact" : [{
-        "name" : "The Argonaut Project",
+        "name" : "HL7 FHIR Infrastructure WG",
         "telecom" : [{
           "system" : "url",
-          "value" : "https://argonautwiki.hl7.org"
+          "value" : "https://hl7.org/Special/committees/fiwg/index.cfm"
         }]
       },
       {
@@ -38,13 +38,14 @@
       "description" : "Codes to represent how much resource content to send in the notification payload.",
       "jurisdiction" : [{
         "coding" : [{
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "US"
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:78e4d3d3-334c-4dfe-a032-6abfc9361dfe",
-        "timestamp" : "2020-07-14T10:49:19-05:00",
+        "identifier" : "urn:uuid:3f913556-1d10-4bc2-a240-b45a4cd47bca",
+        "timestamp" : "2020-07-21T16:50:46-05:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -52,20 +53,20 @@
         },
         {
           "name" : "version",
-          "valueUri" : "http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-content-code-system|0.1.0"
+          "valueUri" : "http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-content-code-system|0.1.0"
         }],
         "contains" : [{
-          "system" : "http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-content-code-system",
+          "system" : "http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-content-code-system",
           "code" : "empty",
           "display" : "Empty"
         },
         {
-          "system" : "http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-content-code-system",
+          "system" : "http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-content-code-system",
           "code" : "id-only",
           "display" : "Id Only"
         },
         {
-          "system" : "http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-content-code-system",
+          "system" : "http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-content-code-system",
           "code" : "full-resource",
           "display" : "Full Resource"
         }]
@@ -73,26 +74,26 @@
     }
   },
   {
-    "fullUrl" : "http://hl7.org/fhir/us/subscriptions-backport/ValueSet/backport-notification-type-value-set",
+    "fullUrl" : "http://hl7.org/fhir/uv/subscriptions-backport/ValueSet/backport-notification-type-value-set",
     "resource" : {
       "resourceType" : "ValueSet",
       "id" : "backport-notification-type-value-set",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-backport-notification-type-code-system.html\">R5 Subscription Notification Type Code System v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-backport-notification-type-code-system.html\"><code>http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-notification-type-code-system</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-subscriptions-backport-CodeSystem-backport-notification-type-code-system-handshake\"> </a><a href=\"CodeSystem-backport-notification-type-code-system.html#backport-notification-type-code-system-handshake\">handshake</a></td><td>Handshake</td><td>The notification is being sent as part of the setup or verification of a communications channel.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-subscriptions-backport-CodeSystem-backport-notification-type-code-system-heartbeat\"> </a><a href=\"CodeSystem-backport-notification-type-code-system.html#backport-notification-type-code-system-heartbeat\">heartbeat</a></td><td>Heartbeat</td><td>The notification is being sent because there has not been a notification generated over an extended period of time.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-subscriptions-backport-CodeSystem-backport-notification-type-code-system-event-notification\"> </a><a href=\"CodeSystem-backport-notification-type-code-system.html#backport-notification-type-code-system-event-notification\">event-notification</a></td><td>Event Notification</td><td>The notification is being sent due to an event for the subscriber.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-subscriptions-backport-CodeSystem-backport-notification-type-code-system-query-status\"> </a><a href=\"CodeSystem-backport-notification-type-code-system.html#backport-notification-type-code-system-query-status\">query-status</a></td><td>Query Status</td><td>The notification is being sent due to a client request or query for Subscription status.</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-backport-notification-type-code-system.html\">R5 Subscription Notification Type Code System v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-backport-notification-type-code-system.html\"><code>http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-notification-type-code-system</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-uv-subscriptions-backport-CodeSystem-backport-notification-type-code-system-handshake\"> </a><a href=\"CodeSystem-backport-notification-type-code-system.html#backport-notification-type-code-system-handshake\">handshake</a></td><td>Handshake</td><td>The notification is being sent as part of the setup or verification of a communications channel.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-uv-subscriptions-backport-CodeSystem-backport-notification-type-code-system-heartbeat\"> </a><a href=\"CodeSystem-backport-notification-type-code-system.html#backport-notification-type-code-system-heartbeat\">heartbeat</a></td><td>Heartbeat</td><td>The notification is being sent because there has not been a notification generated over an extended period of time.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-uv-subscriptions-backport-CodeSystem-backport-notification-type-code-system-event-notification\"> </a><a href=\"CodeSystem-backport-notification-type-code-system.html#backport-notification-type-code-system-event-notification\">event-notification</a></td><td>Event Notification</td><td>The notification is being sent due to an event for the subscriber.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-uv-subscriptions-backport-CodeSystem-backport-notification-type-code-system-query-status\"> </a><a href=\"CodeSystem-backport-notification-type-code-system.html#backport-notification-type-code-system-query-status\">query-status</a></td><td>Query Status</td><td>The notification is being sent due to a client request or query for Subscription status.</td></tr></table></div>"
       },
-      "url" : "http://hl7.org/fhir/us/subscriptions-backport/ValueSet/backport-notification-type-value-set",
+      "url" : "http://hl7.org/fhir/uv/subscriptions-backport/ValueSet/backport-notification-type-value-set",
       "version" : "0.1.0",
       "name" : "BackportNotificationTypeValueSet",
       "title" : "R5 Subscription Notification Type Value Set",
       "status" : "active",
-      "date" : "2020-07-14T10:49:14-05:00",
-      "publisher" : "The Argonaut Project",
+      "date" : "2020-07-21T16:50:41-05:00",
+      "publisher" : "HL7 FHIR Infrastructure WG",
       "contact" : [{
-        "name" : "The Argonaut Project",
+        "name" : "HL7 FHIR Infrastructure WG",
         "telecom" : [{
           "system" : "url",
-          "value" : "https://argonautwiki.hl7.org"
+          "value" : "https://hl7.org/Special/committees/fiwg/index.cfm"
         }]
       },
       {
@@ -105,13 +106,14 @@
       "description" : "Codes to represent types of notification bundles.",
       "jurisdiction" : [{
         "coding" : [{
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "US"
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:4dfef140-614b-4c03-9be1-552a9a410e3e",
-        "timestamp" : "2020-07-14T10:49:19-05:00",
+        "identifier" : "urn:uuid:f6a298a1-798d-4e36-b9d2-b7a161cff35c",
+        "timestamp" : "2020-07-21T16:50:46-05:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -119,25 +121,25 @@
         },
         {
           "name" : "version",
-          "valueUri" : "http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-notification-type-code-system|0.1.0"
+          "valueUri" : "http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-notification-type-code-system|0.1.0"
         }],
         "contains" : [{
-          "system" : "http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-notification-type-code-system",
+          "system" : "http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-notification-type-code-system",
           "code" : "handshake",
           "display" : "Handshake"
         },
         {
-          "system" : "http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-notification-type-code-system",
+          "system" : "http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-notification-type-code-system",
           "code" : "heartbeat",
           "display" : "Heartbeat"
         },
         {
-          "system" : "http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-notification-type-code-system",
+          "system" : "http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-notification-type-code-system",
           "code" : "event-notification",
           "display" : "Event Notification"
         },
         {
-          "system" : "http://hl7.org/fhir/us/subscriptions-backport/CodeSystem/backport-notification-type-code-system",
+          "system" : "http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-notification-type-code-system",
           "code" : "query-status",
           "display" : "Query Status"
         }]

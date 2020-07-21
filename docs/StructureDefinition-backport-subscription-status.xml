@@ -25,18 +25,18 @@
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7;"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0240.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-backport-subscription-status-definitions.html#Parameters.parameter:bundleEventCount.value[x]">value[x]</a><a name="Parameters.parameter.value_x_"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">unsignedInt</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">If parameter is a data type</span></td></tr>
 <tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
-  <url value="http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-status"/>
+  <url value="http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription-status"/>
   <version value="0.1.0"/>
   <name value="BackportSubscriptionStatus"/>
   <title value="Backported R5 Subscription Notification Status"/>
   <status value="active"/>
-  <date value="2020-07-14T10:49:14-05:00"/>
-  <publisher value="The Argonaut Project"/>
+  <date value="2020-07-21T16:50:41-05:00"/>
+  <publisher value="HL7 FHIR Infrastructure WG"/>
   <contact>
-    <name value="The Argonaut Project"/>
+    <name value="HL7 FHIR Infrastructure WG"/>
     <telecom>
       <system value="url"/>
-      <value value="https://argonautwiki.hl7.org"/>
+      <value value="https://hl7.org/Special/committees/fiwg/index.cfm"/>
     </telecom>
   </contact>
   <contact>
@@ -49,8 +49,9 @@
   <description value="Profile on the Parameters resource to enable R5-style topic-based subscription notifications in FHIR R4."/>
   <jurisdiction>
     <coding>
-      <system value="urn:iso:std:iso:3166"/>
-      <code value="US"/>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
     </coding>
   </jurisdiction>
   <fhirVersion value="4.0.1"/>
@@ -1519,7 +1520,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://hl7.org/fhir/us/subscriptions-backport/ValueSet/backport-notification-type-value-set"/>
+        <valueSet value="http://hl7.org/fhir/uv/subscriptions-backport/ValueSet/backport-notification-type-value-set"/>
       </binding>
     </element>
     <element id="Parameters.parameter:type.resource">
@@ -2141,7 +2142,7 @@
       <mustSupport value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://hl7.org/fhir/us/subscriptions-backport/ValueSet/backport-notification-type-value-set"/>
+        <valueSet value="http://hl7.org/fhir/uv/subscriptions-backport/ValueSet/backport-notification-type-value-set"/>
       </binding>
     </element>
     <element id="Parameters.parameter:subscriptionEventCount">

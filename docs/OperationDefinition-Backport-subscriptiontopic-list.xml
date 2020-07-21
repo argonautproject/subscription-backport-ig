@@ -20,12 +20,12 @@
   <status value="draft"/>
   <kind value="operation"/>
   <date value="2020-06-01T17:23:37+00:00"/>
-  <publisher value="The Argonaut Project"/>
+  <publisher value="HL7 FHIR Infrastructure WG"/>
   <contact>
-    <name value="The Argonaut Project"/>
+    <name value="HL7 FHIR Infrastructure WG"/>
     <telecom>
       <system value="url"/>
-      <value value="https://argonautwiki.hl7.org"/>
+      <value value="https://hl7.org/Special/committees/fiwg/index.cfm"/>
     </telecom>
   </contact>
   <contact>
@@ -38,8 +38,9 @@
   <description value="This operation is used to return the current list of R5 SubscriptionTopics in a Backported-R4 environment."/>
   <jurisdiction>
     <coding>
-      <system value="urn:iso:std:iso:3166"/>
-      <code value="US"/>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
     </coding>
   </jurisdiction>
   <code value="topic-list"/>
@@ -47,7 +48,7 @@
   <system value="false"/>
   <type value="true"/>
   <instance value="false"/>
-  <outputProfile value="http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-topic-canonical-urls"/>
+  <outputProfile value="http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription-topic-canonical-urls"/>
   <parameter>
     <name value="urls"/>
     <use value="in"/>

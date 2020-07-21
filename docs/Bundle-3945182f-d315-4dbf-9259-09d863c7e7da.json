@@ -3,7 +3,7 @@
   "id": "3945182f-d315-4dbf-9259-09d863c7e7da",
   "meta": {
     "profile": [
-      "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-notification"
+      "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription-notification"
     ]
   },
   "type": "history",
@@ -16,7 +16,7 @@
         "id": "b21e4fae-ce73-45cb-8e37-1e203362b2ae",
         "meta": {
           "profile": [
-            "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-status"
+            "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription-status"
           ]
         },
         "parameter": [

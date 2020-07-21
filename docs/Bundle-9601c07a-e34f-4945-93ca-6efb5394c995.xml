@@ -3,7 +3,7 @@
 <Bundle xmlns="http://hl7.org/fhir">
   <id value="9601c07a-e34f-4945-93ca-6efb5394c995"/>
   <meta>
-    <profile value="http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-notification"/>
+    <profile value="http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription-notification"/>
   </meta>
   <type value="history"/>
   <timestamp value="2020-05-29T11:44:13.1882432-05:00"/>
@@ -13,7 +13,7 @@
       <Parameters>
         <id value="b21e4fae-ce73-45cb-8e37-1e203362b2ae"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-status"/>
+          <profile value="http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription-status"/>
         </meta>
         <parameter>
           <name value="subscription-url"/>

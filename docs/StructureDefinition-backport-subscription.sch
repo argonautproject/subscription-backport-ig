@@ -12,8 +12,8 @@
   <sch:pattern>
     <sch:title>f:Subscription</sch:title>
     <sch:rule context="f:Subscription">
-      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-topic-canonical']) &gt;= 1">extension with URL = 'http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-topic-canonical': minimum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-topic-canonical']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-topic-canonical': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-topic-canonical']) &gt;= 1">extension with URL = 'http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-topic-canonical': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-topic-canonical']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-topic-canonical': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -105,8 +105,8 @@
   <sch:pattern>
     <sch:title>f:Subscription/f:channel</sch:title>
     <sch:rule context="f:Subscription/f:channel">
-      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-heartbeat-period']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-heartbeat-period': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-timeout']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-timeout': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-heartbeat-period']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-heartbeat-period': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-timeout']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-timeout': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:payload) &gt;= 1">payload: minimum cardinality of 'payload' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
@@ -150,8 +150,8 @@
     <sch:title>f:Subscription/f:channel/f:payload</sch:title>
     <sch:rule context="f:Subscription/f:channel/f:payload">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-payload-content']) &gt;= 1">extension with URL = 'http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-payload-content': minimum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-payload-content']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-payload-content': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-payload-content']) &gt;= 1">extension with URL = 'http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-payload-content': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-payload-content']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-payload-content': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:value) &lt;= 1">value: maximum cardinality of 'value' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>

@@ -24,7 +24,7 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Subscription.extension","subscriptionTopic","","",1,1,"Y","","Y","Extension {[CanonicalType[http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-topic-canonical]]} {[]}
+"Subscription.extension","subscriptionTopic","","",1,1,"Y","","Y","Extension {[CanonicalType[http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-topic-canonical]]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -63,11 +63,11 @@ This element is labeled as a modifier because the status contains codes that mar
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Subscription.channel.extension","heartbeatPeriod","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-heartbeat-period]]} {[]}
+"Subscription.channel.extension","heartbeatPeriod","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-heartbeat-period]]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Subscription.channel.extension","timeout","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-timeout]]} {[]}
+"Subscription.channel.extension","timeout","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-timeout]]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -92,7 +92,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Subscription.channel.payload.extension","content","","",1,1,"Y","","Y","Extension {[CanonicalType[http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-payload-content]]} {[]}
+"Subscription.channel.payload.extension","content","","",1,1,"Y","","Y","Extension {[CanonicalType[http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-payload-content]]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"

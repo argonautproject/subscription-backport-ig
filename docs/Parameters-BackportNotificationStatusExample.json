@@ -3,7 +3,7 @@
   "id": "BackportNotificationStatusExample",
   "meta": {
     "profile": [
-      "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-status"
+      "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription-status"
     ]
   },
   "parameter": [

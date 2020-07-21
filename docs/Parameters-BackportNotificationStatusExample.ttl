@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/subscriptions-backport/Parameters/BackportNotificationStatusExample> a fhir:Parameters;
+<http://hl7.org/fhir/uv/subscriptions-backport/Parameters/BackportNotificationStatusExample> a fhir:Parameters;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "BackportNotificationStatusExample"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-status";
+       fhir:value "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription-status";
        fhir:index 0;
-       fhir:link <http://hl7.org/fhir/us/subscriptions-backport/StructureDefinition/backport-subscription-status>
+       fhir:link <http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription-status>
      ]
   ];
   fhir:Parameters.parameter [
@@ -43,9 +43,9 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/subscriptions-backport/Parameters/BackportNotificationStatusExample.ttl> a owl:Ontology;
+<http://hl7.org/fhir/uv/subscriptions-backport/Parameters/BackportNotificationStatusExample.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/subscriptions-backport/Parameters/BackportNotificationStatusExample.ttl> .
+  owl:versionIRI <http://build.fhir.org/uv/subscriptions-backport/Parameters/BackportNotificationStatusExample.ttl> .
 
 # -------------------------------------------------------------------------------------
 
