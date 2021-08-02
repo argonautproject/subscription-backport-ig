@@ -1,0 +1,33 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "fd2c2202-87d7-4e8e-aa96-da7fbea5a36e-30",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/fd2c2202-87d7-4e8e-aa96-da7fbea5a36e-30",
+  "name" : "IntersectionBackportContentValueSetAndBackportContentValueSet",
+  "title" : "Intersection of Backported R5 Subscription Content Value Set And Backported R5 Subscription Content Value Set",
+  "status" : "active",
+  "date" : "2021-08-02T13:40:38-05:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "expansion" : {
+    "contains" : [{
+      "system" : "http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-content-code-system",
+      "code" : "empty",
+      "display" : "Empty"
+    },
+    {
+      "system" : "http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-content-code-system",
+      "code" : "id-only",
+      "display" : "Id Only"
+    },
+    {
+      "system" : "http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-content-code-system",
+      "code" : "full-resource",
+      "display" : "Full Resource"
+    }]
+  }
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Subscription xmlns="http://hl7.org/fhir">
+  <id value="subscription-admission"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>end</b>: Dec 31, 2020, 6:00:00 AM</p><p><b>reason</b>: Example Backported Subscription for Patient Admission</p><p><b>criteria</b>: http://hl7.org/SubscriptionTopic/admission</p><h3>Channels</h3><table class="grid"><tr><td>-</td><td><b>Extension</b></td><td><b>Type</b></td><td><b>Endpoint</b></td><td><b>Payload</b></td></tr><tr><td>*</td><td>, , </td><td>rest-hook</td><td><a href="https://example.org/Endpoints/eae3806a-f7fb-4e3f-a14d-c4c58ca9c038">https://example.org/Endpoints/eae3806a-f7fb-4e3f-a14d-c4c58ca9c038</a></td><td>application/fhir+json</td></tr></table></div>
+  </text>
+  <status value="active"/>
+  <end value="2020-12-31T12:00:00Z"/>
+  <reason value="Example Backported Subscription for Patient Admission"/>
+  <criteria value="http://hl7.org/SubscriptionTopic/admission">
+    <extension url="http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-filter-criteria">
+      <valueString value="Encounter?patient=Patient/123"/>
+    </extension>
+  </criteria>
+  <channel>
+    <extension url="http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-heartbeat-period">
+      <valueUnsignedInt value="86400"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-timeout">
+      <valueUnsignedInt value="60"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-max-count">
+      <valuePositiveInt value="20"/>
+    </extension>
+    <type value="rest-hook"/>
+    <endpoint value="https://example.org/Endpoints/eae3806a-f7fb-4e3f-a14d-c4c58ca9c038"/>
+    <payload value="application/fhir+json">
+      <extension url="http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-payload-content">
+        <valueCode value="id-only"/>
+      </extension>
+    </payload>
+  </channel>
+</Subscription>

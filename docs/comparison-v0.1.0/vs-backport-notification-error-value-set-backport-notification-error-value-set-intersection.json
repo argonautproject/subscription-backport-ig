@@ -1,0 +1,43 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "fd2c2202-87d7-4e8e-aa96-da7fbea5a36e-33",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/fd2c2202-87d7-4e8e-aa96-da7fbea5a36e-33",
+  "name" : "IntersectionBackportNotificationErrorValueSetAndBackportNotificationErrorValueSet",
+  "title" : "Intersection of R5 Subscription Error Codes Value Set And R5 Subscription Error Codes Value Set",
+  "status" : "active",
+  "date" : "2021-08-02T13:40:38-05:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "expansion" : {
+    "contains" : [{
+      "system" : "http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-notification-error-code-system",
+      "code" : "unreachable",
+      "display" : "Unreachable"
+    },
+    {
+      "system" : "http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-notification-error-code-system",
+      "code" : "certificate-error",
+      "display" : "Certificate Error"
+    },
+    {
+      "system" : "http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-notification-error-code-system",
+      "code" : "timeout",
+      "display" : "Timeout"
+    },
+    {
+      "system" : "http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-notification-error-code-system",
+      "code" : "processing",
+      "display" : "Processing Error"
+    },
+    {
+      "system" : "http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-notification-error-code-system",
+      "code" : "unathorized",
+      "display" : "Unauthorized"
+    }]
+  }
+}

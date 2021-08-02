@@ -1,0 +1,93 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-notification-error-code-system> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "backport-notification-error-code-system"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-notification-error-code-system defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">unreachable<a name=\"backport-notification-error-code-system-unreachable\"> </a></td><td>Unreachable</td><td>The subscription endpoint is currently unreachable.</td></tr><tr><td style=\"white-space:nowrap\">certificate-error<a name=\"backport-notification-error-code-system-certificate-error\"> </a></td><td>Certificate Error</td><td>The subscription endpoint has an invalid certificate.</td></tr><tr><td style=\"white-space:nowrap\">timeout<a name=\"backport-notification-error-code-system-timeout\"> </a></td><td>Timeout</td><td>An attempt to send a notification has timed out.</td></tr><tr><td style=\"white-space:nowrap\">processing<a name=\"backport-notification-error-code-system-processing\"> </a></td><td>Processing Error</td><td>An error occurred while processing the event or notification.</td></tr><tr><td style=\"white-space:nowrap\">unathorized<a name=\"backport-notification-error-code-system-unathorized\"> </a></td><td>Unauthorized</td><td>The server has determined the endpoint is not authorized to receive notifications.</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-notification-error-code-system"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "BackportNotificationErrorCodeSystem"];
+  fhir:CodeSystem.title [ fhir:value "R5 Subscription Error Code System"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2021-08-02T13:40:32-05:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "HL7 FHIR Infrastructure WG"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 FHIR Infrastructure WG" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://hl7.org/Special/committees/fiwg/index.cfm" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Gino Canessa" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "mailto:gino.canessa@microsoft.com" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:ContactDetail.name [ fhir:value "Eric Haas" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "mailto:ehaas@healthedatainc.com" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Codes to represent error states on subscriptions."];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "001" ];
+       fhir:Coding.display [ fhir:value "World" ]
+     ]
+  ];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "5"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "unreachable" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Unreachable" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The subscription endpoint is currently unreachable." ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "certificate-error" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Certificate Error" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The subscription endpoint has an invalid certificate." ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "timeout" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Timeout" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "An attempt to send a notification has timed out." ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "processing" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Processing Error" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "An error occurred while processing the event or notification." ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "unathorized" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Unauthorized" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The server has determined the endpoint is not authorized to receive notifications." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-notification-error-code-system.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/uv/subscriptions-backport/CodeSystem/backport-notification-error-code-system.ttl> .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,41 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "fd2c2202-87d7-4e8e-aa96-da7fbea5a36e-5",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/fd2c2202-87d7-4e8e-aa96-da7fbea5a36e-5",
+  "name" : "UnionBackportNotificationErrorCodeSystemAndBackportNotificationErrorCodeSystem",
+  "title" : "Union of R5 Subscription Error Code System And R5 Subscription Error Code System",
+  "status" : "active",
+  "date" : "2021-08-02T13:40:38-05:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "concept" : [{
+    "code" : "unreachable",
+    "display" : "Unreachable",
+    "definition" : "The subscription endpoint is currently unreachable."
+  },
+  {
+    "code" : "certificate-error",
+    "display" : "Certificate Error",
+    "definition" : "The subscription endpoint has an invalid certificate."
+  },
+  {
+    "code" : "timeout",
+    "display" : "Timeout",
+    "definition" : "An attempt to send a notification has timed out."
+  },
+  {
+    "code" : "processing",
+    "display" : "Processing Error",
+    "definition" : "An error occurred while processing the event or notification."
+  },
+  {
+    "code" : "unathorized",
+    "display" : "Unauthorized",
+    "definition" : "The server has determined the endpoint is not authorized to receive notifications."
+  }]
+}

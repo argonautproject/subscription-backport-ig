@@ -1,0 +1,116 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/subscriptions-backport/Bundle/notification-multi-resource> a fhir:Bundle;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "notification-multi-resource"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription-notification";
+       fhir:index 0;
+       fhir:link <http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription-notification>
+     ]
+  ];
+  fhir:Bundle.type [ fhir:value "history"];
+  fhir:Bundle.timestamp [ fhir:value "2020-05-29T11:44:13.1882432-05:00"^^xsd:dateTime];
+  fhir:Bundle.entry [
+     fhir:index 0;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:babce097-c165-4b54-b7d1-0301b8a095d3" ];
+     fhir:Bundle.entry.resource <urn:uuid:babce097-c165-4b54-b7d1-0301b8a095d3>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "GET" ];
+       fhir:Bundle.entry.request.url [ fhir:value "https://example.org/fhir/r4/Subscription/admission/$status" ]
+     ];
+     fhir:Bundle.entry.response [
+       fhir:Bundle.entry.response.status [ fhir:value "200" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Bundle.entry.fullUrl [ fhir:value "https://example.org/fhir/r4/Encounter/551683b3-1477-41d1-b58e-32fe8b0047b0" ];
+     fhir:Bundle.entry.resource <https://example.org/fhir/r4/Encounter/551683b3-1477-41d1-b58e-32fe8b0047b0>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ];
+       fhir:Bundle.entry.request.url [ fhir:value "Encounter" ]
+     ];
+     fhir:Bundle.entry.response [
+       fhir:Bundle.entry.response.status [ fhir:value "201" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Bundle.entry.fullUrl [ fhir:value "https://example.org/fhir/r4/Patient/46db3334-dbf5-43f3-868f-93ae0883cce1" ];
+     fhir:Bundle.entry.resource <https://example.org/fhir/r4/Patient/46db3334-dbf5-43f3-868f-93ae0883cce1>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "GET" ];
+       fhir:Bundle.entry.request.url [ fhir:value "Patient/46db3334-dbf5-43f3-868f-93ae0883cce1" ]
+     ];
+     fhir:Bundle.entry.response [
+       fhir:Bundle.entry.response.status [ fhir:value "200" ]
+     ]
+  ] .
+
+<urn:uuid:babce097-c165-4b54-b7d1-0301b8a095d3> a fhir:SubscriptionStatus;
+  fhir:Resource.id [ fhir:value "b21e4fae-ce73-45cb-8e37-1e203362b2ae"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>type</b>: event-notification</p><p><b>eventsSinceSubscriptionStart</b>: 310</p><p><b>eventsInNotification</b>: 1</p><p><b>subscription</b>: <a href=\"https://example.org/fhir/r4/Subscription/admission\">https://example.org/fhir/r4/Subscription/admission</a></p><p><b>topic</b>: <a href=\"http://hl7.org/SubscriptionTopic/admission\">http://hl7.org/SubscriptionTopic/admission</a></p></div>"
+  ];
+  fhir:SubscriptionStatus.status [ fhir:value "active"];
+  fhir:SubscriptionStatus.type [ fhir:value "event-notification"];
+  fhir:SubscriptionStatus.eventsSinceSubscriptionStart [ fhir:value "310"];
+  fhir:SubscriptionStatus.eventsInNotification [ fhir:value "1"^^xsd:integer];
+  fhir:SubscriptionStatus.subscription [
+     fhir:link <https://example.org/fhir/r4/Subscription/admission>;
+     fhir:Reference.reference [ fhir:value "https://example.org/fhir/r4/Subscription/admission" ]
+  ];
+  fhir:SubscriptionStatus.topic [
+     fhir:value "http://hl7.org/SubscriptionTopic/admission";
+     fhir:link <http://hl7.org/SubscriptionTopic/admission>
+  ] .
+
+<https://example.org/fhir/r4/Encounter/551683b3-1477-41d1-b58e-32fe8b0047b0> a fhir:Encounter;
+  fhir:Resource.id [ fhir:value "551683b3-1477-41d1-b58e-32fe8b0047b0"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: in-progress</p><p><b>class</b>: <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode VR}\">virtual</span></p><p><b>subject</b>: <a href=\"#Patient_46db3334-dbf5-43f3-868f-93ae0883cce1\">Example Patient. Generated Summary: active; Example Patient</a></p></div>"
+  ];
+  fhir:Encounter.status [ fhir:value "in-progress"];
+  fhir:Encounter.class [
+     fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActCode" ];
+     fhir:Coding.code [ fhir:value "VR" ]
+  ];
+  fhir:Encounter.subject [
+     fhir:link <https://example.org/fhir/r4/Patient/46db3334-dbf5-43f3-868f-93ae0883cce1>;
+     fhir:Reference.reference [ fhir:value "https://example.org/fhir/r4/Patient/46db3334-dbf5-43f3-868f-93ae0883cce1" ];
+     fhir:Reference.display [ fhir:value "Example Patient" ]
+  ] .
+
+<https://example.org/fhir/r4/Patient/46db3334-dbf5-43f3-868f-93ae0883cce1> a fhir:Patient;
+  fhir:Resource.id [ fhir:value "46db3334-dbf5-43f3-868f-93ae0883cce1"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>active</b>: true</p><p><b>name</b>: Example Patient</p></div>"
+  ];
+  fhir:Patient.active [ fhir:value "true"^^xsd:boolean];
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:HumanName.use [ fhir:value "usual" ];
+     fhir:HumanName.text [ fhir:value "Example Patient" ];
+     fhir:HumanName.family [ fhir:value "Patient" ];
+     fhir:HumanName.given [
+       fhir:value "Example";
+       fhir:index 0
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/subscriptions-backport/Bundle/notification-multi-resource.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/uv/subscriptions-backport/Bundle/notification-multi-resource.ttl> .
+
+# -------------------------------------------------------------------------------------
+

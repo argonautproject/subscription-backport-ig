@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="backport-notification-error-code-system"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-notification-error-code-system defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">unreachable<a name="backport-notification-error-code-system-unreachable"> </a></td><td>Unreachable</td><td>The subscription endpoint is currently unreachable.</td></tr><tr><td style="white-space:nowrap">certificate-error<a name="backport-notification-error-code-system-certificate-error"> </a></td><td>Certificate Error</td><td>The subscription endpoint has an invalid certificate.</td></tr><tr><td style="white-space:nowrap">timeout<a name="backport-notification-error-code-system-timeout"> </a></td><td>Timeout</td><td>An attempt to send a notification has timed out.</td></tr><tr><td style="white-space:nowrap">processing<a name="backport-notification-error-code-system-processing"> </a></td><td>Processing Error</td><td>An error occurred while processing the event or notification.</td></tr><tr><td style="white-space:nowrap">unathorized<a name="backport-notification-error-code-system-unathorized"> </a></td><td>Unauthorized</td><td>The server has determined the endpoint is not authorized to receive notifications.</td></tr></table></div>
+  </text>
+  <url value="http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-notification-error-code-system"/>
+  <version value="0.1.0"/>
+  <name value="BackportNotificationErrorCodeSystem"/>
+  <title value="R5 Subscription Error Code System"/>
+  <status value="active"/>
+  <date value="2021-08-02T13:40:32-05:00"/>
+  <publisher value="HL7 FHIR Infrastructure WG"/>
+  <contact>
+    <name value="HL7 FHIR Infrastructure WG"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://hl7.org/Special/committees/fiwg/index.cfm"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Gino Canessa"/>
+    <telecom>
+      <system value="email"/>
+      <value value="mailto:gino.canessa@microsoft.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Eric Haas"/>
+    <telecom>
+      <system value="email"/>
+      <value value="mailto:ehaas@healthedatainc.com"/>
+    </telecom>
+  </contact>
+  <description value="Codes to represent error states on subscriptions."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="unreachable"/>
+    <display value="Unreachable"/>
+    <definition value="The subscription endpoint is currently unreachable."/>
+  </concept>
+  <concept>
+    <code value="certificate-error"/>
+    <display value="Certificate Error"/>
+    <definition value="The subscription endpoint has an invalid certificate."/>
+  </concept>
+  <concept>
+    <code value="timeout"/>
+    <display value="Timeout"/>
+    <definition value="An attempt to send a notification has timed out."/>
+  </concept>
+  <concept>
+    <code value="processing"/>
+    <display value="Processing Error"/>
+    <definition value="An error occurred while processing the event or notification."/>
+  </concept>
+  <concept>
+    <code value="unathorized"/>
+    <display value="Unauthorized"/>
+    <definition value="The server has determined the endpoint is not authorized to receive notifications."/>
+  </concept>
+</CodeSystem>

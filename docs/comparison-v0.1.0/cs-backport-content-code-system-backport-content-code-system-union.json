@@ -1,0 +1,31 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "fd2c2202-87d7-4e8e-aa96-da7fbea5a36e-2",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/fd2c2202-87d7-4e8e-aa96-da7fbea5a36e-2",
+  "name" : "UnionBackportContentCodeSystemAndBackportContentCodeSystem",
+  "title" : "Union of Backported R5 Subscription Content Code System And Backported R5 Subscription Content Code System",
+  "status" : "active",
+  "date" : "2021-08-02T13:40:38-05:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "concept" : [{
+    "code" : "empty",
+    "display" : "Empty",
+    "definition" : "No resource content is transacted in the notification payload."
+  },
+  {
+    "code" : "id-only",
+    "display" : "Id Only",
+    "definition" : "Only the resource id is transacted in the notification payload."
+  },
+  {
+    "code" : "full-resource",
+    "display" : "Full Resource",
+    "definition" : "The entire resource is transacted in the notification payload."
+  }]
+}

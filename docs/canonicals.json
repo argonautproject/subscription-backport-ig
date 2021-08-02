@@ -1,0 +1,142 @@
+[
+  {
+    "id": "backport-subscription-server",
+    "type": "CapabilityStatement",
+    "url": "http://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement/backport-subscription-server",
+    "version": "0.1.0",
+    "name": "BackportSubscriptionCapabilityStatement"
+  },
+  {
+    "id": "backport-content-code-system",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-content-code-system",
+    "version": "0.1.0",
+    "name": "BackportContentCodeSystem"
+  },
+  {
+    "id": "backport-notification-error-code-system",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-notification-error-code-system",
+    "version": "0.1.0",
+    "name": "BackportNotificationErrorCodeSystem"
+  },
+  {
+    "id": "backport-notification-type-code-system",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-notification-type-code-system",
+    "version": "0.1.0",
+    "name": "BackportNotificationTypeCodeSystem"
+  },
+  {
+    "id": "hl7.fhir.uv.subscriptions-backport",
+    "type": "ImplementationGuide",
+    "url": "http://hl7.org/fhir/uv/subscriptions-backport/ImplementationGuide/hl7.fhir.uv.subscriptions-backport",
+    "version": "0.1.0",
+    "name": "SubscriptionsR5Backport"
+  },
+  {
+    "id": "backport-subscription-get-ws-binding-token",
+    "type": "OperationDefinition",
+    "url": "http://hl7.org/fhir/uv/subscriptions-backport/OperationDefinition/backport-subscription-get-ws-binding-token",
+    "version": "0.1.0",
+    "name": "R5SubscriptionGetWsBindingToken"
+  },
+  {
+    "id": "backport-subscription-status",
+    "type": "OperationDefinition",
+    "url": "http://hl7.org/fhir/uv/subscriptions-backport/OperationDefinition/backport-subscription-status",
+    "version": "0.1.0",
+    "name": "R5SubscriptionStatus"
+  },
+  {
+    "id": "backport-channel-type",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-channel-type",
+    "version": "0.1.0",
+    "name": "BackportChannelType"
+  },
+  {
+    "id": "backport-filter-criteria",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-filter-criteria",
+    "version": "0.1.0",
+    "name": "BackportFilterCriteria"
+  },
+  {
+    "id": "backport-heartbeat-period",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-heartbeat-period",
+    "version": "0.1.0",
+    "name": "BackportHeartbeatPeriod"
+  },
+  {
+    "id": "backport-max-count",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-max-count",
+    "version": "0.1.0",
+    "name": "BackportMaxCount"
+  },
+  {
+    "id": "backport-payload-content",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-payload-content",
+    "version": "0.1.0",
+    "name": "BackportPayloadContent"
+  },
+  {
+    "id": "backport-subscription",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription",
+    "version": "0.1.0",
+    "name": "BackportSubscription"
+  },
+  {
+    "id": "backport-subscription-notification",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription-notification",
+    "version": "0.1.0",
+    "name": "BackportSubscriptionNotification"
+  },
+  {
+    "id": "backport-timeout",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-timeout",
+    "version": "0.1.0",
+    "name": "BackportTimeout"
+  },
+  {
+    "id": "subscription-notification-focus-resource",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/subscription-notification-focus-resource",
+    "version": "0.1.0",
+    "name": "BackportNotificationFocusResource"
+  },
+  {
+    "id": "subscription-notification-included-resource",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/subscription-notification-included-resource",
+    "version": "0.1.0",
+    "name": "BackportNotificationIncludedResource"
+  },
+  {
+    "id": "backport-content-value-set",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/subscriptions-backport/ValueSet/backport-content-value-set",
+    "version": "0.1.0",
+    "name": "BackportContentValueSet"
+  },
+  {
+    "id": "backport-notification-error-value-set",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/subscriptions-backport/ValueSet/backport-notification-error-value-set",
+    "version": "0.1.0",
+    "name": "BackportNotificationErrorValueSet"
+  },
+  {
+    "id": "backport-notification-type-value-set",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/subscriptions-backport/ValueSet/backport-notification-type-value-set",
+    "version": "0.1.0",
+    "name": "BackportNotificationTypeValueSet"
+  }
+]

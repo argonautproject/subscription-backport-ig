@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>HL7.FHIR.UV.SUBSCRIPTIONS-BACKPORT\Components - FHIR v4.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+    <link rel="stylesheet" href="assets/css/hl7.css"/>
+    <link rel="stylesheet" href="assets/css/fhir.css"/>
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"5"}
+    h3,h4,h5,h6{--heading-prefix:"5"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a no-external="true" id="hl7-logo" href="http://hl7.org">
+            <img src="assets/images/hl7-logo-header.png" alt="Visit the HL7 website" height="50"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a no-external="true" id="family-logo" href="http://hl7.org/fhir"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a no-external="true" id="hl7-search-lnk" href="searchform.html"><img src="assets/images/search.png" alt="Search FHIR"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Subscriptions R5 Backport</span><br/>0.1.0 - ballot</p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://build.fhir.org/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="background.html">Background</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Specification
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="actors.html">Actors</a>
+      </li>
+      <li>
+        <a href="components.html">Topic-Based Subscription Components</a>
+      </li>
+      <li>
+        <a href="workflow.html">Workflow</a>
+      </li>
+      <li>
+        <a href="channels.html">Channels</a>
+      </li>
+      <li>
+        <a href="notifications.html">Notifications</a>
+      </li>
+      <li>
+        <a href="payloads.html">Payload Types</a>
+      </li>
+      <li>
+        <a href="conformance.html">Conformance</a>
+      </li>
+      <li>
+        <a href="errors.html">Handling Errors</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="safety_security.html">Safety and Security</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html#1">Capability Statements</a>
+      </li>
+      <li>
+        <a href="artifacts.html#2">Operations</a>
+      </li>
+      <li>
+        <a href="artifacts.html#3">Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#4">Extensions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#5">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#7">Examples</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Components</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">Subscriptions R5 Backport - Local Development build (v0.1.0). See the <a href="http://hl7.org/fhir/uv/subscriptions-backport/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Components</h2>
+  
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#subscription-topics" id="markdown-toc-subscription-topics">Subscription Topics</a></li>
+  <li><a href="#subscriptions" id="markdown-toc-subscriptions">Subscriptions</a></li>
+  <li><a href="#subscription-notifications" id="markdown-toc-subscription-notifications">Subscription Notifications</a></li>
+</ul>
+
+</div>
+
+<p>The subscription mechanism is composed of three parts:</p>
+
+<ul>
+  <li><a href="#subscription-topics">Subscription Topic</a>
+    <ul>
+      <li>What is it?
+        <ul>
+          <li>Defines the <strong>data</strong> and <strong>change</strong> used to trigger notifications</li>
+          <li>Defines the <strong>filters</strong> allowed to clients</li>
+          <li>Always referenced by canonical URL</li>
+        </ul>
+      </li>
+      <li>How is it defined?
+        <ul>
+          <li>The R4 4.1.0 (or later) <a href="http://hl7.org/fhir/subscriptiontopic.html">SubscriptionTopic</a> resource</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#subscriptions">Subscription</a>
+    <ul>
+      <li>What is it?
+        <ul>
+          <li>Describes a request to be notified about events defined by a <code class="language-plaintext highlighter-rouge">SubscriptionTopic</code>
+            <ul>
+              <li>Canonical URL link to a <code class="language-plaintext highlighter-rouge">SubscriptionTopic</code></li>
+              <li>Set <strong>filters</strong> on events (as allowed in the referenced <code class="language-plaintext highlighter-rouge">SubscriptionTopic</code>)</li>
+            </ul>
+          </li>
+          <li>Describe the <code class="language-plaintext highlighter-rouge">channel</code> and <code class="language-plaintext highlighter-rouge">endpoint</code> used to send notifications</li>
+          <li>Describe the <strong>payload</strong> included in notifications (MIME type, content level, etc.)</li>
+        </ul>
+      </li>
+      <li>How is it defined?
+        <ul>
+          <li>The R4 4.0.0 (or later) <a href="http://hl7.org/fhir/subscription.html">Subscription</a> resource, plus extensions</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#subscription-notifications">Notification Bundle</a>
+    <ul>
+      <li>What is it?
+        <ul>
+          <li>Describes the contents of a notification</li>
+          <li>Contains zero or more notification <strong>payloads</strong></li>
+        </ul>
+      </li>
+      <li>How is it defined?
+        <ul>
+          <li>The R4 4.0.0 (or later) <a href="http://hl7.org/fhir/bundle.html">Bundle</a> resource, type of <code class="language-plaintext highlighter-rouge">history</code></li>
+          <li>The R4 4.1.0 (or later) <a href="http://hl7.org/fhir/subscriptionstatus.html">SubscriptionStatus</a> resource</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="subscription-topics">Subscription Topics</h3>
+
+<p>In FHIR R5, the <code class="language-plaintext highlighter-rouge">SubscriptionTopic</code> resource is used to define conceptual or computable events for <code class="language-plaintext highlighter-rouge">Subscription</code> resources. Conceptually, subscription topics specify: a type of <strong>data</strong> (e.g., <code class="language-plaintext highlighter-rouge">Observation</code>, <code class="language-plaintext highlighter-rouge">Condition</code>, etc.), a type of <strong>change</strong> (e.g., create, delete, update, etc.), and a set of allowed <strong>filters</strong>.</p>
+
+<p>In order to support this functionality in R4, the <code class="language-plaintext highlighter-rouge">SubscriptionTopic</code> resource has been added as of version 4.1.0.  Detailed information about the resource can be found on the HL7 FHIR website.</p>
+
+<p>In order to make subscription topics more widely available, support for <code class="language-plaintext highlighter-rouge">SubscriptionTopic</code> resources is available via the <a href="http://registry.fhir.org">FHIR Registry</a>.</p>
+
+<h3 id="subscriptions">Subscriptions</h3>
+
+<p>The <code class="language-plaintext highlighter-rouge">Subscription</code> resource is used to request notifications for a specific client about a specific topic. Conceptually, a subscription specifies: a <strong>topic</strong> (<code class="language-plaintext highlighter-rouge">SubscriptionTopic</code>, by canonical URL), the notification <strong>channel</strong> (e.g., REST, websockets, email, etc.), and the notification <strong>payload</strong> (e.g., MIME type, amount of detail, etc.).</p>
+
+<p>In order to add the functionality of R5 subscriptions to the <a href="http://hl7.org/fhir/subscription.html">R4 Subscription</a> resource, this guide defines several extensions.  A list of extensions defined by this guide can be found on the <a href="artifacts.html#3">Artifacts</a> page.</p>
+
+<p>In order to link a <code class="language-plaintext highlighter-rouge">Subscription</code> to a <code class="language-plaintext highlighter-rouge">SubscriptionTopic</code> and prevent any confusion between the R4 query-based and topic-based implementations, the link to a <code class="language-plaintext highlighter-rouge">SubscriptionTopic</code> is specified in the <code class="language-plaintext highlighter-rouge">Subscription.criteria</code> field.  For more details, please see the <a href="StructureDefinition-backport-subscription.html">Subscription Profile</a> in this guide.</p>
+
+<h4 id="accepting-subscription-requests">Accepting Subscription Requests</h4>
+
+<p>When a FHIR Server accepts a request to create a <code class="language-plaintext highlighter-rouge">Subscription</code>, the server is indicating to the client that the server:</p>
+<ul>
+  <li>is capable of detecting when events covered by the requestion SubscriptionTopic occur, and</li>
+  <li>is willing to make a simple best effort attempt at delivering a notification for each occurance of a matching event.</li>
+</ul>
+
+<p>When processing a request for a <code class="language-plaintext highlighter-rouge">Subscription</code>, following are <em>some</em> checks that a server SHOULD validate:</p>
+<ul>
+  <li>that the <code class="language-plaintext highlighter-rouge">SubscriptionTopic</code> is valid and implemented by the server</li>
+  <li>that all requested filters are defined in the requested topic and are implemented in the server</li>
+  <li>that the channel type is known and implemented by the server</li>
+  <li>that the channel endpoint is valid for the channel provided (e.g., is it a valid URL of the expected type)</li>
+  <li>that the payload configuration is known and implemented by the server</li>
+  <li>that the payload configuration is valid for the channel type requested (e.g., complies with the server’s security policy)</li>
+</ul>
+
+<h3 id="subscription-notifications">Subscription Notifications</h3>
+
+<p>In FHIR R5, a new type of <code class="language-plaintext highlighter-rouge">Bundle</code> has been introduced, which uses the new <code class="language-plaintext highlighter-rouge">SubscriptionStatus</code> resource to convey status information in notifications.  For FHIR R4, notifications are instead based on a <a href="http://hl7.org/fhir/bundle.html#history">history Bundle</a>, and a <a href="http://hl7.org/fhir/subscriptionstatus.html">SubscriptionStatus</a> resource is used to convey related meta-information (e.g., which subscription the notification is for).</p>
+
+<p>Since notifications use <code class="language-plaintext highlighter-rouge">history</code> type Bundles, notifications need to comply with all the requirements for them.  Specifically, there are invariants on Bundle (<code class="language-plaintext highlighter-rouge">bdl-3</code> and <code class="language-plaintext highlighter-rouge">bdl-4</code>) that require a <code class="language-plaintext highlighter-rouge">Bundle.entry.request</code> element for <em>every</em> <code class="language-plaintext highlighter-rouge">Budnle.entry</code>.</p>
+<ul>
+  <li>For the status resource (<code class="language-plaintext highlighter-rouge">entry[0]</code>), the request SHALL filled out to match a request to the <code class="language-plaintext highlighter-rouge">$status</code> operation.</li>
+  <li>For additional entries, the request SHOULD be filled out in a way that makes sense given the subscription (e.g., a <code class="language-plaintext highlighter-rouge">POST</code> or <code class="language-plaintext highlighter-rouge">PUT</code> operation on the resource, etc.).  However, a server MAY choose to simply include a <code class="language-plaintext highlighter-rouge">GET</code> to the relevant resource instead.</li>
+</ul>
+
+<h4 id="scoping-responsibilities">Scoping Responsibilities</h4>
+
+<p>Unless otherwise specified by a server implementation and channel, the Subscriptions Framework does not involve guaranteed  delivery of notifications. While the Subscriptions Framework is able to support such mechanisms, defining them are beyond the scope of the standard or this guide.</p>
+
+<p>Servers SHOULD detect errors and take appropriate action where possible.  In general, this boundary is when the notification is delivered.  For example, during a REST-hook notification, the subscription server can detect errors up until the REST endpoint returns a HTTP status code (e.g., 200).  This does not imply that a client successfully processed (or even received) a notification - simply that the server has sent the notification successfully.</p>
+
+<p>Therefore, clients SHOULD be aware of some limitations regarding delivery. In particular:</p>
+<ul>
+  <li>Some notifications might not be delivered.</li>
+  <li>Some notifications might be delivered multiple times.</li>
+</ul>
+
+<p>In order to mitigate the impact from the above issues, the Subscriptions Framework includes mechanisms to detect both scenarios.  Details can be found on the <a href="errors.html">Errors Page</a>.</p>
+
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p><a name="9ff65315-e2c2-41ba-b8b1-4a100e0895f7">​</a>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://hl7.org/Special/committees/fiwg/index.cfm">HL7 FHIR Infrastructure WG</a>.  Package hl7.fhir.uv.subscriptions-backport#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Mon, Aug 2, 2021 13:40-0500">2021-08-02</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+               | <a style="color: #81BEF7" href="http://hl7.org/fhir/uv/subscriptions-backport/history.html" target="_blank">Version History  |
+               <a style="color: #81BEF7" href="searchform.html" target="_blank">Search  |
+                 <a rel="license" style="color: #81BEF7" href="http://build.fhir.org/license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> |
+                   <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" href="http://hl7.org/fhir-issues" target="_blank">Propose a change </a>
+
+          
+        
+          <!-- /inner-wrapper -->
+        <!-- /container -->
+      <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
+    <!-- Analytics Below
+  ================================================== -->
+  
+
+
+</a></a></p></div></div></div></body></html>

@@ -1,0 +1,136 @@
+{
+  "package": "hl7.fhir.uv.subscriptions-backport",
+  "version": "0.1.0",
+  "fhirVersion": "4.1.0",
+  "jurisdiction": "001",
+  "extensions": [
+    {
+      "url": "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-channel-type",
+      "title": "Backported R5 Additional Channel Types",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-filter-criteria",
+      "title": "Backported R5 FilterBy Criteria",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-heartbeat-period",
+      "title": "Backport R5 Subscription Heartbeat Period",
+      "types": [
+        "unsignedInt"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-max-count",
+      "title": "Backported R5 Subscription MaxCount",
+      "types": [
+        "positiveInt"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-payload-content",
+      "title": "Backport R5 Subscription Payload Content Information",
+      "types": [
+        "code",
+        "code"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-timeout",
+      "title": "Backport R5 Subscription Timeout",
+      "types": [
+        "unsignedInt"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/subscription-notification-focus-resource",
+      "title": "Subscription Notification Focus Resource",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/subscription-notification-included-resource",
+      "title": "Subscription Notification Included Resource",
+      "types": [
+        "string"
+      ]
+    }
+  ],
+  "profiles": {
+    "Subscription": [
+      {
+        "url": "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription",
+        "title": "Backported R5 Subscription"
+      }
+    ],
+    "Bundle": [
+      {
+        "url": "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription-notification",
+        "title": "Backported R5 Subscription Notification Bundle"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm": [
+      "OperationDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "OperationDefinition",
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/build/StructureDefinition/definition": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-filter-criteria": [
+      "Subscription.criteria"
+    ],
+    "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-heartbeat-period": [
+      "Subscription.channel"
+    ],
+    "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-max-count": [
+      "Subscription.channel"
+    ],
+    "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-payload-content": [
+      "Subscription.channel.payload"
+    ],
+    "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-timeout": [
+      "Subscription.channel"
+    ]
+  }
+}

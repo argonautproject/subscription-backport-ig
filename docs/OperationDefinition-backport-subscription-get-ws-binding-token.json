@@ -1,0 +1,92 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "backport-subscription-get-ws-binding-token",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>R5SubscriptionGetWsBindingToken</h2><p>OPERATION: R5SubscriptionGetWsBindingToken</p><p>The official URL for this operation definition is: </p><pre>http://hl7.org/fhir/uv/subscriptions-backport/OperationDefinition/backport-subscription-get-ws-binding-token</pre><div><p>This operation is used to get a token for a websocket client to use in order to bind to one or more subscriptions.</p>\n</div><p>URL: [base]/Subscription/$get-ws-binding-token</p><p>URL: [base]/Subscription/[id]/$get-ws-binding-token</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>ids</td><td>0..*</td><td><a href=\"http://build.fhir.org/branches/R4B//datatypes.html#id\">id</a></td><td/><td><div><p>At the Resource level, one or more parameters containing one or more FHIR ids of Subscriptions to get tokens for. In the absense of any specified ids, the server returns tokens for all Subscriptions available to the caller with a channel-type of websocket. At the Instance level, this parameter is ignored.</p>\n</div></td></tr><tr><td>OUT</td><td>return</td><td>1..1</td><td><a href=\"http://build.fhir.org/branches/R4B//parameters.html\">Parameters</a></td><td/><td><div><p>The returned Parameters MUST include a valueString named &quot;token&quot; and a valueDateTime named &quot;expiration&quot;. The returned Parameters MAY include a valueString named &quot;subscriptions&quot; with a comma-delimited list of subscriptions covered by this token.</p>\n<p>Note: as this is the only out parameter, it is a resource, and it has the name 'return', the result of this operation is returned directly as a resource</p>\n</div></td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 0
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/subscriptions-backport/OperationDefinition/backport-subscription-get-ws-binding-token",
+  "version": "0.1.0",
+  "name": "R5SubscriptionGetWsBindingToken",
+  "status": "active",
+  "kind": "operation",
+  "date": "2020-11-30",
+  "publisher": "HL7 FHIR Infrastructure WG",
+  "contact": [
+    {
+      "name": "HL7 FHIR Infrastructure WG",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://hl7.org/Special/committees/fiwg/index.cfm"
+        }
+      ]
+    },
+    {
+      "name": "Gino Canessa",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "mailto:gino.canessa@microsoft.com"
+        }
+      ]
+    },
+    {
+      "name": "Eric Haas",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "mailto:ehaas@healthedatainc.com"
+        }
+      ]
+    }
+  ],
+  "description": "This operation is used to get a token for a websocket client to use in order to bind to one or more subscriptions.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001",
+          "display": "World"
+        }
+      ]
+    }
+  ],
+  "affectsState": false,
+  "code": "get-ws-binding-token",
+  "resource": [
+    "Subscription"
+  ],
+  "system": false,
+  "type": true,
+  "instance": true,
+  "parameter": [
+    {
+      "name": "ids",
+      "use": "in",
+      "min": 0,
+      "max": "*",
+      "documentation": "At the Resource level, one or more parameters containing one or more FHIR ids of Subscriptions to get tokens for. In the absense of any specified ids, the server returns tokens for all Subscriptions available to the caller with a channel-type of websocket. At the Instance level, this parameter is ignored.",
+      "type": "id"
+    },
+    {
+      "name": "return",
+      "use": "out",
+      "min": 1,
+      "max": "1",
+      "documentation": "The returned Parameters MUST include a valueString named \"token\" and a valueDateTime named \"expiration\". The returned Parameters MAY include a valueString named \"subscriptions\" with a comma-delimited list of subscriptions covered by this token.\r\n\r\nNote: as this is the only out parameter, it is a resource, and it has the name 'return', the result of this operation is returned directly as a resource",
+      "type": "Parameters"
+    }
+  ]
+}

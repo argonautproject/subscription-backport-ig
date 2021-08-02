@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="backport-notification-error-value-set"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-backport-notification-error-code-system.html"><code>http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-notification-error-code-system</code></a></li></ul></div>
+  </text>
+  <url value="http://hl7.org/fhir/uv/subscriptions-backport/ValueSet/backport-notification-error-value-set"/>
+  <version value="0.1.0"/>
+  <name value="BackportNotificationErrorValueSet"/>
+  <title value="R5 Subscription Error Codes Value Set"/>
+  <status value="active"/>
+  <date value="2021-08-02T13:40:32-05:00"/>
+  <publisher value="HL7 FHIR Infrastructure WG"/>
+  <contact>
+    <name value="HL7 FHIR Infrastructure WG"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://hl7.org/Special/committees/fiwg/index.cfm"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Gino Canessa"/>
+    <telecom>
+      <system value="email"/>
+      <value value="mailto:gino.canessa@microsoft.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Eric Haas"/>
+    <telecom>
+      <system value="email"/>
+      <value value="mailto:ehaas@healthedatainc.com"/>
+    </telecom>
+  </contact>
+  <description value="Codes to represent error states on subscriptions."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-notification-error-code-system"/>
+    </include>
+  </compose>
+</ValueSet>

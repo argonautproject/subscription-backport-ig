@@ -1,0 +1,59 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/subscriptions-backport/Bundle/notification-empty> a fhir:Bundle;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "notification-empty"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription-notification";
+       fhir:index 0;
+       fhir:link <http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription-notification>
+     ]
+  ];
+  fhir:Bundle.type [ fhir:value "history"];
+  fhir:Bundle.timestamp [ fhir:value "2020-05-29T11:44:13.1882432-05:00"^^xsd:dateTime];
+  fhir:Bundle.entry [
+     fhir:index 0;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:b21e4fae-ce73-45cb-8e37-1e203362b2ae" ];
+     fhir:Bundle.entry.resource <urn:uuid:b21e4fae-ce73-45cb-8e37-1e203362b2ae>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "GET" ];
+       fhir:Bundle.entry.request.url [ fhir:value "https://example.org/fhir/r4/Subscription/admission/$status" ]
+     ];
+     fhir:Bundle.entry.response [
+       fhir:Bundle.entry.response.status [ fhir:value "200" ]
+     ]
+  ] .
+
+<urn:uuid:b21e4fae-ce73-45cb-8e37-1e203362b2ae> a fhir:SubscriptionStatus;
+  fhir:Resource.id [ fhir:value "b21e4fae-ce73-45cb-8e37-1e203362b2ae"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>type</b>: event-notification</p><p><b>eventsSinceSubscriptionStart</b>: 310</p><p><b>eventsInNotification</b>: 1</p><p><b>subscription</b>: <a href=\"https://example.org/fhir/r4/Subscription/admission\">https://example.org/fhir/r4/Subscription/admission</a></p><p><b>topic</b>: <a href=\"http://hl7.org/SubscriptionTopic/admission\">http://hl7.org/SubscriptionTopic/admission</a></p></div>"
+  ];
+  fhir:SubscriptionStatus.status [ fhir:value "active"];
+  fhir:SubscriptionStatus.type [ fhir:value "event-notification"];
+  fhir:SubscriptionStatus.eventsSinceSubscriptionStart [ fhir:value "310"];
+  fhir:SubscriptionStatus.eventsInNotification [ fhir:value "1"^^xsd:integer];
+  fhir:SubscriptionStatus.subscription [
+     fhir:link <https://example.org/fhir/r4/Subscription/admission>;
+     fhir:Reference.reference [ fhir:value "https://example.org/fhir/r4/Subscription/admission" ]
+  ];
+  fhir:SubscriptionStatus.topic [
+     fhir:value "http://hl7.org/SubscriptionTopic/admission";
+     fhir:link <http://hl7.org/SubscriptionTopic/admission>
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/subscriptions-backport/Bundle/notification-empty.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/uv/subscriptions-backport/Bundle/notification-empty.ttl> .
+
+# -------------------------------------------------------------------------------------
+

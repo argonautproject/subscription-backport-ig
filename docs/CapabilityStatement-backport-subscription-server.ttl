@@ -1,0 +1,119 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement/backport-subscription-server> a fhir:CapabilityStatement;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "backport-subscription-server"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2 id=\"title\">Backport Subscription Server Capability Statement</h2><ul><li>Implementation Guide Version: 0.1.1</li><li>FHIR Version: 4.0.1</li><li>Supported formats: xml, json</li><li>Published: 2020-11-30</li><li>Published by: HL7 FHIR Infrastructure WG</li></ul><p>Example CapabilityStatement describing the expected capabilities of a FHIR Server supporting backported R5 Subscriptions.</p><h3 id=\"behavior\">FHIR RESTful Capabilities</h3><h3 id=\"resource--details\" class=\"no_toc\">RESTful Capabilities by Resource/Profile:</h3><p><strong>Summary of Search Criteria</strong></p><table class=\"grid\"><thead><tr><th>Resource Type</th><th>Supported Profiles</th><th>Supported Searches</th><th>Supported <code>_includes</code></th><th>Supported <code>_revincludes</code></th><th>Supported Operations</th></tr></thead><tbody><tr><td><a href=\"#subscription\">Subscription</a></td><td><a href=\"StructureDefinition-backport-subscription.html\">Backported R5 Subscription</a></td><td/><td/><td/><td>$topic-list, $status</td></tr></tbody></table><h4 id=\"subscription\" class=\"no_toc\">Subscription</h4><p>Conformance Expectation: <strong>SHALL</strong></p><p>Supported Profiles: <a href=\"StructureDefinition-backport-subscription.html\">Backported R5 Subscription</a></p><p>Profile Interaction Summary:</p><ul/><p>Operation Summary:</p><ul><li><strong>SHALL</strong> support the <a href=\"OperationDefinition-backport-subscriptiontopic-list.html\">$topic-list</a> operation , <a href=\"OperationDefinition-backport-subscription-status.html\">$status</a> operation</li></ul><p>Fetch and Search Criteria:</p><ul><li>A Server <strong>SHALL</strong> be capable of returning a Subscription resource using: <code class=\"highlighter-rouge\">GET [base]/Subscription/[id]</code></li></ul></div>"
+  ];
+  fhir:CapabilityStatement.url [ fhir:value "http://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement/backport-subscription-server"];
+  fhir:CapabilityStatement.version [ fhir:value "0.1.0"];
+  fhir:CapabilityStatement.name [ fhir:value "BackportSubscriptionCapabilityStatement"];
+  fhir:CapabilityStatement.status [ fhir:value "active"];
+  fhir:CapabilityStatement.date [ fhir:value "2020-11-30"^^xsd:date];
+  fhir:CapabilityStatement.publisher [ fhir:value "HL7 FHIR Infrastructure WG"];
+  fhir:CapabilityStatement.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 FHIR Infrastructure WG" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://hl7.org/Special/committees/fiwg/index.cfm" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Gino Canessa" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "mailto:gino.canessa@microsoft.com" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:ContactDetail.name [ fhir:value "Eric Haas" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "mailto:ehaas@healthedatainc.com" ]
+     ]
+  ];
+  fhir:CapabilityStatement.description [ fhir:value "Example CapabilityStatement describing the expected capabilities of a FHIR Server supporting backported R5 Subscriptions."];
+  fhir:CapabilityStatement.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "001" ];
+       fhir:Coding.display [ fhir:value "World" ]
+     ]
+  ];
+  fhir:CapabilityStatement.kind [ fhir:value "requirements"];
+  fhir:CapabilityStatement.fhirVersion [ fhir:value "4.0.1"];
+  fhir:CapabilityStatement.format [
+     fhir:value "xml";
+     fhir:index 0
+  ], [
+     fhir:value "json";
+     fhir:index 1
+  ];
+  fhir:CapabilityStatement.implementationGuide [
+     fhir:value "http://hl7.org/fhir/uv/subscriptions-backport/ImplementationGuide/hl7.fhir.uv.subscriptions-backport";
+     fhir:index 0;
+     fhir:link <http://hl7.org/fhir/uv/subscriptions-backport/ImplementationGuide/hl7.fhir.uv.subscriptions-backport>
+  ];
+  fhir:CapabilityStatement.rest [
+     fhir:index 0;
+     fhir:CapabilityStatement.rest.mode [ fhir:value "server" ];
+     fhir:CapabilityStatement.rest.resource [
+       fhir:index 0;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "Subscription" ];
+       fhir:CapabilityStatement.rest.resource.supportedProfile [
+         fhir:value "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription";
+         fhir:index 0;
+         fhir:link <http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription>
+       ];
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "create" ]
+       ], [
+         fhir:index 2;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "update" ]
+       ], [
+         fhir:index 3;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "delete" ]
+       ];
+       fhir:CapabilityStatement.rest.resource.operation [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.operation.name [ fhir:value "$topic-list" ];
+         fhir:CapabilityStatement.rest.resource.operation.definition [
+           fhir:value "http://hl7.org/fhir/uv/subscriptions-backport/OperationDefinition/backport-subscriptiontopic-list";
+           fhir:link <http://hl7.org/fhir/uv/subscriptions-backport/OperationDefinition/backport-subscriptiontopic-list>
+         ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.operation.name [ fhir:value "$status" ];
+         fhir:CapabilityStatement.rest.resource.operation.definition [
+           fhir:value "http://hl7.org/fhir/uv/subscriptions-backport/OperationDefinition/backport-subscription-status";
+           fhir:link <http://hl7.org/fhir/uv/subscriptions-backport/OperationDefinition/backport-subscription-status>
+         ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement/backport-subscription-server.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/uv/subscriptions-backport/CapabilityStatement/backport-subscription-server.ttl> .
+
+# -------------------------------------------------------------------------------------
+

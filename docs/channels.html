@@ -1,0 +1,439 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>HL7.FHIR.UV.SUBSCRIPTIONS-BACKPORT\Channels - FHIR v4.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+    <link rel="stylesheet" href="assets/css/hl7.css"/>
+    <link rel="stylesheet" href="assets/css/fhir.css"/>
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"4"}
+    h3,h4,h5,h6{--heading-prefix:"4"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a no-external="true" id="hl7-logo" href="http://hl7.org">
+            <img src="assets/images/hl7-logo-header.png" alt="Visit the HL7 website" height="50"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a no-external="true" id="family-logo" href="http://hl7.org/fhir"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a no-external="true" id="hl7-search-lnk" href="searchform.html"><img src="assets/images/search.png" alt="Search FHIR"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Subscriptions R5 Backport</span><br/>0.1.0 - ballot</p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://build.fhir.org/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="background.html">Background</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Specification
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="actors.html">Actors</a>
+      </li>
+      <li>
+        <a href="components.html">Topic-Based Subscription Components</a>
+      </li>
+      <li>
+        <a href="workflow.html">Workflow</a>
+      </li>
+      <li>
+        <a href="channels.html">Channels</a>
+      </li>
+      <li>
+        <a href="notifications.html">Notifications</a>
+      </li>
+      <li>
+        <a href="payloads.html">Payload Types</a>
+      </li>
+      <li>
+        <a href="conformance.html">Conformance</a>
+      </li>
+      <li>
+        <a href="errors.html">Handling Errors</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="safety_security.html">Safety and Security</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html#1">Capability Statements</a>
+      </li>
+      <li>
+        <a href="artifacts.html#2">Operations</a>
+      </li>
+      <li>
+        <a href="artifacts.html#3">Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#4">Extensions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#5">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#7">Examples</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Channels</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">Subscriptions R5 Backport - Local Development build (v0.1.0). See the <a href="http://hl7.org/fhir/uv/subscriptions-backport/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Channels</h2>
+  
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div>
+  <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
+</div>
+
+<p>In FHIR R5, there are four channel types which were common enough to be defined in the specification (additional channel types can be defined externally).  In this Implementation Guide, we define those same channel types; additional channel definitions may be defined by other implementations or Implementation Guides.</p>
+
+<h4 id="deciding-on-channel-type">Deciding On Channel Type</h4>
+
+<p>Both the FHIR specification and this guide rely on the definitions of a reduced set of channel types.  While the specification allows for additional channel type definitions, the included set attempts to cover the majority of common use cases.  Below is some guidance for implementers to consider when selecting a channel type.</p>
+
+<h5 id="rest-hook">REST-Hook</h5>
+
+<p>The FHIR standard makes extensive use of the RESTful model.  Given the popularity of REST and widespread adoption, most implementers should assume REST-hook as the ‘default’ channel type.  In general, REST-based systems are well-supported (e.g., tooling, infrastructure, documentation, etc.), and will present the lowest bar for implementation.</p>
+
+<h5 id="websocket">Websocket</h5>
+
+<p>Websockets are unique in the pre-defined channel types in being the only channel that does not require the client to have an endpoint.  Due to this property, the websocket channel is very useful for clients where creating an endpoint would be difficult or impossible (e.g., mobile clients, web-based clients, etc.).</p>
+
+<h5 id="email">Email</h5>
+
+<p>The Email channel is the only channel that could contest REST in non-FHIR implementations.  That said, Email communication is often high-latency and is typically used for communication to individuals - not applications.  Email channels are particularly useful in the context of these non-application use cases, such as public health notifications.  For example, if a public health agency does not have the ability or desire to build a custom RESTful solution (e.g., creating and maintaining an endpoint to receive notifications, as well as software to consume those notifications), it is straightforward to map notifications to email addresses or aliases.</p>
+
+<h5 id="fhir-messaging">FHIR Messaging</h5>
+
+<p>FHIR Messaging is a mechanism defined to allow for non-RESTful communication between FHIR servers and clients.  One common use case is when connectivity is an issue (e.g., remote sites that batch all communications when connections are available).  This channel defines how to integrate topic-based subscriptions with the FHIR Messaging model.</p>
+
+<h5 id="custom-channels">Custom Channels</h5>
+
+<p>For use cases that are not well-met by any of the predefined channels, the Subscriptions Framework allows for custom channel definitions.  Some examples of scenarios where custom channels may be applicable include:</p>
+<ul>
+  <li>requirements for reliable (guaranteed) delivery (e.g., message queues)</li>
+  <li>implementations using other communication protocols (e.g., protocols specific to a cloud-based provider)</li>
+  <li>implementations using a non-standard serialization format</li>
+</ul>
+
+<h4 id="rest-hook-1">REST-Hook</h4>
+
+<p>To receive notifications via HTTP/S POST, a client should request a subscription with the channel type of <code class="language-plaintext highlighter-rouge">rest-hook</code> and set the endpoint to the appropriate client URL. Note that this URL must be accessible by the hosting server.</p>
+
+<p>To convey an event notification, the server POSTs a <code class="language-plaintext highlighter-rouge">Bundle</code> to the client’s nominated endpoint URL per the format requests in the Subscription:</p>
+<ul>
+  <li>The <code class="language-plaintext highlighter-rouge">content-type</code> of the POST SHALL match the MIME type on the Subscription (<a href="http://hl7.org/fhir/subscription-definitions.html#Subscription.channel.payload">Subscription.channel.payload</a>).</li>
+  <li>Each <a href="http://hl7.org/fhir/subscription-definitions.html#Subscription.channel.header">Subscription.header</a> value SHALL be conveyed as an HTTP request header.</li>
+  <li>The bundle SHALL comply with the <a href="StructureDefinition-backport-subscription-notification.html">Backported R5 Notification Bundle Profile</a>.</li>
+</ul>
+
+<p>When a <code class="language-plaintext highlighter-rouge">Subscription</code> is created for a REST Hook channel type, the server SHALL set initial status to <code class="language-plaintext highlighter-rouge">requested</code>, pending verification of the nominated endpoint URL. After a successful <code class="language-plaintext highlighter-rouge">handshake</code> notification has been sent and accepted, the server SHALL update the status to <code class="language-plaintext highlighter-rouge">active</code>. Any errors in the initial <code class="language-plaintext highlighter-rouge">handshake</code> SHALL result in the status being changed to <code class="language-plaintext highlighter-rouge">error</code>.</p>
+
+<p>An example workflow for establishing a <code>rest-hook</code> subscription is shown below.</p>
+
+<p><img src="subscription-rest-hook-flow.svg" alt="Diagram showing a workflow for rest-hook subscriptions" style="float:none;"/></p>
+
+<ol>
+  <li>Client creates a <code class="language-plaintext highlighter-rouge">Subscription</code> with the <code class="language-plaintext highlighter-rouge">channelType</code> set to <code class="language-plaintext highlighter-rouge">rest-hook</code>.</li>
+  <li>Server responds with a success code and creates the subscription with a state of <code class="language-plaintext highlighter-rouge">requested</code>.</li>
+  <li>Server performs an HTTP POST to the requested endpoint with a <code class="language-plaintext highlighter-rouge">handshake</code> notification.</li>
+  <li>Client Endpoint accepts the POST and returns a success HTTP code (e.g., <code class="language-plaintext highlighter-rouge">200</code>).</li>
+  <li>Server may send notifications of type <code class="language-plaintext highlighter-rouge">heartbeat</code> at any time.</li>
+  <li>Server may send notifications of type <code class="language-plaintext highlighter-rouge">event-notificaiton</code> at any time.</li>
+</ol>
+
+<h5 id="security-notes">Security Notes</h5>
+
+<p>HTTP is neither a secure nor an encrypted channel, nor does it provide endpoint verification. It is strongly recommended that implementations refuse requests to send notifications to URLs using the HTTP protocol (use HTTPS instead).</p>
+
+<h4 id="websockets">Websockets</h4>
+
+<p>While the primary interface for FHIR servers is the FHIR REST API, notifications need not occur via REST. Indeed, some subscribers may be unable to expose an outward-facing HTTP server to receive triggered notifications. For example, a pure client-side Web app or mobile app may want to subscribe to a data feed. This can be accomplished using a <code class="language-plaintext highlighter-rouge">websocket</code> notification channel.</p>
+
+<p>A client can declare its intention to receive notifications via Web Sockets by requesting a subscription with the channel type of <code class="language-plaintext highlighter-rouge">websocket</code>.</p>
+
+<p>An example workflow for receiving notifications via websockets is shown below:</p>
+
+<p><img src="subscription-websocket-flow.svg" alt="Diagram showing a workflow for websocket subscriptions" style="float:none;"/></p>
+
+<ol>
+  <li>Client creates a Subscription with the <code class="language-plaintext highlighter-rouge">channelType</code> set to <code class="language-plaintext highlighter-rouge">websocket</code>.</li>
+  <li>Server responds with a success code and creates the subscription.</li>
+  <li>Client requests FHIR server’s <a href="http://hl7.org/fhir/capabilitystatement.html">CapabilityStatement</a> to find the server’s websocket URL via the <a href="http://hl7.org/fhir/extension-capabilitystatement-websocket.html">websocket extension</a>.</li>
+  <li>Server returns its <code class="language-plaintext highlighter-rouge">CapabilityStatement</code>.</li>
+  <li>Client connects to the server via websockets (<code class="language-plaintext highlighter-rouge">wss://</code> preferred).</li>
+  <li>Client requests a websocket binding token, by invoking the <code class="language-plaintext highlighter-rouge">$get-ws-binding-token</code> operation via REST. Note: this call is intended to be repeated as necessary (e.g., prior to a token expiring, a client should request a new one).</li>
+  <li>Server returns <code class="language-plaintext highlighter-rouge">Parameters</code> with a <code class="language-plaintext highlighter-rouge">token</code> and an <code class="language-plaintext highlighter-rouge">expiration</code>.</li>
+  <li>Client sends a <code class="language-plaintext highlighter-rouge">bind-with-token</code> message via websockets, with the token provided by the server. Note: this operation can be repeated concurrently for multiple subscriptions, and serially for continued operation over a single websocket connection.</li>
+  <li>Server sends one or more <code class="language-plaintext highlighter-rouge">handshake</code> messages via websockets (one per Subscription included in the token). Note: some servers may additionally send one or more <code class="language-plaintext highlighter-rouge">event-notification</code> messages at this time (e.g., all messages since last connected, last ‘n’ messages, etc.). Clients are expected to handle either flow.</li>
+  <li>Server may send notifications of type <code class="language-plaintext highlighter-rouge">heartbeat</code> at any time.</li>
+  <li>Server may send notifications of type <code class="language-plaintext highlighter-rouge">event-notification</code> at any time.</li>
+  <li>Either the server or the client may close the websocket connection.</li>
+</ol>
+
+<p>Note: all notifications sent from the server SHALL be in the MIME type specified by the Subscription (<a href="http://hl7.org/fhir/subscription-definitions.html#Subscription.channel.payload">Subscription.channel.payload</a>).</p>
+
+<h5 id="security-notes-1">Security Notes</h5>
+
+<p>WebSocket security poses several challenges specific to the channel. When implementing websockets for notifications, please keep in mind the following list of some areas of concern:</p>
+
+<ul>
+  <li>Authentication of WebSockets is not generically interoperable with JWT or other ‘Authentication header’ protocols - WS and WSS do NOT allow for the required headers.</li>
+  <li>Given client limitations on concurrent WebSocket connections (commonly 6), it is recommended that a single connection be able to authenticate to multiple Subscription resources.</li>
+  <li>Unlike HTTP/S requests, WebSockets can be long-lived. Because of this, the case of revoking access of an active connection must be considered.</li>
+</ul>
+
+<h4 id="email-1">Email</h4>
+
+<p>While the primary interface for FHIR servers is the FHIR REST API, notifications need not occur via REST. Indeed, some subscribers may be unable to maintain an outward-facing HTTP server to receive triggered notifications. For example, a public health organization may want to be notified of outbreaks of various illnesses. This can be accomplished using an <code class="language-plaintext highlighter-rouge">email</code> notification channel.</p>
+
+<p>A client can declare its intention to receive notifications via Email by requesting a subscription with the channel type of <code class="language-plaintext highlighter-rouge">email</code> and setting the endpoint to the appropriate email URI (e.g., <code class="language-plaintext highlighter-rouge">mailto:public_health_notifications@example.org</code>).</p>
+
+<p>The server will send a new message each time a notification should be sent (e.g., per event or per batch). The server will create a message based on the values present in the <a href="http://hl7.org/fhir/subscription-definitions.html#Subscription.channel.payload">Subscription.channel.payload</a> and <a href="StructureDefinition-backport-payload-content.html">payload content</a> fields. If a server cannot honor the requested combination, the server SHOULD reject the Subscription request rather than send unexpected email messages.</p>
+
+<p>The email channel sets two guidelines about content:</p>
+
+<ul>
+  <li>Message Body content SHALL be human readable</li>
+  <li>Message Attachments SHOULD be machine readable</li>
+</ul>
+
+<p>Due to these guidelines, the <a href="http://hl7.org/fhir/subscription-definitions.html#Subscription.channel.payload">Subscription.channel.payload</a> refers to the content of the body of the message. Attachment type information can be appended as a MIME parameter, for example:</p>
+
+<ul>
+  <li>text/plain: a plain-text body with no attachment</li>
+  <li>text/html: an HTML body with no attachment</li>
+  <li>text/plain;attach=application/fhir+json: a plain-text body with a FHIR JSON bundle attached</li>
+  <li>text/html;attach=application/fhir+xml: an HTML body with a FHIR XML bundle attached</li>
+</ul>
+
+<p>The <a href="StructureDefinition-backport-payload-content.html">payload content</a> field SHALL be applied to any attachments and MAY be applied to body contents (depending on server implementation). However, a server must not include a body which exceeds the specified content level. For example, a server may choose to always include a standard message in the body of the message containing no PHI and vary the attachment, but cannot include PHI in the body of an email when the content is set to <code class="language-plaintext highlighter-rouge">empty</code>.</p>
+
+<p>An example workflow for receiving notifications via email is shown below:</p>
+
+<p><img src="subscription-email-flow.svg" alt="Diagram showing a workflow for email subscriptions" style="float:none;"/></p>
+
+<ol>
+  <li>Client creates a Subscription with the channelType set to <code class="language-plaintext highlighter-rouge">email</code>.</li>
+  <li>Server responds with a success code and creates the subscription with a state of either <code class="language-plaintext highlighter-rouge">requested</code> or <code class="language-plaintext highlighter-rouge">active</code>.</li>
+  <li>Optional: Server sends a email message to the requested endpoint with a <code class="language-plaintext highlighter-rouge">handshake</code> notification. If the subscription was set to <code class="language-plaintext highlighter-rouge">requested</code>, it should be updated to <code class="language-plaintext highlighter-rouge">active</code> after successfully sending the email (pending additional steps such as user confirmation, etc.).</li>
+  <li>Server may send notifications of type <code class="language-plaintext highlighter-rouge">heartbeat</code> at any time.</li>
+  <li>Server may send notifications of type <code class="language-plaintext highlighter-rouge">event-notification</code> at any time.</li>
+</ol>
+
+<h5 id="security-notes-2">Security Notes</h5>
+
+<p>Email (SMTP) is not a secure channel. Implementers must ensure that any messages containing PHI have been secured according to their policy requirements (e.g., use of a system such as <a href="http://directproject.org/">Direct</a>).</p>
+
+<h4 id="fhir-messaging-1">FHIR Messaging</h4>
+
+<p>There are times when it is desireable to use Subscriptions as a communication channel between FHIR servers. This can be accomplished using a <code class="language-plaintext highlighter-rouge">Subscription</code> with the channel type of <code class="language-plaintext highlighter-rouge">message</code>.</p>
+
+<p>To receive notifications via messaging, a client should request a subscription with the channel type of <code class="language-plaintext highlighter-rouge">message</code> and set the endpoint to the destination FHIR server base URL. Note that this URL must be accessible by the hosting server.</p>
+
+<p>The FHIR server hosting the subscription (server) will send FHIR messages to the destination FHIR server (endpoint) as needed. These messages will, as the contents of the message, have a fully-formed notification Bundle.</p>
+
+<p>An example workflow for receiving notification via FHIR messaging is shown below:</p>
+
+<p><img src="subscription-message-flow.svg" alt="Diagram showing a workflow for FHIR messaging subscriptions" style="float:none;"/></p>
+
+<ol>
+  <li>Client creates a Subscription with the channelType set to <code class="language-plaintext highlighter-rouge">message</code>.</li>
+  <li>Server responds with a success code and creates the subscription with a state of <code class="language-plaintext highlighter-rouge">requested</code>.</li>
+  <li>Server sends a FHIR Message to the requested endpoint with a <code class="language-plaintext highlighter-rouge">handshake</code> notification.</li>
+  <li>Client Endpoint accepts the Message and returns success.</li>
+  <li>Server may send notifications of type <code class="language-plaintext highlighter-rouge">heartbeat</code> at any time.</li>
+  <li>Server may send notifications of type <code class="language-plaintext highlighter-rouge">event-notification</code> at any time.</li>
+</ol>
+
+<h5 id="security-notes-3">Security Notes</h5>
+
+<p>Servers MAY require that the end-point is allow-listed prior to allowing these kinds of subscriptions. Additionally, servers MAY impose authorization/authentication requirements for server to server communication (e.g., certificate pinning, etc.).</p>
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p><a name="cc14db0d-a986-4866-9e68-e7fd75fc92ec">​</a>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://hl7.org/Special/committees/fiwg/index.cfm">HL7 FHIR Infrastructure WG</a>.  Package hl7.fhir.uv.subscriptions-backport#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Mon, Aug 2, 2021 13:40-0500">2021-08-02</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+               | <a style="color: #81BEF7" href="http://hl7.org/fhir/uv/subscriptions-backport/history.html" target="_blank">Version History  |
+               <a style="color: #81BEF7" href="searchform.html" target="_blank">Search  |
+                 <a rel="license" style="color: #81BEF7" href="http://build.fhir.org/license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> |
+                   <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" href="http://hl7.org/fhir-issues" target="_blank">Propose a change </a>
+
+          
+        
+          <!-- /inner-wrapper -->
+        <!-- /container -->
+      <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
+    <!-- Analytics Below
+  ================================================== -->
+  
+
+
+</a></a></p></div></div></div></body></html>

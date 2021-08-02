@@ -1,0 +1,36 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "fd2c2202-87d7-4e8e-aa96-da7fbea5a36e-9",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/fd2c2202-87d7-4e8e-aa96-da7fbea5a36e-9",
+  "name" : "IntersectionBackportNotificationTypeCodeSystemAndBackportNotificationTypeCodeSystem",
+  "title" : "Intersection of R5 Subscription Notification Type Code System And R5 Subscription Notification Type Code System",
+  "status" : "active",
+  "date" : "2021-08-02T13:40:38-05:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "concept" : [{
+    "code" : "handshake",
+    "display" : "Handshake",
+    "definition" : "The notification is being sent as part of the setup or verification of a communications channel."
+  },
+  {
+    "code" : "heartbeat",
+    "display" : "Heartbeat",
+    "definition" : "The notification is being sent because there has not been a notification generated over an extended period of time."
+  },
+  {
+    "code" : "event-notification",
+    "display" : "Event Notification",
+    "definition" : "The notification is being sent due to an event for the subscriber."
+  },
+  {
+    "code" : "query-status",
+    "display" : "Query Status",
+    "definition" : "The notification is being sent due to a client request or query for Subscription status."
+  }]
+}

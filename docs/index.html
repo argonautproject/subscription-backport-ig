@@ -1,8 +1,392 @@
-<html>
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="Refresh" content="0; url='http://build.fhir.org/ig/HL7/fhir-subscription-backport-ig/'"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>HL7.FHIR.UV.SUBSCRIPTIONS-BACKPORT\Home - FHIR v4.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+    <link rel="stylesheet" href="assets/css/hl7.css"/>
+    <link rel="stylesheet" href="assets/css/fhir.css"/>
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
-  <body>
-    Moved: http://build.fhir.org/ig/HL7/fhir-subscription-backport-ig/
-  </body>
-</html>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"1"}
+    h3,h4,h5,h6{--heading-prefix:"1"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a no-external="true" id="hl7-logo" href="http://hl7.org">
+            <img src="assets/images/hl7-logo-header.png" alt="Visit the HL7 website" height="50"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a no-external="true" id="family-logo" href="http://hl7.org/fhir"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a no-external="true" id="hl7-search-lnk" href="searchform.html"><img src="assets/images/search.png" alt="Search FHIR"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Subscriptions R5 Backport</span><br/>0.1.0 - ballot</p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://build.fhir.org/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="background.html">Background</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Specification
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="actors.html">Actors</a>
+      </li>
+      <li>
+        <a href="components.html">Topic-Based Subscription Components</a>
+      </li>
+      <li>
+        <a href="workflow.html">Workflow</a>
+      </li>
+      <li>
+        <a href="channels.html">Channels</a>
+      </li>
+      <li>
+        <a href="notifications.html">Notifications</a>
+      </li>
+      <li>
+        <a href="payloads.html">Payload Types</a>
+      </li>
+      <li>
+        <a href="conformance.html">Conformance</a>
+      </li>
+      <li>
+        <a href="errors.html">Handling Errors</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="safety_security.html">Safety and Security</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html#1">Capability Statements</a>
+      </li>
+      <li>
+        <a href="artifacts.html#2">Operations</a>
+      </li>
+      <li>
+        <a href="artifacts.html#3">Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#4">Extensions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#5">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#7">Examples</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Home</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">Subscriptions R5 Backport - Local Development build (v0.1.0). See the <a href="http://hl7.org/fhir/uv/subscriptions-backport/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Home</h2>
+  
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#about-this-guide" id="markdown-toc-about-this-guide">About This Guide</a></li>
+  <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
+</ul>
+
+</div>
+<p>The Subscription R5 Backport Implementation Guide enables servers running verions of FHIR earlier than R5 to implement a subset of R5 Subscriptions in a standardized way.</p>
+
+<h3 id="about-this-guide">About This Guide</h3>
+
+<p>During the development of FHIR R5, the Subscriptions Framework has gone through a significant redesign.  Many implementers have expressed a need for functionality from the FHIR R5 version of Subscriptions to be made available in FHIR R4.</p>
+
+<p>The goal of publishing this guide is to define a standard method of back-porting the R5 Subscriptions Framework for greater compatibility and adoption.</p>
+
+<h3 id="contents">Contents</h3>
+
+<ul>
+  <li><a href="background.html">Background</a>
+    <ul>
+      <li>What are Subscriptions?</li>
+      <li>Subscriptions in R4</li>
+      <li>Subscriptions in R5</li>
+      <li>This IG</li>
+    </ul>
+  </li>
+  <li>Specification
+    <ul>
+      <li><a href="actors.html">Actors</a>
+        <ul>
+          <li>Server</li>
+          <li>Client</li>
+          <li>Endpoint</li>
+        </ul>
+      </li>
+      <li><a href="components.html">Components</a>
+        <ul>
+          <li>Subscription Topics</li>
+          <li>Subscriptions</li>
+          <li>Notifications</li>
+        </ul>
+      </li>
+      <li><a href="workflow.html">Workflow</a></li>
+      <li><a href="notifications.html">Notifications</a>
+        <ul>
+          <li>Handshake</li>
+          <li>Heartbeat</li>
+          <li>Event Notification</li>
+          <li>Query Status</li>
+        </ul>
+      </li>
+      <li><a href="channels.html">Channels</a>
+        <ul>
+          <li>REST-Hook (http/s POST)</li>
+          <li>Websockets</li>
+          <li>Email</li>
+          <li>FHIR Messaging</li>
+        </ul>
+      </li>
+      <li><a href="payloads.html">Payloads</a>
+        <ul>
+          <li>Empty</li>
+          <li>Id Only</li>
+          <li>Full Resource</li>
+        </ul>
+      </li>
+      <li><a href="conformance.html">Conformance</a></li>
+      <li><a href="errors.html">Handling Errors</a></li>
+    </ul>
+  </li>
+  <li>
+    <p><a href="safety_security.html">Safety and Security</a></p>
+  </li>
+  <li>Profiles and Extensions
+    <ul>
+      <li><a name="338c3698-beba-434f-a41c-c87302e4d7cc">​</a>Profile: <a href="StructureDefinition-backport-subscription-topic-canonical-urls.html">Subscription Topic URL Parameters</a></li>
+      <li>Profile: <a href="StructureDefinition-backport-subscription.html">Subscription</a>
+        <ul>
+          <li><a name="9772771f-3b58-442d-8c62-a12c821ba032">​</a>Extension: <a href="StructureDefinition-backport-topic-canonical.html">Backport Topic Canonical</a></li>
+          <li>Extension: <a href="StructureDefinition-backport-heartbeat-period.html">Backport Heartbeat Period</a></li>
+          <li>Extension: <a href="StructureDefinition-backport-timeout.html">Backport Timeout</a></li>
+          <li><a name="619992cb-d019-4fdd-ba4d-bbac95e54b5c">​</a>Extension: <a href="StructureDefinition-backport-notification-url-location.html">Backport Notification URL Location</a></li>
+          <li>Extension: <a href="StructureDefinition-backport-max-count.html">Backport Notification Max Count</a></li>
+          <li>Extension: <a href="StructureDefinition-backport-payload-content.html">Backport Payload Content</a></li>
+        </ul>
+      </li>
+      <li>Profile: Notification <a href="StructureDefinition-backport-subscription-notification.html">Bundle</a></li>
+      <li><a name="a1f38644-74f9-45fe-8aff-4c965b79bb1d">​</a>Profile: Subscription Status - <a href="StructureDefinition-backport-subscriptionstatus.html">Parameters</a></li>
+    </ul>
+  </li>
+  <li>Operations
+    <ul>
+      <li>Operation: <a href="OperationDefinition-backport-subscription-get-ws-binding-token.html">$get-ws-binding-token</a></li>
+      <li>Operation: <a href="OperationDefinition-backport-subscription-status.html">$status</a></li>
+      <li><a name="d16f1bf5-043c-4b92-82a9-0e7761e68f61">​</a>Operation: <a href="OperationDefinition-backport-subscriptiontopic-list.html">$topic-list</a></li>
+    </ul>
+  </li>
+  <li>Value Sets and Code Systems
+    <ul>
+      <li>Subscription Contents
+        <ul>
+          <li><a href="CodeSystem-backport-content-code-system.html">Code System</a></li>
+          <li><a href="ValueSet-backport-content-value-set.html">Value Set</a></li>
+        </ul>
+      </li>
+      <li>Subscription Notification Types
+        <ul>
+          <li><a href="CodeSystem-backport-notification-type-code-system.html">Code System</a></li>
+          <li><a href="ValueSet-backport-notification-type-value-set.html">Value Set</a></li>
+        </ul>
+      </li>
+      <li>Subscription Notification URL Location
+        <ul>
+          <li><a name="f7515cad-c5aa-442a-912e-f314ea6eb4e5">​</a><a href="CodeSystem-backport-notification-url-location-code-system.html">Code System</a></li>
+          <li><a name="ea03b403-93f7-4332-b26d-baca16611f7c">​</a><a href="ValueSet-backport-notification-url-location-value-set.html">Value Set</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="downloads.html">Downloads</a></li>
+</ul>
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p><a name="3abf91a1-7f80-4aac-8331-92af53586ac9">​</a>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://hl7.org/Special/committees/fiwg/index.cfm">HL7 FHIR Infrastructure WG</a>.  Package hl7.fhir.uv.subscriptions-backport#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Mon, Aug 2, 2021 13:40-0500">2021-08-02</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+               | <a style="color: #81BEF7" href="http://hl7.org/fhir/uv/subscriptions-backport/history.html" target="_blank">Version History  |
+               <a style="color: #81BEF7" href="searchform.html" target="_blank">Search  |
+                 <a rel="license" style="color: #81BEF7" href="http://build.fhir.org/license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> |
+                   <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" href="http://hl7.org/fhir-issues" target="_blank">Propose a change </a>
+
+          
+        
+          <!-- /inner-wrapper -->
+        <!-- /container -->
+      <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
+    <!-- Analytics Below
+  ================================================== -->
+  
+
+
+</a></a></p></div></div></div></body></html>

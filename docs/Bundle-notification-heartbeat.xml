@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="notification-heartbeat"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription-notification"/>
+  </meta>
+  <type value="history"/>
+  <timestamp value="2020-05-29T11:44:13.1882432-05:00"/>
+  <entry>
+    <fullUrl value="urn:uuid:2ec7c86b-421a-462d-a1a8-64bdb289c965"/>
+    <resource>
+      <SubscriptionStatus>
+        <id value="2ec7c86b-421a-462d-a1a8-64bdb289c965"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>type</b>: heartbeat</p><p><b>eventsSinceSubscriptionStart</b>: 309</p><p><b>eventsInNotification</b>: 0</p><p><b>subscription</b>: <a href="https://example.org/fhir/r4/Subscription/admission">https://example.org/fhir/r4/Subscription/admission</a></p><p><b>topic</b>: <a href="http://hl7.org/SubscriptionTopic/admission">http://hl7.org/SubscriptionTopic/admission</a></p></div>
+        </text>
+        <status value="active"/>
+        <type value="heartbeat"/>
+        <eventsSinceSubscriptionStart value="309"/>
+        <eventsInNotification value="0"/>
+        <subscription>
+          <reference value="https://example.org/fhir/r4/Subscription/admission"/>
+        </subscription>
+        <topic value="http://hl7.org/SubscriptionTopic/admission"/>
+      </SubscriptionStatus>
+    </resource>
+    <request>
+      <method value="GET"/>
+      <url value="https://example.org/fhir/r4/Subscription/admission/$status"/>
+    </request>
+    <response>
+      <status value="200"/>
+    </response>
+  </entry>
+</Bundle>

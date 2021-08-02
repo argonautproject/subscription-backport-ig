@@ -1,0 +1,248 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "43afc3cf-01b8-4d28-8171-1a018245a595",
+  "meta" : {
+    "lastUpdated" : "2021-08-02T13:40:32.659-05:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://hl7.org/fhir/uv/subscriptions-backport/ValueSet/backport-content-value-set",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "backport-content-value-set",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-backport-content-code-system.html\">Backported R5 Subscription Content Code System v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-backport-content-code-system.html\"><code>http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-content-code-system</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-uv-subscriptions-backport-CodeSystem-backport-content-code-system-empty\"> </a><a href=\"CodeSystem-backport-content-code-system.html#backport-content-code-system-empty\">empty</a></td><td>Empty</td><td>No resource content is transacted in the notification payload.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-uv-subscriptions-backport-CodeSystem-backport-content-code-system-id-only\"> </a><a href=\"CodeSystem-backport-content-code-system.html#backport-content-code-system-id-only\">id-only</a></td><td>Id Only</td><td>Only the resource id is transacted in the notification payload.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-uv-subscriptions-backport-CodeSystem-backport-content-code-system-full-resource\"> </a><a href=\"CodeSystem-backport-content-code-system.html#backport-content-code-system-full-resource\">full-resource</a></td><td>Full Resource</td><td>The entire resource is transacted in the notification payload.</td></tr></table></div>"
+      },
+      "url" : "http://hl7.org/fhir/uv/subscriptions-backport/ValueSet/backport-content-value-set",
+      "version" : "0.1.0",
+      "name" : "BackportContentValueSet",
+      "title" : "Backported R5 Subscription Content Value Set",
+      "status" : "active",
+      "date" : "2021-08-02T13:40:32-05:00",
+      "publisher" : "HL7 FHIR Infrastructure WG",
+      "contact" : [{
+        "name" : "HL7 FHIR Infrastructure WG",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://hl7.org/Special/committees/fiwg/index.cfm"
+        }]
+      },
+      {
+        "name" : "Gino Canessa",
+        "telecom" : [{
+          "system" : "email",
+          "value" : "mailto:gino.canessa@microsoft.com"
+        }]
+      },
+      {
+        "name" : "Eric Haas",
+        "telecom" : [{
+          "system" : "email",
+          "value" : "mailto:ehaas@healthedatainc.com"
+        }]
+      }],
+      "description" : "Codes to represent how much resource content to send in the notification payload.",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:d9e24105-911e-4107-9474-9001a1bce484",
+        "timestamp" : "2021-08-02T13:40:45-05:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-content-code-system|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-content-code-system",
+          "code" : "empty",
+          "display" : "Empty"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-content-code-system",
+          "code" : "id-only",
+          "display" : "Id Only"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-content-code-system",
+          "code" : "full-resource",
+          "display" : "Full Resource"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://hl7.org/fhir/uv/subscriptions-backport/ValueSet/backport-notification-error-value-set",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "backport-notification-error-value-set",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-backport-notification-error-code-system.html\">R5 Subscription Error Code System v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-backport-notification-error-code-system.html\"><code>http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-notification-error-code-system</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-uv-subscriptions-backport-CodeSystem-backport-notification-error-code-system-unreachable\"> </a><a href=\"CodeSystem-backport-notification-error-code-system.html#backport-notification-error-code-system-unreachable\">unreachable</a></td><td>Unreachable</td><td>The subscription endpoint is currently unreachable.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-uv-subscriptions-backport-CodeSystem-backport-notification-error-code-system-certificate-error\"> </a><a href=\"CodeSystem-backport-notification-error-code-system.html#backport-notification-error-code-system-certificate-error\">certificate-error</a></td><td>Certificate Error</td><td>The subscription endpoint has an invalid certificate.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-uv-subscriptions-backport-CodeSystem-backport-notification-error-code-system-timeout\"> </a><a href=\"CodeSystem-backport-notification-error-code-system.html#backport-notification-error-code-system-timeout\">timeout</a></td><td>Timeout</td><td>An attempt to send a notification has timed out.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-uv-subscriptions-backport-CodeSystem-backport-notification-error-code-system-processing\"> </a><a href=\"CodeSystem-backport-notification-error-code-system.html#backport-notification-error-code-system-processing\">processing</a></td><td>Processing Error</td><td>An error occurred while processing the event or notification.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-uv-subscriptions-backport-CodeSystem-backport-notification-error-code-system-unathorized\"> </a><a href=\"CodeSystem-backport-notification-error-code-system.html#backport-notification-error-code-system-unathorized\">unathorized</a></td><td>Unauthorized</td><td>The server has determined the endpoint is not authorized to receive notifications.</td></tr></table></div>"
+      },
+      "url" : "http://hl7.org/fhir/uv/subscriptions-backport/ValueSet/backport-notification-error-value-set",
+      "version" : "0.1.0",
+      "name" : "BackportNotificationErrorValueSet",
+      "title" : "R5 Subscription Error Codes Value Set",
+      "status" : "active",
+      "date" : "2021-08-02T13:40:32-05:00",
+      "publisher" : "HL7 FHIR Infrastructure WG",
+      "contact" : [{
+        "name" : "HL7 FHIR Infrastructure WG",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://hl7.org/Special/committees/fiwg/index.cfm"
+        }]
+      },
+      {
+        "name" : "Gino Canessa",
+        "telecom" : [{
+          "system" : "email",
+          "value" : "mailto:gino.canessa@microsoft.com"
+        }]
+      },
+      {
+        "name" : "Eric Haas",
+        "telecom" : [{
+          "system" : "email",
+          "value" : "mailto:ehaas@healthedatainc.com"
+        }]
+      }],
+      "description" : "Codes to represent error states on subscriptions.",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:8099bfbc-fa2d-4fff-905b-54ce793d2b25",
+        "timestamp" : "2021-08-02T13:40:45-05:00",
+        "total" : 5,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-notification-error-code-system|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-notification-error-code-system",
+          "code" : "unreachable",
+          "display" : "Unreachable"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-notification-error-code-system",
+          "code" : "certificate-error",
+          "display" : "Certificate Error"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-notification-error-code-system",
+          "code" : "timeout",
+          "display" : "Timeout"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-notification-error-code-system",
+          "code" : "processing",
+          "display" : "Processing Error"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-notification-error-code-system",
+          "code" : "unathorized",
+          "display" : "Unauthorized"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://hl7.org/fhir/uv/subscriptions-backport/ValueSet/backport-notification-type-value-set",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "backport-notification-type-value-set",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-backport-notification-type-code-system.html\">R5 Subscription Notification Type Code System v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-backport-notification-type-code-system.html\"><code>http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-notification-type-code-system</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-uv-subscriptions-backport-CodeSystem-backport-notification-type-code-system-handshake\"> </a><a href=\"CodeSystem-backport-notification-type-code-system.html#backport-notification-type-code-system-handshake\">handshake</a></td><td>Handshake</td><td>The notification is being sent as part of the setup or verification of a communications channel.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-uv-subscriptions-backport-CodeSystem-backport-notification-type-code-system-heartbeat\"> </a><a href=\"CodeSystem-backport-notification-type-code-system.html#backport-notification-type-code-system-heartbeat\">heartbeat</a></td><td>Heartbeat</td><td>The notification is being sent because there has not been a notification generated over an extended period of time.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-uv-subscriptions-backport-CodeSystem-backport-notification-type-code-system-event-notification\"> </a><a href=\"CodeSystem-backport-notification-type-code-system.html#backport-notification-type-code-system-event-notification\">event-notification</a></td><td>Event Notification</td><td>The notification is being sent due to an event for the subscriber.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-uv-subscriptions-backport-CodeSystem-backport-notification-type-code-system-query-status\"> </a><a href=\"CodeSystem-backport-notification-type-code-system.html#backport-notification-type-code-system-query-status\">query-status</a></td><td>Query Status</td><td>The notification is being sent due to a client request or query for Subscription status.</td></tr></table></div>"
+      },
+      "url" : "http://hl7.org/fhir/uv/subscriptions-backport/ValueSet/backport-notification-type-value-set",
+      "version" : "0.1.0",
+      "name" : "BackportNotificationTypeValueSet",
+      "title" : "R5 Subscription Notification Type Value Set",
+      "status" : "active",
+      "date" : "2021-08-02T13:40:32-05:00",
+      "publisher" : "HL7 FHIR Infrastructure WG",
+      "contact" : [{
+        "name" : "HL7 FHIR Infrastructure WG",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://hl7.org/Special/committees/fiwg/index.cfm"
+        }]
+      },
+      {
+        "name" : "Gino Canessa",
+        "telecom" : [{
+          "system" : "email",
+          "value" : "mailto:gino.canessa@microsoft.com"
+        }]
+      },
+      {
+        "name" : "Eric Haas",
+        "telecom" : [{
+          "system" : "email",
+          "value" : "mailto:ehaas@healthedatainc.com"
+        }]
+      }],
+      "description" : "Codes to represent types of notification bundles.",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:aa84f146-8763-4602-92d1-a505cf61458e",
+        "timestamp" : "2021-08-02T13:40:45-05:00",
+        "total" : 4,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-notification-type-code-system|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-notification-type-code-system",
+          "code" : "handshake",
+          "display" : "Handshake"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-notification-type-code-system",
+          "code" : "heartbeat",
+          "display" : "Heartbeat"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-notification-type-code-system",
+          "code" : "event-notification",
+          "display" : "Event Notification"
+        },
+        {
+          "system" : "http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-notification-type-code-system",
+          "code" : "query-status",
+          "display" : "Query Status"
+        }]
+      }
+    }
+  }]
+}

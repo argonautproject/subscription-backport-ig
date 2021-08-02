@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>HL7.FHIR.UV.SUBSCRIPTIONS-BACKPORT\Table of Contents - FHIR v4.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+    <link rel="stylesheet" href="assets/css/hl7.css"/>
+    <link rel="stylesheet" href="assets/css/fhir.css"/>
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"0"}
+    h3,h4,h5,h6{--heading-prefix:"0.0"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a no-external="true" id="hl7-logo" href="http://hl7.org">
+            <img src="assets/images/hl7-logo-header.png" alt="Visit the HL7 website" height="50"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a no-external="true" id="family-logo" href="http://hl7.org/fhir"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a no-external="true" id="hl7-search-lnk" href="searchform.html"><img src="assets/images/search.png" alt="Search FHIR"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Subscriptions R5 Backport</span><br/>0.1.0 - ballot</p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://build.fhir.org/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="background.html">Background</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Specification
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="actors.html">Actors</a>
+      </li>
+      <li>
+        <a href="components.html">Topic-Based Subscription Components</a>
+      </li>
+      <li>
+        <a href="workflow.html">Workflow</a>
+      </li>
+      <li>
+        <a href="channels.html">Channels</a>
+      </li>
+      <li>
+        <a href="notifications.html">Notifications</a>
+      </li>
+      <li>
+        <a href="payloads.html">Payload Types</a>
+      </li>
+      <li>
+        <a href="conformance.html">Conformance</a>
+      </li>
+      <li>
+        <a href="errors.html">Handling Errors</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="safety_security.html">Safety and Security</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html#1">Capability Statements</a>
+      </li>
+      <li>
+        <a href="artifacts.html#2">Operations</a>
+      </li>
+      <li>
+        <a href="artifacts.html#3">Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#4">Extensions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#5">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#7">Examples</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><b>Table of Contents</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">Subscriptions R5 Backport - Local Development build (v0.1.0). See the <a href="http://hl7.org/fhir/uv/subscriptions-backport/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Table of Contents</h2>
+  
+    <!-- ?xml version="1.0" encoding="UTF-8"? --><div style="col-12"><table border="0" cellpadding="0" cellspacing="0" style="border:0px;font-size:11px;font-family:verdana;vertical-align:top;"><tbody><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="toc.html" title="Table of Contents">0 Table of Contents</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="index.html" title="Home">1 Home</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="actors.html" title="Actors">2 Actors</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="background.html" title="Background">3 Background</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="channels.html" title="Channels">4 Channels</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="components.html" title="Components">5 Components</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="conformance.html" title="Conformance">6 Conformance</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="downloads.html" title="Downloads">7 Downloads</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="errors.html" title="Errors">8 Errors</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="notifications.html" title="Notifications">9 Notifications</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="payloads.html" title="Payloads">10 Payloads</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="safety_security.html" title="Safety Security">11 Safety Security</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="workflow.html" title="Workflow">12 Workflow</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="workflow-diagrams.html" title="Workflow Diagrams">13 Workflow Diagrams</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="artifacts.html" title="Artifacts Summary">14 Artifacts Summary</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="CapabilityStatement-backport-subscription-server.html" title="Backport Subscription Server Capability Statement">14.1 Backport Subscription Server Capability Statement</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="OperationDefinition-backport-subscription-get-ws-binding-token.html" title="Backport Subscription Get WS Binding Token">14.2 Backport Subscription Get WS Binding Token</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="OperationDefinition-backport-subscription-status.html" title="Backport Subscription Status Operation">14.3 Backport Subscription Status Operation</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="StructureDefinition-backport-subscription.html" title="Backported R5 Subscription">14.4 Backported R5 Subscription</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="StructureDefinition-backport-subscription-notification.html" title="Backported R5 Subscription Notification Bundle">14.5 Backported R5 Subscription Notification Bundle</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="StructureDefinition-backport-channel-type.html" title="Backported R5 Additional Channel Types">14.6 Backported R5 Additional Channel Types</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="StructureDefinition-backport-filter-criteria.html" title="Backported R5 FilterBy Criteria">14.7 Backported R5 FilterBy Criteria</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="StructureDefinition-backport-heartbeat-period.html" title="Backport R5 Subscription Heartbeat Period">14.8 Backport R5 Subscription Heartbeat Period</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="StructureDefinition-backport-max-count.html" title="Backported R5 Subscription MaxCount">14.9 Backported R5 Subscription MaxCount</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="StructureDefinition-subscription-notification-focus-resource.html" title="Subscription Notification Focus Resource">14.10 Subscription Notification Focus Resource</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="StructureDefinition-subscription-notification-included-resource.html" title="Subscription Notification Included Resource">14.11 Subscription Notification Included Resource</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="StructureDefinition-backport-payload-content.html" title="Backport R5 Subscription Payload Content Information">14.12 Backport R5 Subscription Payload Content Information</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="StructureDefinition-backport-timeout.html" title="Backport R5 Subscription Timeout">14.13 Backport R5 Subscription Timeout</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="ValueSet-backport-content-value-set.html" title="Backported R5 Subscription Content Value Set">14.14 Backported R5 Subscription Content Value Set</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="ValueSet-backport-notification-error-value-set.html" title="R5 Subscription Error Codes Value Set">14.15 R5 Subscription Error Codes Value Set</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="ValueSet-backport-notification-type-value-set.html" title="R5 Subscription Notification Type Value Set">14.16 R5 Subscription Notification Type Value Set</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="CodeSystem-backport-content-code-system.html" title="Backported R5 Subscription Content Code System">14.17 Backported R5 Subscription Content Code System</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="CodeSystem-backport-notification-error-code-system.html" title="R5 Subscription Error Code System">14.18 R5 Subscription Error Code System</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="CodeSystem-backport-notification-type-code-system.html" title="R5 Subscription Notification Type Code System">14.19 R5 Subscription Notification Type Code System</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="Bundle-notification-empty.html" title="Backported Notification: Empty">14.20 Backported Notification: Empty</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="Bundle-notification-error.html" title="Backported Notification: Error">14.21 Backported Notification: Error</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="Bundle-notification-full-resource.html" title="Backported Notification: Full Resource">14.22 Backported Notification: Full Resource</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="Bundle-notification-handshake.html" title="Backported Notification: Handshake">14.23 Backported Notification: Handshake</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="Bundle-notification-heartbeat.html" title="Backported Notification: Heartbeat">14.24 Backported Notification: Heartbeat</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="Bundle-notification-id-only.html" title="Backported Notification: Id Only">14.25 Backported Notification: Id Only</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="Bundle-notification-multi-resource.html" title="Backported Notification: Multiple Resources">14.26 Backported Notification: Multiple Resources</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="SubscriptionStatus-notification-status.html" title="Backported Notification: Status">14.27 Backported Notification: Status</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="Subscription-subscription-admission.html" title="Backported Subscription: Admission">14.28 Backported Subscription: Admission</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:white;"><td style="vertical-align:top;text-align:left;background-color:white;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color:inherit" class="hierarchy"/><img src="icon_page.gif" alt="." style="background-color:white;background-color:inherit" class="hierarchy"/><a href="Subscription-subscription-multi-resource.html" title="Backported Subscription: Multi-Resource">14.29 Backported Subscription: Multi-Resource</a></td></tr></tbody></table></div>
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p><a name="3d77cf8a-5349-43b4-a111-5ac7dcb2503e">​</a>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://hl7.org/Special/committees/fiwg/index.cfm">HL7 FHIR Infrastructure WG</a>.  Package hl7.fhir.uv.subscriptions-backport#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Mon, Aug 2, 2021 13:40-0500">2021-08-02</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+               | <a style="color: #81BEF7" href="http://hl7.org/fhir/uv/subscriptions-backport/history.html" target="_blank">Version History  |
+               <a style="color: #81BEF7" href="searchform.html" target="_blank">Search  |
+                 <a rel="license" style="color: #81BEF7" href="http://build.fhir.org/license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> |
+                   <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" href="http://hl7.org/fhir-issues" target="_blank">Propose a change </a>
+
+          
+        
+          <!-- /inner-wrapper -->
+        <!-- /container -->
+      <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
+    <!-- Analytics Below
+  ================================================== -->
+  
+
+
+</a></a></p></div></div></div></body></html>
