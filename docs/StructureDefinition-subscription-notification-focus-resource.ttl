@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "BackportNotificationFocusResource"];
   fhir:StructureDefinition.title [ fhir:value "Subscription Notification Focus Resource"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-08-02T13:40:32-05:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-08-11T11:08:20-05:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 FHIR Infrastructure WG"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

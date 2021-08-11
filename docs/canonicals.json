@@ -35,6 +35,13 @@
     "name": "SubscriptionsR5Backport"
   },
   {
+    "id": "backport-subscription-events",
+    "type": "OperationDefinition",
+    "url": "http://hl7.org/fhir/uv/subscriptions-backport/OperationDefinition/backport-subscription-events",
+    "version": "0.1.0",
+    "name": "R5SubscriptionEvents"
+  },
+  {
     "id": "backport-subscription-get-ws-binding-token",
     "type": "OperationDefinition",
     "url": "http://hl7.org/fhir/uv/subscriptions-backport/OperationDefinition/backport-subscription-get-ws-binding-token",

@@ -11,7 +11,7 @@
   <name value="SubscriptionsR5Backport"/>
   <title value="Subscriptions R5 Backport"/>
   <status value="draft"/>
-  <date value="2021-08-02T13:40:32-05:00"/>
+  <date value="2021-08-11T11:08:20-05:00"/>
   <publisher value="HL7 FHIR Infrastructure WG"/>
   <contact>
     <name value="HL7 FHIR Infrastructure WG"/>
@@ -220,6 +220,17 @@
       </reference>
       <name value="R5 Subscription Notification Type Code System"/>
       <description value="Codes to represent types of notification bundles."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OperationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="OperationDefinition/backport-subscription-events"/>
+      </reference>
+      <name value="Backport Subscription Events Operation"/>
+      <description value="This operation is used to return historical events in the backported R5-Style Subscriptions."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

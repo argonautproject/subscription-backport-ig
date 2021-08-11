@@ -131,6 +131,12 @@
     ],
     "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-timeout": [
       "Subscription.channel"
+    ],
+    "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/subscription-notification-focus-resource": [
+      "Bundle.entry"
+    ],
+    "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/subscription-notification-included-resource": [
+      "Bundle.entry"
     ]
   }
 }

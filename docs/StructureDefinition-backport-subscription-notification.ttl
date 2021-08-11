@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "backport-subscription-notification"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://build.fhir.org/formats.html#table\" title=\"Legend for this format\"><img src=\"http://build.fhir.org/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-backport-subscription-notification-definitions.html#Bundle\">Bundle</a><a name=\"Bundle\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: black; null\" title=\"This element has or is affected by some invariants (backport-notification-bundle-1)\">I</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/branches/R4B//bundle.html\">Bundle</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Contains a collection of resources</span><br/><span style=\"font-weight:bold\">backport-notification-bundle-1: </span>A notification bundle MUST have a SubscriptionStatus as the first entry</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-backport-subscription-notification-definitions.html#Bundle.type\">type</a><a name=\"Bundle.type\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://build.fhir.org/branches/R4B//datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">document | message | transaction | transaction-response | batch | batch-response | history | searchset | collection</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">history</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck03.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Definition\" class=\"hierarchy\"/> <a style=\"font-style: italic\" href=\"StructureDefinition-backport-subscription-notification-definitions.html#Bundle.entry\">Slices for entry</a><a name=\"Bundle.entry\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-style: italic\"/><span style=\"font-style: italic\">1</span><span style=\"font-style: italic\">..</span><span style=\"opacity: 0.5; font-style: italic\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; font-style: italic\" href=\"http://build.fhir.org/branches/R4B//backboneelement.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5; font-style: italic\">Entry in the bundle - will have a resource or information</span><br style=\"font-style: italic\"/><span style=\"font-weight:bold; font-style: italic\">Slice: </span><span style=\"font-style: italic\">Unordered, Open by type:resource</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck025.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-backport-subscription-notification-definitions.html#Bundle.entry:subscriptionStatus\" title=\"Slice subscriptionStatus\">entry:subscriptionStatus</a><a name=\"Bundle.entry\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://build.fhir.org/branches/R4B//backboneelement.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Entry in the bundle - will have a resource or information</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0240.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-backport-subscription-notification-definitions.html#Bundle.entry:subscriptionStatus.resource\">resource</a><a name=\"Bundle.entry.resource\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/branches/R4B//subscriptionstatus.html\">SubscriptionStatus</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">A resource in the bundle</span></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://build.fhir.org/formats.html#table\" title=\"Legend for this format\"><img src=\"http://build.fhir.org/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://build.fhir.org/formats.html#table\" title=\"Legend for this format\"><img src=\"http://build.fhir.org/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-backport-subscription-notification-definitions.html#Bundle\">Bundle</a><a name=\"Bundle\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: black; null\" title=\"This element has or is affected by some invariants (backport-notification-bundle-1)\">I</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/branches/R4B//bundle.html\">Bundle</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Contains a collection of resources</span><br/><span style=\"font-weight:bold\">backport-notification-bundle-1: </span>A notification bundle MUST have a SubscriptionStatus as the first entry</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-backport-subscription-notification-definitions.html#Bundle.type\">type</a><a name=\"Bundle.type\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://build.fhir.org/branches/R4B//datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">document | message | transaction | transaction-response | batch | batch-response | history | searchset | collection</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">history</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck03.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Definition\" class=\"hierarchy\"/> <a style=\"font-style: italic\" href=\"StructureDefinition-backport-subscription-notification-definitions.html#Bundle.entry\">Slices for entry</a><a name=\"Bundle.entry\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-style: italic\"/><span style=\"font-style: italic\">1</span><span style=\"font-style: italic\">..</span><span style=\"opacity: 0.5; font-style: italic\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; font-style: italic\" href=\"http://build.fhir.org/branches/R4B//backboneelement.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5; font-style: italic\">Entry in the bundle - will have a resource or information</span><br style=\"font-style: italic\"/><span style=\"font-weight:bold; font-style: italic\">Slice: </span><span style=\"font-style: italic\">Unordered, Open by type:resource</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck033.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> entry:All Slices<a name=\"Bundle.entry\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Content/Rules for all slices</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0332.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension_simple.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Simple Extension\" class=\"hierarchy\"/> <a href=\"StructureDefinition-backport-subscription-notification-definitions.html#Bundle.entry.extension\">Slices for extension</a><a name=\"Bundle.entry.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://build.fhir.org/branches/R4B//extensibility.html#Extension\">Extension</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Extension</span><br/><span style=\"font-weight:bold\">Slice: </span>Unordered, Open by value:url</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0334.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-backport-subscription-notification-definitions.html#Bundle.entry.extension:focusResource\" title=\"Extension URL = http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/subscription-notification-focus-resource\">subscription-notification-focus-resource</a><a name=\"Bundle.entry.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/branches/R4B//datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Subscription Notification Focus Resource</span><br/><span style=\"font-weight:bold\">URL: </span><a href=\"http://build.fhir.org/StructureDefinition-subscription-notification-focus-resource.html\">http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/subscription-notification-focus-resource</a><br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0324.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-backport-subscription-notification-definitions.html#Bundle.entry.extension:includedResource\" title=\"Extension URL = http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/subscription-notification-included-resource\">subscription-notification-included-resource</a><a name=\"Bundle.entry.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/branches/R4B//datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Subscription Notification Included Resource</span><br/><span style=\"font-weight:bold\">URL: </span><a href=\"http://build.fhir.org/StructureDefinition-subscription-notification-included-resource.html\">http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/subscription-notification-included-resource</a><br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck025.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-backport-subscription-notification-definitions.html#Bundle.entry:subscriptionStatus\" title=\"Slice subscriptionStatus\">entry:subscriptionStatus</a><a name=\"Bundle.entry\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://build.fhir.org/branches/R4B//backboneelement.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Entry in the bundle - will have a resource or information</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0240.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-backport-subscription-notification-definitions.html#Bundle.entry:subscriptionStatus.resource\">resource</a><a name=\"Bundle.entry.resource\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/branches/R4B//subscriptionstatus.html\">SubscriptionStatus</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">A resource in the bundle</span></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://build.fhir.org/formats.html#table\" title=\"Legend for this format\"><img src=\"http://build.fhir.org/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "BackportSubscriptionNotification"];
   fhir:StructureDefinition.title [ fhir:value "Backported R5 Subscription Notification Bundle"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-08-02T13:40:32-05:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-08-11T11:08:20-05:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 FHIR Infrastructure WG"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -919,16 +919,17 @@
        fhir:index 17;
        fhir:Element.id [ fhir:value "Bundle.entry.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.extension" ];
-       fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
-       fhir:ElementDefinition.definition [ fhir:value "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ];
-       fhir:ElementDefinition.comment [ fhir:value "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ];
-       fhir:ElementDefinition.alias [
-         fhir:value "extensions";
-         fhir:index 0
-       ], [
-         fhir:value "user content";
-         fhir:index 1
+       fhir:ElementDefinition.slicing [
+         fhir:ElementDefinition.slicing.discriminator [
+           fhir:index 0;
+           fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "value" ];
+           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "url" ]
+         ];
+         fhir:ElementDefinition.slicing.ordered [ fhir:value "false"^^xsd:boolean ];
+         fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
        ];
+       fhir:ElementDefinition.short [ fhir:value "Extension" ];
+       fhir:ElementDefinition.definition [ fhir:value "An Extension" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.base [
@@ -964,14 +965,111 @@
          ]
        ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.mapping [
-         fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
-       ]
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 18;
+       fhir:Element.id [ fhir:value "Bundle.entry.extension:focusResource" ];
+       fhir:ElementDefinition.path [ fhir:value "Bundle.entry.extension" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "focusResource" ];
+       fhir:ElementDefinition.short [ fhir:value "Subscription Notification Focus Resource" ];
+       fhir:ElementDefinition.definition [ fhir:value "Tagging for Bundle entries to indicate a resource is the focus of a specific notification." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Element.extension" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/subscription-notification-focus-resource";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/subscription-notification-focus-resource>
+         ]
+       ];
+       fhir:ElementDefinition.condition [
+         fhir:value "ele-1";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children unless an empty Parameters resource" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count()) or $this is Parameters" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div|self::f:Parameters" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ext-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "Must have either extensions or value[x], not both" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "extension.exists() != value.exists()" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Extension";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 19;
+       fhir:Element.id [ fhir:value "Bundle.entry.extension:includedResource" ];
+       fhir:ElementDefinition.path [ fhir:value "Bundle.entry.extension" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "includedResource" ];
+       fhir:ElementDefinition.short [ fhir:value "Subscription Notification Included Resource" ];
+       fhir:ElementDefinition.definition [ fhir:value "Tagging for Bundle entries to indicate a resource is included because of a specific notification." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Element.extension" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/subscription-notification-included-resource";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/subscription-notification-included-resource>
+         ]
+       ];
+       fhir:ElementDefinition.condition [
+         fhir:value "ele-1";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children unless an empty Parameters resource" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count()) or $this is Parameters" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div|self::f:Parameters" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ext-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "Must have either extensions or value[x], not both" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "extension.exists() != value.exists()" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Extension";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 20;
        fhir:Element.id [ fhir:value "Bundle.entry.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -1031,7 +1129,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 19;
+       fhir:index 21;
        fhir:Element.id [ fhir:value "Bundle.entry.link" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.link" ];
        fhir:ElementDefinition.short [ fhir:value "Links related to this entry" ];
@@ -1060,7 +1158,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 20;
+       fhir:index 22;
        fhir:Element.id [ fhir:value "Bundle.entry.fullUrl" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.fullUrl" ];
        fhir:ElementDefinition.short [ fhir:value "URI for resource (Absolute URL server address or URI for UUID/OID)" ];
@@ -1093,7 +1191,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 21;
+       fhir:index 23;
        fhir:Element.id [ fhir:value "Bundle.entry.resource" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.resource" ];
        fhir:ElementDefinition.short [ fhir:value "A resource in the bundle" ];
@@ -1113,7 +1211,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 22;
+       fhir:index 24;
        fhir:Element.id [ fhir:value "Bundle.entry.search" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.search" ];
        fhir:ElementDefinition.short [ fhir:value "Search related information" ];
@@ -1149,7 +1247,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 23;
+       fhir:index 25;
        fhir:Element.id [ fhir:value "Bundle.entry.search.id" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.search.id" ];
        fhir:ElementDefinition.representation [
@@ -1182,7 +1280,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 24;
+       fhir:index 26;
        fhir:Element.id [ fhir:value "Bundle.entry.search.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.search.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -1237,7 +1335,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 25;
+       fhir:index 27;
        fhir:Element.id [ fhir:value "Bundle.entry.search.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.search.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -1297,7 +1395,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 26;
+       fhir:index 28;
        fhir:Element.id [ fhir:value "Bundle.entry.search.mode" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.search.mode" ];
        fhir:ElementDefinition.short [ fhir:value "match | include | outcome - why this is in the result set" ];
@@ -1347,7 +1445,7 @@
          ]
        ]
      ], [
-       fhir:index 27;
+       fhir:index 29;
        fhir:Element.id [ fhir:value "Bundle.entry.search.score" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.search.score" ];
        fhir:ElementDefinition.short [ fhir:value "Search ranking (between 0 and 1)" ];
@@ -1380,7 +1478,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 28;
+       fhir:index 30;
        fhir:Element.id [ fhir:value "Bundle.entry.request" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.request" ];
        fhir:ElementDefinition.short [ fhir:value "Additional execution information (transaction/batch/history)" ];
@@ -1416,7 +1514,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 29;
+       fhir:index 31;
        fhir:Element.id [ fhir:value "Bundle.entry.request.id" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.request.id" ];
        fhir:ElementDefinition.representation [
@@ -1449,7 +1547,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 30;
+       fhir:index 32;
        fhir:Element.id [ fhir:value "Bundle.entry.request.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.request.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -1504,7 +1602,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 31;
+       fhir:index 33;
        fhir:Element.id [ fhir:value "Bundle.entry.request.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.request.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -1564,7 +1662,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 32;
+       fhir:index 34;
        fhir:Element.id [ fhir:value "Bundle.entry.request.method" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.request.method" ];
        fhir:ElementDefinition.short [ fhir:value "GET | HEAD | POST | PUT | DELETE | PATCH" ];
@@ -1613,7 +1711,7 @@
          ]
        ]
      ], [
-       fhir:index 33;
+       fhir:index 35;
        fhir:Element.id [ fhir:value "Bundle.entry.request.url" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.request.url" ];
        fhir:ElementDefinition.short [ fhir:value "URL for HTTP equivalent of this entry" ];
@@ -1646,7 +1744,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 34;
+       fhir:index 36;
        fhir:Element.id [ fhir:value "Bundle.entry.request.ifNoneMatch" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.request.ifNoneMatch" ];
        fhir:ElementDefinition.short [ fhir:value "For managing cache currency" ];
@@ -1678,7 +1776,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 35;
+       fhir:index 37;
        fhir:Element.id [ fhir:value "Bundle.entry.request.ifModifiedSince" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.request.ifModifiedSince" ];
        fhir:ElementDefinition.short [ fhir:value "For managing cache currency" ];
@@ -1710,7 +1808,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 36;
+       fhir:index 38;
        fhir:Element.id [ fhir:value "Bundle.entry.request.ifMatch" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.request.ifMatch" ];
        fhir:ElementDefinition.short [ fhir:value "For managing update contention" ];
@@ -1742,7 +1840,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 37;
+       fhir:index 39;
        fhir:Element.id [ fhir:value "Bundle.entry.request.ifNoneExist" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.request.ifNoneExist" ];
        fhir:ElementDefinition.short [ fhir:value "For conditional creates" ];
@@ -1774,7 +1872,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 38;
+       fhir:index 40;
        fhir:Element.id [ fhir:value "Bundle.entry.response" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.response" ];
        fhir:ElementDefinition.short [ fhir:value "Results of execution (transaction/batch/history)" ];
@@ -1810,7 +1908,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 39;
+       fhir:index 41;
        fhir:Element.id [ fhir:value "Bundle.entry.response.id" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.response.id" ];
        fhir:ElementDefinition.representation [
@@ -1843,7 +1941,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 40;
+       fhir:index 42;
        fhir:Element.id [ fhir:value "Bundle.entry.response.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.response.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -1898,7 +1996,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 41;
+       fhir:index 43;
        fhir:Element.id [ fhir:value "Bundle.entry.response.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.response.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -1958,7 +2056,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 42;
+       fhir:index 44;
        fhir:Element.id [ fhir:value "Bundle.entry.response.status" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.response.status" ];
        fhir:ElementDefinition.short [ fhir:value "Status response code (text optional)" ];
@@ -1990,7 +2088,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 43;
+       fhir:index 45;
        fhir:Element.id [ fhir:value "Bundle.entry.response.location" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.response.location" ];
        fhir:ElementDefinition.short [ fhir:value "The location (if the operation returns a location)" ];
@@ -2022,7 +2120,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 44;
+       fhir:index 46;
        fhir:Element.id [ fhir:value "Bundle.entry.response.etag" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.response.etag" ];
        fhir:ElementDefinition.short [ fhir:value "The Etag for the resource (if relevant)" ];
@@ -2055,7 +2153,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 45;
+       fhir:index 47;
        fhir:Element.id [ fhir:value "Bundle.entry.response.lastModified" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.response.lastModified" ];
        fhir:ElementDefinition.short [ fhir:value "Server's date time modified" ];
@@ -2088,7 +2186,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 46;
+       fhir:index 48;
        fhir:Element.id [ fhir:value "Bundle.entry.response.outcome" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.response.outcome" ];
        fhir:ElementDefinition.short [ fhir:value "OperationOutcome with hints and warnings (for batch/transaction)" ];
@@ -2109,7 +2207,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 47;
+       fhir:index 49;
        fhir:Element.id [ fhir:value "Bundle.entry:subscriptionStatus" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry" ];
        fhir:ElementDefinition.sliceName [ fhir:value "subscriptionStatus" ];
@@ -2165,7 +2263,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 48;
+       fhir:index 50;
        fhir:Element.id [ fhir:value "Bundle.entry:subscriptionStatus.id" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.id" ];
        fhir:ElementDefinition.representation [
@@ -2198,7 +2296,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 49;
+       fhir:index 51;
        fhir:Element.id [ fhir:value "Bundle.entry:subscriptionStatus.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -2253,7 +2351,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 50;
+       fhir:index 52;
        fhir:Element.id [ fhir:value "Bundle.entry:subscriptionStatus.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -2313,7 +2411,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 51;
+       fhir:index 53;
        fhir:Element.id [ fhir:value "Bundle.entry:subscriptionStatus.link" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.link" ];
        fhir:ElementDefinition.short [ fhir:value "Links related to this entry" ];
@@ -2342,7 +2440,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 52;
+       fhir:index 54;
        fhir:Element.id [ fhir:value "Bundle.entry:subscriptionStatus.fullUrl" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.fullUrl" ];
        fhir:ElementDefinition.short [ fhir:value "URI for resource (Absolute URL server address or URI for UUID/OID)" ];
@@ -2375,7 +2473,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 53;
+       fhir:index 55;
        fhir:Element.id [ fhir:value "Bundle.entry:subscriptionStatus.resource" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.resource" ];
        fhir:ElementDefinition.short [ fhir:value "A resource in the bundle" ];
@@ -2395,7 +2493,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 54;
+       fhir:index 56;
        fhir:Element.id [ fhir:value "Bundle.entry:subscriptionStatus.search" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.search" ];
        fhir:ElementDefinition.short [ fhir:value "Search related information" ];
@@ -2431,7 +2529,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 55;
+       fhir:index 57;
        fhir:Element.id [ fhir:value "Bundle.entry:subscriptionStatus.search.id" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.search.id" ];
        fhir:ElementDefinition.representation [
@@ -2464,7 +2562,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 56;
+       fhir:index 58;
        fhir:Element.id [ fhir:value "Bundle.entry:subscriptionStatus.search.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.search.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -2519,7 +2617,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 57;
+       fhir:index 59;
        fhir:Element.id [ fhir:value "Bundle.entry:subscriptionStatus.search.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.search.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -2579,7 +2677,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 58;
+       fhir:index 60;
        fhir:Element.id [ fhir:value "Bundle.entry:subscriptionStatus.search.mode" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.search.mode" ];
        fhir:ElementDefinition.short [ fhir:value "match | include | outcome - why this is in the result set" ];
@@ -2629,7 +2727,7 @@
          ]
        ]
      ], [
-       fhir:index 59;
+       fhir:index 61;
        fhir:Element.id [ fhir:value "Bundle.entry:subscriptionStatus.search.score" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.search.score" ];
        fhir:ElementDefinition.short [ fhir:value "Search ranking (between 0 and 1)" ];
@@ -2662,7 +2760,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 60;
+       fhir:index 62;
        fhir:Element.id [ fhir:value "Bundle.entry:subscriptionStatus.request" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.request" ];
        fhir:ElementDefinition.short [ fhir:value "Additional execution information (transaction/batch/history)" ];
@@ -2698,7 +2796,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 61;
+       fhir:index 63;
        fhir:Element.id [ fhir:value "Bundle.entry:subscriptionStatus.request.id" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.request.id" ];
        fhir:ElementDefinition.representation [
@@ -2731,7 +2829,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 62;
+       fhir:index 64;
        fhir:Element.id [ fhir:value "Bundle.entry:subscriptionStatus.request.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.request.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -2786,7 +2884,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 63;
+       fhir:index 65;
        fhir:Element.id [ fhir:value "Bundle.entry:subscriptionStatus.request.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.request.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -2846,7 +2944,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 64;
+       fhir:index 66;
        fhir:Element.id [ fhir:value "Bundle.entry:subscriptionStatus.request.method" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.request.method" ];
        fhir:ElementDefinition.short [ fhir:value "GET | HEAD | POST | PUT | DELETE | PATCH" ];
@@ -2895,7 +2993,7 @@
          ]
        ]
      ], [
-       fhir:index 65;
+       fhir:index 67;
        fhir:Element.id [ fhir:value "Bundle.entry:subscriptionStatus.request.url" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.request.url" ];
        fhir:ElementDefinition.short [ fhir:value "URL for HTTP equivalent of this entry" ];
@@ -2928,7 +3026,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 66;
+       fhir:index 68;
        fhir:Element.id [ fhir:value "Bundle.entry:subscriptionStatus.request.ifNoneMatch" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.request.ifNoneMatch" ];
        fhir:ElementDefinition.short [ fhir:value "For managing cache currency" ];
@@ -2960,7 +3058,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 67;
+       fhir:index 69;
        fhir:Element.id [ fhir:value "Bundle.entry:subscriptionStatus.request.ifModifiedSince" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.request.ifModifiedSince" ];
        fhir:ElementDefinition.short [ fhir:value "For managing cache currency" ];
@@ -2992,7 +3090,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 68;
+       fhir:index 70;
        fhir:Element.id [ fhir:value "Bundle.entry:subscriptionStatus.request.ifMatch" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.request.ifMatch" ];
        fhir:ElementDefinition.short [ fhir:value "For managing update contention" ];
@@ -3024,7 +3122,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 69;
+       fhir:index 71;
        fhir:Element.id [ fhir:value "Bundle.entry:subscriptionStatus.request.ifNoneExist" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.request.ifNoneExist" ];
        fhir:ElementDefinition.short [ fhir:value "For conditional creates" ];
@@ -3056,7 +3154,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 70;
+       fhir:index 72;
        fhir:Element.id [ fhir:value "Bundle.entry:subscriptionStatus.response" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.response" ];
        fhir:ElementDefinition.short [ fhir:value "Results of execution (transaction/batch/history)" ];
@@ -3092,7 +3190,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 71;
+       fhir:index 73;
        fhir:Element.id [ fhir:value "Bundle.entry:subscriptionStatus.response.id" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.response.id" ];
        fhir:ElementDefinition.representation [
@@ -3125,7 +3223,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 72;
+       fhir:index 74;
        fhir:Element.id [ fhir:value "Bundle.entry:subscriptionStatus.response.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.response.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -3180,7 +3278,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 73;
+       fhir:index 75;
        fhir:Element.id [ fhir:value "Bundle.entry:subscriptionStatus.response.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.response.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -3240,7 +3338,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 74;
+       fhir:index 76;
        fhir:Element.id [ fhir:value "Bundle.entry:subscriptionStatus.response.status" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.response.status" ];
        fhir:ElementDefinition.short [ fhir:value "Status response code (text optional)" ];
@@ -3272,7 +3370,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 75;
+       fhir:index 77;
        fhir:Element.id [ fhir:value "Bundle.entry:subscriptionStatus.response.location" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.response.location" ];
        fhir:ElementDefinition.short [ fhir:value "The location (if the operation returns a location)" ];
@@ -3304,7 +3402,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 76;
+       fhir:index 78;
        fhir:Element.id [ fhir:value "Bundle.entry:subscriptionStatus.response.etag" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.response.etag" ];
        fhir:ElementDefinition.short [ fhir:value "The Etag for the resource (if relevant)" ];
@@ -3337,7 +3435,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 77;
+       fhir:index 79;
        fhir:Element.id [ fhir:value "Bundle.entry:subscriptionStatus.response.lastModified" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.response.lastModified" ];
        fhir:ElementDefinition.short [ fhir:value "Server's date time modified" ];
@@ -3370,7 +3468,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 78;
+       fhir:index 80;
        fhir:Element.id [ fhir:value "Bundle.entry:subscriptionStatus.response.outcome" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.response.outcome" ];
        fhir:ElementDefinition.short [ fhir:value "OperationOutcome with hints and warnings (for batch/transaction)" ];
@@ -3391,7 +3489,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 79;
+       fhir:index 81;
        fhir:Element.id [ fhir:value "Bundle.signature" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -3470,6 +3568,51 @@
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ]
      ], [
        fhir:index 3;
+       fhir:Element.id [ fhir:value "Bundle.entry.extension" ];
+       fhir:ElementDefinition.path [ fhir:value "Bundle.entry.extension" ];
+       fhir:ElementDefinition.slicing [
+         fhir:ElementDefinition.slicing.discriminator [
+           fhir:index 0;
+           fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "value" ];
+           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "url" ]
+         ];
+         fhir:ElementDefinition.slicing.ordered [ fhir:value "false"^^xsd:boolean ];
+         fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:Element.id [ fhir:value "Bundle.entry.extension:focusResource" ];
+       fhir:ElementDefinition.path [ fhir:value "Bundle.entry.extension" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "focusResource" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/subscription-notification-focus-resource";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/subscription-notification-focus-resource>
+         ]
+       ]
+     ], [
+       fhir:index 5;
+       fhir:Element.id [ fhir:value "Bundle.entry.extension:includedResource" ];
+       fhir:ElementDefinition.path [ fhir:value "Bundle.entry.extension" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "includedResource" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/subscription-notification-included-resource";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/subscription-notification-included-resource>
+         ]
+       ]
+     ], [
+       fhir:index 6;
        fhir:Element.id [ fhir:value "Bundle.entry:subscriptionStatus" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry" ];
        fhir:ElementDefinition.sliceName [ fhir:value "subscriptionStatus" ];
@@ -3477,7 +3620,7 @@
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 4;
+       fhir:index 7;
        fhir:Element.id [ fhir:value "Bundle.entry:subscriptionStatus.resource" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.entry.resource" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];

@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "SubscriptionsR5Backport"];
   fhir:ImplementationGuide.title [ fhir:value "Subscriptions R5 Backport"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-08-02T13:40:32-05:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-08-11T11:08:20-05:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 FHIR Infrastructure WG"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -293,6 +293,20 @@
          fhir:Extension.valueString [ fhir:value "OperationDefinition" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/uv/subscriptions-backport/OperationDefinition/backport-subscription-events>;
+         fhir:Reference.reference [ fhir:value "OperationDefinition/backport-subscription-events" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Backport Subscription Events Operation" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This operation is used to return historical events in the backported R5-Style Subscriptions." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "OperationDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <http://hl7.org/fhir/uv/subscriptions-backport/OperationDefinition/backport-subscription-get-ws-binding-token>;
          fhir:Reference.reference [ fhir:value "OperationDefinition/backport-subscription-get-ws-binding-token" ]
        ];
@@ -300,7 +314,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This operation is used to get a token for a websocket client to use in order to bind to one or more subscriptions." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 17;
+       fhir:index 18;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -314,7 +328,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example CapabilityStatement describing the expected capabilities of a FHIR Server supporting backported R5 Subscriptions." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 18;
+       fhir:index 19;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -328,7 +342,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This operation is used to return the current status information about one or more backported R5-Style Subscriptions in R4." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 19;
+       fhir:index 20;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -345,7 +359,7 @@
          fhir:link <http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription-notification>
        ]
      ], [
-       fhir:index 20;
+       fhir:index 21;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -362,7 +376,7 @@
          fhir:link <http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription-notification>
        ]
      ], [
-       fhir:index 21;
+       fhir:index 22;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -379,7 +393,7 @@
          fhir:link <http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription-notification>
        ]
      ], [
-       fhir:index 22;
+       fhir:index 23;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -396,7 +410,7 @@
          fhir:link <http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription-notification>
        ]
      ], [
-       fhir:index 23;
+       fhir:index 24;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -413,7 +427,7 @@
          fhir:link <http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription-notification>
        ]
      ], [
-       fhir:index 24;
+       fhir:index 25;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -430,7 +444,7 @@
          fhir:link <http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription-notification>
        ]
      ], [
-       fhir:index 25;
+       fhir:index 26;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -447,7 +461,7 @@
          fhir:link <http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription-notification>
        ]
      ], [
-       fhir:index 26;
+       fhir:index 27;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -461,7 +475,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a backported notification with status content." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 27;
+       fhir:index 28;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -478,7 +492,7 @@
          fhir:link <http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription>
        ]
      ], [
-       fhir:index 28;
+       fhir:index 29;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -748,6 +762,8 @@
 <http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-notification-error-code-system> a fhir:uv .
 
 <http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-notification-type-code-system> a fhir:uv .
+
+<http://hl7.org/fhir/uv/subscriptions-backport/OperationDefinition/backport-subscription-events> a fhir:uv .
 
 <http://hl7.org/fhir/uv/subscriptions-backport/OperationDefinition/backport-subscription-get-ws-binding-token> a fhir:uv .
 
