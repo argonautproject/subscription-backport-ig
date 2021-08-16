@@ -229,7 +229,7 @@
 
 
 
-  <pre class="xml"><code class="language-xml"><a name="18d46372-4a34-4ddb-ac9a-9d745797d3ea">​</a>
+  <pre class="xml"><code class="language-xml"><a name="a6452209-21d6-433c-a8b4-ed3a0e5cb019">​</a>
 
 &lt;<a href="http://build.fhir.org/branches/R4B//bundle.html#Bundle">Bundle</a> xmlns="http://hl7.org/fhir"&gt;
   &lt;<a href="http://build.fhir.org/branches/R4B//bundle.html#Bundle.id">id</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#id">value</a>="notification-multi-resource"/&gt;
@@ -246,12 +246,24 @@
         &lt;<a href="http://build.fhir.org/branches/R4B//subscriptionstatus.html#SubscriptionStatus.id">id</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#id">value</a>="b21e4fae-ce73-45cb-8e37-1e203362b2ae"/&gt;
         &lt;<a href="http://build.fhir.org/branches/R4B//subscriptionstatus.html#SubscriptionStatus.text">text</a>&gt;
           &lt;<a href="http://build.fhir.org/branches/R4B//narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">value</a>="generated"/&gt;
-          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: event-notification&lt;/p&gt;&lt;p&gt;&lt;b&gt;eventsSinceSubscriptionStart&lt;/b&gt;: 2&lt;/p&gt;&lt;p&gt;&lt;b&gt;eventsInNotification&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;subscription&lt;/b&gt;: &lt;a href="https://example.org/fhir/r4/Subscription/admission"&gt;https://example.org/fhir/r4/Subscription/admission&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;topic&lt;/b&gt;: &lt;a href="http://hl7.org/SubscriptionTopic/admission"&gt;http://hl7.org/SubscriptionTopic/admission&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: event-notification&lt;/p&gt;&lt;p&gt;&lt;b&gt;eventsSinceSubscriptionStart&lt;/b&gt;: 2&lt;/p&gt;&lt;p&gt;&lt;b&gt;eventsInNotification&lt;/b&gt;: 1&lt;/p&gt;&lt;h3&gt;NotificationEvents&lt;/h3&gt;&lt;table class="grid"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;EventNumber&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Timestamp&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Focus&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;AdditionalContext&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;May 29, 2020, 11:44:13 AM&lt;/td&gt;&lt;td&gt;&lt;a href="#Encounter_551683b3-1477-41d1-b58e-32fe8b0047b0"&gt;See above (Encounter/551683b3-1477-41d1-b58e-32fe8b0047b0)&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="#Patient_46db3334-dbf5-43f3-868f-93ae0883cce1"&gt;See above (Patient/46db3334-dbf5-43f3-868f-93ae0883cce1)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;subscription&lt;/b&gt;: &lt;a href="https://example.org/fhir/r4/Subscription/admission"&gt;https://example.org/fhir/r4/Subscription/admission&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;topic&lt;/b&gt;: &lt;a href="http://hl7.org/SubscriptionTopic/admission"&gt;http://hl7.org/SubscriptionTopic/admission&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
         &lt;/text&gt;
         &lt;<a href="http://build.fhir.org/branches/R4B//subscriptionstatus.html#SubscriptionStatus.status">status</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">value</a>="active"/&gt;
         &lt;<a href="http://build.fhir.org/branches/R4B//subscriptionstatus.html#SubscriptionStatus.type">type</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">value</a>="event-notification"/&gt;
         &lt;<a href="http://build.fhir.org/branches/R4B//subscriptionstatus.html#SubscriptionStatus.eventsSinceSubscriptionStart">eventsSinceSubscriptionStart</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">value</a>="2"/&gt;
         &lt;<a href="http://build.fhir.org/branches/R4B//subscriptionstatus.html#SubscriptionStatus.eventsInNotification">eventsInNotification</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#integer">value</a>="1"/&gt;
+        &lt;<a href="http://build.fhir.org/branches/R4B//subscriptionstatus.html#SubscriptionStatus.notificationEvent">notificationEvent</a>&gt;
+          &lt;<a href="http://build.fhir.org/branches/R4B//subscriptionstatus.html#SubscriptionStatus.notificationEvent.eventNumber">eventNumber</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">value</a>="2"/&gt;
+          &lt;<a href="http://build.fhir.org/branches/R4B//subscriptionstatus.html#SubscriptionStatus.notificationEvent.timestamp">timestamp</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#instant">value</a>="2020-05-29T11:44:13.1882432-05:00"/&gt;
+          &lt;<a href="http://build.fhir.org/branches/R4B//subscriptionstatus.html#SubscriptionStatus.notificationEvent.focus">focus</a>&gt;
+            &lt;<a href="http://build.fhir.org/branches/R4B//references.html#Reference#Reference.reference">reference</a>
+                       <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">value</a>="https://example.org/fhir/r4/Encounter/551683b3-1477-41d1-b58e-32fe8b0047b0"/&gt;
+          &lt;/focus&gt;
+          &lt;<a href="http://build.fhir.org/branches/R4B//subscriptionstatus.html#SubscriptionStatus.notificationEvent.additionalContext">additionalContext</a>&gt;
+            &lt;<a href="http://build.fhir.org/branches/R4B//references.html#Reference#Reference.reference">reference</a>
+                       <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">value</a>="https://example.org/fhir/r4/Patient/46db3334-dbf5-43f3-868f-93ae0883cce1"/&gt;
+          &lt;/additionalContext&gt;
+        &lt;/notificationEvent&gt;
         &lt;<a href="http://build.fhir.org/branches/R4B//subscriptionstatus.html#SubscriptionStatus.subscription">subscription</a>&gt;
           &lt;<a href="http://build.fhir.org/branches/R4B//references.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">value</a>="https://example.org/fhir/r4/Subscription/admission"/&gt;
         &lt;/subscription&gt;
@@ -352,8 +364,8 @@
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="f2b67e02-d08f-46ba-896d-df1e6b334030">​</a>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://hl7.org/Special/committees/fiwg/index.cfm">HL7 FHIR Infrastructure WG</a>.  Package hl7.fhir.uv.subscriptions-backport#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Mon, Aug 16, 2021 11:25-0500">2021-08-16</span>
+        <p><a name="2d05e0ed-399b-4044-a1f0-d3f745fd04ed">​</a>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://hl7.org/Special/committees/fiwg/index.cfm">HL7 FHIR Infrastructure WG</a>.  Package hl7.fhir.uv.subscriptions-backport#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Mon, Aug 16, 2021 15:52-0500">2021-08-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

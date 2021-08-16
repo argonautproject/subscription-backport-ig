@@ -13,12 +13,19 @@
       <SubscriptionStatus>
         <id value="b21e4fae-ce73-45cb-8e37-1e203362b2ae"/>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>type</b>: event-notification</p><p><b>eventsSinceSubscriptionStart</b>: 2</p><p><b>eventsInNotification</b>: 1</p><p><b>subscription</b>: </p><p><b style="color: maroon">Exception generating Narrative: Cannot invoke "org.hl7.fhir.r5.elementmodel.Element.fhirType()" because "res" is null</b></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>type</b>: event-notification</p><p><b>eventsSinceSubscriptionStart</b>: 2</p><p><b>eventsInNotification</b>: 1</p><p><b style="color: maroon">Exception generating Narrative: Cannot invoke "org.hl7.fhir.r5.elementmodel.Element.getChildValue(String)" because "br" is null</b></p></div>
         </text>
         <status value="active"/>
         <type value="event-notification"/>
         <eventsSinceSubscriptionStart value="2"/>
         <eventsInNotification value="1"/>
+        <notificationEvent>
+          <eventNumber value="2"/>
+          <timestamp value="2020-05-29T11:44:13.1882432-05:00"/>
+          <focus>
+            <reference value="https://example.org/fhir/r4/Encounter/551683b3-1477-41d1-b58e-32fe8b0047b0"/>
+          </focus>
+        </notificationEvent>
         <subscription>
           <reference value="https://example.org/fhir/r4/Subscription/admission"/>
         </subscription>

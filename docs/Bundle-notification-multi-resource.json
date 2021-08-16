@@ -16,12 +16,26 @@
         "id": "b21e4fae-ce73-45cb-8e37-1e203362b2ae",
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>type</b>: event-notification</p><p><b>eventsSinceSubscriptionStart</b>: 2</p><p><b>eventsInNotification</b>: 1</p><p><b>subscription</b>: <a href=\"https://example.org/fhir/r4/Subscription/admission\">https://example.org/fhir/r4/Subscription/admission</a></p><p><b>topic</b>: <a href=\"http://hl7.org/SubscriptionTopic/admission\">http://hl7.org/SubscriptionTopic/admission</a></p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>type</b>: event-notification</p><p><b>eventsSinceSubscriptionStart</b>: 2</p><p><b>eventsInNotification</b>: 1</p><h3>NotificationEvents</h3><table class=\"grid\"><tr><td>-</td><td><b>EventNumber</b></td><td><b>Timestamp</b></td><td><b>Focus</b></td><td><b>AdditionalContext</b></td></tr><tr><td>*</td><td>2</td><td>May 29, 2020, 11:44:13 AM</td><td><a href=\"#Encounter_551683b3-1477-41d1-b58e-32fe8b0047b0\">See above (Encounter/551683b3-1477-41d1-b58e-32fe8b0047b0)</a></td><td><a href=\"#Patient_46db3334-dbf5-43f3-868f-93ae0883cce1\">See above (Patient/46db3334-dbf5-43f3-868f-93ae0883cce1)</a></td></tr></table><p><b>subscription</b>: <a href=\"https://example.org/fhir/r4/Subscription/admission\">https://example.org/fhir/r4/Subscription/admission</a></p><p><b>topic</b>: <a href=\"http://hl7.org/SubscriptionTopic/admission\">http://hl7.org/SubscriptionTopic/admission</a></p></div>"
         },
         "status": "active",
         "type": "event-notification",
         "eventsSinceSubscriptionStart": "2",
         "eventsInNotification": 1,
+        "notificationEvent": [
+          {
+            "eventNumber": "2",
+            "timestamp": "2020-05-29T11:44:13.1882432-05:00",
+            "focus": {
+              "reference": "https://example.org/fhir/r4/Encounter/551683b3-1477-41d1-b58e-32fe8b0047b0"
+            },
+            "additionalContext": [
+              {
+                "reference": "https://example.org/fhir/r4/Patient/46db3334-dbf5-43f3-868f-93ae0883cce1"
+              }
+            ]
+          }
+        ],
         "subscription": {
           "reference": "https://example.org/fhir/r4/Subscription/admission"
         },
