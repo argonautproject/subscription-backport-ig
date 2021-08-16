@@ -40,7 +40,7 @@
       ]
     }
   ],
-  "description": "Example CapabilityStatement describing the expected capabilities of a FHIR Server supporting backported R5 Subscriptions.",
+  "description": "CapabilityStatement describing the minimal required capabilities of a FHIR Server supporting backported R5 Subscriptions.",
   "jurisdiction": [
     {
       "coding": [
@@ -86,12 +86,16 @@
           ],
           "operation": [
             {
-              "name": "$topic-list",
-              "definition": "http://hl7.org/fhir/uv/subscriptions-backport/OperationDefinition/backport-subscriptiontopic-list"
-            },
-            {
               "name": "$status",
               "definition": "http://hl7.org/fhir/uv/subscriptions-backport/OperationDefinition/backport-subscription-status"
+            }
+          ]
+        },
+        {
+          "type": "SubscriptionTopic",
+          "interaction": [
+            {
+              "code": "read"
             }
           ]
         }

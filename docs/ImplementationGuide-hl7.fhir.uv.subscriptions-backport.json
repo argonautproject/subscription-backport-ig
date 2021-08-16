@@ -10,7 +10,7 @@
   "name": "SubscriptionsR5Backport",
   "title": "Subscriptions R5 Backport",
   "status": "draft",
-  "date": "2021-08-11T11:08:20-05:00",
+  "date": "2021-08-16T11:25:51-05:00",
   "publisher": "HL7 FHIR Infrastructure WG",
   "contact": [
     {
@@ -294,7 +294,7 @@
         "reference": {
           "reference": "OperationDefinition/backport-subscription-events"
         },
-        "name": "Backport Subscription Events Operation",
+        "name": "Subscription Events Operation",
         "description": "This operation is used to return historical events in the backported R5-Style Subscriptions.",
         "exampleBoolean": false
       },
@@ -308,7 +308,7 @@
         "reference": {
           "reference": "OperationDefinition/backport-subscription-get-ws-binding-token"
         },
-        "name": "Backport Subscription Get WS Binding Token",
+        "name": "Get WS Binding Token for Subscription Operation",
         "description": "This operation is used to get a token for a websocket client to use in order to bind to one or more subscriptions.",
         "exampleBoolean": false
       },
@@ -322,8 +322,8 @@
         "reference": {
           "reference": "CapabilityStatement/backport-subscription-server"
         },
-        "name": "Backport Subscription Server Capability Statement",
-        "description": "Example CapabilityStatement describing the expected capabilities of a FHIR Server supporting backported R5 Subscriptions.",
+        "name": "Minimal Backport Subscription Server Capability Statement",
+        "description": "CapabilityStatement describing the minimal required capabilities of a FHIR Server supporting backported R5 Subscriptions.",
         "exampleBoolean": false
       },
       {
@@ -336,7 +336,7 @@
         "reference": {
           "reference": "OperationDefinition/backport-subscription-status"
         },
-        "name": "Backport Subscription Status Operation",
+        "name": "Subscription Status Operation",
         "description": "This operation is used to return the current status information about one or more backported R5-Style Subscriptions in R4.",
         "exampleBoolean": false
       },

@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>HL7.FHIR.UV.SUBSCRIPTIONS-BACKPORT\Backport Subscription Events Operation - FHIR v4.1.0</title>
+    <title>HL7.FHIR.UV.SUBSCRIPTIONS-BACKPORT\Subscription Events Operation - FHIR v4.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -164,7 +164,7 @@
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Backport Subscription Events Operation</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Subscription Events Operation</b></li>
 
         </ul>
       </div>    <!-- /container -->
@@ -221,7 +221,7 @@
   <a name="root"> </a>
 
 
-  <h2 id="root">OperationDefinition: Backport Subscription Events Operation</h2>
+  <h2 id="root">OperationDefinition: Subscription Events Operation</h2>
 
 
   
@@ -233,10 +233,10 @@
 
 
   <div><h2>R5SubscriptionEvents</h2><p>OPERATION: R5SubscriptionEvents</p><p>The official URL for this operation definition is: </p><pre>http://hl7.org/fhir/uv/subscriptions-backport/OperationDefinition/backport-subscription-events</pre><div><p>This operation is used to search for and return events which  notifications backported R5-Style Subscriptions in R4.</p>
-</div><p>URL: [base]/Subscription/[id]/$events</p><p>Parameters</p><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>eventsSinceNumber</td><td>0..1</td><td><a name="a5e706f1-36f0-4d80-8924-fcf618f32988">​</a><a href="http://build.fhir.org/branches/R4B//datatypes.html#string">string</a></td><td></td><td><div><p>The starting event number, inclusive of this event (lower bound).</p>
-</div></td></tr><tr><td>IN</td><td>eventsUntilNumber</td><td>0..1</td><td><a name="3735463a-4c1d-43d3-9179-32f7b8da5fcd">​</a><a href="http://build.fhir.org/branches/R4B//datatypes.html#string">string</a></td><td></td><td><div><p>The ending event number, inclusive of this event (upper bound).</p>
-</div></td></tr><tr><td>IN</td><td>content</td><td>0..1</td><td><a name="36b7019d-e5d9-47af-b7d3-68e86f3b7fa6">​</a><a href="http://build.fhir.org/branches/R4B//datatypes.html#code">code</a></td><td></td><td><div><p>Requested content style of returned data. Codes from backport-content-value-set (e.g., empty, id-only, full-resource). This is a hint to the server what a client would prefer, and MAY be ignored.</p>
-</div></td></tr><tr><td>OUT</td><td>return</td><td>1..1</td><td><a name="9e378982-0695-4ddf-8958-c2ffb38f029c">​</a><a href="http://build.fhir.org/branches/R4B//bundle.html">Bundle</a></td><td></td><td><div><p>The bundle type is "history". The operation returns a notification bundle, with the first entry being a SubscriptionStatus resource.</p>
+</div><p>URL: [base]/Subscription/[id]/$events</p><p>Parameters</p><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>eventsSinceNumber</td><td>0..1</td><td><a name="ada27e04-456d-4786-a0be-19c79818eb0f">​</a><a href="http://build.fhir.org/branches/R4B//datatypes.html#string">string</a></td><td></td><td><div><p>The starting event number, inclusive of this event (lower bound).</p>
+</div></td></tr><tr><td>IN</td><td>eventsUntilNumber</td><td>0..1</td><td><a name="a61804bc-dd34-4389-9174-549843f27b89">​</a><a href="http://build.fhir.org/branches/R4B//datatypes.html#string">string</a></td><td></td><td><div><p>The ending event number, inclusive of this event (upper bound).</p>
+</div></td></tr><tr><td>IN</td><td>content</td><td>0..1</td><td><a name="0fb7d8db-1417-49c9-a11e-7a1b1a91edb5">​</a><a href="http://build.fhir.org/branches/R4B//datatypes.html#code">code</a></td><td></td><td><div><p>Requested content style of returned data. Codes from backport-content-value-set (e.g., empty, id-only, full-resource). This is a hint to the server what a client would prefer, and MAY be ignored.</p>
+</div></td></tr><tr><td>OUT</td><td>return</td><td>1..1</td><td><a name="cb4d72c5-bf18-4697-a12f-ce8116d534b4">​</a><a href="http://build.fhir.org/branches/R4B//bundle.html">Bundle</a></td><td></td><td><div><p>The bundle type is "history". The operation returns a notification bundle, with the first entry being a SubscriptionStatus resource.</p>
 </div></td></tr></table></div>
 
     <!-- insert notes if present -->
@@ -265,8 +265,8 @@
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="a3912cd0-2954-4d37-a9be-dd760e01d0ab">​</a>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://hl7.org/Special/committees/fiwg/index.cfm">HL7 FHIR Infrastructure WG</a>.  Package hl7.fhir.uv.subscriptions-backport#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Wed, Aug 11, 2021 11:08-0500">2021-08-11</span>
+        <p><a name="98f819bb-fae8-41bf-8632-da3271256cee">​</a>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://hl7.org/Special/committees/fiwg/index.cfm">HL7 FHIR Infrastructure WG</a>.  Package hl7.fhir.uv.subscriptions-backport#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Mon, Aug 16, 2021 11:25-0500">2021-08-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

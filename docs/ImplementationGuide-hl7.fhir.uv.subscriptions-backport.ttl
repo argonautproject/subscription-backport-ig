@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "SubscriptionsR5Backport"];
   fhir:ImplementationGuide.title [ fhir:value "Subscriptions R5 Backport"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-08-11T11:08:20-05:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-08-16T11:25:51-05:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 FHIR Infrastructure WG"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -296,7 +296,7 @@
          fhir:link <http://hl7.org/fhir/uv/subscriptions-backport/OperationDefinition/backport-subscription-events>;
          fhir:Reference.reference [ fhir:value "OperationDefinition/backport-subscription-events" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Backport Subscription Events Operation" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Subscription Events Operation" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This operation is used to return historical events in the backported R5-Style Subscriptions." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -310,7 +310,7 @@
          fhir:link <http://hl7.org/fhir/uv/subscriptions-backport/OperationDefinition/backport-subscription-get-ws-binding-token>;
          fhir:Reference.reference [ fhir:value "OperationDefinition/backport-subscription-get-ws-binding-token" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Backport Subscription Get WS Binding Token" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Get WS Binding Token for Subscription Operation" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This operation is used to get a token for a websocket client to use in order to bind to one or more subscriptions." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -324,8 +324,8 @@
          fhir:link <http://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement/backport-subscription-server>;
          fhir:Reference.reference [ fhir:value "CapabilityStatement/backport-subscription-server" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Backport Subscription Server Capability Statement" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example CapabilityStatement describing the expected capabilities of a FHIR Server supporting backported R5 Subscriptions." ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Minimal Backport Subscription Server Capability Statement" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "CapabilityStatement describing the minimal required capabilities of a FHIR Server supporting backported R5 Subscriptions." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 19;
@@ -338,7 +338,7 @@
          fhir:link <http://hl7.org/fhir/uv/subscriptions-backport/OperationDefinition/backport-subscription-status>;
          fhir:Reference.reference [ fhir:value "OperationDefinition/backport-subscription-status" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Backport Subscription Status Operation" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Subscription Status Operation" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This operation is used to return the current status information about one or more backported R5-Style Subscriptions in R4." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [

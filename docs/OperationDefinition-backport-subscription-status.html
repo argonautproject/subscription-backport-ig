@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>HL7.FHIR.UV.SUBSCRIPTIONS-BACKPORT\Backport Subscription Status Operation - FHIR v4.1.0</title>
+    <title>HL7.FHIR.UV.SUBSCRIPTIONS-BACKPORT\Subscription Status Operation - FHIR v4.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -164,7 +164,7 @@
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Backport Subscription Status Operation</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Subscription Status Operation</b></li>
 
         </ul>
       </div>    <!-- /container -->
@@ -221,7 +221,7 @@
   <a name="root"> </a>
 
 
-  <h2 id="root">OperationDefinition: Backport Subscription Status Operation</h2>
+  <h2 id="root">OperationDefinition: Subscription Status Operation</h2>
 
 
   
@@ -233,9 +233,9 @@
 
 
   <div><h2>R5SubscriptionStatus</h2><p>OPERATION: R5SubscriptionStatus</p><p>The official URL for this operation definition is: </p><pre>http://hl7.org/fhir/uv/subscriptions-backport/OperationDefinition/backport-subscription-status</pre><div><p>This operation is used to return the current status information about one or more backported R5-Style Subscriptions in R4.</p>
-</div><p>URL: [base]/Subscription/$status</p><p>URL: [base]/Subscription/[id]/$status</p><p>Parameters</p><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>ids</td><td>0..*</td><td><a name="b16cdf10-6d60-42e4-9f6a-cfb6f4092042">​</a><a href="http://build.fhir.org/branches/R4B//datatypes.html#id">id</a></td><td></td><td><div><p>At the Resource level, one or more parameters containing one or more comma-delimited FHIR ids of Subscriptions to get status information for.  In the absence of any specified ids, the server returns the status for all Subscriptions available to the caller.  At the Instance level, this parameter is ignored.</p>
-</div></td></tr><tr><td>IN</td><td>status</td><td>0..*</td><td><a name="03b65ae4-325f-40cc-91fa-cd343826c608">​</a><a href="http://build.fhir.org/branches/R4B//datatypes.html#id">id</a></td><td></td><td><div><p>At the Resource level, a comma-delimited list of Subscription statuses to filter by (e.g., active). In the absence of any specified status values, the server does not filter contents based on the status.  At the Instance level, this parameter is ignored.</p>
-</div></td></tr><tr><td>OUT</td><td>return</td><td>1..1</td><td><a name="85b605fa-577e-4913-9206-1683edf8209a">​</a><a href="http://build.fhir.org/branches/R4B//bundle.html">Bundle</a></td><td></td><td><div><p>The bundle type is "searchset". The operation returns a bundle containing one or more SubscriptionStatus resources, one per Subscription being queried.</p>
+</div><p>URL: [base]/Subscription/$status</p><p>URL: [base]/Subscription/[id]/$status</p><p>Parameters</p><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>ids</td><td>0..*</td><td><a name="20e1cf8b-920f-467a-9677-110fdb0d7ec0">​</a><a href="http://build.fhir.org/branches/R4B//datatypes.html#id">id</a></td><td></td><td><div><p>At the Resource level, one or more parameters containing one or more comma-delimited FHIR ids of Subscriptions to get status information for.  In the absence of any specified ids, the server returns the status for all Subscriptions available to the caller.  At the Instance level, this parameter is ignored.</p>
+</div></td></tr><tr><td>IN</td><td>status</td><td>0..*</td><td><a name="ef66674d-afae-41ef-84a3-e7e0acae9464">​</a><a href="http://build.fhir.org/branches/R4B//datatypes.html#id">id</a></td><td></td><td><div><p>At the Resource level, a comma-delimited list of Subscription statuses to filter by (e.g., active). In the absence of any specified status values, the server does not filter contents based on the status.  At the Instance level, this parameter is ignored.</p>
+</div></td></tr><tr><td>OUT</td><td>return</td><td>1..1</td><td><a name="a4b7b23a-49cf-4a17-97a0-31d460d81ab5">​</a><a href="http://build.fhir.org/branches/R4B//bundle.html">Bundle</a></td><td></td><td><div><p>The bundle type is "searchset". The operation returns a bundle containing one or more SubscriptionStatus resources, one per Subscription being queried.</p>
 </div></td></tr></table></div>
 
     <!-- insert notes if present -->
@@ -264,8 +264,8 @@
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="20894b01-1219-4ece-989b-756e711e7639">​</a>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://hl7.org/Special/committees/fiwg/index.cfm">HL7 FHIR Infrastructure WG</a>.  Package hl7.fhir.uv.subscriptions-backport#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Wed, Aug 11, 2021 11:08-0500">2021-08-11</span>
+        <p><a name="d10d0d70-f2ab-469e-a838-b3d7f0107772">​</a>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://hl7.org/Special/committees/fiwg/index.cfm">HL7 FHIR Infrastructure WG</a>.  Package hl7.fhir.uv.subscriptions-backport#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Mon, Aug 16, 2021 11:25-0500">2021-08-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

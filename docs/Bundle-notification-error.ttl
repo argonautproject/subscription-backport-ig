@@ -34,11 +34,11 @@
   fhir:Resource.id [ fhir:value "2efd9e8b-e894-4460-97f1-1d0c09daeb10"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: error</p><p><b>type</b>: query-status</p><p><b>eventsSinceSubscriptionStart</b>: 315</p><p><b>subscription</b>: <a href=\"https://example.org/fhir/r4/Subscription/admission\">https://example.org/fhir/r4/Subscription/admission</a></p><p><b>topic</b>: <a href=\"http://hl7.org/SubscriptionTopic/admission\">http://hl7.org/SubscriptionTopic/admission</a></p><p><b>error</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-notification-error-code-system unreachable}\">Unreachable</span></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: error</p><p><b>type</b>: query-status</p><p><b>eventsSinceSubscriptionStart</b>: 10</p><p><b>subscription</b>: <a href=\"https://example.org/fhir/r4/Subscription/admission\">https://example.org/fhir/r4/Subscription/admission</a></p><p><b>topic</b>: <a href=\"http://hl7.org/SubscriptionTopic/admission\">http://hl7.org/SubscriptionTopic/admission</a></p><p><b>error</b>: <span title=\"Codes: {http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-notification-error-code-system unreachable}\">Unreachable</span></p></div>"
   ];
   fhir:SubscriptionStatus.status [ fhir:value "error"];
   fhir:SubscriptionStatus.type [ fhir:value "query-status"];
-  fhir:SubscriptionStatus.eventsSinceSubscriptionStart [ fhir:value "315"];
+  fhir:SubscriptionStatus.eventsSinceSubscriptionStart [ fhir:value "10"];
   fhir:SubscriptionStatus.subscription [
      fhir:link <https://example.org/fhir/r4/Subscription/admission>;
      fhir:Reference.reference [ fhir:value "https://example.org/fhir/r4/Subscription/admission" ]

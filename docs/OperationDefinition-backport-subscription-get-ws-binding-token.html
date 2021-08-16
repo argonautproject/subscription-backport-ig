@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>HL7.FHIR.UV.SUBSCRIPTIONS-BACKPORT\Backport Subscription Get WS Binding Token - FHIR v4.1.0</title>
+    <title>HL7.FHIR.UV.SUBSCRIPTIONS-BACKPORT\Get WS Binding Token for Subscription Operation - FHIR v4.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -164,7 +164,7 @@
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Backport Subscription Get WS Binding Token</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Get WS Binding Token for Subscription Operation</b></li>
 
         </ul>
       </div>    <!-- /container -->
@@ -221,7 +221,7 @@
   <a name="root"> </a>
 
 
-  <h2 id="root">OperationDefinition: Backport Subscription Get WS Binding Token</h2>
+  <h2 id="root">OperationDefinition: Get WS Binding Token for Subscription Operation</h2>
 
 
   
@@ -233,8 +233,8 @@
 
 
   <div><h2>R5SubscriptionGetWsBindingToken</h2><p>OPERATION: R5SubscriptionGetWsBindingToken</p><p>The official URL for this operation definition is: </p><pre>http://hl7.org/fhir/uv/subscriptions-backport/OperationDefinition/backport-subscription-get-ws-binding-token</pre><div><p>This operation is used to get a token for a websocket client to use in order to bind to one or more subscriptions.</p>
-</div><p>URL: [base]/Subscription/$get-ws-binding-token</p><p>URL: [base]/Subscription/[id]/$get-ws-binding-token</p><p>Parameters</p><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>ids</td><td>0..*</td><td><a name="a8e499df-11d3-4733-9d11-13c750c227ae">​</a><a href="http://build.fhir.org/branches/R4B//datatypes.html#id">id</a></td><td></td><td><div><p>At the Resource level, one or more parameters containing one or more FHIR ids of Subscriptions to get tokens for. In the absense of any specified ids, the server returns tokens for all Subscriptions available to the caller with a channel-type of websocket. At the Instance level, this parameter is ignored.</p>
-</div></td></tr><tr><td>OUT</td><td>return</td><td>1..1</td><td><a name="68a3d8a0-d3d7-4302-bec5-52dc6ec936a2">​</a><a href="http://build.fhir.org/branches/R4B//parameters.html">Parameters</a></td><td></td><td><div><p>The returned Parameters MUST include a valueString named "token" and a valueDateTime named "expiration". The returned Parameters MAY include a valueString named "subscriptions" with a comma-delimited list of subscriptions covered by this token.</p>
+</div><p>URL: [base]/Subscription/$get-ws-binding-token</p><p>URL: [base]/Subscription/[id]/$get-ws-binding-token</p><p>Parameters</p><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>ids</td><td>0..*</td><td><a name="5753084a-d33f-49ef-8092-9d1f241e930a">​</a><a href="http://build.fhir.org/branches/R4B//datatypes.html#id">id</a></td><td></td><td><div><p>At the Resource level, one or more parameters containing one or more FHIR ids of Subscriptions to get tokens for. In the absense of any specified ids, the server returns tokens for all Subscriptions available to the caller with a channel-type of websocket. At the Instance level, this parameter is ignored.</p>
+</div></td></tr><tr><td>OUT</td><td>return</td><td>1..1</td><td><a name="fc705cb0-68d4-4784-81e7-de8257085ee6">​</a><a href="http://build.fhir.org/branches/R4B//parameters.html">Parameters</a></td><td></td><td><div><p>The returned Parameters MUST include a valueString named "token" and a valueDateTime named "expiration". The returned Parameters MAY include a valueString named "subscriptions" with a comma-delimited list of subscriptions covered by this token.</p>
 <p>Note: as this is the only out parameter, it is a resource, and it has the name 'return', the result of this operation is returned directly as a resource</p>
 </div></td></tr></table></div>
 
@@ -264,8 +264,8 @@
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="f427cd8d-1643-405a-9daf-5cb7ecac320d">​</a>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://hl7.org/Special/committees/fiwg/index.cfm">HL7 FHIR Infrastructure WG</a>.  Package hl7.fhir.uv.subscriptions-backport#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Wed, Aug 11, 2021 11:08-0500">2021-08-11</span>
+        <p><a name="a073993b-8516-4897-a5af-7d362c3933b4">​</a>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://hl7.org/Special/committees/fiwg/index.cfm">HL7 FHIR Infrastructure WG</a>.  Package hl7.fhir.uv.subscriptions-backport#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Mon, Aug 16, 2021 11:25-0500">2021-08-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

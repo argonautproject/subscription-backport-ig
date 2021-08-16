@@ -56,11 +56,11 @@
   fhir:Resource.id [ fhir:value "b21e4fae-ce73-45cb-8e37-1e203362b2ae"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>type</b>: event-notification</p><p><b>eventsSinceSubscriptionStart</b>: 310</p><p><b>eventsInNotification</b>: 1</p><p><b>subscription</b>: <a href=\"https://example.org/fhir/r4/Subscription/admission\">https://example.org/fhir/r4/Subscription/admission</a></p><p><b>topic</b>: <a href=\"http://hl7.org/SubscriptionTopic/admission\">http://hl7.org/SubscriptionTopic/admission</a></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>type</b>: event-notification</p><p><b>eventsSinceSubscriptionStart</b>: 2</p><p><b>eventsInNotification</b>: 1</p><p><b>subscription</b>: <a href=\"https://example.org/fhir/r4/Subscription/admission\">https://example.org/fhir/r4/Subscription/admission</a></p><p><b>topic</b>: <a href=\"http://hl7.org/SubscriptionTopic/admission\">http://hl7.org/SubscriptionTopic/admission</a></p></div>"
   ];
   fhir:SubscriptionStatus.status [ fhir:value "active"];
   fhir:SubscriptionStatus.type [ fhir:value "event-notification"];
-  fhir:SubscriptionStatus.eventsSinceSubscriptionStart [ fhir:value "310"];
+  fhir:SubscriptionStatus.eventsSinceSubscriptionStart [ fhir:value "2"];
   fhir:SubscriptionStatus.eventsInNotification [ fhir:value "1"^^xsd:integer];
   fhir:SubscriptionStatus.subscription [
      fhir:link <https://example.org/fhir/r4/Subscription/admission>;

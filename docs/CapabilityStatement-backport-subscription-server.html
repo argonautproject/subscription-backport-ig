@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>HL7.FHIR.UV.SUBSCRIPTIONS-BACKPORT\Backport Subscription Server Capability Statement - FHIR v4.1.0</title>
+    <title>HL7.FHIR.UV.SUBSCRIPTIONS-BACKPORT\Minimal Backport Subscription Server Capability Statement - FHIR v4.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -164,7 +164,7 @@
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Backport Subscription Server Capability Statement</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Minimal Backport Subscription Server Capability Statement</b></li>
 
         </ul>
       </div>    <!-- /container -->
@@ -221,7 +221,7 @@
   <a name="root"> </a>
 
 
-  <h2 id="root">CapabilityStatement: Backport Subscription Server Capability Statement</h2>
+  <h2 id="root">CapabilityStatement: Minimal Backport Subscription Server Capability Statement</h2>
 
 
   
@@ -245,7 +245,7 @@
 
 
 
-  <div><h2 id="title">Backport Subscription Server Capability Statement</h2><ul><li>Implementation Guide Version: 0.1.1</li><li>FHIR Version: 4.0.1</li><li>Supported formats: xml, json</li><li>Published: 2020-11-30</li><li>Published by: HL7 FHIR Infrastructure WG</li></ul><p>Example CapabilityStatement describing the expected capabilities of a FHIR Server supporting backported R5 Subscriptions.</p><h3 id="behavior">FHIR RESTful Capabilities</h3><h3 id="resource--details" class="no_toc">RESTful Capabilities by Resource/Profile:</h3><p><strong>Summary of Search Criteria</strong></p><table class="grid"><thead><tr><th>Resource Type</th><th>Supported Profiles</th><th>Supported Searches</th><th>Supported <code>_includes</code></th><th>Supported <code>_revincludes</code></th><th>Supported Operations</th></tr></thead><tbody><tr><td><a href="#subscription">Subscription</a></td><td><a href="StructureDefinition-backport-subscription.html">Backported R5 Subscription</a></td><td></td><td></td><td></td><td>$topic-list, $status</td></tr></tbody></table><h4 id="subscription" class="no_toc">Subscription</h4><p>Conformance Expectation: <strong>SHALL</strong></p><p>Supported Profiles: <a href="StructureDefinition-backport-subscription.html">Backported R5 Subscription</a></p><p>Profile Interaction Summary:</p><ul></ul><p>Operation Summary:</p><ul><li><a name="3a574153-4b3b-4d22-877b-13d3ad0611dc">​</a><strong>SHALL</strong> support the <a href="OperationDefinition-backport-subscriptiontopic-list.html">$topic-list</a> operation , <a href="OperationDefinition-backport-subscription-status.html">$status</a> operation</li></ul><p>Fetch and Search Criteria:</p><ul><li>A Server <strong>SHALL</strong> be capable of returning a Subscription resource using: <code class="highlighter-rouge">GET [base]/Subscription/[id]</code></li></ul></div>
+  <div><h2 id="title">Backport Subscription Server Capability Statement</h2><ul><li>Implementation Guide Version: 0.1.1</li><li>FHIR Version: 4.0.1</li><li>Supported formats: xml, json</li><li>Published: 2020-11-30</li><li>Published by: HL7 FHIR Infrastructure WG</li></ul><p>Example CapabilityStatement describing the expected capabilities of a FHIR Server supporting backported R5 Subscriptions.</p><h3 id="behavior">FHIR RESTful Capabilities</h3><h3 id="resource--details" class="no_toc">RESTful Capabilities by Resource/Profile:</h3><p><strong>Summary of Search Criteria</strong></p><table class="grid"><thead><tr><th>Resource Type</th><th>Supported Profiles</th><th>Supported Searches</th><th>Supported <code>_includes</code></th><th>Supported <code>_revincludes</code></th><th>Supported Operations</th></tr></thead><tbody><tr><td><a href="#subscription">Subscription</a></td><td><a href="StructureDefinition-backport-subscription.html">Backported R5 Subscription</a></td><td></td><td></td><td></td><td>$topic-list, $status</td></tr></tbody></table><h4 id="subscription" class="no_toc">Subscription</h4><p>Conformance Expectation: <strong>SHALL</strong></p><p>Supported Profiles: <a href="StructureDefinition-backport-subscription.html">Backported R5 Subscription</a></p><p>Profile Interaction Summary:</p><ul></ul><p>Operation Summary:</p><ul><li><a name="2bba0497-a52a-443a-80bd-7df276128d14">​</a><strong>SHALL</strong> support the <a href="OperationDefinition-backport-subscriptiontopic-list.html">$topic-list</a> operation , <a href="OperationDefinition-backport-subscription-status.html">$status</a> operation</li></ul><p>Fetch and Search Criteria:</p><ul><li>A Server <strong>SHALL</strong> be capable of returning a Subscription resource using: <code class="highlighter-rouge">GET [base]/Subscription/[id]</code></li></ul></div>
 
     <!-- insert notes if present -->
   
@@ -273,8 +273,8 @@
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="b3a8cf81-afb8-47cf-bf3f-0d37de9e06a6">​</a>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://hl7.org/Special/committees/fiwg/index.cfm">HL7 FHIR Infrastructure WG</a>.  Package hl7.fhir.uv.subscriptions-backport#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Wed, Aug 11, 2021 11:08-0500">2021-08-11</span>
+        <p><a name="445ee291-1bfd-4392-8844-36f2f74ad100">​</a>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://hl7.org/Special/committees/fiwg/index.cfm">HL7 FHIR Infrastructure WG</a>.  Package hl7.fhir.uv.subscriptions-backport#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Mon, Aug 16, 2021 11:25-0500">2021-08-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

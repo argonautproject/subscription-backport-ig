@@ -213,8 +213,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <ul>
       <li>What is it?
         <ul>
-          <li>Defines the <strong>data</strong> and <strong>change</strong> used to trigger notifications</li>
+          <li>Defines the <strong>what</strong> is used to trigger notifications</li>
           <li>Defines the <strong>filters</strong> allowed to clients</li>
+          <li>Defines the <strong>shape</strong> of the notification</li>
           <li>Always referenced by canonical URL</li>
         </ul>
       </li>
@@ -266,9 +267,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="subscription-topics">Subscription Topics</h3>
 
-<p>In FHIR R5, the <code class="language-plaintext highlighter-rouge">SubscriptionTopic</code> resource is used to define conceptual or computable events for <code class="language-plaintext highlighter-rouge">Subscription</code> resources. Conceptually, subscription topics specify: a type of <strong>data</strong> (e.g., <code class="language-plaintext highlighter-rouge">Observation</code>, <code class="language-plaintext highlighter-rouge">Condition</code>, etc.), a type of <strong>change</strong> (e.g., create, delete, update, etc.), and a set of allowed <strong>filters</strong>.</p>
+<p>In FHIR R5, the <code class="language-plaintext highlighter-rouge">SubscriptionTopic</code> resource is used to define conceptual or computable events for <code class="language-plaintext highlighter-rouge">Subscription</code> resources. Conceptually, subscription topics specify an event that is used to trigger a notification and the boundaries around what a Subscription can filter for.  For example, a topic may define that notifications should be sent when a resource (e.g., <code class="language-plaintext highlighter-rouge">Encounter</code>) has a specific type of change (e.g., update) with a specific value (e.g., stats=<code class="language-plaintext highlighter-rouge">in-progress</code>).  For ease in implementation, the topic may specify that filters may only be applied to the Patient referenced by the Encounter.</p>
 
-<p>In order to support this functionality in R4, the <code class="language-plaintext highlighter-rouge">SubscriptionTopic</code> resource has been added as of version 4.1.0.  Detailed information about the resource can be found on the HL7 FHIR website.</p>
+<p>In order to support this functionality in R4, the <a href="http://hl7.org/fhir/R4/subscriptiontopic.html">SubscriptionTopic</a> resource has been added as to FHIR version 4.1.0.  Detailed information about the resource can be found on the HL7 FHIR website.</p>
 
 <p>In order to make subscription topics more widely available, support for <code class="language-plaintext highlighter-rouge">SubscriptionTopic</code> resources is available via the <a href="http://registry.fhir.org">FHIR Registry</a>.</p>
 
@@ -346,8 +347,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="615b4a7d-0d0b-47c2-9d97-65997a3270a6">​</a>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://hl7.org/Special/committees/fiwg/index.cfm">HL7 FHIR Infrastructure WG</a>.  Package hl7.fhir.uv.subscriptions-backport#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Wed, Aug 11, 2021 11:08-0500">2021-08-11</span>
+        <p><a name="3b4c561d-ffa1-411d-90c5-ad038284e3e3">​</a>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://hl7.org/Special/committees/fiwg/index.cfm">HL7 FHIR Infrastructure WG</a>.  Package hl7.fhir.uv.subscriptions-backport#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Mon, Aug 16, 2021 11:25-0500">2021-08-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

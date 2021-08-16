@@ -32,7 +32,7 @@
       <value value="mailto:ehaas@healthedatainc.com"/>
     </telecom>
   </contact>
-  <description value="Example CapabilityStatement describing the expected capabilities of a FHIR Server supporting backported R5 Subscriptions."/>
+  <description value="CapabilityStatement describing the minimal required capabilities of a FHIR Server supporting backported R5 Subscriptions."/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -63,13 +63,15 @@
         <code value="delete"/>
       </interaction>
       <operation>
-        <name value="$topic-list"/>
-        <definition value="http://hl7.org/fhir/uv/subscriptions-backport/OperationDefinition/backport-subscriptiontopic-list"/>
-      </operation>
-      <operation>
         <name value="$status"/>
         <definition value="http://hl7.org/fhir/uv/subscriptions-backport/OperationDefinition/backport-subscription-status"/>
       </operation>
+    </resource>
+    <resource>
+      <type value="SubscriptionTopic"/>
+      <interaction>
+        <code value="read"/>
+      </interaction>
     </resource>
   </rest>
 </CapabilityStatement>

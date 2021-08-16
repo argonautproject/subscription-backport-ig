@@ -13,11 +13,11 @@
       <SubscriptionStatus>
         <id value="2ec7c86b-421a-462d-a1a8-64bdb289c965"/>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>type</b>: heartbeat</p><p><b>eventsSinceSubscriptionStart</b>: 309</p><p><b>eventsInNotification</b>: 0</p><p><b>subscription</b>: <a href="https://example.org/fhir/r4/Subscription/admission">https://example.org/fhir/r4/Subscription/admission</a></p><p><b>topic</b>: <a href="http://hl7.org/SubscriptionTopic/admission">http://hl7.org/SubscriptionTopic/admission</a></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>type</b>: heartbeat</p><p><b>eventsSinceSubscriptionStart</b>: 2</p><p><b>eventsInNotification</b>: 0</p><p><b>subscription</b>: <a href="https://example.org/fhir/r4/Subscription/admission">https://example.org/fhir/r4/Subscription/admission</a></p><p><b>topic</b>: <a href="http://hl7.org/SubscriptionTopic/admission">http://hl7.org/SubscriptionTopic/admission</a></p></div>
         </text>
         <status value="active"/>
         <type value="heartbeat"/>
-        <eventsSinceSubscriptionStart value="309"/>
+        <eventsSinceSubscriptionStart value="2"/>
         <eventsInNotification value="0"/>
         <subscription>
           <reference value="https://example.org/fhir/r4/Subscription/admission"/>

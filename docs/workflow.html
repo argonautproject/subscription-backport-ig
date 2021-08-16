@@ -211,13 +211,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <ol>
   <li>Server implements the core functionality required for subscriptions (see <a href="conformance.html">Conformance</a>).</li>
-  <li>Server implements one or more <code class="language-plaintext highlighter-rouge">SubscriptionTopics</code>.  Topic implementation is specific to each defined topic, and will vary between implementations.</li>
-  <li><a name="12ab75e3-7b87-4394-8443-813021e34db8">​</a>Client asks the server for the list of supported <code class="language-plaintext highlighter-rouge">SubscriptionTopics</code>, via the <a href="OperationDefinition-backport-subscriptiontopic-list.html">Subscription/$topic-list</a> operation.</li>
-  <li><a name="6430acbb-897b-4893-bf69-7e5fab07f35b">​</a>Server responds with a <a href="StructureDefinition-backport-subscription-topic-canonical-urls.html">Canonical URLs</a> Parameters resource.</li>
+  <li>Server implements one or more <a href="http://hl7.org/fhir/R4/subscriptiontopic.html">SubscriptionTopic</a> resources.  Implementation is specific to each topic, and will vary between servers.</li>
+  <li>Client asks the server for the list of supported <a href="http://hl7.org/fhir/R4/subscriptiontopic.html">SubscriptionTopic</a> resources, via querying the resource.</li>
+  <li>Server responds with a <a href="http://hl7.org/fhir/R4/bundle.html#searchset">searchset Bundle</a>.</li>
   <li>Client ensures that the endpoint is prepared (if applicable - see <a href="channels.html">Channels</a>).</li>
-  <li>Client requests a Subscription (e.g., via <code class="language-plaintext highlighter-rouge">POST</code>, <code class="language-plaintext highlighter-rouge">PUT</code>, etc.).</li>
-  <li>Server MAY accept the Subscription request (e.g., supported channel and payload).</li>
-  <li>Server MAY reject the Subscription request (e.g., unsupported channel type).</li>
+  <li>Client requests a <a href="http://hl7.org/fhir/R4/subscription.html">Subscription</a> (e.g., via <code class="language-plaintext highlighter-rouge">POST</code>, <code class="language-plaintext highlighter-rouge">PUT</code>, etc.).</li>
+  <li>Server MAY accept the <a href="http://hl7.org/fhir/R4/subscription.html">Subscription</a> request (e.g., supported channel and payload).</li>
+  <li>Server MAY reject the <a href="http://hl7.org/fhir/R4/subscription.html">Subscription</a> request (e.g., unsupported channel type).</li>
   <li>If applicable, the server MAY send a <code class="language-plaintext highlighter-rouge">handshake</code> to the endpoint.</li>
   <li>If the Server sends a <code class="language-plaintext highlighter-rouge">handshake</code>, the endpoint should respond appropriately.</li>
 </ol>
@@ -247,8 +247,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="87473b9a-bd31-4417-ae39-f4ee9d795435">​</a>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://hl7.org/Special/committees/fiwg/index.cfm">HL7 FHIR Infrastructure WG</a>.  Package hl7.fhir.uv.subscriptions-backport#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Wed, Aug 11, 2021 11:08-0500">2021-08-11</span>
+        <p><a name="732c53fb-05fa-4567-bd49-248c669f2339">​</a>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://hl7.org/Special/committees/fiwg/index.cfm">HL7 FHIR Infrastructure WG</a>.  Package hl7.fhir.uv.subscriptions-backport#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Mon, Aug 16, 2021 11:25-0500">2021-08-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

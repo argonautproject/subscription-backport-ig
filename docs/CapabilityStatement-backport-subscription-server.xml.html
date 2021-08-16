@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>HL7.FHIR.UV.SUBSCRIPTIONS-BACKPORT\Backport Subscription Server Capability Statement - XML Representation - FHIR v4.1.0</title>
+    <title>HL7.FHIR.UV.SUBSCRIPTIONS-BACKPORT\Minimal Backport Subscription Server Capability Statement - XML Representation - FHIR v4.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -164,7 +164,7 @@
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Backport Subscription Server Capability Statement</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Minimal Backport Subscription Server Capability Statement</b></li>
 
         </ul>
       </div>    <!-- /container -->
@@ -220,7 +220,7 @@
 <a name="root"> </a>
 
 
-<h2 id="root">: Backport Subscription Server Capability Statement - XML Representation</h2>
+<h2 id="root">: Minimal Backport Subscription Server Capability Statement - XML Representation</h2>
 
 <p><a href="CapabilityStatement-backport-subscription-server.xml" no-download="true">Raw xml</a> | <a download="null" href="CapabilityStatement-backport-subscription-server.xml">Download</a></p>
 
@@ -229,7 +229,7 @@
 
 
 
-  <pre class="xml"><code class="language-xml"><a name="dd586649-fd51-40a7-83eb-cda464717511">​</a>
+  <pre class="xml"><code class="language-xml"><a name="047f3688-d9a3-4a55-9318-0352d1e7e0dc">​</a>
 
 &lt;<a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement">CapabilityStatement</a> xmlns="http://hl7.org/fhir"&gt;
   &lt;<a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.id">id</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#id">value</a>="backport-subscription-server"/&gt;
@@ -266,7 +266,7 @@
     &lt;/telecom&gt;
   &lt;/contact&gt;
   &lt;<a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.description">description</a>
-               <a href="http://build.fhir.org/branches/R4B//datatypes.html#markdown">value</a>="Example CapabilityStatement describing the expected capabilities of a FHIR Server supporting backported R5 Subscriptions."/&gt;
+               <a href="http://build.fhir.org/branches/R4B//datatypes.html#markdown">value</a>="CapabilityStatement describing the minimal required capabilities of a FHIR Server supporting backported R5 Subscriptions."/&gt;
   &lt;<a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.jurisdiction">jurisdiction</a>&gt;
     &lt;<a href="http://build.fhir.org/branches/R4B//datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
       &lt;<a href="http://build.fhir.org/branches/R4B//datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#uri">value</a>="http://unstats.un.org/unsd/methods/m49/m49.htm"/&gt;
@@ -299,15 +299,16 @@
         &lt;<a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">value</a>="delete"/&gt;
       &lt;/interaction&gt;
       &lt;<a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.operation">operation</a>&gt;
-        &lt;<a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.operation.name">name</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">value</a>="$topic-list"/&gt;
-        &lt;<a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.operation.definition">definition</a>
-                    <a href="http://build.fhir.org/branches/R4B//datatypes.html#canonical">value</a>="http://hl7.org/fhir/uv/subscriptions-backport/OperationDefinition/backport-subscriptiontopic-list"/&gt;
-      &lt;/operation&gt;
-      &lt;<a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.operation">operation</a>&gt;
         &lt;<a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.operation.name">name</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">value</a>="$status"/&gt;
         &lt;<a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.operation.definition">definition</a>
                     <a href="http://build.fhir.org/branches/R4B//datatypes.html#canonical">value</a>="http://hl7.org/fhir/uv/subscriptions-backport/OperationDefinition/backport-subscription-status"/&gt;
       &lt;/operation&gt;
+    &lt;/resource&gt;
+    &lt;<a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource">resource</a>&gt;
+      &lt;<a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">value</a>="SubscriptionTopic"/&gt;
+      &lt;<a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.interaction">interaction</a>&gt;
+        &lt;<a href="http://build.fhir.org/branches/R4B//capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">value</a>="read"/&gt;
+      &lt;/interaction&gt;
     &lt;/resource&gt;
   &lt;/rest&gt;
 &lt;/CapabilityStatement&gt;</code></pre>
@@ -339,8 +340,8 @@
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="286ef865-61ca-4871-bbe9-a02eb23fb35b">​</a>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://hl7.org/Special/committees/fiwg/index.cfm">HL7 FHIR Infrastructure WG</a>.  Package hl7.fhir.uv.subscriptions-backport#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Wed, Aug 11, 2021 11:08-0500">2021-08-11</span>
+        <p><a name="1c017d9b-b988-4c60-bcf0-d9e8fcd8f950">​</a>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://hl7.org/Special/committees/fiwg/index.cfm">HL7 FHIR Infrastructure WG</a>.  Package hl7.fhir.uv.subscriptions-backport#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Mon, Aug 16, 2021 11:25-0500">2021-08-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

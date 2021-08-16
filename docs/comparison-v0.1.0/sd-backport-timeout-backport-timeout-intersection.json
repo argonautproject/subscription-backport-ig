@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "97a4a31a-cf47-4e91-9e0d-5adc7aef66a3-27",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/97a4a31a-cf47-4e91-9e0d-5adc7aef66a3-27",
+  "id" : "e65b6ae6-fb1c-47a7-b128-13a4354ba2a8-27",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/e65b6ae6-fb1c-47a7-b128-13a4354ba2a8-27",
   "name" : "IntersectionBackportTimeoutAndBackportTimeout",
   "title" : "Intersection of Backport R5 Subscription Timeout And Backport R5 Subscription Timeout",
   "status" : "active",
-  "date" : "2021-08-11T11:08:27-05:00",
+  "date" : "2021-08-16T11:25:57-05:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",

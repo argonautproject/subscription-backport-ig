@@ -2,7 +2,7 @@
   "openapi": "3.0.2",
   "info": {
     "title": "BackportSubscriptionCapabilityStatement",
-    "description": "Example CapabilityStatement describing the expected capabilities of a FHIR Server supporting backported R5 Subscriptions.",
+    "description": "CapabilityStatement describing the minimal required capabilities of a FHIR Server supporting backported R5 Subscriptions.",
     "license": {
       "name": "Creative Commons Zero v1.0 Universal",
       "url": "http://spdx.org/licenses/CC0-1.0.html"
@@ -314,6 +314,71 @@
           }
         },
         "parameters": [
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          }
+        ]
+      }
+    },
+    "/SubscriptionTopic/{rid}": {
+      "summary": "Read/Write/etc resource instance of type SubscriptionTopic",
+      "description": "Access to services to manage the state of a single resource of type SubscriptionTopic",
+      "get": {
+        "summary": "Read the current state of the resource",
+        "operationId": "readSubscriptionTopic",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://build.fhir.org/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/SubscriptionTopic"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://build.fhir.org/SubscriptionTopic.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/rid"
+          },
           {
             "$ref": "#/components/parameters/summary"
           },

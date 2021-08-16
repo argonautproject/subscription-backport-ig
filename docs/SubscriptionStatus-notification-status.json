@@ -3,11 +3,11 @@
   "id": "notification-status",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>type</b>: event-notification</p><p><b>eventsSinceSubscriptionStart</b>: 310</p><p><b>eventsInNotification</b>: 1</p><p><b>subscription</b>: <a href=\"https://example.org/fhir/r4/Subscription/admission\">https://example.org/fhir/r4/Subscription/admission</a></p><p><b>topic</b>: <a href=\"http://hl7.org/SubscriptionTopic/admission\">http://hl7.org/SubscriptionTopic/admission</a></p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>type</b>: event-notification</p><p><b>eventsSinceSubscriptionStart</b>: 2</p><p><b>eventsInNotification</b>: 1</p><p><b>subscription</b>: <a href=\"https://example.org/fhir/r4/Subscription/admission\">https://example.org/fhir/r4/Subscription/admission</a></p><p><b>topic</b>: <a href=\"http://hl7.org/SubscriptionTopic/admission\">http://hl7.org/SubscriptionTopic/admission</a></p></div>"
   },
   "status": "active",
   "type": "event-notification",
-  "eventsSinceSubscriptionStart": "310",
+  "eventsSinceSubscriptionStart": "2",
   "eventsInNotification": 1,
   "subscription": {
     "reference": "https://example.org/fhir/r4/Subscription/admission"
