@@ -10,7 +10,7 @@
   "name": "SubscriptionsR5Backport",
   "title": "Subscriptions R5 Backport",
   "status": "draft",
-  "date": "2021-08-16T15:52:26-05:00",
+  "date": "2021-08-17T10:45:23-05:00",
   "publisher": "HL7 FHIR Infrastructure WG",
   "contact": [
     {
@@ -152,34 +152,6 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/subscription-notification-focus-resource"
-        },
-        "name": "Subscription Notification Focus Resource",
-        "description": "Tagging for Bundle entries to indicate a resource is the focus of a specific notification.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/subscription-notification-included-resource"
-        },
-        "name": "Subscription Notification Included Resource",
-        "description": "Tagging for Bundle entries to indicate a resource is included because of a specific notification.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
           "reference": "StructureDefinition/backport-payload-content"
         },
         "name": "Backport R5 Subscription Payload Content Information",
@@ -225,7 +197,7 @@
           "reference": "ValueSet/backport-notification-error-value-set"
         },
         "name": "R5 Subscription Error Codes Value Set",
-        "description": "Codes to represent error states on subscriptions.",
+        "description": "!!NOTE!! This has been added to R4B and will be removed when CI builds are available.",
         "exampleBoolean": false
       },
       {
@@ -239,7 +211,7 @@
           "reference": "ValueSet/backport-notification-type-value-set"
         },
         "name": "R5 Subscription Notification Type Value Set",
-        "description": "Codes to represent types of notification bundles.",
+        "description": "!!NOTE!! This has been added to R4B and will be removed when CI builds are available.",
         "exampleBoolean": false
       },
       {
@@ -267,7 +239,7 @@
           "reference": "CodeSystem/backport-notification-error-code-system"
         },
         "name": "R5 Subscription Error Code System",
-        "description": "Codes to represent error states on subscriptions.",
+        "description": "!!NOTE!! This has been added to R4B and will be removed when CI builds are available.",
         "exampleBoolean": false
       },
       {
@@ -281,7 +253,7 @@
           "reference": "CodeSystem/backport-notification-type-code-system"
         },
         "name": "R5 Subscription Notification Type Code System",
-        "description": "Codes to represent types of notification bundles.",
+        "description": "!!NOTE!! This has been added to R4B and will be removed when CI builds are available.",
         "exampleBoolean": false
       },
       {

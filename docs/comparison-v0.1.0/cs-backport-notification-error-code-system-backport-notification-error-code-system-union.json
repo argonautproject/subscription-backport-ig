@@ -1,11 +1,11 @@
 {
   "resourceType" : "CodeSystem",
-  "id" : "a569d5ea-a6fa-4908-8957-96096dab0877-5",
-  "url" : "http://hl7.org/fhir/comparison/CodeSystem/a569d5ea-a6fa-4908-8957-96096dab0877-5",
+  "id" : "e32dcd71-6c5f-4f87-9c53-b1a8469cf379-5",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/e32dcd71-6c5f-4f87-9c53-b1a8469cf379-5",
   "name" : "UnionBackportNotificationErrorCodeSystemAndBackportNotificationErrorCodeSystem",
   "title" : "Union of R5 Subscription Error Code System And R5 Subscription Error Code System",
   "status" : "active",
-  "date" : "2021-08-16T15:52:31-05:00",
+  "date" : "2021-08-17T10:45:29-05:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="5df815c3-e76e-48ca-9704-17e12a2f6940"/>
+  <id value="30d8b0c8-2c0c-476a-b0dd-ada64f03280d"/>
   <meta>
-    <lastUpdated value="2021-08-16T15:52:26.890-05:00"/>
+    <lastUpdated value="2021-08-17T10:45:23.746-05:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -67,7 +67,7 @@
         <name value="BackportContentValueSet"/>
         <title value="Backported R5 Subscription Content Value Set"/>
         <status value="active"/>
-        <date value="2021-08-16T15:52:26-05:00"/>
+        <date value="2021-08-17T10:45:23-05:00"/>
         <publisher value="HL7 FHIR Infrastructure WG"/>
         <contact>
           <name value="HL7 FHIR Infrastructure WG"/>
@@ -99,8 +99,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:17f248ba-c2f6-4248-a9cd-26c8fb2ceeea"/>
-          <timestamp value="2021-08-16T15:52:37-05:00"/>
+          <identifier value="urn:uuid:9b9b9287-06d8-4b3c-bca9-7d0866bd1721"/>
+          <timestamp value="2021-08-17T10:45:35-05:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -206,7 +206,7 @@
         <name value="BackportNotificationErrorValueSet"/>
         <title value="R5 Subscription Error Codes Value Set"/>
         <status value="active"/>
-        <date value="2021-08-16T15:52:26-05:00"/>
+        <date value="2021-08-17T10:45:23-05:00"/>
         <publisher value="HL7 FHIR Infrastructure WG"/>
         <contact>
           <name value="HL7 FHIR Infrastructure WG"/>
@@ -229,7 +229,7 @@
             <value value="mailto:ehaas@healthedatainc.com"/>
           </telecom>
         </contact>
-        <description value="Codes to represent error states on subscriptions."/>
+        <description value="!!NOTE!! This has been added to R4B and will be removed when CI builds are available."/>
         <jurisdiction>
           <coding>
             <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -238,8 +238,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:4ab5181c-88cc-43b1-acf1-64a5185f1507"/>
-          <timestamp value="2021-08-16T15:52:37-05:00"/>
+          <identifier value="urn:uuid:d7ac3ca3-072d-45e4-8675-206d5e9647d5"/>
+          <timestamp value="2021-08-17T10:45:35-05:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -286,7 +286,7 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 4 concepts</p>
+            <p>This value set contains 5 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-backport-notification-type-code-system.html">R5 Subscription Notification Type Code System v0.1.0 (CodeSystem)</a>
             </p>
@@ -339,6 +339,14 @@
                 <td>Query Status</td>
                 <td>The notification is being sent due to a client request or query for Subscription status.</td>
               </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-uv-subscriptions-backport-CodeSystem-backport-notification-type-code-system-query-event"> </a>
+                  <a href="CodeSystem-backport-notification-type-code-system.html#backport-notification-type-code-system-query-event">query-event</a>
+                </td>
+                <td>Query Event</td>
+                <td>The notification is being sent due to a client request or query for Subscription events.</td>
+              </tr>
             </table>
           </div>
         </text>
@@ -347,7 +355,7 @@
         <name value="BackportNotificationTypeValueSet"/>
         <title value="R5 Subscription Notification Type Value Set"/>
         <status value="active"/>
-        <date value="2021-08-16T15:52:26-05:00"/>
+        <date value="2021-08-17T10:45:23-05:00"/>
         <publisher value="HL7 FHIR Infrastructure WG"/>
         <contact>
           <name value="HL7 FHIR Infrastructure WG"/>
@@ -370,7 +378,7 @@
             <value value="mailto:ehaas@healthedatainc.com"/>
           </telecom>
         </contact>
-        <description value="Codes to represent types of notification bundles."/>
+        <description value="!!NOTE!! This has been added to R4B and will be removed when CI builds are available."/>
         <jurisdiction>
           <coding>
             <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -379,9 +387,9 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:7bb59177-5cb9-456e-8590-944d66aa05af"/>
-          <timestamp value="2021-08-16T15:52:37-05:00"/>
-          <total value="4"/>
+          <identifier value="urn:uuid:5fe9c0f6-4b51-4dab-aa87-14838b738ff2"/>
+          <timestamp value="2021-08-17T10:45:35-05:00"/>
+          <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -409,6 +417,11 @@
             <system value="http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-notification-type-code-system"/>
             <code value="query-status"/>
             <display value="Query Status"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-notification-type-code-system"/>
+            <code value="query-event"/>
+            <display value="Query Event"/>
           </contains>
         </expansion>
       </ValueSet>

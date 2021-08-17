@@ -11,7 +11,7 @@
   <name value="SubscriptionsR5Backport"/>
   <title value="Subscriptions R5 Backport"/>
   <status value="draft"/>
-  <date value="2021-08-16T15:52:26-05:00"/>
+  <date value="2021-08-17T10:45:23-05:00"/>
   <publisher value="HL7 FHIR Infrastructure WG"/>
   <contact>
     <name value="HL7 FHIR Infrastructure WG"/>
@@ -117,28 +117,6 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/subscription-notification-focus-resource"/>
-      </reference>
-      <name value="Subscription Notification Focus Resource"/>
-      <description value="Tagging for Bundle entries to indicate a resource is the focus of a specific notification."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/subscription-notification-included-resource"/>
-      </reference>
-      <name value="Subscription Notification Included Resource"/>
-      <description value="Tagging for Bundle entries to indicate a resource is included because of a specific notification."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/backport-payload-content"/>
       </reference>
       <name value="Backport R5 Subscription Payload Content Information"/>
@@ -175,7 +153,7 @@
         <reference value="ValueSet/backport-notification-error-value-set"/>
       </reference>
       <name value="R5 Subscription Error Codes Value Set"/>
-      <description value="Codes to represent error states on subscriptions."/>
+      <description value="!!NOTE!! This has been added to R4B and will be removed when CI builds are available."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -186,7 +164,7 @@
         <reference value="ValueSet/backport-notification-type-value-set"/>
       </reference>
       <name value="R5 Subscription Notification Type Value Set"/>
-      <description value="Codes to represent types of notification bundles."/>
+      <description value="!!NOTE!! This has been added to R4B and will be removed when CI builds are available."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -208,7 +186,7 @@
         <reference value="CodeSystem/backport-notification-error-code-system"/>
       </reference>
       <name value="R5 Subscription Error Code System"/>
-      <description value="Codes to represent error states on subscriptions."/>
+      <description value="!!NOTE!! This has been added to R4B and will be removed when CI builds are available."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -219,7 +197,7 @@
         <reference value="CodeSystem/backport-notification-type-code-system"/>
       </reference>
       <name value="R5 Subscription Notification Type Code System"/>
-      <description value="Codes to represent types of notification bundles."/>
+      <description value="!!NOTE!! This has been added to R4B and will be removed when CI builds are available."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

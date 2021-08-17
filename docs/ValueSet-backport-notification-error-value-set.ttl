@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "BackportNotificationErrorValueSet"];
   fhir:ValueSet.title [ fhir:value "R5 Subscription Error Codes Value Set"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2021-08-16T15:52:26-05:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2021-08-17T10:45:23-05:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "HL7 FHIR Infrastructure WG"];
   fhir:ValueSet.contact [
      fhir:index 0;
@@ -44,7 +44,7 @@
        fhir:ContactPoint.value [ fhir:value "mailto:ehaas@healthedatainc.com" ]
      ]
   ];
-  fhir:ValueSet.description [ fhir:value "Codes to represent error states on subscriptions."];
+  fhir:ValueSet.description [ fhir:value "!!NOTE!! This has been added to R4B and will be removed when CI builds are available."];
   fhir:ValueSet.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [

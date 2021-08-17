@@ -303,7 +303,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>In FHIR R5, a new type of <code class="language-plaintext highlighter-rouge">Bundle</code> has been introduced, which uses the new <code class="language-plaintext highlighter-rouge">SubscriptionStatus</code> resource to convey status information in notifications.  For FHIR R4, notifications are instead based on a <a href="http://hl7.org/fhir/bundle.html#history">history Bundle</a>, and a <a href="http://hl7.org/fhir/subscriptionstatus.html">SubscriptionStatus</a> resource is used to convey related meta-information (e.g., which subscription the notification is for).</p>
 
-<p>Since notifications use <code class="language-plaintext highlighter-rouge">history</code> type Bundles, notifications need to comply with all the requirements for them.  Specifically, there are invariants on Bundle (<code class="language-plaintext highlighter-rouge">bdl-3</code> and <code class="language-plaintext highlighter-rouge">bdl-4</code>) that require a <code class="language-plaintext highlighter-rouge">Bundle.entry.request</code> element for <em>every</em> <code class="language-plaintext highlighter-rouge">Budnle.entry</code>.</p>
+<p>Since notifications use <code class="language-plaintext highlighter-rouge">history</code> type Bundles, notifications need to comply with all the requirements for them.  Specifically, there are invariants on Bundle (<code class="language-plaintext highlighter-rouge">bdl-3</code> and <code class="language-plaintext highlighter-rouge">bdl-4</code>) that require a <code class="language-plaintext highlighter-rouge">Bundle.entry.request</code> element for <em>every</em> <code class="language-plaintext highlighter-rouge">Bundle.entry</code>.</p>
 <ul>
   <li>For the status resource (<code class="language-plaintext highlighter-rouge">entry[0]</code>), the request SHALL filled out to match a request to the <code class="language-plaintext highlighter-rouge">$status</code> operation.</li>
   <li>For additional entries, the request SHOULD be filled out in a way that makes sense given the subscription (e.g., a <code class="language-plaintext highlighter-rouge">POST</code> or <code class="language-plaintext highlighter-rouge">PUT</code> operation on the resource, etc.).  However, a server MAY choose to simply include a <code class="language-plaintext highlighter-rouge">GET</code> to the relevant resource instead.</li>
@@ -347,8 +347,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="d51b62ad-4edb-4890-a97e-159bd564c968">​</a>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://hl7.org/Special/committees/fiwg/index.cfm">HL7 FHIR Infrastructure WG</a>.  Package hl7.fhir.uv.subscriptions-backport#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Mon, Aug 16, 2021 15:52-0500">2021-08-16</span>
+        <p><a name="8191ff03-fd07-4691-9c40-ce4d1d3233f9">​</a>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://hl7.org/Special/committees/fiwg/index.cfm">HL7 FHIR Infrastructure WG</a>.  Package hl7.fhir.uv.subscriptions-backport#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Tue, Aug 17, 2021 10:45-0500">2021-08-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

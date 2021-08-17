@@ -3,14 +3,14 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="backport-notification-type-code-system"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-notification-type-code-system defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">handshake<a name="backport-notification-type-code-system-handshake"> </a></td><td>Handshake</td><td>The notification is being sent as part of the setup or verification of a communications channel.</td></tr><tr><td style="white-space:nowrap">heartbeat<a name="backport-notification-type-code-system-heartbeat"> </a></td><td>Heartbeat</td><td>The notification is being sent because there has not been a notification generated over an extended period of time.</td></tr><tr><td style="white-space:nowrap">event-notification<a name="backport-notification-type-code-system-event-notification"> </a></td><td>Event Notification</td><td>The notification is being sent due to an event for the subscriber.</td></tr><tr><td style="white-space:nowrap">query-status<a name="backport-notification-type-code-system-query-status"> </a></td><td>Query Status</td><td>The notification is being sent due to a client request or query for Subscription status.</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-notification-type-code-system defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">handshake<a name="backport-notification-type-code-system-handshake"> </a></td><td>Handshake</td><td>The notification is being sent as part of the setup or verification of a communications channel.</td></tr><tr><td style="white-space:nowrap">heartbeat<a name="backport-notification-type-code-system-heartbeat"> </a></td><td>Heartbeat</td><td>The notification is being sent because there has not been a notification generated over an extended period of time.</td></tr><tr><td style="white-space:nowrap">event-notification<a name="backport-notification-type-code-system-event-notification"> </a></td><td>Event Notification</td><td>The notification is being sent due to an event for the subscriber.</td></tr><tr><td style="white-space:nowrap">query-status<a name="backport-notification-type-code-system-query-status"> </a></td><td>Query Status</td><td>The notification is being sent due to a client request or query for Subscription status.</td></tr><tr><td style="white-space:nowrap">query-event<a name="backport-notification-type-code-system-query-event"> </a></td><td>Query Event</td><td>The notification is being sent due to a client request or query for Subscription events.</td></tr></table></div>
   </text>
   <url value="http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-notification-type-code-system"/>
   <version value="0.1.0"/>
   <name value="BackportNotificationTypeCodeSystem"/>
   <title value="R5 Subscription Notification Type Code System"/>
   <status value="active"/>
-  <date value="2021-08-16T15:52:26-05:00"/>
+  <date value="2021-08-17T10:45:23-05:00"/>
   <publisher value="HL7 FHIR Infrastructure WG"/>
   <contact>
     <name value="HL7 FHIR Infrastructure WG"/>
@@ -33,7 +33,7 @@
       <value value="mailto:ehaas@healthedatainc.com"/>
     </telecom>
   </contact>
-  <description value="Codes to represent types of notification bundles."/>
+  <description value="!!NOTE!! This has been added to R4B and will be removed when CI builds are available."/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -42,7 +42,7 @@
     </coding>
   </jurisdiction>
   <content value="complete"/>
-  <count value="4"/>
+  <count value="5"/>
   <concept>
     <code value="handshake"/>
     <display value="Handshake"/>
@@ -62,5 +62,10 @@
     <code value="query-status"/>
     <display value="Query Status"/>
     <definition value="The notification is being sent due to a client request or query for Subscription status."/>
+  </concept>
+  <concept>
+    <code value="query-event"/>
+    <display value="Query Event"/>
+    <definition value="The notification is being sent due to a client request or query for Subscription events."/>
   </concept>
 </CodeSystem>

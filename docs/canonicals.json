@@ -112,20 +112,6 @@
     "name": "BackportTimeout"
   },
   {
-    "id": "subscription-notification-focus-resource",
-    "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/subscription-notification-focus-resource",
-    "version": "0.1.0",
-    "name": "BackportNotificationFocusResource"
-  },
-  {
-    "id": "subscription-notification-included-resource",
-    "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/subscription-notification-included-resource",
-    "version": "0.1.0",
-    "name": "BackportNotificationIncludedResource"
-  },
-  {
     "id": "backport-content-value-set",
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/uv/subscriptions-backport/ValueSet/backport-content-value-set",

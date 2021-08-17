@@ -46,20 +46,6 @@
       "types": [
         "unsignedInt"
       ]
-    },
-    {
-      "url": "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/subscription-notification-focus-resource",
-      "title": "Subscription Notification Focus Resource",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/subscription-notification-included-resource",
-      "title": "Subscription Notification Included Resource",
-      "types": [
-        "string"
-      ]
     }
   ],
   "profiles": {
@@ -131,12 +117,6 @@
     ],
     "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-timeout": [
       "Subscription.channel"
-    ],
-    "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/subscription-notification-focus-resource": [
-      "Bundle.entry"
-    ],
-    "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/subscription-notification-included-resource": [
-      "Bundle.entry"
     ]
   }
 }

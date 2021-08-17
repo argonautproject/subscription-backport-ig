@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "backport-notification-type-code-system"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-notification-type-code-system defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">handshake<a name=\"backport-notification-type-code-system-handshake\"> </a></td><td>Handshake</td><td>The notification is being sent as part of the setup or verification of a communications channel.</td></tr><tr><td style=\"white-space:nowrap\">heartbeat<a name=\"backport-notification-type-code-system-heartbeat\"> </a></td><td>Heartbeat</td><td>The notification is being sent because there has not been a notification generated over an extended period of time.</td></tr><tr><td style=\"white-space:nowrap\">event-notification<a name=\"backport-notification-type-code-system-event-notification\"> </a></td><td>Event Notification</td><td>The notification is being sent due to an event for the subscriber.</td></tr><tr><td style=\"white-space:nowrap\">query-status<a name=\"backport-notification-type-code-system-query-status\"> </a></td><td>Query Status</td><td>The notification is being sent due to a client request or query for Subscription status.</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-notification-type-code-system defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">handshake<a name=\"backport-notification-type-code-system-handshake\"> </a></td><td>Handshake</td><td>The notification is being sent as part of the setup or verification of a communications channel.</td></tr><tr><td style=\"white-space:nowrap\">heartbeat<a name=\"backport-notification-type-code-system-heartbeat\"> </a></td><td>Heartbeat</td><td>The notification is being sent because there has not been a notification generated over an extended period of time.</td></tr><tr><td style=\"white-space:nowrap\">event-notification<a name=\"backport-notification-type-code-system-event-notification\"> </a></td><td>Event Notification</td><td>The notification is being sent due to an event for the subscriber.</td></tr><tr><td style=\"white-space:nowrap\">query-status<a name=\"backport-notification-type-code-system-query-status\"> </a></td><td>Query Status</td><td>The notification is being sent due to a client request or query for Subscription status.</td></tr><tr><td style=\"white-space:nowrap\">query-event<a name=\"backport-notification-type-code-system-query-event\"> </a></td><td>Query Event</td><td>The notification is being sent due to a client request or query for Subscription events.</td></tr></table></div>"
   ];
   fhir:CodeSystem.url [ fhir:value "http://hl7.org/fhir/uv/subscriptions-backport/CodeSystem/backport-notification-type-code-system"];
   fhir:CodeSystem.version [ fhir:value "0.1.0"];
   fhir:CodeSystem.name [ fhir:value "BackportNotificationTypeCodeSystem"];
   fhir:CodeSystem.title [ fhir:value "R5 Subscription Notification Type Code System"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2021-08-16T15:52:26-05:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2021-08-17T10:45:23-05:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "HL7 FHIR Infrastructure WG"];
   fhir:CodeSystem.contact [
      fhir:index 0;
@@ -44,7 +44,7 @@
        fhir:ContactPoint.value [ fhir:value "mailto:ehaas@healthedatainc.com" ]
      ]
   ];
-  fhir:CodeSystem.description [ fhir:value "Codes to represent types of notification bundles."];
+  fhir:CodeSystem.description [ fhir:value "!!NOTE!! This has been added to R4B and will be removed when CI builds are available."];
   fhir:CodeSystem.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -55,7 +55,7 @@
      ]
   ];
   fhir:CodeSystem.content [ fhir:value "complete"];
-  fhir:CodeSystem.count [ fhir:value "4"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.count [ fhir:value "5"^^xsd:nonNegativeInteger];
   fhir:CodeSystem.concept [
      fhir:index 0;
      fhir:CodeSystem.concept.code [ fhir:value "handshake" ];
@@ -76,6 +76,11 @@
      fhir:CodeSystem.concept.code [ fhir:value "query-status" ];
      fhir:CodeSystem.concept.display [ fhir:value "Query Status" ];
      fhir:CodeSystem.concept.definition [ fhir:value "The notification is being sent due to a client request or query for Subscription status." ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "query-event" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Query Event" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The notification is being sent due to a client request or query for Subscription events." ]
   ] .
 
 # - ontology header ------------------------------------------------------------
