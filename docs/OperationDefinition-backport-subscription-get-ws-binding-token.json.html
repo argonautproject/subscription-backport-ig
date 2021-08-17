@@ -229,13 +229,13 @@
 
 
 
-  <pre class="json"><code class="language-json"><a name="a1716149-c770-49ec-a364-22bf887b2ad6">​</a>
+  <pre class="json"><code class="language-json"><a name="a2fdd888-e108-48d9-82ac-d69ba15eb2c4">​</a>
 {
   "<a href="http://build.fhir.org/branches/R4B//operationdefinition.html#OperationDefinition">resourceType</a>" : "OperationDefinition",
   "<a href="http://build.fhir.org/branches/R4B//operationdefinition.html#OperationDefinition.id">id</a>" : "backport-subscription-get-ws-binding-token",
   "<a href="http://build.fhir.org/branches/R4B//operationdefinition.html#OperationDefinition.text">text</a>" : {
     "<a href="http://build.fhir.org/branches/R4B//narrative.html#Narrative#Narrative.status">status</a>" : "extensions",
-    "<a href="http://build.fhir.org/branches/R4B//narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;h2&gt;R5SubscriptionGetWsBindingToken&lt;/h2&gt;&lt;p&gt;OPERATION: R5SubscriptionGetWsBindingToken&lt;/p&gt;&lt;p&gt;The official URL for this operation definition is: &lt;/p&gt;&lt;pre&gt;http://hl7.org/fhir/uv/subscriptions-backport/OperationDefinition/backport-subscription-get-ws-binding-token&lt;/pre&gt;&lt;div&gt;&lt;p&gt;This operation is used to get a token for a websocket client to use in order to bind to one or more subscriptions.&lt;/p&gt;\n&lt;/div&gt;&lt;p&gt;URL: [base]/Subscription/$get-ws-binding-token&lt;/p&gt;&lt;p&gt;URL: [base]/Subscription/[id]/$get-ws-binding-token&lt;/p&gt;&lt;p&gt;Parameters&lt;/p&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Use&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Cardinality&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Binding&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Documentation&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;ids&lt;/td&gt;&lt;td&gt;0..*&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://build.fhir.org/branches/R4B//datatypes.html#id\"&gt;id&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;At the Resource level, one or more parameters containing one or more FHIR ids of Subscriptions to get tokens for. In the absense of any specified ids, the server returns tokens for all Subscriptions available to the caller with a channel-type of websocket. At the Instance level, this parameter is ignored.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OUT&lt;/td&gt;&lt;td&gt;return&lt;/td&gt;&lt;td&gt;1..1&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://build.fhir.org/branches/R4B//parameters.html\"&gt;Parameters&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;The returned Parameters MUST include a valueString named &amp;quot;token&amp;quot; and a valueDateTime named &amp;quot;expiration&amp;quot;. The returned Parameters MAY include a valueString named &amp;quot;subscriptions&amp;quot; with a comma-delimited list of subscriptions covered by this token.&lt;/p&gt;\n&lt;p&gt;Note: as this is the only out parameter, it is a resource, and it has the name 'return', the result of this operation is returned directly as a resource&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://build.fhir.org/branches/R4B//narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;h2&gt;R5SubscriptionGetWsBindingToken&lt;/h2&gt;&lt;p&gt;OPERATION: R5SubscriptionGetWsBindingToken&lt;/p&gt;&lt;p&gt;The official URL for this operation definition is: &lt;/p&gt;&lt;pre&gt;http://hl7.org/fhir/uv/subscriptions-backport/OperationDefinition/backport-subscription-get-ws-binding-token&lt;/pre&gt;&lt;div&gt;&lt;p&gt;This operation is used to get a token for a websocket client to use in order to bind to one or more subscriptions.&lt;/p&gt;\n&lt;/div&gt;&lt;p&gt;URL: [base]/Subscription/$get-ws-binding-token&lt;/p&gt;&lt;p&gt;URL: [base]/Subscription/[id]/$get-ws-binding-token&lt;/p&gt;&lt;p&gt;Parameters&lt;/p&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Use&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Cardinality&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Binding&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Documentation&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;ids&lt;/td&gt;&lt;td&gt;0..*&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://build.fhir.org/branches/R4B//datatypes.html#id\"&gt;id&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;At the Resource level, one or more parameters containing one or more FHIR ids of Subscriptions to get tokens for. In the absense of any specified ids, the server returns tokens for all Subscriptions available to the caller with a channel-type of websocket. At the Instance level, this parameter is ignored.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OUT&lt;/td&gt;&lt;td&gt;token&lt;/td&gt;&lt;td&gt;1..1&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://build.fhir.org/branches/R4B//datatypes.html#string\"&gt;string&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;An access token that a client may use to show authorization during websocket connections.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OUT&lt;/td&gt;&lt;td&gt;expiration&lt;/td&gt;&lt;td&gt;1..1&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://build.fhir.org/branches/R4B//datatypes.html#dateTime\"&gt;dateTime&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;The date and time this token is valid until.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OUT&lt;/td&gt;&lt;td&gt;subscriptions&lt;/td&gt;&lt;td&gt;0..*&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://build.fhir.org/branches/R4B//datatypes.html#string\"&gt;string&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;The subscriptions this token is valid for.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://build.fhir.org/branches/R4B//operationdefinition.html#OperationDefinition.extension">extension</a>" : [
     {
@@ -313,12 +313,28 @@
       "<a href="http://build.fhir.org/branches/R4B//operationdefinition.html#OperationDefinition.parameter.type">type</a>" : "id"
     },
     {
-      "<a href="http://build.fhir.org/branches/R4B//operationdefinition.html#OperationDefinition.parameter.name">name</a>" : "return",
+      "<a href="http://build.fhir.org/branches/R4B//operationdefinition.html#OperationDefinition.parameter.name">name</a>" : "token",
       "<a href="http://build.fhir.org/branches/R4B//operationdefinition.html#OperationDefinition.parameter.use">use</a>" : "out",
       "<a href="http://build.fhir.org/branches/R4B//operationdefinition.html#OperationDefinition.parameter.min">min</a>" : 1,
       "<a href="http://build.fhir.org/branches/R4B//operationdefinition.html#OperationDefinition.parameter.max">max</a>" : "1",
-      "<a href="http://build.fhir.org/branches/R4B//operationdefinition.html#OperationDefinition.parameter.documentation">documentation</a>" : "The returned Parameters MUST include a valueString named \"token\" and a valueDateTime named \"expiration\". The returned Parameters MAY include a valueString named \"subscriptions\" with a comma-delimited list of subscriptions covered by this token.\r\n\r\nNote: as this is the only out parameter, it is a resource, and it has the name 'return', the result of this operation is returned directly as a resource",
-      "<a href="http://build.fhir.org/branches/R4B//operationdefinition.html#OperationDefinition.parameter.type">type</a>" : "Parameters"
+      "<a href="http://build.fhir.org/branches/R4B//operationdefinition.html#OperationDefinition.parameter.documentation">documentation</a>" : "An access token that a client may use to show authorization during websocket connections.",
+      "<a href="http://build.fhir.org/branches/R4B//operationdefinition.html#OperationDefinition.parameter.type">type</a>" : "string"
+    },
+    {
+      "<a href="http://build.fhir.org/branches/R4B//operationdefinition.html#OperationDefinition.parameter.name">name</a>" : "expiration",
+      "<a href="http://build.fhir.org/branches/R4B//operationdefinition.html#OperationDefinition.parameter.use">use</a>" : "out",
+      "<a href="http://build.fhir.org/branches/R4B//operationdefinition.html#OperationDefinition.parameter.min">min</a>" : 1,
+      "<a href="http://build.fhir.org/branches/R4B//operationdefinition.html#OperationDefinition.parameter.max">max</a>" : "1",
+      "<a href="http://build.fhir.org/branches/R4B//operationdefinition.html#OperationDefinition.parameter.documentation">documentation</a>" : "The date and time this token is valid until.",
+      "<a href="http://build.fhir.org/branches/R4B//operationdefinition.html#OperationDefinition.parameter.type">type</a>" : "dateTime"
+    },
+    {
+      "<a href="http://build.fhir.org/branches/R4B//operationdefinition.html#OperationDefinition.parameter.name">name</a>" : "subscriptions",
+      "<a href="http://build.fhir.org/branches/R4B//operationdefinition.html#OperationDefinition.parameter.use">use</a>" : "out",
+      "<a href="http://build.fhir.org/branches/R4B//operationdefinition.html#OperationDefinition.parameter.min">min</a>" : 0,
+      "<a href="http://build.fhir.org/branches/R4B//operationdefinition.html#OperationDefinition.parameter.max">max</a>" : "*",
+      "<a href="http://build.fhir.org/branches/R4B//operationdefinition.html#OperationDefinition.parameter.documentation">documentation</a>" : "The subscriptions this token is valid for.",
+      "<a href="http://build.fhir.org/branches/R4B//operationdefinition.html#OperationDefinition.parameter.type">type</a>" : "string"
     }
   ]
 }</code></pre>
@@ -350,8 +366,8 @@
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="cd485f7c-f92f-4a60-84df-199af2d2e80a">​</a>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://hl7.org/Special/committees/fiwg/index.cfm">HL7 FHIR Infrastructure WG</a>.  Package hl7.fhir.uv.subscriptions-backport#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Tue, Aug 17, 2021 10:45-0500">2021-08-17</span>
+        <p><a name="4ca71a2b-ec83-4c4d-8b23-d9a9fcffc31e">​</a>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://hl7.org/Special/committees/fiwg/index.cfm">HL7 FHIR Infrastructure WG</a>.  Package hl7.fhir.uv.subscriptions-backport#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Tue, Aug 17, 2021 16:59-0500">2021-08-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

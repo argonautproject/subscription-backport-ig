@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "e32dcd71-6c5f-4f87-9c53-b1a8469cf379-15",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/e32dcd71-6c5f-4f87-9c53-b1a8469cf379-15",
+  "id" : "1edf63b4-8e8f-4156-a528-f70afb39407b-15",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/1edf63b4-8e8f-4156-a528-f70afb39407b-15",
   "name" : "IntersectionBackportMaxCountAndBackportMaxCount",
   "title" : "Intersection of Backported R5 Subscription MaxCount And Backported R5 Subscription MaxCount",
   "status" : "active",
-  "date" : "2021-08-17T10:45:29-05:00",
+  "date" : "2021-08-17T16:59:50-05:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",

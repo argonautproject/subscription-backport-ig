@@ -5,8 +5,9 @@
   <text>
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>R5SubscriptionGetWsBindingToken</h2><p>OPERATION: R5SubscriptionGetWsBindingToken</p><p>The official URL for this operation definition is: </p><pre>http://hl7.org/fhir/uv/subscriptions-backport/OperationDefinition/backport-subscription-get-ws-binding-token</pre><div><p>This operation is used to get a token for a websocket client to use in order to bind to one or more subscriptions.</p>
 </div><p>URL: [base]/Subscription/$get-ws-binding-token</p><p>URL: [base]/Subscription/[id]/$get-ws-binding-token</p><p>Parameters</p><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>ids</td><td>0..*</td><td><a href="http://build.fhir.org/branches/R4B//datatypes.html#id">id</a></td><td/><td><div><p>At the Resource level, one or more parameters containing one or more FHIR ids of Subscriptions to get tokens for. In the absense of any specified ids, the server returns tokens for all Subscriptions available to the caller with a channel-type of websocket. At the Instance level, this parameter is ignored.</p>
-</div></td></tr><tr><td>OUT</td><td>return</td><td>1..1</td><td><a href="http://build.fhir.org/branches/R4B//parameters.html">Parameters</a></td><td/><td><div><p>The returned Parameters MUST include a valueString named &quot;token&quot; and a valueDateTime named &quot;expiration&quot;. The returned Parameters MAY include a valueString named &quot;subscriptions&quot; with a comma-delimited list of subscriptions covered by this token.</p>
-<p>Note: as this is the only out parameter, it is a resource, and it has the name 'return', the result of this operation is returned directly as a resource</p>
+</div></td></tr><tr><td>OUT</td><td>token</td><td>1..1</td><td><a href="http://build.fhir.org/branches/R4B//datatypes.html#string">string</a></td><td/><td><div><p>An access token that a client may use to show authorization during websocket connections.</p>
+</div></td></tr><tr><td>OUT</td><td>expiration</td><td>1..1</td><td><a href="http://build.fhir.org/branches/R4B//datatypes.html#dateTime">dateTime</a></td><td/><td><div><p>The date and time this token is valid until.</p>
+</div></td></tr><tr><td>OUT</td><td>subscriptions</td><td>0..*</td><td><a href="http://build.fhir.org/branches/R4B//datatypes.html#string">string</a></td><td/><td><div><p>The subscriptions this token is valid for.</p>
 </div></td></tr></table></div>
   </text>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
@@ -66,11 +67,27 @@
     <type value="id"/>
   </parameter>
   <parameter>
-    <name value="return"/>
+    <name value="token"/>
     <use value="out"/>
     <min value="1"/>
     <max value="1"/>
-    <documentation value="The returned Parameters MUST include a valueString named &quot;token&quot; and a valueDateTime named &quot;expiration&quot;. The returned Parameters MAY include a valueString named &quot;subscriptions&quot; with a comma-delimited list of subscriptions covered by this token.&#xD;&#xA;&#xD;&#xA;Note: as this is the only out parameter, it is a resource, and it has the name &#39;return&#39;, the result of this operation is returned directly as a resource"/>
-    <type value="Parameters"/>
+    <documentation value="An access token that a client may use to show authorization during websocket connections."/>
+    <type value="string"/>
+  </parameter>
+  <parameter>
+    <name value="expiration"/>
+    <use value="out"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="The date and time this token is valid until."/>
+    <type value="dateTime"/>
+  </parameter>
+  <parameter>
+    <name value="subscriptions"/>
+    <use value="out"/>
+    <min value="0"/>
+    <max value="*"/>
+    <documentation value="The subscriptions this token is valid for."/>
+    <type value="string"/>
   </parameter>
 </OperationDefinition>
