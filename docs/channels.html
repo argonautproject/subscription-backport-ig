@@ -275,15 +275,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ol>
   <li>Client creates a Subscription with the <code class="language-plaintext highlighter-rouge">channelType</code> set to <code class="language-plaintext highlighter-rouge">websocket</code>.</li>
   <li>Server responds with a success code and creates the subscription.</li>
-  <li>Client requests FHIR server’s <a href="http://hl7.org/fhir/capabilitystatement.html">CapabilityStatement</a> to find the server’s websocket URL via the <a href="http://hl7.org/fhir/extension-capabilitystatement-websocket.html">websocket extension</a>.</li>
-  <li>Server returns its <code class="language-plaintext highlighter-rouge">CapabilityStatement</code>.</li>
-  <li>Client connects to the server via websockets (<code class="language-plaintext highlighter-rouge">wss://</code> preferred).</li>
   <li>Client requests a websocket binding token, by invoking the <code class="language-plaintext highlighter-rouge">$get-ws-binding-token</code> operation via REST. Note: this call is intended to be repeated as necessary (e.g., prior to a token expiring, a client should request a new one).</li>
-  <li>Server returns <code class="language-plaintext highlighter-rouge">Parameters</code> with a <code class="language-plaintext highlighter-rouge">token</code> and an <code class="language-plaintext highlighter-rouge">expiration</code>.</li>
+  <li>Server returns <code class="language-plaintext highlighter-rouge">Parameters</code> with a <code class="language-plaintext highlighter-rouge">token</code>,<code class="language-plaintext highlighter-rouge">expiration</code>, and <code class="language-plaintext highlighter-rouge">websocket-url</code>.</li>
+  <li>Client connects to the server via websockets, via the returned <code class="language-plaintext highlighter-rouge">websocket-url</code> (<code class="language-plaintext highlighter-rouge">wss://</code> preferred).</li>
   <li>Client sends a <code class="language-plaintext highlighter-rouge">bind-with-token</code> message via websockets, with the token provided by the server. Note: this operation can be repeated concurrently for multiple subscriptions, and serially for continued operation over a single websocket connection.</li>
   <li>Server sends one or more <code class="language-plaintext highlighter-rouge">handshake</code> messages via websockets (one per Subscription included in the token). Note: some servers may additionally send one or more <code class="language-plaintext highlighter-rouge">event-notification</code> messages at this time (e.g., all messages since last connected, last ‘n’ messages, etc.). Clients are expected to handle either flow.</li>
   <li>Server may send notifications of type <code class="language-plaintext highlighter-rouge">heartbeat</code> at any time.</li>
   <li>Server may send notifications of type <code class="language-plaintext highlighter-rouge">event-notification</code> at any time.</li>
+  <li>If the token is expiring soon and the Client wishes to continue receiving notifications, it should invoke the <code class="language-plaintext highlighter-rouge">$get-ws-binding-token</code> operation via REST.</li>
+  <li>Server returns <code class="language-plaintext highlighter-rouge">Parameters</code> with a new <code class="language-plaintext highlighter-rouge">token</code>, <code class="language-plaintext highlighter-rouge">expiration</code>, and <code class="language-plaintext highlighter-rouge">websocket-url</code>.</li>
+  <li>If the <code class="language-plaintext highlighter-rouge">websocket-url</code> is different from the existing connection, the Client establishes a new connection to the Client Endpoint.</li>
+  <li>Client sends a <code class="language-plaintext highlighter-rouge">bind-with-token</code> message via websockets, with the token provided by the server. Note: this operation can be repeated concurrently for multiple subscriptions, and serially for continued operation over a single websocket connection.</li>
+  <li>Server sends one or more <code class="language-plaintext highlighter-rouge">handshake</code> messages via websockets (one per Subscription included in the token). Note: some servers may additionally send one or more <code class="language-plaintext highlighter-rouge">event-notification</code> messages at this time (e.g., all messages since last connected, last ‘n’ messages, etc.). Clients are expected to handle either flow.</li>
   <li>Either the server or the client may close the websocket connection.</li>
 </ol>
 
@@ -389,8 +392,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="beab1bbb-b0b8-4778-a3be-ea449a8a4783">​</a>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://hl7.org/Special/committees/fiwg/index.cfm">HL7 FHIR Infrastructure WG</a>.  Package hl7.fhir.uv.subscriptions-backport#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Thu, Aug 19, 2021 15:53-0500">2021-08-19</span>
+        <p><a name="ed960bdf-0505-47c5-a91c-6bf8cbdcfedb">​</a>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://hl7.org/Special/committees/fiwg/index.cfm">HL7 FHIR Infrastructure WG</a>.  Package hl7.fhir.uv.subscriptions-backport#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Wed, Oct 6, 2021 13:00-0500">2021-10-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

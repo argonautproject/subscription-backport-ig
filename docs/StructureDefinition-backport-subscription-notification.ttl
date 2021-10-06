@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "BackportSubscriptionNotification"];
   fhir:StructureDefinition.title [ fhir:value "Backported R5 Subscription Notification Bundle"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-08-19T15:53:42-05:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-10-06T13:00:58-05:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 FHIR Infrastructure WG"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

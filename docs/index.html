@@ -246,6 +246,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
           <li>Heartbeat</li>
           <li>Event Notification</li>
           <li>Query Status</li>
+          <li>Query Event</li>
         </ul>
       </li>
       <li><a href="channels.html">Channels</a>
@@ -272,26 +273,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </li>
   <li>Profiles and Extensions
     <ul>
-      <li><a name="f2afd687-fc78-4a0a-a7ea-6428cce90955">​</a>Profile: <a href="StructureDefinition-backport-subscription-topic-canonical-urls.html">Subscription Topic URL Parameters</a></li>
       <li>Profile: <a href="StructureDefinition-backport-subscription.html">Subscription</a>
         <ul>
-          <li><a name="e7c9eb40-87f7-4235-abe9-72c892f18050">​</a>Extension: <a href="StructureDefinition-backport-topic-canonical.html">Backport Topic Canonical</a></li>
+          <li>Extension: <a href="StructureDefinition-backport-channel-type.html">Backport Channel Type</a></li>
+          <li>Extension: <a href="StructureDefinition-backport-filter-criteria.html">Backport Filter Criteria</a></li>
           <li>Extension: <a href="StructureDefinition-backport-heartbeat-period.html">Backport Heartbeat Period</a></li>
           <li>Extension: <a href="StructureDefinition-backport-timeout.html">Backport Timeout</a></li>
-          <li><a name="8851103a-8e70-41da-b08d-0a4805b60ee3">​</a>Extension: <a href="StructureDefinition-backport-notification-url-location.html">Backport Notification URL Location</a></li>
           <li>Extension: <a href="StructureDefinition-backport-max-count.html">Backport Notification Max Count</a></li>
           <li>Extension: <a href="StructureDefinition-backport-payload-content.html">Backport Payload Content</a></li>
         </ul>
       </li>
       <li>Profile: Notification <a href="StructureDefinition-backport-subscription-notification.html">Bundle</a></li>
-      <li><a name="f2578f1f-d995-4a92-b860-deb0de97f098">​</a>Profile: Subscription Status - <a href="StructureDefinition-backport-subscriptionstatus.html">Parameters</a></li>
     </ul>
   </li>
   <li>Operations
     <ul>
       <li>Operation: <a href="OperationDefinition-backport-subscription-get-ws-binding-token.html">$get-ws-binding-token</a></li>
       <li>Operation: <a href="OperationDefinition-backport-subscription-status.html">$status</a></li>
-      <li><a name="66f68917-fb4c-4223-98bf-bdf2ad99bb9f">​</a>Operation: <a href="OperationDefinition-backport-subscriptiontopic-list.html">$topic-list</a></li>
+      <li>Operation: <a href="OperationDefinition-backport-subscription-events.html">$events</a></li>
     </ul>
   </li>
   <li>Value Sets and Code Systems
@@ -310,8 +309,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </li>
       <li>Subscription Notification URL Location
         <ul>
-          <li><a name="5e656d6a-869a-4c58-bca4-4b184e90078c">​</a><a href="CodeSystem-backport-notification-url-location-code-system.html">Code System</a></li>
-          <li><a name="67d2562a-ce9c-4c8d-96b1-a745ed01b87c">​</a><a href="ValueSet-backport-notification-url-location-value-set.html">Value Set</a></li>
+          <li><a name="166ad549-954a-4bab-b542-075c40623228">​</a><a href="CodeSystem-backport-notification-url-location-code-system.html">Code System</a></li>
+          <li><a name="8bf6199a-42b2-4e9c-8ee3-07661cd32e38">​</a><a href="ValueSet-backport-notification-url-location-value-set.html">Value Set</a></li>
         </ul>
       </li>
     </ul>
@@ -342,8 +341,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="e7fbca8c-4986-4934-a939-22e9157a814f">​</a>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://hl7.org/Special/committees/fiwg/index.cfm">HL7 FHIR Infrastructure WG</a>.  Package hl7.fhir.uv.subscriptions-backport#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Thu, Aug 19, 2021 15:53-0500">2021-08-19</span>
+        <p><a name="c79615ca-fbc2-435e-a6c0-cd075e004192">​</a>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://hl7.org/Special/committees/fiwg/index.cfm">HL7 FHIR Infrastructure WG</a>.  Package hl7.fhir.uv.subscriptions-backport#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Wed, Oct 6, 2021 13:00-0500">2021-10-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

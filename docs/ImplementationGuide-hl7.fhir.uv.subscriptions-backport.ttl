@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "SubscriptionsR5Backport"];
   fhir:ImplementationGuide.title [ fhir:value "Subscriptions R5 Backport"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-08-19T15:53:42-05:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-10-06T13:00:58-05:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 FHIR Infrastructure WG"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;

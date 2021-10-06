@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "b24f84cc-6489-4467-9243-3a89cc243b9c-14",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/b24f84cc-6489-4467-9243-3a89cc243b9c-14",
+  "id" : "89fddcc9-9fd4-4544-8f6b-c97cdd5898f0-14",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/89fddcc9-9fd4-4544-8f6b-c97cdd5898f0-14",
   "name" : "UnionBackportMaxCountAndBackportMaxCount",
   "title" : "Union of Backported R5 Subscription MaxCount And Backported R5 Subscription MaxCount",
   "status" : "active",
-  "date" : "2021-08-19T15:53:49-05:00",
+  "date" : "2021-10-06T13:01:04-05:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",

@@ -8,6 +8,7 @@
 </div></td></tr><tr><td>OUT</td><td>token</td><td>1..1</td><td><a href="http://build.fhir.org/branches/R4B//datatypes.html#string">string</a></td><td/><td><div><p>An access token that a client may use to show authorization during websocket connections.</p>
 </div></td></tr><tr><td>OUT</td><td>expiration</td><td>1..1</td><td><a href="http://build.fhir.org/branches/R4B//datatypes.html#dateTime">dateTime</a></td><td/><td><div><p>The date and time this token is valid until.</p>
 </div></td></tr><tr><td>OUT</td><td>subscriptions</td><td>0..*</td><td><a href="http://build.fhir.org/branches/R4B//datatypes.html#string">string</a></td><td/><td><div><p>The subscriptions this token is valid for.</p>
+</div></td></tr><tr><td>OUT</td><td>websocket-url</td><td>1..1</td><td><a href="http://build.fhir.org/branches/R4B//datatypes.html#url">url</a></td><td/><td><div><p>The URL the client should use to connect to Websockets.</p>
 </div></td></tr></table></div>
   </text>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
@@ -89,5 +90,13 @@
     <max value="*"/>
     <documentation value="The subscriptions this token is valid for."/>
     <type value="string"/>
+  </parameter>
+  <parameter>
+    <name value="websocket-url"/>
+    <use value="out"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="The URL the client should use to connect to Websockets."/>
+    <type value="url"/>
   </parameter>
 </OperationDefinition>
