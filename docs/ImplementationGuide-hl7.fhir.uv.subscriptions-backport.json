@@ -10,7 +10,7 @@
   "name": "SubscriptionsR5Backport",
   "title": "Subscriptions R5 Backport",
   "status": "draft",
-  "date": "2021-10-06T13:00:58-05:00",
+  "date": "2021-10-07T16:18:10-05:00",
   "publisher": "HL7 FHIR Infrastructure WG",
   "contact": [
     {
@@ -464,63 +464,65 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "actors.html",
-          "title": "Actors",
-          "generation": "markdown"
-        },
-        {
           "nameUrl": "background.html",
           "title": "Background",
           "generation": "markdown"
         },
         {
-          "nameUrl": "channels.html",
-          "title": "Channels",
-          "generation": "markdown"
+          "nameUrl": "specification.html",
+          "title": "Specification",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "actors.html",
+              "title": "Actors",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "components.html",
+              "title": "Topic-Based Subscription Components",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "workflow.html",
+              "title": "Workflow",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "channels.html",
+              "title": "Channels",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "notifications.html",
+              "title": "Notifications",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "payloads.html",
+              "title": "Payload Types",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "conformance.html",
+              "title": "Conformance",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "errors.html",
+              "title": "Handling Errors",
+              "generation": "markdown"
+            }
+          ]
         },
         {
-          "nameUrl": "components.html",
-          "title": "Components",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "conformance.html",
-          "title": "Conformance",
+          "nameUrl": "safety_security.html",
+          "title": "Safety and Security",
           "generation": "markdown"
         },
         {
           "nameUrl": "downloads.html",
           "title": "Downloads",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "errors.html",
-          "title": "Errors",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "notifications.html",
-          "title": "Notifications",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "payloads.html",
-          "title": "Payloads",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "safety_security.html",
-          "title": "Safety Security",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "workflow.html",
-          "title": "Workflow",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "workflow-diagrams.html",
-          "title": "Workflow Diagrams",
           "generation": "markdown"
         }
       ]

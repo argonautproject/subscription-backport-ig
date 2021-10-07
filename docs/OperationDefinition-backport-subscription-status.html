@@ -41,8 +41,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"14.4"}
-    h3,h4,h5,h6{--heading-prefix:"14.4"}</style>
+    <style type="text/css">h2{--heading-prefix:"6.4"}
+    h3,h4,h5,h6{--heading-prefix:"6.4"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -86,6 +86,9 @@
 <ul class="nav navbar-nav">
   <li>
     <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Contents</a>
   </li>
   <li>
     <a href="background.html">Background</a>
@@ -233,9 +236,9 @@
 
 
   <div><h2>R5SubscriptionStatus</h2><p>OPERATION: R5SubscriptionStatus</p><p>The official URL for this operation definition is: </p><pre>http://hl7.org/fhir/uv/subscriptions-backport/OperationDefinition/backport-subscription-status</pre><div><p>This operation is used to return the current status information about one or more backported R5-Style Subscriptions in R4.</p>
-</div><p>URL: [base]/Subscription/$status</p><p>URL: [base]/Subscription/[id]/$status</p><p>Parameters</p><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>ids</td><td>0..*</td><td><a name="d2dd4ebc-c4a2-482d-9313-11489ca85565">​</a><a href="http://build.fhir.org/branches/R4B//datatypes.html#id">id</a></td><td></td><td><div><p>At the Resource level, one or more parameters containing one or more comma-delimited FHIR ids of Subscriptions to get status information for.  In the absence of any specified ids, the server returns the status for all Subscriptions available to the caller.  At the Instance level, this parameter is ignored.</p>
-</div></td></tr><tr><td>IN</td><td>status</td><td>0..*</td><td><a name="daf3d558-b570-416a-9283-e6757b1adae3">​</a><a href="http://build.fhir.org/branches/R4B//datatypes.html#id">id</a></td><td></td><td><div><p>At the Resource level, a comma-delimited list of Subscription statuses to filter by (e.g., active). In the absence of any specified status values, the server does not filter contents based on the status.  At the Instance level, this parameter is ignored.</p>
-</div></td></tr><tr><td>OUT</td><td>return</td><td>1..1</td><td><a name="a0ffd0d0-ec12-4ca4-92f8-d90db01addd5">​</a><a href="http://build.fhir.org/branches/R4B//bundle.html">Bundle</a></td><td></td><td><div><p>The bundle type is "searchset". The operation returns a bundle containing one or more SubscriptionStatus resources, one per Subscription being queried.</p>
+</div><p>URL: [base]/Subscription/$status</p><p>URL: [base]/Subscription/[id]/$status</p><p>Parameters</p><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>ids</td><td>0..*</td><td><a name="a8ff0f4d-ec7e-44ba-b2fd-d73bee05b4b0">​</a><a href="http://build.fhir.org/branches/R4B//datatypes.html#id">id</a></td><td></td><td><div><p>At the Resource level, one or more parameters containing one or more comma-delimited FHIR ids of Subscriptions to get status information for.  In the absence of any specified ids, the server returns the status for all Subscriptions available to the caller.  At the Instance level, this parameter is ignored.</p>
+</div></td></tr><tr><td>IN</td><td>status</td><td>0..*</td><td><a name="76fe928f-076d-45a3-b19a-e3da2d575585">​</a><a href="http://build.fhir.org/branches/R4B//datatypes.html#id">id</a></td><td></td><td><div><p>At the Resource level, a comma-delimited list of Subscription statuses to filter by (e.g., active). In the absence of any specified status values, the server does not filter contents based on the status.  At the Instance level, this parameter is ignored.</p>
+</div></td></tr><tr><td>OUT</td><td>return</td><td>1..1</td><td><a name="5de6211e-e99c-4f2f-b9cf-33a9b443b5f8">​</a><a href="http://build.fhir.org/branches/R4B//bundle.html">Bundle</a></td><td></td><td><div><p>The bundle type is "searchset". The operation returns a bundle containing one or more SubscriptionStatus resources, one per Subscription being queried.</p>
 </div></td></tr></table></div>
 
     <!-- insert notes if present -->
@@ -264,8 +267,8 @@
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="02360d9f-97a9-42fe-9e90-5d7c51a5fb12">​</a>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://hl7.org/Special/committees/fiwg/index.cfm">HL7 FHIR Infrastructure WG</a>.  Package hl7.fhir.uv.subscriptions-backport#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Wed, Oct 6, 2021 13:00-0500">2021-10-06</span>
+        <p><a name="6fe4bcc9-2ea1-4d95-839f-70d99a50269e">​</a>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://hl7.org/Special/committees/fiwg/index.cfm">HL7 FHIR Infrastructure WG</a>.  Package hl7.fhir.uv.subscriptions-backport#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Thu, Oct 7, 2021 16:18-0500">2021-10-07</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

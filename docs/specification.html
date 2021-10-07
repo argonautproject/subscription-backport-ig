@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>HL7.FHIR.UV.SUBSCRIPTIONS-BACKPORT\Workflow Diagrams - FHIR v4.1.0</title>
+    <title>HL7.FHIR.UV.SUBSCRIPTIONS-BACKPORT\Specification - FHIR v4.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"13"}
-    h3,h4,h5,h6{--heading-prefix:"13"}</style>
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3.0"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -86,6 +86,9 @@
 <ul class="nav navbar-nav">
   <li>
     <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Contents</a>
   </li>
   <li>
     <a href="background.html">Background</a>
@@ -164,7 +167,7 @@
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Workflow Diagrams</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Specification</b></li>
 
         </ul>
       </div>    <!-- /container -->
@@ -185,7 +188,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </style>
 <div class="col-12">
     <!-- ReleaseHeader --><p id="publish-box">Subscriptions R5 Backport - Local Development build (v0.1.0). See the <a href="http://hl7.org/fhir/uv/subscriptions-backport/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
-  <h2>Workflow Diagrams</h2>
+  <h2>Specification</h2>
   
 
 
@@ -200,79 +203,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div>
   <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
 </div>
-<pre><code class="language-mermaid">sequenceDiagram
-  autonumber
-  participant S as FHIR Server&lt;br/&gt;REST API
-  participant C as Client
-  participant E as FHIR Server&lt;br/&gt;Websocket
 
+<p>This chapter details the technical specification of Topic-Based Subscriptions in FHIR R4.</p>
 
-  rect rgba(0,0,0,.05)
-    note over C,S: Configuration
-    C-&gt;&gt;S: Create Subscription&lt;br/&gt;channelType = websocket
-    S--&gt;&gt;C: OK&lt;br/&gt;Subscription.status = active
-  end
-
-note over C: Per Session
-C-&gt;&gt;S: GET: /Subscription/example/$get-ws-binding-token
-S--&gt;&gt;C: Parameters:&lt;br/&gt;token: token-abc&lt;br/&gt;expiration: some-future-date-time&lt;br/&gt;websocket-url: wss://example.org/fhirR4ws
-C-&gt;&gt;+E: Connect: wss://example.org/fhirR4ws
-
-C-&gt;&gt;E: bind-with-token: token-abc
-E-&gt;&gt;C: Bundle: subscription-notification&lt;br/&gt;type: handshake
-
-
-
-alt 
-    note over C: Receive Heartbeat
-    E-&gt;&gt;C: Bundle: subscription-notification&lt;br/&gt;type: heartbeat
-else
-    note over C: Receive Event Notification
-    E-&gt;&gt;C: Bundle: subscription-notification&lt;br/&gt;type: event-notification
-else
-    note over C: Token is Expiring Soon
-    C-&gt;&gt;S: GET: /Subscription/example/$get-ws-binding-token
-    S--&gt;&gt;C: Parameters:&lt;br/&gt;token: token-def&lt;br/&gt;expiration: some-future-date-time&lt;br/&gt;websocket-url: wss://example.org/fhirR4ws
-    C--&gt;C: Client checks the url and establishes a new connection if necessary
-    C-&gt;&gt;E: bind-with-token: token-def
-    E-&gt;&gt;C: Bundle: subscription-notification&lt;br/&gt;type: handshake
-end
-
-E-&gt;-C: Disconnect
-</code></pre>
-
-<p>C-»S: GET: /metadata
-  S–»C: Capability Statement<br/>including Extension: websocket</p>
-
-<pre><code class="language-mermaid">sequenceDiagram
-  autonumber
-  participant S as FHIR Server
-  participant C as Client
-  participant E as Endpoint
-
-  S-&gt;S: 
-  Note over S: Implement Subscription&lt;br/&gt;Core Functionality
-
-  S-&gt;S: 
-  Note over S: Implement one or more&lt;br/&gt;SubscriptionTopics
-
-  C-&gt;&gt;S: GET .../SubscriptionTopic/
-  S--&gt;&gt;C: Bundle with supported&lt;br/&gt;SubscriptionTopic resources
-
-  C-&gt;E: Create/Configure/Initialize&lt;br/&gt;Endpoint
-  
-  C-&gt;&gt;S: Create Subscription
-  alt
-    S--&gt;&gt;C: OK: status = requested/active
-  else 
-    S--&gt;&gt;C: Rejected
-  end
-
-  opt
-    S-&gt;&gt;E: Handshake
-    E--&gt;&gt;S: OK
-  end
-</code></pre>
+<ol>
+  <li><a href="actors.html">Actors</a> - Defines the actors / systems involved in subscriptions.</li>
+  <li><a href="components.html">Topic-Based Subscription Components</a> - Defines and describes the components (FHIR Resources) used in subscriptions.</li>
+  <li><a href="workflow.html">Workflow</a> - Provides a high-level overview of the workflow for creating a subscription and sending/receiving notifications.</li>
+  <li><a href="channels.html">Channels</a> - Describes the pre-defined channels used in subscriptions, how to select one, and how to extend into custom channel types.</li>
+  <li><a href="notifications.html">Notifications</a> - Details the contents of notifications.</li>
+  <li><a href="payloads.html">Payload Types</a> - Describes the different types of payloads available in notifications.</li>
+  <li><a href="conformance.html">Conformance</a> - Specifies minimum conformance requirements to conform with this IG.</li>
+  <li><a href="errors.html">Handling Errors</a> - Provides some information on detecting and handling errors for clients and servers.</li>
+</ol>
 
 
 
@@ -298,8 +241,8 @@ E-&gt;-C: Disconnect
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="697db6df-2b9d-4c7d-a85d-932ddfa5a83e">​</a>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://hl7.org/Special/committees/fiwg/index.cfm">HL7 FHIR Infrastructure WG</a>.  Package hl7.fhir.uv.subscriptions-backport#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Wed, Oct 6, 2021 13:00-0500">2021-10-06</span>
+        <p><a name="7968994f-f58e-4cc1-bfc8-73742956f63a">​</a>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://hl7.org/Special/committees/fiwg/index.cfm">HL7 FHIR Infrastructure WG</a>.  Package hl7.fhir.uv.subscriptions-backport#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Thu, Oct 7, 2021 16:18-0500">2021-10-07</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

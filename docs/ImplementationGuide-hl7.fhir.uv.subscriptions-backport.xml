@@ -11,7 +11,7 @@
   <name value="SubscriptionsR5Backport"/>
   <title value="Subscriptions R5 Backport"/>
   <status value="draft"/>
-  <date value="2021-10-06T13:00:58-05:00"/>
+  <date value="2021-10-07T16:18:10-05:00"/>
   <publisher value="HL7 FHIR Infrastructure WG"/>
   <contact>
     <name value="HL7 FHIR Infrastructure WG"/>
@@ -364,63 +364,63 @@
         <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="actors.html"/>
-        <title value="Actors"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
         <nameUrl value="background.html"/>
         <title value="Background"/>
         <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="channels.html"/>
-        <title value="Channels"/>
+        <nameUrl value="specification.html"/>
+        <title value="Specification"/>
         <generation value="markdown"/>
+        <page>
+          <nameUrl value="actors.html"/>
+          <title value="Actors"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="components.html"/>
+          <title value="Topic-Based Subscription Components"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="workflow.html"/>
+          <title value="Workflow"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="channels.html"/>
+          <title value="Channels"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="notifications.html"/>
+          <title value="Notifications"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="payloads.html"/>
+          <title value="Payload Types"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="conformance.html"/>
+          <title value="Conformance"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="errors.html"/>
+          <title value="Handling Errors"/>
+          <generation value="markdown"/>
+        </page>
       </page>
       <page>
-        <nameUrl value="components.html"/>
-        <title value="Components"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <nameUrl value="conformance.html"/>
-        <title value="Conformance"/>
+        <nameUrl value="safety_security.html"/>
+        <title value="Safety and Security"/>
         <generation value="markdown"/>
       </page>
       <page>
         <nameUrl value="downloads.html"/>
         <title value="Downloads"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <nameUrl value="errors.html"/>
-        <title value="Errors"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <nameUrl value="notifications.html"/>
-        <title value="Notifications"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <nameUrl value="payloads.html"/>
-        <title value="Payloads"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <nameUrl value="safety_security.html"/>
-        <title value="Safety Security"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <nameUrl value="workflow.html"/>
-        <title value="Workflow"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <nameUrl value="workflow-diagrams.html"/>
-        <title value="Workflow Diagrams"/>
         <generation value="markdown"/>
       </page>
     </page>

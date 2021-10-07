@@ -1,11 +1,11 @@
 {
   "resourceType" : "CodeSystem",
-  "id" : "89fddcc9-9fd4-4544-8f6b-c97cdd5898f0-3",
-  "url" : "http://hl7.org/fhir/comparison/CodeSystem/89fddcc9-9fd4-4544-8f6b-c97cdd5898f0-3",
+  "id" : "ca4f9df8-9abc-4c11-bb33-10e4e4c70ce1-3",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/ca4f9df8-9abc-4c11-bb33-10e4e4c70ce1-3",
   "name" : "IntersectionBackportContentCodeSystemAndBackportContentCodeSystem",
   "title" : "Intersection of Backported R5 Subscription Content Code System And Backported R5 Subscription Content Code System",
   "status" : "active",
-  "date" : "2021-10-06T13:01:04-05:00",
+  "date" : "2021-10-07T16:18:16-05:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",

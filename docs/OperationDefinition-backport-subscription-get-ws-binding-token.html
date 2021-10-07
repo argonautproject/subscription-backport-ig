@@ -41,8 +41,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"14.3"}
-    h3,h4,h5,h6{--heading-prefix:"14.3"}</style>
+    <style type="text/css">h2{--heading-prefix:"6.3"}
+    h3,h4,h5,h6{--heading-prefix:"6.3"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -86,6 +86,9 @@
 <ul class="nav navbar-nav">
   <li>
     <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Contents</a>
   </li>
   <li>
     <a href="background.html">Background</a>
@@ -233,11 +236,11 @@
 
 
   <div><h2>R5SubscriptionGetWsBindingToken</h2><p>OPERATION: R5SubscriptionGetWsBindingToken</p><p>The official URL for this operation definition is: </p><pre>http://hl7.org/fhir/uv/subscriptions-backport/OperationDefinition/backport-subscription-get-ws-binding-token</pre><div><p>This operation is used to get a token for a websocket client to use in order to bind to one or more subscriptions.</p>
-</div><p>URL: [base]/Subscription/$get-ws-binding-token</p><p>URL: [base]/Subscription/[id]/$get-ws-binding-token</p><p>Parameters</p><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>ids</td><td>0..*</td><td><a name="d4fcc92c-8d7e-49d8-b30d-a5ac3bd0899c">​</a><a href="http://build.fhir.org/branches/R4B//datatypes.html#id">id</a></td><td></td><td><div><p>At the Resource level, one or more parameters containing one or more FHIR ids of Subscriptions to get tokens for. In the absense of any specified ids, the server returns tokens for all Subscriptions available to the caller with a channel-type of websocket. At the Instance level, this parameter is ignored.</p>
-</div></td></tr><tr><td>OUT</td><td>token</td><td>1..1</td><td><a name="d8afa3a9-925e-4e0b-9ead-7f20e741dcdd">​</a><a href="http://build.fhir.org/branches/R4B//datatypes.html#string">string</a></td><td></td><td><div><p>An access token that a client may use to show authorization during websocket connections.</p>
-</div></td></tr><tr><td>OUT</td><td>expiration</td><td>1..1</td><td><a name="036899d3-82ea-47b3-9cf8-d3dfa278ff32">​</a><a href="http://build.fhir.org/branches/R4B//datatypes.html#dateTime">dateTime</a></td><td></td><td><div><p>The date and time this token is valid until.</p>
-</div></td></tr><tr><td>OUT</td><td>subscriptions</td><td>0..*</td><td><a name="8d797be5-d101-4be3-9efc-229340701df8">​</a><a href="http://build.fhir.org/branches/R4B//datatypes.html#string">string</a></td><td></td><td><div><p>The subscriptions this token is valid for.</p>
-</div></td></tr><tr><td>OUT</td><td>websocket-url</td><td>1..1</td><td><a name="06c06885-16b6-4dab-ad8a-ccde39949be5">​</a><a href="http://build.fhir.org/branches/R4B//datatypes.html#url">url</a></td><td></td><td><div><p>The URL the client should use to connect to Websockets.</p>
+</div><p>URL: [base]/Subscription/$get-ws-binding-token</p><p>URL: [base]/Subscription/[id]/$get-ws-binding-token</p><p>Parameters</p><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>ids</td><td>0..*</td><td><a name="f0cbaf4d-2e91-41fd-bb49-c7c74f340d5f">​</a><a href="http://build.fhir.org/branches/R4B//datatypes.html#id">id</a></td><td></td><td><div><p>At the Resource level, one or more parameters containing one or more FHIR ids of Subscriptions to get tokens for. In the absense of any specified ids, the server returns tokens for all Subscriptions available to the caller with a channel-type of websocket. At the Instance level, this parameter is ignored.</p>
+</div></td></tr><tr><td>OUT</td><td>token</td><td>1..1</td><td><a name="a5cbab27-2276-4a1f-8bfa-9c8a3a398169">​</a><a href="http://build.fhir.org/branches/R4B//datatypes.html#string">string</a></td><td></td><td><div><p>An access token that a client may use to show authorization during websocket connections.</p>
+</div></td></tr><tr><td>OUT</td><td>expiration</td><td>1..1</td><td><a name="83c301c8-ffa2-4b03-8f1b-ab80e25273de">​</a><a href="http://build.fhir.org/branches/R4B//datatypes.html#dateTime">dateTime</a></td><td></td><td><div><p>The date and time this token is valid until.</p>
+</div></td></tr><tr><td>OUT</td><td>subscriptions</td><td>0..*</td><td><a name="a5aa8fda-a7ac-4079-9fff-7959aa97fca0">​</a><a href="http://build.fhir.org/branches/R4B//datatypes.html#string">string</a></td><td></td><td><div><p>The subscriptions this token is valid for.</p>
+</div></td></tr><tr><td>OUT</td><td>websocket-url</td><td>1..1</td><td><a name="3f402795-db38-47cb-b545-7fc2fab6ad51">​</a><a href="http://build.fhir.org/branches/R4B//datatypes.html#url">url</a></td><td></td><td><div><p>The URL the client should use to connect to Websockets.</p>
 </div></td></tr></table></div>
 
     <!-- insert notes if present -->
@@ -266,8 +269,8 @@
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="438d1441-03bf-4102-ab35-a7c1b0257491">​</a>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://hl7.org/Special/committees/fiwg/index.cfm">HL7 FHIR Infrastructure WG</a>.  Package hl7.fhir.uv.subscriptions-backport#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Wed, Oct 6, 2021 13:00-0500">2021-10-06</span>
+        <p><a name="b71f4fca-1222-48cf-b278-c143bc89ce41">​</a>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://hl7.org/Special/committees/fiwg/index.cfm">HL7 FHIR Infrastructure WG</a>.  Package hl7.fhir.uv.subscriptions-backport#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Thu, Oct 7, 2021 16:18-0500">2021-10-07</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

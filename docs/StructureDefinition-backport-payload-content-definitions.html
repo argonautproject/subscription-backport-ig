@@ -41,8 +41,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"14.11"}
-    h3,h4,h5,h6{--heading-prefix:"14.11"}</style>
+    <style type="text/css">h2{--heading-prefix:"6.11"}
+    h3,h4,h5,h6{--heading-prefix:"6.11"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -86,6 +86,9 @@
 <ul class="nav navbar-nav">
   <li>
     <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Contents</a>
   </li>
   <li>
     <a href="background.html">Background</a>
@@ -259,12 +262,12 @@
   <tr><td>Definition</td><td><p>Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.</p>
 </td></tr>
   <tr><td><a href="http://build.fhir.org/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://build.fhir.org/datatypes.html">Type</a></td><td><a name="9ea4f629-b297-49c7-a01c-393a6ebc49ff">​</a><a href="http://build.fhir.org/branches/R4B//datatypes.html#string">string</a></td></tr>
+  <tr><td><a href="http://build.fhir.org/datatypes.html">Type</a></td><td><a name="a3b8306c-2bfa-4a8e-bcfc-6d2eec86248d">​</a><a href="http://build.fhir.org/branches/R4B//datatypes.html#string">string</a></td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Extension.extension"> </a><span style="color: grey">3.</span> <b>Extension.extension</b><a href="#Extension.extension" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
   <tr><td>Definition</td><td><p>An Extension</p>
 </td></tr>
   <tr><td><a href="http://build.fhir.org/conformance-rules.html#conformance">Control</a></td><td>0..0</td></tr>
-  <tr><td><a href="http://build.fhir.org/datatypes.html">Type</a></td><td><a name="7862e3c2-47fe-4023-80ab-d004de3ce5fc">​</a><a href="http://build.fhir.org/branches/R4B//extensibility.html#Extension">Extension</a></td></tr>
+  <tr><td><a href="http://build.fhir.org/datatypes.html">Type</a></td><td><a name="11b811f7-7ad1-481b-9a7f-001724fa8648">​</a><a href="http://build.fhir.org/branches/R4B//extensibility.html#Extension">Extension</a></td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
   <tr><td><a href="http://build.fhir.org/profiling.html#slicing">Slicing</a></td><td>This element introduces a set of slices on Extension.extension. The slices are unordered and Open, and can be differentiated using the following discriminators: <ul> <li>value @ url</li></ul></td></tr>
@@ -272,26 +275,26 @@
   <tr><td>Definition</td><td><p>Source of the definition for the extension code - a logical name or a URL.</p>
 </td></tr>
   <tr><td><a href="http://build.fhir.org/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://build.fhir.org/datatypes.html">Type</a></td><td><a name="ae6f0eaa-e363-4ffd-87ca-2edf46e36d0d">​</a><a href="http://build.fhir.org/branches/R4B//datatypes.html#uri">uri</a></td></tr>
+  <tr><td><a href="http://build.fhir.org/datatypes.html">Type</a></td><td><a name="78e3080e-4edf-45b6-befc-fca244053874">​</a><a href="http://build.fhir.org/branches/R4B//datatypes.html#uri">uri</a></td></tr>
   <tr><td>Comments</td><td><p>The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.</p>
 </td></tr>
   <tr><td>Fixed Value</td><td>http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-payload-content</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Extension.value[x]"> </a><a name="Extension.valueCode"> </a><span style="color: grey">5.</span> <b>Extension.value[x]</b><a href="#Extension.value[x]" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
-  <tr><td>Definition</td><td><p><a name="a6f11ac3-f215-4523-9ca1-69b790e11b1a">​</a>Value of extension - must be one of a constrained set of the data types (see <a href="extensibility.html">Extensibility</a> for a list).</p>
+  <tr><td>Definition</td><td><p><a name="8ecb5122-4654-44f5-b3a8-216f8e4e3cfe">​</a>Value of extension - must be one of a constrained set of the data types (see <a href="extensibility.html">Extensibility</a> for a list).</p>
 </td></tr>
   <tr><td><a href="http://build.fhir.org/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://build.fhir.org/datatypes.html">Type</a></td><td><a name="331fc1f4-1020-4436-95fd-22443b7ceab6">​</a><a href="http://build.fhir.org/branches/R4B//datatypes.html#code">code</a></td></tr>
+  <tr><td><a href="http://build.fhir.org/datatypes.html">Type</a></td><td><a name="65c4b96b-ce42-467d-ac45-2130617b4a13">​</a><a href="http://build.fhir.org/branches/R4B//datatypes.html#code">code</a></td></tr>
   <tr><td>[x] Note</td><td>See <a href="http://build.fhir.org/formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
   <tr><td><a href="http://build.fhir.org/profiling.html#slicing">Slicing</a></td><td>This element introduces a set of slices on Extension.value[x]. The slices are unordered and Closed, and can be differentiated using the following discriminators: <ul> <li>type @ $this</li></ul></td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Extension.value[x]:valueCode"> </a><a name="Extension.valueCode"> </a><a name="Extension.valueCode:valueCode"> </a><span style="color: grey">6.</span> <b>Extension.value[x]:valueCode</b><a href="#Extension.value[x]:valueCode" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
   <tr><td><a href="http://build.fhir.org/profiling.html#slicing">SliceName</a></td><td>valueCode</td></tr>
-  <tr><td>Definition</td><td><p><a name="33dd3146-96a5-4552-bba4-7be873ffd203">​</a>Value of extension - must be one of a constrained set of the data types (see <a href="extensibility.html">Extensibility</a> for a list).</p>
+  <tr><td>Definition</td><td><p><a name="d7a6c58a-e031-4269-a304-3a5ba0b45dfb">​</a>Value of extension - must be one of a constrained set of the data types (see <a href="extensibility.html">Extensibility</a> for a list).</p>
 </td></tr>
   <tr><td><a href="http://build.fhir.org/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://build.fhir.org/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-backport-content-value-set.html">Backported R5 Subscription Content Value Set</a></td></tr>
-  <tr><td><a href="http://build.fhir.org/datatypes.html">Type</a></td><td><a name="b059886a-c7a0-4dcd-a83e-7bac4c132d91">​</a><a href="http://build.fhir.org/branches/R4B//datatypes.html#code">code</a></td></tr>
+  <tr><td><a href="http://build.fhir.org/datatypes.html">Type</a></td><td><a name="681a510f-a40a-439e-ad95-57bdabd6cc1a">​</a><a href="http://build.fhir.org/branches/R4B//datatypes.html#code">code</a></td></tr>
   <tr><td>[x] Note</td><td>See <a href="http://build.fhir.org/formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
@@ -348,8 +351,8 @@
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="bb0266f6-5285-42e6-bab3-7b1973183ea2">​</a>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://hl7.org/Special/committees/fiwg/index.cfm">HL7 FHIR Infrastructure WG</a>.  Package hl7.fhir.uv.subscriptions-backport#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Wed, Oct 6, 2021 13:00-0500">2021-10-06</span>
+        <p><a name="0167e358-568a-4022-b81e-bd9cc89d7e82">​</a>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://hl7.org/Special/committees/fiwg/index.cfm">HL7 FHIR Infrastructure WG</a>.  Package hl7.fhir.uv.subscriptions-backport#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Thu, Oct 7, 2021 16:18-0500">2021-10-07</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
