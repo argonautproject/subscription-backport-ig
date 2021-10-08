@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "ca4f9df8-9abc-4c11-bb33-10e4e4c70ce1-32",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/ca4f9df8-9abc-4c11-bb33-10e4e4c70ce1-32",
+  "id" : "47ffbf35-ed17-4d96-9402-fa316e6a0037-32",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/47ffbf35-ed17-4d96-9402-fa316e6a0037-32",
   "name" : "UnionBackportNotificationErrorValueSetAndBackportNotificationErrorValueSet",
   "title" : "Union of R5 Subscription Error Codes Value Set And R5 Subscription Error Codes Value Set",
   "status" : "active",
-  "date" : "2021-10-07T16:18:17-05:00",
+  "date" : "2021-10-08T09:19:49-05:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
