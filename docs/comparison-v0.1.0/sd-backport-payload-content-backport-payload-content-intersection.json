@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "3811accc-ec59-4242-b3af-61441604c6e6-18",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/3811accc-ec59-4242-b3af-61441604c6e6-18",
+  "id" : "9c8f6e3c-41ca-46e8-b50e-a6e28bb609d9-18",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/9c8f6e3c-41ca-46e8-b50e-a6e28bb609d9-18",
   "name" : "IntersectionBackportPayloadContentAndBackportPayloadContent",
   "title" : "Intersection of Backport R5 Subscription Payload Content Information And Backport R5 Subscription Payload Content Information",
   "status" : "active",
-  "date" : "2021-10-08T10:44:07-05:00",
+  "date" : "2021-10-15T17:16:18-05:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",

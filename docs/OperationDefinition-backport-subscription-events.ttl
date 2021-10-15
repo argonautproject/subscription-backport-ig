@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "backport-subscription-events"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>R5SubscriptionEvents</h2><p>OPERATION: R5SubscriptionEvents</p><p>The official URL for this operation definition is: </p><pre>http://hl7.org/fhir/uv/subscriptions-backport/OperationDefinition/backport-subscription-events</pre><div><p>This operation is used to search for and return events which  notifications backported R5-Style Subscriptions in R4.</p>\n</div><p>URL: [base]/Subscription/[id]/$events</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>eventsSinceNumber</td><td>0..1</td><td><a href=\"http://build.fhir.org/branches/R4B//datatypes.html#string\">string</a></td><td/><td><div><p>The starting event number, inclusive of this event (lower bound).</p>\n</div></td></tr><tr><td>IN</td><td>eventsUntilNumber</td><td>0..1</td><td><a href=\"http://build.fhir.org/branches/R4B//datatypes.html#string\">string</a></td><td/><td><div><p>The ending event number, inclusive of this event (upper bound).</p>\n</div></td></tr><tr><td>IN</td><td>content</td><td>0..1</td><td><a href=\"http://build.fhir.org/branches/R4B//datatypes.html#code\">code</a></td><td/><td><div><p>Requested content style of returned data. Codes from backport-content-value-set (e.g., empty, id-only, full-resource). This is a hint to the server what a client would prefer, and MAY be ignored.</p>\n</div></td></tr><tr><td>OUT</td><td>return</td><td>1..1</td><td><a href=\"http://build.fhir.org/branches/R4B//bundle.html\">Bundle</a></td><td/><td><div><p>The bundle type is &quot;history&quot;. The operation returns a notification bundle, with the first entry being a SubscriptionStatus resource.</p>\n</div></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>R5SubscriptionEvents</h2><p>OPERATION: R5SubscriptionEvents</p><p>The official URL for this operation definition is: </p><pre>http://hl7.org/fhir/uv/subscriptions-backport/OperationDefinition/backport-subscription-events</pre><div><p>This operation is used to search for and return notifications that have been previously triggered by a topic-based Subscription in R4.</p>\n</div><p>URL: [base]/Subscription/[id]/$events</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>eventsSinceNumber</td><td>0..1</td><td><a href=\"http://build.fhir.org/branches/R4B//datatypes.html#string\">string</a></td><td/><td><div><p>The starting event number, inclusive of this event (lower bound).</p>\n</div></td></tr><tr><td>IN</td><td>eventsUntilNumber</td><td>0..1</td><td><a href=\"http://build.fhir.org/branches/R4B//datatypes.html#string\">string</a></td><td/><td><div><p>The ending event number, inclusive of this event (upper bound).</p>\n</div></td></tr><tr><td>IN</td><td>content</td><td>0..1</td><td><a href=\"http://build.fhir.org/branches/R4B//datatypes.html#code\">code</a></td><td/><td><div><p>Requested content style of returned data. Codes from backport-content-value-set (e.g., empty, id-only, full-resource). This is a hint to the server what a client would prefer, and MAY be ignored.</p>\n</div></td></tr><tr><td>OUT</td><td>return</td><td>1..1</td><td><a href=\"http://build.fhir.org/branches/R4B//bundle.html\">Bundle</a></td><td/><td><div><p>The operation returns a valid notification bundle, with the first entry being a SubscriptionStatus resource. The bundle type is &quot;history&quot;.</p>\n</div></td></tr></table></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -53,7 +53,7 @@
        fhir:ContactPoint.value [ fhir:value "mailto:ehaas@healthedatainc.com" ]
      ]
   ];
-  fhir:OperationDefinition.description [ fhir:value "This operation is used to search for and return events which  notifications backported R5-Style Subscriptions in R4."];
+  fhir:OperationDefinition.description [ fhir:value "This operation is used to search for and return notifications that have been previously triggered by a topic-based Subscription in R4."];
   fhir:OperationDefinition.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -102,7 +102,7 @@
      fhir:OperationDefinition.parameter.use [ fhir:value "out" ];
      fhir:OperationDefinition.parameter.min [ fhir:value "1"^^xsd:integer ];
      fhir:OperationDefinition.parameter.max [ fhir:value "1" ];
-     fhir:OperationDefinition.parameter.documentation [ fhir:value "The bundle type is \"history\". The operation returns a notification bundle, with the first entry being a SubscriptionStatus resource." ];
+     fhir:OperationDefinition.parameter.documentation [ fhir:value "The operation returns a valid notification bundle, with the first entry being a SubscriptionStatus resource. The bundle type is \"history\"." ];
      fhir:OperationDefinition.parameter.type [ fhir:value "Bundle" ]
   ] .
 

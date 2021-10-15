@@ -85,10 +85,10 @@
 
 <ul class="nav navbar-nav">
   <li>
-    <a href="index.html">IG Home</a>
+    <a href="toc.html">Contents</a>
   </li>
   <li>
-    <a href="toc.html">Contents</a>
+    <a href="index.html">Home</a>
   </li>
   <li>
     <a href="background.html">Background</a>
@@ -232,16 +232,16 @@
 
 
 
-  <pre class="xml"><code class="language-xml"><a name="a7e1b360-3d73-48b8-9d92-8c243b71cf35">​</a>
+  <pre class="xml"><code class="language-xml"><a name="a252bdf0-6a92-45fd-8b3c-bcda6cb05604">​</a>
 
 &lt;<a href="http://build.fhir.org/branches/R4B//operationdefinition.html#OperationDefinition">OperationDefinition</a> xmlns="http://hl7.org/fhir"&gt;
   &lt;<a href="http://build.fhir.org/branches/R4B//operationdefinition.html#OperationDefinition.id">id</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#id">value</a>="backport-subscription-status"/&gt;
   &lt;<a href="http://build.fhir.org/branches/R4B//operationdefinition.html#OperationDefinition.text">text</a>&gt;
     &lt;<a href="http://build.fhir.org/branches/R4B//narrative.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">value</a>="extensions"/&gt;
-    &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;h2&gt;R5SubscriptionStatus&lt;/h2&gt;&lt;p&gt;OPERATION: R5SubscriptionStatus&lt;/p&gt;&lt;p&gt;The official URL for this operation definition is: &lt;/p&gt;&lt;pre&gt;http://hl7.org/fhir/uv/subscriptions-backport/OperationDefinition/backport-subscription-status&lt;/pre&gt;&lt;div&gt;&lt;p&gt;This operation is used to return the current status information about one or more backported R5-Style Subscriptions in R4.&lt;/p&gt;
-&lt;/div&gt;&lt;p&gt;URL: [base]/Subscription/$status&lt;/p&gt;&lt;p&gt;URL: [base]/Subscription/[id]/$status&lt;/p&gt;&lt;p&gt;Parameters&lt;/p&gt;&lt;table class="grid"&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Use&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Cardinality&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Binding&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Documentation&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;ids&lt;/td&gt;&lt;td&gt;0..*&lt;/td&gt;&lt;td&gt;&lt;a href="http://build.fhir.org/branches/R4B//datatypes.html#id"&gt;id&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;At the Resource level, one or more parameters containing one or more comma-delimited FHIR ids of Subscriptions to get status information for.  In the absence of any specified ids, the server returns the status for all Subscriptions available to the caller.  At the Instance level, this parameter is ignored.&lt;/p&gt;
-&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;status&lt;/td&gt;&lt;td&gt;0..*&lt;/td&gt;&lt;td&gt;&lt;a href="http://build.fhir.org/branches/R4B//datatypes.html#id"&gt;id&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;At the Resource level, a comma-delimited list of Subscription statuses to filter by (e.g., active). In the absence of any specified status values, the server does not filter contents based on the status.  At the Instance level, this parameter is ignored.&lt;/p&gt;
-&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OUT&lt;/td&gt;&lt;td&gt;return&lt;/td&gt;&lt;td&gt;1..1&lt;/td&gt;&lt;td&gt;&lt;a href="http://build.fhir.org/branches/R4B//bundle.html"&gt;Bundle&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;The bundle type is &amp;quot;searchset&amp;quot;. The operation returns a bundle containing one or more SubscriptionStatus resources, one per Subscription being queried.&lt;/p&gt;
+    &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;h2&gt;R5SubscriptionStatus&lt;/h2&gt;&lt;p&gt;OPERATION: R5SubscriptionStatus&lt;/p&gt;&lt;p&gt;The official URL for this operation definition is: &lt;/p&gt;&lt;pre&gt;http://hl7.org/fhir/uv/subscriptions-backport/OperationDefinition/backport-subscription-status&lt;/pre&gt;&lt;div&gt;&lt;p&gt;This operation is used to return the current status information about one or more topic-based Subscriptions in R4.&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;URL: [base]/Subscription/$status&lt;/p&gt;&lt;p&gt;URL: [base]/Subscription/[id]/$status&lt;/p&gt;&lt;p&gt;Parameters&lt;/p&gt;&lt;table class="grid"&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Use&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Cardinality&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Binding&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Documentation&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;ids&lt;/td&gt;&lt;td&gt;0..*&lt;/td&gt;&lt;td&gt;&lt;a href="http://build.fhir.org/branches/R4B//datatypes.html#id"&gt;id&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;At the Instance level, this parameter is ignored.  At the Resource level, one or more parameters containing a FHIR id for a Subscription to get status information for. In the absence of any specified ids, the server returns the status for all Subscriptions available to the caller. Multiple values are joined via OR (e.g., &amp;quot;id1&amp;quot; OR &amp;quot;id2&amp;quot;).&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;status&lt;/td&gt;&lt;td&gt;0..*&lt;/td&gt;&lt;td&gt;&lt;a href="http://build.fhir.org/branches/R4B//datatypes.html#code"&gt;code&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;At the Instance level, this parameter is ignored. At the Resource level, a Subscription status to filter by (e.g., &amp;quot;active&amp;quot;). In the absence of any specified status values, the server does not filter contents based on the status. Multiple values are joined via OR (e.g., &amp;quot;error&amp;quot; OR &amp;quot;off&amp;quot;).&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OUT&lt;/td&gt;&lt;td&gt;return&lt;/td&gt;&lt;td&gt;1..1&lt;/td&gt;&lt;td&gt;&lt;a href="http://build.fhir.org/branches/R4B//bundle.html"&gt;Bundle&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;The operation returns a bundle containing one or more SubscriptionStatus resources, one per Subscription being queried. The Bundle type is &amp;quot;searchset&amp;quot;.&lt;/p&gt;
 &lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/text&gt;
   &lt;<a href="http://build.fhir.org/branches/R4B//operationdefinition.html#OperationDefinition.extension">extension</a>
@@ -282,7 +282,7 @@
     &lt;/telecom&gt;
   &lt;/contact&gt;
   &lt;<a href="http://build.fhir.org/branches/R4B//operationdefinition.html#OperationDefinition.description">description</a>
-               <a href="http://build.fhir.org/branches/R4B//datatypes.html#markdown">value</a>="This operation is used to return the current status information about one or more backported R5-Style Subscriptions in R4."/&gt;
+               <a href="http://build.fhir.org/branches/R4B//datatypes.html#markdown">value</a>="This operation is used to return the current status information about one or more topic-based Subscriptions in R4."/&gt;
   &lt;<a href="http://build.fhir.org/branches/R4B//operationdefinition.html#OperationDefinition.jurisdiction">jurisdiction</a>&gt;
     &lt;<a href="http://build.fhir.org/branches/R4B//datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
       &lt;<a href="http://build.fhir.org/branches/R4B//datatypes.html#Coding#Coding.system">system</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#uri">value</a>="http://unstats.un.org/unsd/methods/m49/m49.htm"/&gt;
@@ -302,7 +302,7 @@
     &lt;<a href="http://build.fhir.org/branches/R4B//operationdefinition.html#OperationDefinition.parameter.min">min</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#integer">value</a>="0"/&gt;
     &lt;<a href="http://build.fhir.org/branches/R4B//operationdefinition.html#OperationDefinition.parameter.max">max</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">value</a>="*"/&gt;
     &lt;<a href="http://build.fhir.org/branches/R4B//operationdefinition.html#OperationDefinition.parameter.documentation">documentation</a>
-                   <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">value</a>="At the Resource level, one or more parameters containing one or more comma-delimited FHIR ids of Subscriptions to get status information for.  In the absence of any specified ids, the server returns the status for all Subscriptions available to the caller.  At the Instance level, this parameter is ignored."/&gt;
+                   <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">value</a>="At the Instance level, this parameter is ignored.  At the Resource level, one or more parameters containing a FHIR id for a Subscription to get status information for. In the absence of any specified ids, the server returns the status for all Subscriptions available to the caller. Multiple values are joined via OR (e.g., &amp;quot;id1&amp;quot; OR &amp;quot;id2&amp;quot;)."/&gt;
     &lt;<a href="http://build.fhir.org/branches/R4B//operationdefinition.html#OperationDefinition.parameter.type">type</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">value</a>="id"/&gt;
   &lt;/parameter&gt;
   &lt;<a href="http://build.fhir.org/branches/R4B//operationdefinition.html#OperationDefinition.parameter">parameter</a>&gt;
@@ -311,8 +311,8 @@
     &lt;<a href="http://build.fhir.org/branches/R4B//operationdefinition.html#OperationDefinition.parameter.min">min</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#integer">value</a>="0"/&gt;
     &lt;<a href="http://build.fhir.org/branches/R4B//operationdefinition.html#OperationDefinition.parameter.max">max</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">value</a>="*"/&gt;
     &lt;<a href="http://build.fhir.org/branches/R4B//operationdefinition.html#OperationDefinition.parameter.documentation">documentation</a>
-                   <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">value</a>="At the Resource level, a comma-delimited list of Subscription statuses to filter by (e.g., active). In the absence of any specified status values, the server does not filter contents based on the status.  At the Instance level, this parameter is ignored."/&gt;
-    &lt;<a href="http://build.fhir.org/branches/R4B//operationdefinition.html#OperationDefinition.parameter.type">type</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">value</a>="id"/&gt;
+                   <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">value</a>="At the Instance level, this parameter is ignored. At the Resource level, a Subscription status to filter by (e.g., &amp;quot;active&amp;quot;). In the absence of any specified status values, the server does not filter contents based on the status. Multiple values are joined via OR (e.g., &amp;quot;error&amp;quot; OR &amp;quot;off&amp;quot;)."/&gt;
+    &lt;<a href="http://build.fhir.org/branches/R4B//operationdefinition.html#OperationDefinition.parameter.type">type</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">value</a>="code"/&gt;
   &lt;/parameter&gt;
   &lt;<a href="http://build.fhir.org/branches/R4B//operationdefinition.html#OperationDefinition.parameter">parameter</a>&gt;
     &lt;<a href="http://build.fhir.org/branches/R4B//operationdefinition.html#OperationDefinition.parameter.name">name</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">value</a>="return"/&gt;
@@ -320,7 +320,7 @@
     &lt;<a href="http://build.fhir.org/branches/R4B//operationdefinition.html#OperationDefinition.parameter.min">min</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#integer">value</a>="1"/&gt;
     &lt;<a href="http://build.fhir.org/branches/R4B//operationdefinition.html#OperationDefinition.parameter.max">max</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">value</a>="1"/&gt;
     &lt;<a href="http://build.fhir.org/branches/R4B//operationdefinition.html#OperationDefinition.parameter.documentation">documentation</a>
-                   <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">value</a>="The bundle type is &amp;quot;searchset&amp;quot;. The operation returns a bundle containing one or more SubscriptionStatus resources, one per Subscription being queried."/&gt;
+                   <a href="http://build.fhir.org/branches/R4B//datatypes.html#string">value</a>="The operation returns a bundle containing one or more SubscriptionStatus resources, one per Subscription being queried. The Bundle type is &amp;quot;searchset&amp;quot;."/&gt;
     &lt;<a href="http://build.fhir.org/branches/R4B//operationdefinition.html#OperationDefinition.parameter.type">type</a> <a href="http://build.fhir.org/branches/R4B//datatypes.html#code">value</a>="Bundle"/&gt;
   &lt;/parameter&gt;
 &lt;/OperationDefinition&gt;</code></pre>
@@ -352,8 +352,8 @@
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="088188a1-2d3c-4c1f-a9cd-4f8d2205b639">​</a>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://hl7.org/Special/committees/fiwg/index.cfm">HL7 FHIR Infrastructure WG</a>.  Package hl7.fhir.uv.subscriptions-backport#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Fri, Oct 8, 2021 10:44-0500">2021-10-08</span>
+        <p><a name="3894045b-6cda-4c1d-8716-e5ba62bacb55">​</a>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://hl7.org/Special/committees/fiwg/index.cfm">HL7 FHIR Infrastructure WG</a>.  Package hl7.fhir.uv.subscriptions-backport#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Fri, Oct 15, 2021 17:16-0500">2021-10-15</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

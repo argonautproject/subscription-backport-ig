@@ -3,10 +3,10 @@
 <OperationDefinition xmlns="http://hl7.org/fhir">
   <id value="backport-subscription-status"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>R5SubscriptionStatus</h2><p>OPERATION: R5SubscriptionStatus</p><p>The official URL for this operation definition is: </p><pre>http://hl7.org/fhir/uv/subscriptions-backport/OperationDefinition/backport-subscription-status</pre><div><p>This operation is used to return the current status information about one or more backported R5-Style Subscriptions in R4.</p>
-</div><p>URL: [base]/Subscription/$status</p><p>URL: [base]/Subscription/[id]/$status</p><p>Parameters</p><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>ids</td><td>0..*</td><td><a href="http://build.fhir.org/branches/R4B//datatypes.html#id">id</a></td><td/><td><div><p>At the Resource level, one or more parameters containing one or more comma-delimited FHIR ids of Subscriptions to get status information for.  In the absence of any specified ids, the server returns the status for all Subscriptions available to the caller.  At the Instance level, this parameter is ignored.</p>
-</div></td></tr><tr><td>IN</td><td>status</td><td>0..*</td><td><a href="http://build.fhir.org/branches/R4B//datatypes.html#id">id</a></td><td/><td><div><p>At the Resource level, a comma-delimited list of Subscription statuses to filter by (e.g., active). In the absence of any specified status values, the server does not filter contents based on the status.  At the Instance level, this parameter is ignored.</p>
-</div></td></tr><tr><td>OUT</td><td>return</td><td>1..1</td><td><a href="http://build.fhir.org/branches/R4B//bundle.html">Bundle</a></td><td/><td><div><p>The bundle type is &quot;searchset&quot;. The operation returns a bundle containing one or more SubscriptionStatus resources, one per Subscription being queried.</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>R5SubscriptionStatus</h2><p>OPERATION: R5SubscriptionStatus</p><p>The official URL for this operation definition is: </p><pre>http://hl7.org/fhir/uv/subscriptions-backport/OperationDefinition/backport-subscription-status</pre><div><p>This operation is used to return the current status information about one or more topic-based Subscriptions in R4.</p>
+</div><p>URL: [base]/Subscription/$status</p><p>URL: [base]/Subscription/[id]/$status</p><p>Parameters</p><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>ids</td><td>0..*</td><td><a href="http://build.fhir.org/branches/R4B//datatypes.html#id">id</a></td><td/><td><div><p>At the Instance level, this parameter is ignored.  At the Resource level, one or more parameters containing a FHIR id for a Subscription to get status information for. In the absence of any specified ids, the server returns the status for all Subscriptions available to the caller. Multiple values are joined via OR (e.g., &quot;id1&quot; OR &quot;id2&quot;).</p>
+</div></td></tr><tr><td>IN</td><td>status</td><td>0..*</td><td><a href="http://build.fhir.org/branches/R4B//datatypes.html#code">code</a></td><td/><td><div><p>At the Instance level, this parameter is ignored. At the Resource level, a Subscription status to filter by (e.g., &quot;active&quot;). In the absence of any specified status values, the server does not filter contents based on the status. Multiple values are joined via OR (e.g., &quot;error&quot; OR &quot;off&quot;).</p>
+</div></td></tr><tr><td>OUT</td><td>return</td><td>1..1</td><td><a href="http://build.fhir.org/branches/R4B//bundle.html">Bundle</a></td><td/><td><div><p>The operation returns a bundle containing one or more SubscriptionStatus resources, one per Subscription being queried. The Bundle type is &quot;searchset&quot;.</p>
 </div></td></tr></table></div>
   </text>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
@@ -43,7 +43,7 @@
       <value value="mailto:ehaas@healthedatainc.com"/>
     </telecom>
   </contact>
-  <description value="This operation is used to return the current status information about one or more backported R5-Style Subscriptions in R4."/>
+  <description value="This operation is used to return the current status information about one or more topic-based Subscriptions in R4."/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -62,7 +62,7 @@
     <use value="in"/>
     <min value="0"/>
     <max value="*"/>
-    <documentation value="At the Resource level, one or more parameters containing one or more comma-delimited FHIR ids of Subscriptions to get status information for.  In the absence of any specified ids, the server returns the status for all Subscriptions available to the caller.  At the Instance level, this parameter is ignored."/>
+    <documentation value="At the Instance level, this parameter is ignored.  At the Resource level, one or more parameters containing a FHIR id for a Subscription to get status information for. In the absence of any specified ids, the server returns the status for all Subscriptions available to the caller. Multiple values are joined via OR (e.g., &quot;id1&quot; OR &quot;id2&quot;)."/>
     <type value="id"/>
   </parameter>
   <parameter>
@@ -70,15 +70,15 @@
     <use value="in"/>
     <min value="0"/>
     <max value="*"/>
-    <documentation value="At the Resource level, a comma-delimited list of Subscription statuses to filter by (e.g., active). In the absence of any specified status values, the server does not filter contents based on the status.  At the Instance level, this parameter is ignored."/>
-    <type value="id"/>
+    <documentation value="At the Instance level, this parameter is ignored. At the Resource level, a Subscription status to filter by (e.g., &quot;active&quot;). In the absence of any specified status values, the server does not filter contents based on the status. Multiple values are joined via OR (e.g., &quot;error&quot; OR &quot;off&quot;)."/>
+    <type value="code"/>
   </parameter>
   <parameter>
     <name value="return"/>
     <use value="out"/>
     <min value="1"/>
     <max value="1"/>
-    <documentation value="The bundle type is &quot;searchset&quot;. The operation returns a bundle containing one or more SubscriptionStatus resources, one per Subscription being queried."/>
+    <documentation value="The operation returns a bundle containing one or more SubscriptionStatus resources, one per Subscription being queried. The Bundle type is &quot;searchset&quot;."/>
     <type value="Bundle"/>
   </parameter>
 </OperationDefinition>

@@ -85,10 +85,10 @@
 
 <ul class="nav navbar-nav">
   <li>
-    <a href="index.html">IG Home</a>
+    <a href="toc.html">Contents</a>
   </li>
   <li>
-    <a href="toc.html">Contents</a>
+    <a href="index.html">Home</a>
   </li>
   <li>
     <a href="background.html">Background</a>
@@ -235,11 +235,11 @@
 
 
 
-  <div><h2>R5SubscriptionEvents</h2><p>OPERATION: R5SubscriptionEvents</p><p>The official URL for this operation definition is: </p><pre>http://hl7.org/fhir/uv/subscriptions-backport/OperationDefinition/backport-subscription-events</pre><div><p>This operation is used to search for and return events which  notifications backported R5-Style Subscriptions in R4.</p>
-</div><p>URL: [base]/Subscription/[id]/$events</p><p>Parameters</p><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>eventsSinceNumber</td><td>0..1</td><td><a name="b713162c-f94a-4daa-b854-0a9b7d331a65">​</a><a href="http://build.fhir.org/branches/R4B//datatypes.html#string">string</a></td><td></td><td><div><p>The starting event number, inclusive of this event (lower bound).</p>
-</div></td></tr><tr><td>IN</td><td>eventsUntilNumber</td><td>0..1</td><td><a name="18fe78e5-db94-429c-a8b0-c31f57d6e1ad">​</a><a href="http://build.fhir.org/branches/R4B//datatypes.html#string">string</a></td><td></td><td><div><p>The ending event number, inclusive of this event (upper bound).</p>
-</div></td></tr><tr><td>IN</td><td>content</td><td>0..1</td><td><a name="d4e1d827-a663-42a4-bdf1-8319c6ed31ed">​</a><a href="http://build.fhir.org/branches/R4B//datatypes.html#code">code</a></td><td></td><td><div><p>Requested content style of returned data. Codes from backport-content-value-set (e.g., empty, id-only, full-resource). This is a hint to the server what a client would prefer, and MAY be ignored.</p>
-</div></td></tr><tr><td>OUT</td><td>return</td><td>1..1</td><td><a name="2b4361fd-7e68-45c5-ae8a-dfe0a48d7ba9">​</a><a href="http://build.fhir.org/branches/R4B//bundle.html">Bundle</a></td><td></td><td><div><p>The bundle type is "history". The operation returns a notification bundle, with the first entry being a SubscriptionStatus resource.</p>
+  <div><h2>R5SubscriptionEvents</h2><p>OPERATION: R5SubscriptionEvents</p><p>The official URL for this operation definition is: </p><pre>http://hl7.org/fhir/uv/subscriptions-backport/OperationDefinition/backport-subscription-events</pre><div><p>This operation is used to search for and return notifications that have been previously triggered by a topic-based Subscription in R4.</p>
+</div><p>URL: [base]/Subscription/[id]/$events</p><p>Parameters</p><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>eventsSinceNumber</td><td>0..1</td><td><a name="78c1d106-2ce8-4601-b089-f9bbd46f8707">​</a><a href="http://build.fhir.org/branches/R4B//datatypes.html#string">string</a></td><td></td><td><div><p>The starting event number, inclusive of this event (lower bound).</p>
+</div></td></tr><tr><td>IN</td><td>eventsUntilNumber</td><td>0..1</td><td><a name="8220097b-40af-4f0e-ade1-224d7690d4c1">​</a><a href="http://build.fhir.org/branches/R4B//datatypes.html#string">string</a></td><td></td><td><div><p>The ending event number, inclusive of this event (upper bound).</p>
+</div></td></tr><tr><td>IN</td><td>content</td><td>0..1</td><td><a name="bc0ecd65-cece-456a-93ed-4568fe9bc440">​</a><a href="http://build.fhir.org/branches/R4B//datatypes.html#code">code</a></td><td></td><td><div><p>Requested content style of returned data. Codes from backport-content-value-set (e.g., empty, id-only, full-resource). This is a hint to the server what a client would prefer, and MAY be ignored.</p>
+</div></td></tr><tr><td>OUT</td><td>return</td><td>1..1</td><td><a name="04ec99df-772c-455d-8b2a-c57660f4a649">​</a><a href="http://build.fhir.org/branches/R4B//bundle.html">Bundle</a></td><td></td><td><div><p>The operation returns a valid notification bundle, with the first entry being a SubscriptionStatus resource. The bundle type is "history".</p>
 </div></td></tr></table></div>
 
     <!-- insert notes if present -->
@@ -268,8 +268,8 @@
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="0c6d242b-99c5-4988-8884-722bcf27ce7e">​</a>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://hl7.org/Special/committees/fiwg/index.cfm">HL7 FHIR Infrastructure WG</a>.  Package hl7.fhir.uv.subscriptions-backport#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Fri, Oct 8, 2021 10:44-0500">2021-10-08</span>
+        <p><a name="1f1bebc5-ae90-41d0-8410-301af7d487ab">​</a>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://hl7.org/Special/committees/fiwg/index.cfm">HL7 FHIR Infrastructure WG</a>.  Package hl7.fhir.uv.subscriptions-backport#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Fri, Oct 15, 2021 17:16-0500">2021-10-15</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
