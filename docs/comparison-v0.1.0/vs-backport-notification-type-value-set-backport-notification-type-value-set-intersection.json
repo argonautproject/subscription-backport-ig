@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "9c8f6e3c-41ca-46e8-b50e-a6e28bb609d9-36",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/9c8f6e3c-41ca-46e8-b50e-a6e28bb609d9-36",
+  "id" : "d1909bab-4c4f-4050-9cc9-8516886e5067-36",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/d1909bab-4c4f-4050-9cc9-8516886e5067-36",
   "name" : "IntersectionBackportNotificationTypeValueSetAndBackportNotificationTypeValueSet",
   "title" : "Intersection of R5 Subscription Notification Type Value Set And R5 Subscription Notification Type Value Set",
   "status" : "active",
-  "date" : "2021-10-15T17:16:18-05:00",
+  "date" : "2021-10-18T12:21:04-05:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",

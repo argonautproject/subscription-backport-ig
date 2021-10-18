@@ -17,7 +17,7 @@
   fhir:CodeSystem.name [ fhir:value "BackportNotificationTypeCodeSystem"];
   fhir:CodeSystem.title [ fhir:value "R5 Subscription Notification Type Code System"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2021-10-15T17:16:11-05:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2021-10-18T12:20:57-05:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "HL7 FHIR Infrastructure WG"];
   fhir:CodeSystem.contact [
      fhir:index 0;

@@ -10,7 +10,7 @@
   "name": "SubscriptionsR5Backport",
   "title": "Subscriptions R5 Backport",
   "status": "draft",
-  "date": "2021-10-15T17:16:11-05:00",
+  "date": "2021-10-18T12:20:57-05:00",
   "publisher": "HL7 FHIR Infrastructure WG",
   "contact": [
     {
@@ -461,11 +461,6 @@
         {
           "nameUrl": "index.html",
           "title": "Home",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "background.html",
-          "title": "Background",
           "generation": "markdown"
         },
         {

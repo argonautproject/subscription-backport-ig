@@ -90,9 +90,6 @@
   <li>
     <a href="index.html">Home</a>
   </li>
-  <li>
-    <a href="background.html">Background</a>
-  </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Specification
       <b class="caret"></b>
@@ -203,7 +200,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div class="markdown-toc">
 <ul id="markdown-toc">
   <li><a href="#about-this-guide" id="markdown-toc-about-this-guide">About This Guide</a></li>
-  <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
+  <li><a href="#what-are-subscriptions" id="markdown-toc-what-are-subscriptions">What are Subscriptions?</a></li>
+  <li><a href="#query-defined-subscriptions-dstu2---r4" id="markdown-toc-query-defined-subscriptions-dstu2---r4">Query-Defined Subscriptions (DSTU2 - R4)</a></li>
+  <li><a href="#topic-based-subscriptions---r5-and-later" id="markdown-toc-topic-based-subscriptions---r5-and-later">Topic-Based Subscriptions - R5 and Later</a></li>
+  <li><a href="#topic-based-subscriptions---r4b-and-later" id="markdown-toc-topic-based-subscriptions---r4b-and-later">Topic-Based Subscriptions - R4B and Later</a></li>
+  <li><a href="#boundaries-and-relationships" id="markdown-toc-boundaries-and-relationships">Boundaries and Relationships</a></li>
   <li><a href="#authors-and-contributors" id="markdown-toc-authors-and-contributors">Authors and Contributors</a></li>
 </ul>
 
@@ -216,111 +217,77 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>The goal of publishing this guide is to define a standard method of back-porting the R5 Subscriptions Framework for greater compatibility and adoption.</p>
 
-<h3 id="contents">Contents</h3>
+<h3 id="what-are-subscriptions">What are Subscriptions?</h3>
 
+<p>The Subscriptions Framework is a mechanism designed to allow clients to ask for notifications when data changes.  It is an active notification system; a FHIR server actively sends notifications to clients as changes occur.</p>
+
+<h3 id="query-defined-subscriptions-dstu2---r4">Query-Defined Subscriptions (DSTU2 - R4)</h3>
+
+<p>There is a defined <a href="http://hl7.org/fhir/r4/subscription.html">Subscription</a> resource in FHIR R4, which has been in place since DSTU2.  In those releases of FHIR, subscriptions are defined by a client dynamically by posting a Subscription resource with a criteria string. The FHIR server must then run a query against that criteria and track the query result-set for each subscription request.  Each time a change to the server’s data is made, a server must re-run the query and send notifications to clients if their result-set changes (e.g., a new entry is added or removed).</p>
+
+<p>The above approach works well for some use cases, but has issues which prevent it from being used in others.  Some of the issues identified include:</p>
 <ul>
-  <li><a href="background.html">Background</a>
-    <ul>
-      <li>What are Subscriptions?</li>
-      <li>Subscriptions in R4</li>
-      <li>Subscriptions in R5</li>
-      <li>This IG</li>
-    </ul>
-  </li>
-  <li>Specification
-    <ul>
-      <li><a href="actors.html">Actors</a>
-        <ul>
-          <li>Server</li>
-          <li>Client</li>
-          <li>Endpoint</li>
-        </ul>
-      </li>
-      <li><a href="components.html">Components</a>
-        <ul>
-          <li>Subscription Topics</li>
-          <li>Subscriptions</li>
-          <li>Notifications</li>
-        </ul>
-      </li>
-      <li><a href="workflow.html">Workflow</a></li>
-      <li><a href="notifications.html">Notifications</a>
-        <ul>
-          <li>Handshake</li>
-          <li>Heartbeat</li>
-          <li>Event Notification</li>
-          <li>Query Status</li>
-          <li>Query Event</li>
-        </ul>
-      </li>
-      <li><a href="channels.html">Channels</a>
-        <ul>
-          <li>REST-Hook (http/s POST)</li>
-          <li>Websockets</li>
-          <li>Email</li>
-          <li>FHIR Messaging</li>
-        </ul>
-      </li>
-      <li><a href="payloads.html">Payloads</a>
-        <ul>
-          <li>Empty</li>
-          <li>Id Only</li>
-          <li>Full Resource</li>
-        </ul>
-      </li>
-      <li><a href="conformance.html">Conformance</a></li>
-      <li><a href="errors.html">Handling Errors</a></li>
-    </ul>
-  </li>
-  <li>
-    <p><a href="safety_security.html">Safety and Security</a></p>
-  </li>
-  <li>Profiles and Extensions
-    <ul>
-      <li>Profile: <a href="StructureDefinition-backport-subscription.html">Subscription</a>
-        <ul>
-          <li>Extension: <a href="StructureDefinition-backport-channel-type.html">Backport Channel Type</a></li>
-          <li>Extension: <a href="StructureDefinition-backport-filter-criteria.html">Backport Filter Criteria</a></li>
-          <li>Extension: <a href="StructureDefinition-backport-heartbeat-period.html">Backport Heartbeat Period</a></li>
-          <li>Extension: <a href="StructureDefinition-backport-timeout.html">Backport Timeout</a></li>
-          <li>Extension: <a href="StructureDefinition-backport-max-count.html">Backport Notification Max Count</a></li>
-          <li>Extension: <a href="StructureDefinition-backport-payload-content.html">Backport Payload Content</a></li>
-        </ul>
-      </li>
-      <li>Profile: Notification <a href="StructureDefinition-backport-subscription-notification.html">Bundle</a></li>
-    </ul>
-  </li>
-  <li>Operations
-    <ul>
-      <li>Operation: <a href="OperationDefinition-backport-subscription-get-ws-binding-token.html">$get-ws-binding-token</a></li>
-      <li>Operation: <a href="OperationDefinition-backport-subscription-status.html">$status</a></li>
-      <li>Operation: <a href="OperationDefinition-backport-subscription-events.html">$events</a></li>
-    </ul>
-  </li>
-  <li>Value Sets and Code Systems
-    <ul>
-      <li>Subscription Contents
-        <ul>
-          <li><a href="CodeSystem-backport-content-code-system.html">Code System</a></li>
-          <li><a href="ValueSet-backport-content-value-set.html">Value Set</a></li>
-        </ul>
-      </li>
-      <li>Subscription Notification Types
-        <ul>
-          <li><a href="CodeSystem-backport-notification-type-code-system.html">Code System</a></li>
-          <li><a href="ValueSet-backport-notification-type-value-set.html">Value Set</a></li>
-        </ul>
-      </li>
-      <li>Subscription Notification URL Location
-        <ul>
-          <li><a name="01b31e26-6934-4791-92a3-fc114c9683cc">​</a><a href="CodeSystem-backport-notification-url-location-code-system.html">Code System</a></li>
-          <li><a name="9b5a45f4-b0aa-4c05-9cc2-0396cdf13e0f">​</a><a href="ValueSet-backport-notification-url-location-value-set.html">Value Set</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li><a href="downloads.html">Downloads</a></li>
+  <li>Difficulty implementing the server-side logic at scale (both in terms of large datasets and many clients).</li>
+  <li>An opaque discovery process (e.g., servers that had restrictions on queries had no way to advertise them).</li>
+  <li>Lack of granularity in events (e.g., it was unclear why something was removed from a dataset).</li>
+  <li>No ability to bundle notifications (e.g., servers had to send a single notification for each discrete event).</li>
+  <li>Notifications required clients to re-query after receiving a notification.</li>
 </ul>
+
+<p>While some of the issues would be addressable with modifications to the existing <code class="language-plaintext highlighter-rouge">Subscription</code> resource, the FHIR Infrastructure Work Group felt that more extensive changes were needed, and so started a redesign of Subscriptions for R5.</p>
+
+<h3 id="topic-based-subscriptions---r5-and-later">Topic-Based Subscriptions - R5 and Later</h3>
+
+<p>More than a year of focused work resulted in a new design for Subscriptions in FHIR.  The redesign focused on three main areas:</p>
+
+<ol>
+  <li>Moving to a topic-based model, with the defintion of a <code class="language-plaintext highlighter-rouge">SubscriptionTopic</code> resource.</li>
+  <li>Changing the <code class="language-plaintext highlighter-rouge">Subscription</code> resource to add clarity and flexibility.</li>
+  <li>Restructuring notifications by adding a new <code class="language-plaintext highlighter-rouge">Bundle</code> type.</li>
+</ol>
+
+<p>The implementer response to these changes has been overwhelmingly positive - changes to the mechanism address the issues identified and retain all of the existing functionality.  However, many of the changes cannot be made to the FHIR specifications until the release of R5.  Implementers have expressed concern that the publication and adoption of FHIR R5 are too far in the future.</p>
+
+<h3 id="topic-based-subscriptions---r4b-and-later">Topic-Based Subscriptions - R4B and Later</h3>
+
+<p>In order to provide topic-based subscription support in FHIR R4, this Implementation Guide supplements additions made to FHIR R4B to support the new FHIR R5 topic-based subscriptions.  Wherever possible, this guide tries to align with FHIR R5 to lower implementer burden, however some differences are unavoidable.</p>
+
+<h3 id="boundaries-and-relationships">Boundaries and Relationships</h3>
+
+<h4 id="relation-to-fhircast">Relation to FHIRcast</h4>
+
+<p><a href="http://fhircast.org">FHIRcast</a> is a framework for user-activity synchronization across applications.  FHIRcast and Subscription are both conceptually based <a href="https://www.w3.org/TR/websub/">W3 WebSub</a>, and while the mechanics of two projects look similar, they are fundamentally different projects used to address different use cases.  In particular:</p>
+
+<ol>
+  <li>What Is Communicated
+    <ul>
+      <li>FHIRcast is primarily concerned with context syncrhonization.</li>
+      <li>Subscriptions are focused on content synchonization.</li>
+    </ul>
+  </li>
+  <li>User Interaction
+    <ul>
+      <li>FHIRcast is designed to be used by multiple applications perhaps with the same user and typically on the same device.</li>
+      <li>Subscriptions are designed to be used by multiple distinct systems, often outside of a user workflow.</li>
+    </ul>
+  </li>
+  <li>Session Duration
+    <ul>
+      <li>FHIRcast is designed around short-lived sessions.</li>
+      <li>Subscriptions are intented to be long-lived resources.</li>
+    </ul>
+  </li>
+  <li>Event Frequency
+    <ul>
+      <li>FHIRcast sends only single-event notifications.</li>
+      <li>Subscriptions allow servers to batch multiple notifications in high-frequency scenarios.</li>
+    </ul>
+  </li>
+</ol>
+
+<h4 id="relation-to-fhir-messaging">Relation to FHIR Messaging</h4>
+
+<p>FHIR <a href="http://hl7.org/fhir/messaging.html">Messaging</a> is a message-based protocol which can be used for communication. When combining Messaging and Subscriptions, complete notifications are wrapped into Messaging Bundles.  More details are provided on the <a href="channels.html#fhir-messaging">channels page</a>.</p>
 
 <h3 id="authors-and-contributors">Authors and Contributors</h3>
 
@@ -406,8 +373,8 @@ Julie Winters</p>
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="e8d93215-e33e-4128-b04f-5d529d0617cb">​</a>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://hl7.org/Special/committees/fiwg/index.cfm">HL7 FHIR Infrastructure WG</a>.  Package hl7.fhir.uv.subscriptions-backport#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Fri, Oct 15, 2021 17:16-0500">2021-10-15</span>
+        <p><a name="8bced4b9-d3c9-4c80-b127-a6a054287c50">​</a>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://hl7.org/Special/committees/fiwg/index.cfm">HL7 FHIR Infrastructure WG</a>.  Package hl7.fhir.uv.subscriptions-backport#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Mon, Oct 18, 2021 12:20-0500">2021-10-18</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

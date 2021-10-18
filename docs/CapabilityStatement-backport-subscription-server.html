@@ -41,8 +41,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"6.1"}
-    h3,h4,h5,h6{--heading-prefix:"6.1"}</style>
+    <style type="text/css">h2{--heading-prefix:"5.1"}
+    h3,h4,h5,h6{--heading-prefix:"5.1"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -89,9 +89,6 @@
   </li>
   <li>
     <a href="index.html">Home</a>
-  </li>
-  <li>
-    <a href="background.html">Background</a>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Specification
@@ -248,7 +245,7 @@
 
 
 
-  <div><h2 id="title">Backport Subscription Server Capability Statement</h2><ul><li>Implementation Guide Version: 0.1.1</li><li>FHIR Version: 4.0.1</li><li>Supported formats: xml, json</li><li>Published: 2020-11-30</li><li>Published by: HL7 FHIR Infrastructure WG</li></ul><p>Example CapabilityStatement describing the expected capabilities of a FHIR Server supporting backported R5 Subscriptions.</p><h3 id="behavior">FHIR RESTful Capabilities</h3><h3 id="resource--details" class="no_toc">RESTful Capabilities by Resource/Profile:</h3><p><strong>Summary of Search Criteria</strong></p><table class="grid"><thead><tr><th>Resource Type</th><th>Supported Profiles</th><th>Supported Searches</th><th>Supported <code>_includes</code></th><th>Supported <code>_revincludes</code></th><th>Supported Operations</th></tr></thead><tbody><tr><td><a name="88563138-466e-4833-80f8-f6fb055e3409">​</a><a href="#subscriptiontopic">SubscriptionTopic</a></td><td></td><td>url, title, resource</td><td></td><td></td><td></td></tr><tr><td><a href="#subscription">Subscription</a></td><td><a href="StructureDefinition-backport-subscription.html">Backported R5 Subscription</a></td><td></td><td></td><td></td><td>$status, $events, $get-ws-binding-token</td></tr></tbody></table><h4 id="subscription" class="no_toc">Subscription</h4><p>Conformance Expectation: <strong>SHALL</strong></p><p>Supported Profiles: <a href="StructureDefinition-backport-subscription.html">Backported R5 Subscription</a></p><p>Profile Interaction Summary:</p><ul></ul><p>Operation Summary:</p><ul><li><strong>SHALL</strong> support the <a href="OperationDefinition-backport-subscription-status.html">$status</a> operation</li><li><strong>MAY</strong> support the <a href="OperationDefinition-backport-subscription-events.html">$events</a> operation, <a href="OperationDefinition-backport-subscription-get-ws-binding-token.html">$get-ws-binding-token</a> operation</li></ul><p>Fetch and Search Criteria:</p><ul><li>A Server <strong>SHALL</strong> be capable of returning Subscription resources using: <code class="highlighter-rouge">GET [base]/Subscription</code></li><li>A Server <strong>SHALL</strong> be capable of returning a Subscription resource using: <code class="highlighter-rouge">GET [base]/Subscription/[id]</code></li><li>A Server <strong>SHALL</strong> be capable of removing a Subscription resource using: <code class="highlighter-rouge">DELETE [base]/Subscription/[id]</code></li><li>A Server <strong>SHALL</strong> be capable of returning SubscriptionTopic resources using: <code class="highlighter-rouge">GET [base]/SubscriptionTopic</code></li><li>A Server <strong>SHALL</strong> be capable of returning a SubscriptionTopic resource using: <code class="highlighter-rouge">GET [base]/SubscriptionTopic/[id]</code></li></ul></div>
+  <div><h2 id="title">Backport Subscription Server Capability Statement</h2><ul><li>Implementation Guide Version: 0.1.1</li><li>FHIR Version: 4.0.1</li><li>Supported formats: xml, json</li><li>Published: 2020-11-30</li><li>Published by: HL7 FHIR Infrastructure WG</li></ul><p>Example CapabilityStatement describing the expected capabilities of a FHIR Server supporting backported R5 Subscriptions.</p><h3 id="behavior">FHIR RESTful Capabilities</h3><h3 id="resource--details" class="no_toc">RESTful Capabilities by Resource/Profile:</h3><p><strong>Summary of Search Criteria</strong></p><table class="grid"><thead><tr><th>Resource Type</th><th>Supported Profiles</th><th>Supported Searches</th><th>Supported <code>_includes</code></th><th>Supported <code>_revincludes</code></th><th>Supported Operations</th></tr></thead><tbody><tr><td><a name="8aba7180-aef3-4f84-b2aa-9fd63fae90f1">​</a><a href="#subscriptiontopic">SubscriptionTopic</a></td><td></td><td>url, title, resource</td><td></td><td></td><td></td></tr><tr><td><a href="#subscription">Subscription</a></td><td><a href="StructureDefinition-backport-subscription.html">Backported R5 Subscription</a></td><td></td><td></td><td></td><td>$status, $events, $get-ws-binding-token</td></tr></tbody></table><h4 id="subscription" class="no_toc">Subscription</h4><p>Conformance Expectation: <strong>SHALL</strong></p><p>Supported Profiles: <a href="StructureDefinition-backport-subscription.html">Backported R5 Subscription</a></p><p>Profile Interaction Summary:</p><ul></ul><p>Operation Summary:</p><ul><li><strong>SHALL</strong> support the <a href="OperationDefinition-backport-subscription-status.html">$status</a> operation</li><li><strong>MAY</strong> support the <a href="OperationDefinition-backport-subscription-events.html">$events</a> operation, <a href="OperationDefinition-backport-subscription-get-ws-binding-token.html">$get-ws-binding-token</a> operation</li></ul><p>Fetch and Search Criteria:</p><ul><li>A Server <strong>SHALL</strong> be capable of returning Subscription resources using: <code class="highlighter-rouge">GET [base]/Subscription</code></li><li>A Server <strong>SHALL</strong> be capable of returning a Subscription resource using: <code class="highlighter-rouge">GET [base]/Subscription/[id]</code></li><li>A Server <strong>SHALL</strong> be capable of removing a Subscription resource using: <code class="highlighter-rouge">DELETE [base]/Subscription/[id]</code></li><li>A Server <strong>SHALL</strong> be capable of returning SubscriptionTopic resources using: <code class="highlighter-rouge">GET [base]/SubscriptionTopic</code></li><li>A Server <strong>SHALL</strong> be capable of returning a SubscriptionTopic resource using: <code class="highlighter-rouge">GET [base]/SubscriptionTopic/[id]</code></li></ul></div>
 
     <!-- insert notes if present -->
   
@@ -276,8 +273,8 @@
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="16b01e05-16f9-4fd9-a0dd-09f040d61bc4">​</a>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://hl7.org/Special/committees/fiwg/index.cfm">HL7 FHIR Infrastructure WG</a>.  Package hl7.fhir.uv.subscriptions-backport#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Fri, Oct 15, 2021 17:16-0500">2021-10-15</span>
+        <p><a name="4b2443d1-50e3-4898-b148-b30e46928353">​</a>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://hl7.org/Special/committees/fiwg/index.cfm">HL7 FHIR Infrastructure WG</a>.  Package hl7.fhir.uv.subscriptions-backport#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Mon, Oct 18, 2021 12:20-0500">2021-10-18</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
