@@ -305,7 +305,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>WebSocket security poses several challenges specific to the channel. When implementing websockets for notifications, please keep in mind the following list of some areas of concern:</p>
 
 <ul>
-  <li>Authentication of WebSockets is not generically interoperable with JWT or other ‘Authentication header’ protocols - WS and WSS do NOT allow for the required headers.</li>
+  <li>Authentication of WebSockets is not generically interoperable with JWT or other ‘Authentication header’ protocols - the <a href="https://html.spec.whatwg.org/multipage/web-sockets.html#network">JavaScript WebSocket API</a> does not include the ability to include them.</li>
   <li>Given client limitations on concurrent WebSocket connections (commonly 6), it is recommended that a single connection be able to authenticate to multiple Subscription resources.</li>
   <li>Unlike HTTP/S requests, WebSockets can be long-lived. Because of this, the case of revoking access of an active connection must be considered.</li>
 </ul>
@@ -408,8 +408,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="a90ae80d-c7da-434a-964b-d809cf8c54ff">​</a>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://hl7.org/Special/committees/fiwg/index.cfm">HL7 FHIR Infrastructure WG</a>.  Package hl7.fhir.uv.subscriptions-backport#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Tue, Nov 9, 2021 16:33-0600">2021-11-09</span>
+        <p><a name="93f05f14-ca0a-4b1d-96c4-ecff803670a6">​</a>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://hl7.org/Special/committees/fiwg/index.cfm">HL7 FHIR Infrastructure WG</a>.  Package hl7.fhir.uv.subscriptions-backport#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.1.0</a>. Generated <span title="Tue, Nov 9, 2021 16:42-0600">2021-11-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

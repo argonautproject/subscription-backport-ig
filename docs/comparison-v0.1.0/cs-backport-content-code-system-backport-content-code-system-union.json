@@ -1,11 +1,11 @@
 {
   "resourceType" : "CodeSystem",
-  "id" : "d215971d-fb4b-4c77-811f-ca8dfa75b1d0-2",
-  "url" : "http://hl7.org/fhir/comparison/CodeSystem/d215971d-fb4b-4c77-811f-ca8dfa75b1d0-2",
+  "id" : "7294b504-4687-4657-ba7e-2045ecf20c98-2",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/7294b504-4687-4657-ba7e-2045ecf20c98-2",
   "name" : "UnionBackportContentCodeSystemAndBackportContentCodeSystem",
   "title" : "Union of Backported R5 Subscription Content Code System And Backported R5 Subscription Content Code System",
   "status" : "active",
-  "date" : "2021-11-09T16:34:03-06:00",
+  "date" : "2021-11-09T16:42:04-06:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
