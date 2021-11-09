@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "e0109aa9-0137-4c5e-afed-5cebac41ca36-35",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/e0109aa9-0137-4c5e-afed-5cebac41ca36-35",
+  "id" : "bb70e95d-34cd-4f22-8c78-c37ccc92f778-35",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/bb70e95d-34cd-4f22-8c78-c37ccc92f778-35",
   "name" : "UnionBackportNotificationTypeValueSetAndBackportNotificationTypeValueSet",
   "title" : "Union of R5 Subscription Notification Type Value Set And R5 Subscription Notification Type Value Set",
   "status" : "active",
-  "date" : "2021-10-19T10:48:54-05:00",
+  "date" : "2021-11-09T15:02:57-06:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",

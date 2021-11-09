@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "e0109aa9-0137-4c5e-afed-5cebac41ca36-20",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/e0109aa9-0137-4c5e-afed-5cebac41ca36-20",
+  "id" : "bb70e95d-34cd-4f22-8c78-c37ccc92f778-20",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/bb70e95d-34cd-4f22-8c78-c37ccc92f778-20",
   "name" : "UnionBackportSubscriptionNotificationAndBackportSubscriptionNotification",
   "title" : "Union of Backported R5 Subscription Notification Bundle And Backported R5 Subscription Notification Bundle",
   "status" : "active",
-  "date" : "2021-10-19T10:48:54-05:00",
+  "date" : "2021-11-09T15:02:57-06:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
