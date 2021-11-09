@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "BackportMaxCount"];
   fhir:StructureDefinition.title [ fhir:value "Backported R5 Subscription MaxCount"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-11-09T15:02:52-06:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-11-09T16:33:58-06:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 FHIR Infrastructure WG"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

@@ -1,11 +1,11 @@
 {
   "resourceType" : "CodeSystem",
-  "id" : "bb70e95d-34cd-4f22-8c78-c37ccc92f778-9",
-  "url" : "http://hl7.org/fhir/comparison/CodeSystem/bb70e95d-34cd-4f22-8c78-c37ccc92f778-9",
+  "id" : "d215971d-fb4b-4c77-811f-ca8dfa75b1d0-9",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/d215971d-fb4b-4c77-811f-ca8dfa75b1d0-9",
   "name" : "IntersectionBackportNotificationTypeCodeSystemAndBackportNotificationTypeCodeSystem",
   "title" : "Intersection of R5 Subscription Notification Type Code System And R5 Subscription Notification Type Code System",
   "status" : "active",
-  "date" : "2021-11-09T15:02:57-06:00",
+  "date" : "2021-11-09T16:34:03-06:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
